@@ -127,13 +127,24 @@ class AnnotationApp(tk.Tk):
         s.theme_use("clam")
         s.configure("TFrame",  background="#1e1e2e")
         s.configure("Card.TFrame", background="#2a2a3e", relief="flat")
-        s.configure("TLabel",  background="#1e1e2e", foreground="#e0e0f0", font=(FONT, 12))
+        s.configure("TLabel",  background="#1e1e2e", foreground="#e0e0f0", font=(FONT, 13))
         s.configure("Title.TLabel", background="#1e1e2e", foreground="#ffffff",
-                    font=(FONT, 15, "bold"))
-        s.configure("Status.TLabel", background="#1e1e2e", foreground="#a0a0c0", font=(FONT, 11))
-        s.configure("Primary.TButton", font=(FONT, 12, "bold"), padding=6)
-        s.configure("TCombobox", font=(FONT, 12))
-        s.map("TCombobox", fieldbackground=[("readonly", "#2a2a3e")])
+                    font=(FONT, 16, "bold"))
+        s.configure("Status.TLabel", background="#1e1e2e", foreground="#a0a0c0", font=(FONT, 12))
+        s.configure("Primary.TButton", font=(FONT, 13, "bold"), padding=6)
+        self.option_add("*TCombobox*Listbox.background", "white")
+        self.option_add("*TCombobox*Listbox.foreground", "black")
+        self.option_add("*TCombobox*Listbox.selectBackground", "#2563eb")
+        self.option_add("*TCombobox*Listbox.selectForeground", "white")
+
+        s.configure("TCombobox", font=(FONT, 13),
+                    fieldbackground="white", background="white", foreground="black",
+                    selectbackground="#2563eb", selectforeground="white")
+        s.map("TCombobox",
+              fieldbackground=[("readonly", "white")],
+              foreground=[("readonly", "black")],
+              selectbackground=[("readonly", "#2563eb")],
+              selectforeground=[("readonly", "white")])
 
     # ── UI Build ─────────────────────────────────────────────────────────────
 
@@ -142,9 +153,9 @@ class AnnotationApp(tk.Tk):
         top = tk.Frame(self, bg="#12121e", pady=6, padx=12)
         top.pack(fill="x")
         tk.Label(top, text="📄 Invoice Annotation Tool", bg="#12121e", fg="#7c9eff",
-                 font=(FONT, 16, "bold")).pack(side="left")
+                 font=(FONT, 17, "bold")).pack(side="left")
         self.progress_lbl = tk.Label(top, text="", bg="#12121e", fg="#a0a0c0",
-                                     font=(FONT, 12))
+                                     font=(FONT, 13))
         self.progress_lbl.pack(side="right", padx=10)
 
         self.verified_lbl = tk.Label(top, text="", bg="#12121e", fg="#34d399",
@@ -164,31 +175,31 @@ class AnnotationApp(tk.Tk):
         nav = tk.Frame(left, bg="#2a2a3e", pady=6, padx=8)
         nav.pack(fill="x", pady=(0, 6))
         tk.Button(nav, text="◀ Prev", command=self._prev,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11, "bold"), padx=8
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12, "bold"), padx=8
                   ).pack(side="left", padx=2)
         tk.Button(nav, text="Next ▶", command=self._next,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11, "bold"), padx=8
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12, "bold"), padx=8
                   ).pack(side="left", padx=2)
         tk.Button(nav, text="⏭ Skip", command=self._next,
-                  bg="#2a2a3e", fg="#e0e0f0", activebackground="#3a3a5e", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 10), padx=6
+                  bg="#2a2a3e", fg="#2563eb", activebackground="#3a3a5e", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 11), padx=6
                   ).pack(side="left", padx=2)
 
         # Doc selector
         sel_frame = tk.Frame(left, bg="#1e1e2e", pady=2, padx=4)
         sel_frame.pack(fill="x")
         tk.Label(sel_frame, text="Jump to:", bg="#1e1e2e", fg="#cbd5e1",
-                 font=(FONT, 11, "bold")).pack(side="left")
+                 font=(FONT, 12, "bold")).pack(side="left")
         self.doc_combo = ttk.Combobox(sel_frame, values=DOC_IDS, state="readonly",
-                                      font=(FONT, 11), width=38)
+                                      font=(FONT, 12), width=38)
         self.doc_combo.pack(side="left", padx=4)
         self.doc_combo.bind("<<ComboboxSelected>>", self._on_doc_select)
 
         # Status bar
         self.status_bar = tk.Label(left, text="", bg="#1a1a2e", fg="#a0d0ff",
-                                   font=(FONT, 11), anchor="w", padx=8, pady=4)
+                                   font=(FONT, 12), anchor="w", padx=8, pady=4)
         self.status_bar.pack(fill="x", pady=(4, 0))
 
         # Image viewer
@@ -199,16 +210,16 @@ class AnnotationApp(tk.Tk):
         zoom_bar = tk.Frame(img_frame, bg="#0e0e1a")
         zoom_bar.pack(fill="x")
         tk.Button(zoom_bar, text="+", command=lambda: self._zoom(1.25),
-                  bg="#2a2a4e", fg="#ffffff", activebackground="#3d3d66", activeforeground="#ffffff", relief="flat", font=(FONT, 12, "bold"), width=2
+                  bg="#2a2a4e", fg="#2563eb", activebackground="#3d3d66", activeforeground="#1d4ed8", relief="flat", font=(FONT, 13, "bold"), width=2
                   ).pack(side="left", padx=2, pady=1)
         tk.Button(zoom_bar, text="−", command=lambda: self._zoom(0.8),
-                  bg="#2a2a4e", fg="#ffffff", activebackground="#3d3d66", activeforeground="#ffffff", relief="flat", font=(FONT, 12, "bold"), width=2
+                  bg="#2a2a4e", fg="#2563eb", activebackground="#3d3d66", activeforeground="#1d4ed8", relief="flat", font=(FONT, 13, "bold"), width=2
                   ).pack(side="left", padx=2, pady=1)
         tk.Button(zoom_bar, text="↺ Reset", command=self._zoom_reset,
-                  bg="#2a2a4e", fg="#ffffff", activebackground="#3d3d66", activeforeground="#ffffff", relief="flat", font=(FONT, 11), padx=4
+                  bg="#2a2a4e", fg="#2563eb", activebackground="#3d3d66", activeforeground="#1d4ed8", relief="flat", font=(FONT, 12), padx=4
                   ).pack(side="left", padx=4, pady=1)
         self.zoom_lbl = tk.Label(zoom_bar, text="100%", bg="#0e0e1a",
-                                 fg="#cbd5e1", font=(FONT, 11))
+                                 fg="#cbd5e1", font=(FONT, 12))
         self.zoom_lbl.pack(side="right", padx=6)
 
         self.img_canvas = tk.Canvas(img_frame, bg="#0e0e1a", cursor="crosshair",
@@ -229,11 +240,11 @@ class AnnotationApp(tk.Tk):
         sec_row = tk.Frame(right, bg="#12121e", pady=5, padx=8)
         sec_row.pack(fill="x")
         tk.Label(sec_row, text="Section:", bg="#12121e", fg="#cbd5e1",
-                 font=(FONT, 12, "bold")).pack(side="left", padx=(0, 6))
+                 font=(FONT, 13, "bold")).pack(side="left", padx=(0, 6))
         
         self.sec_dropdown = ttk.Combobox(
             sec_row, textvariable=self.sec_filter_var, state="readonly",
-            font=(FONT, 12), width=24
+            font=(FONT, 13), width=24
         )
         self.sec_dropdown.pack(side="left")
         self.sec_dropdown.bind("<<ComboboxSelected>>", self._on_sec_filter_change)
@@ -242,20 +253,20 @@ class AnnotationApp(tk.Tk):
         filt_row = tk.Frame(right, bg="#12121e", pady=5, padx=8)
         filt_row.pack(fill="x")
         tk.Label(filt_row, text="Status:", bg="#12121e", fg="#cbd5e1",
-                 font=(FONT, 12, "bold")).pack(side="left", padx=(0, 6))
+                 font=(FONT, 13, "bold")).pack(side="left", padx=(0, 6))
         for label in ["All", "Conflict", "Partial", "Agreed", "Missing", "All_Null"]:
             tk.Radiobutton(
                 filt_row, text=label, variable=self.filter_var, value=label,
                 command=self._apply_filter,
                 bg="#12121e", fg="#e2e8f0", selectcolor="#2563eb",
-                activebackground="#12121e", activeforeground="#ffffff", font=(FONT, 11),
+                activebackground="#12121e", activeforeground="#ffffff", font=(FONT, 12),
                 indicatoron=True,
             ).pack(side="left", padx=6)
         tk.Checkbutton(
             filt_row, text="Show nulls", variable=self.null_var,
             command=self._apply_filter,
             bg="#12121e", fg="#a0a0c0", selectcolor="#2a2a3e",
-            activebackground="#12121e", activeforeground="#ffffff", font=(FONT, 11)
+            activebackground="#12121e", activeforeground="#ffffff", font=(FONT, 12)
         ).pack(side="right", padx=8)
 
         # Scrollable fields area
@@ -284,31 +295,31 @@ class AnnotationApp(tk.Tk):
 
         tk.Button(bottom, text="👁 Preview",
                   command=self._open_preview,
-                  bg="#3b82f6", fg="#ffffff", activebackground="#2563eb", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11, "bold"), padx=12, pady=4
+                  bg="#3b82f6", fg="#2563eb", activebackground="#2563eb", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12, "bold"), padx=12, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="💾 Save & Next",
                   command=self._save_and_next,
-                  bg="#10b981", fg="#ffffff", activebackground="#059669", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11, "bold"), padx=12, pady=4
+                  bg="#10b981", fg="#2563eb", activebackground="#059669", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12, "bold"), padx=12, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="💾 Save Only",
                   command=self._save_only,
-                  bg="#059669", fg="#ffffff", activebackground="#047857", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11), padx=10, pady=4
+                  bg="#059669", fg="#2563eb", activebackground="#047857", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12), padx=10, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="🔀 Save Combinations",
                   command=self._open_save_combinations,
-                  bg="#8b5cf6", fg="#ffffff", activebackground="#7c3aed", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11), padx=10, pady=4
+                  bg="#8b5cf6", fg="#2563eb", activebackground="#7c3aed", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12), padx=10, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="📦 Export JSONL",
                   command=self._export,
-                  bg="#4b5563", fg="#ffffff", activebackground="#374151", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11), padx=8, pady=4
+                  bg="#4b5563", fg="#2563eb", activebackground="#374151", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12), padx=8, pady=4
                   ).pack(side="right", padx=4)
         self.save_msg = tk.Label(bottom, text="", bg="#12121e", fg="#5dade2",
-                                 font=(FONT, 11))
+                                 font=(FONT, 12))
         self.save_msg.pack(side="left", padx=8)
 
         self._wire_global_scroll()
@@ -541,9 +552,9 @@ class AnnotationApp(tk.Tk):
         badge_text = {"conflict": "!! all differ", "partial": "~ partial",
                       "agree": "✓ agree", "missing": "∅ missing"}.get(status, status)
         tk.Label(hdr, text=path, bg=sc["bg"], fg=sc["text"],
-                 font=(FONT, 12, "bold")).pack(side="left")
+                 font=(FONT, 13, "bold")).pack(side="left")
         tk.Label(hdr, text=f" {badge_text}", bg=sc["badge_bg"], fg=sc["badge_fg"],
-                 font=(FONT, 10, "bold"), padx=6, pady=2, relief="flat"
+                 font=(FONT, 11, "bold"), padx=6, pady=2, relief="flat"
                  ).pack(side="right")
 
         # Radio buttons for each model
@@ -573,7 +584,7 @@ class AnnotationApp(tk.Tk):
             rb.pack(side="left")
 
             tk.Label(mrow, text=lbl, bg=row_bg, fg="#a5b4fc",
-                     font=(FONT, 11, "bold"), width=10, anchor="w"
+                     font=(FONT, 12, "bold"), width=10, anchor="w"
                      ).pack(side="left")
 
             disp = val if val else "(null / missing)"
@@ -585,7 +596,7 @@ class AnnotationApp(tk.Tk):
                 fg_color = "#cbd5e1"
 
             tk.Label(mrow, text=disp, bg=row_bg, fg=fg_color,
-                     font=(FONT, 11), anchor="w", wraplength=500
+                     font=(FONT, 12), anchor="w", wraplength=500
                      ).pack(side="left", fill="x", expand=True)
 
         if default_model:
@@ -595,14 +606,14 @@ class AnnotationApp(tk.Tk):
         fv_frame = tk.Frame(card, bg=sc["bg"])
         fv_frame.pack(fill="x", pady=(4, 0))
         tk.Label(fv_frame, text="Final value:", bg=sc["bg"], fg=sc["text"],
-                 font=(FONT, 11, "bold"), width=12, anchor="e"
+                 font=(FONT, 12, "bold"), width=12, anchor="e"
                  ).pack(side="left")
 
         entry_var = tk.StringVar(value=cur_final)
         self._entry_vars[path] = entry_var
 
         entry = tk.Entry(fv_frame, textvariable=entry_var,
-                         font=(FONT, 11), relief="solid", bd=1,
+                         font=(FONT, 12), relief="solid", bd=1,
                          bg="#2a2a3e", fg="#ffffff", insertbackground="white")
         entry.pack(side="left", fill="x", expand=True, padx=(4, 4))
 
@@ -613,8 +624,8 @@ class AnnotationApp(tk.Tk):
         tk.Button(
             fv_frame, text="Submit",
             command=lambda p=path, ev=entry_var: self._on_submit(p, ev.get()),
-            bg="#3b82f6", fg="#ffffff", relief="flat",
-            font=(FONT, 10, "bold"), padx=10, pady=2
+            bg="#3b82f6", fg="#2563eb", relief="flat",
+            font=(FONT, 11, "bold"), padx=10, pady=2
         ).pack(side="left")
 
         # Label to show verified status & timestamp
@@ -628,7 +639,7 @@ class AnnotationApp(tk.Tk):
 
         verified_lbl = tk.Label(
             fv_frame, text=lbl_text, bg=sc["bg"], fg=lbl_fg,
-            font=(FONT, 10, "italic")
+            font=(FONT, 11, "italic")
         )
         verified_lbl.pack(side="left", padx=(10, 0))
         self._verified_labels[path] = verified_lbl
@@ -702,7 +713,7 @@ class AnnotationApp(tk.Tk):
             self.img_canvas.create_text(
                 self.img_canvas.winfo_width() // 2 or 100,
                 self.img_canvas.winfo_height() // 2 or 100,
-                text="No image", fill="#555566", font=("Helvetica Neue", 12)
+                text="No image", fill="#555566", font=("Helvetica Neue", 13)
             )
             return
         cw = self.img_canvas.winfo_width()
@@ -790,10 +801,10 @@ class AnnotationApp(tk.Tk):
 
         tk.Label(win, text="Select Save Combinations",
                  bg="#1e1e2e", fg="#7c9eff",
-                 font=(FONT, 14, "bold")).pack(pady=(12, 4))
+                 font=(FONT, 15, "bold")).pack(pady=(12, 4))
         tk.Label(win, text="Each checked option saves to its own folder under the project directory.",
                  bg="#1e1e2e", fg="#a0a0c0",
-                 font=(FONT, 11), wraplength=460).pack(pady=(0, 8))
+                 font=(FONT, 12), wraplength=460).pack(pady=(0, 8))
 
         checks_frame = tk.Frame(win, bg="#1e1e2e")
         checks_frame.pack(fill="both", expand=True, padx=20)
@@ -805,13 +816,13 @@ class AnnotationApp(tk.Tk):
             cb = tk.Checkbutton(
                 checks_frame, text=opt, variable=var,
                 bg="#1e1e2e", fg="#cbd5e1", selectcolor="#2a2a3e",
-                activebackground="#1e1e2e", activeforeground="#ffffff", font=(FONT, 11),
+                activebackground="#1e1e2e", activeforeground="#ffffff", font=(FONT, 12),
                 anchor="w"
             )
             cb.pack(fill="x", pady=2)
 
         result_lbl = tk.Label(win, text="", bg="#1e1e2e", fg="#34d399",
-                              font=(FONT, 11), wraplength=460)
+                              font=(FONT, 12), wraplength=460)
         result_lbl.pack(pady=4)
 
         def do_save_combos():
@@ -833,12 +844,12 @@ class AnnotationApp(tk.Tk):
         btn_row = tk.Frame(win, bg="#1e1e2e")
         btn_row.pack(pady=8)
         tk.Button(btn_row, text="💾 Save Selected", command=do_save_combos,
-                  bg="#10b981", fg="#ffffff", activebackground="#059669", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11, "bold"), padx=12, pady=4
+                  bg="#10b981", fg="#2563eb", activebackground="#059669", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12, "bold"), padx=12, pady=4
                   ).pack(side="left", padx=6)
         tk.Button(btn_row, text="Close", command=win.destroy,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11), padx=10, pady=4
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12), padx=10, pady=4
                   ).pack(side="left", padx=6)
 
     # ── Preview Window ───────────────────────────────────────────────────────
@@ -854,16 +865,16 @@ class AnnotationApp(tk.Tk):
 
         tk.Label(win, text="Final Values (read-only preview)",
                  bg="#1e1e2e", fg="#7c9eff",
-                 font=(FONT, 14, "bold")).pack(pady=(10, 4))
+                 font=(FONT, 15, "bold")).pack(pady=(10, 4))
 
         # Search bar
         search_frame = tk.Frame(win, bg="#1e1e2e")
         search_frame.pack(fill="x", padx=10, pady=(0, 4))
         tk.Label(search_frame, text="Search:", bg="#1e1e2e", fg="#cbd5e1",
-                 font=(FONT, 11, "bold")).pack(side="left")
+                 font=(FONT, 12, "bold")).pack(side="left")
         search_var = tk.StringVar()
         search_entry = tk.Entry(search_frame, textvariable=search_var,
-                                font=(FONT, 11), bg="#2a2a3e",
+                                font=(FONT, 12), bg="#2a2a3e",
                                 fg="white", insertbackground="white", bd=0)
         search_entry.pack(side="left", fill="x", expand=True, padx=6, ipady=4)
 
@@ -926,7 +937,7 @@ class AnnotationApp(tk.Tk):
         s.configure("Treeview", background="#2a2a3e", foreground="#e0e0f0",
                     rowheight=26, fieldbackground="#2a2a3e")
         s.configure("Treeview.Heading", background="#12121e",
-                    foreground="#7c9eff", font=(FONT, 11, "bold"))
+                    foreground="#7c9eff", font=(FONT, 12, "bold"))
         s.map("Treeview", background=[("selected", "#3a5a9e")])
 
         scroll = ttk.Scrollbar(frame, orient="vertical", command=tree.yview)
@@ -945,12 +956,12 @@ class AnnotationApp(tk.Tk):
 
         # Count label
         count_lbl = tk.Label(win, text=f"{len(all_items)} total keys",
-                             bg="#1e1e2e", fg="#a0a0c0", font=(FONT, 11))
+                             bg="#1e1e2e", fg="#a0a0c0", font=(FONT, 12))
         count_lbl.pack(pady=(0, 4))
 
         tk.Button(win, text="Close", command=win.destroy,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
-                  font=(FONT, 11), padx=12, pady=4
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
+                  font=(FONT, 12), padx=12, pady=4
                   ).pack(pady=(0, 8))
 
 
