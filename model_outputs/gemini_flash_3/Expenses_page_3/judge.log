@@ -1,0 +1,11 @@
+17:49:42  INFO     =======================================================
+17:49:42  INFO       JUDGE  doc_id=Expenses_page_3  [2026-05-18 17:49:42]
+17:49:42  INFO     =======================================================
+17:50:26  INFO     FAIL  issues=7  confidence=0.90  cost=$0.0995  elapsed=43247ms
+17:50:26  WARNING    [parties] seller.registrationNumber — The seller's EORI number 'GB330097233000' is incorrectly extracted as a company registration number.
+17:50:26  WARNING    [parties] seller.taxRegistrationNumber — The seller's EORI tax registration number is missing from the taxRegistrationNumber field.
+17:50:26  WARNING    [parties] seller.addressStructured.state — The postal code 'LU4 8EF' has been incorrectly duplicated into the state field.
+17:50:26  WARNING    [parties] billTo.addressStructured.state — The postal code 'GU51 3BU' has been incorrectly duplicated into the state field.
+17:50:26  WARNING    [totals] subtotal — The grand total value was incorrectly extracted into the subtotal field, duplicating the value from totalIncludingTax.
+17:50:26  WARNING    [totals] taxableAmount — The value was duplicated from totalExcludingTax into taxableAmount, but the field should be null as no explicit 'Taxable Amount' label exists.
+17:50:26  WARNING    [totals] balanceDue — The grand total was duplicated into balanceDue despite the absence of an explicit 'Balance Due' label.

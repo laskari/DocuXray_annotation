@@ -1,0 +1,44 @@
+{
+  "document_id": "D206_page_74",
+  "file": "D206_page_74.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 1.0,
+    "issues": {},
+    "token_usage": {
+      "input": 18833,
+      "output": 1812,
+      "total": 20645
+    },
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 1812,
+      "input_cost": 0.0094165,
+      "output_cost": 0.005436,
+      "total_cost": 0.0148525
+    },
+    "verification_model": "gemini-3-flash-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Document Content**\n\nI am encountering a significant hurdle. The document image is almost entirely blank; I can discern only faint, tiny markings. Extraction of `invoiceInfo` will be impossible. This poses a major problem.\n\n\n",
+      "parties": "**Verifying Blank Image Analysis**\n\nI've determined the image's \"parties\" section extraction verification is impossible. My analysis confirms the image is entirely blank. There's zero visual content, no text, no identifying elements. Consequently, verification of the section is not feasible since there is nothing to examine.\n\n\n",
+      "totals": "**Verifying Financial Totals**\n\nI'm currently focused on validating financial totals extracted from JSON against a document image. Specifically, I'm examining fields like discountTotal, discountPercentage, subtotal, totalExcludingTax, shippingAmount, and freightCharges. Each is currently null.\n\n\n",
+      "shippingInfo": "**Verifying Data Extraction**\n\nI'm currently analyzing the document image. It seems to be a blank white page, or an image with no information, so extraction is not possible. I need to verify if the file provided is correct.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 4496,
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 1812,
+      "input_cost": 0.0094165,
+      "output_cost": 0.005436,
+      "total_cost": 0.0148525
+    }
+  }
+}

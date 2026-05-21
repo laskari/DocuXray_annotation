@@ -1,0 +1,82 @@
+{
+  "document_id": "ConsettScanner_20260105_130848_page_33",
+  "file": "ConsettScanner_20260105_130848_page_33.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 4,
+    "sections_with_issues": [
+      "lineItems",
+      "totals"
+    ],
+    "confidence": 0.9,
+    "issues": {
+      "lineItems": [
+        {
+          "field": "lineItems.description",
+          "row_index": 3,
+          "reasoning": "1. Are MULTIPLE fields in this row displaced or shifted together compared to the document? No, the row order and amount alignment are intact. 2. Does the SAME extracted value appear verbatim in another field where it should not? No, 'VAT' does not appear duplicated verbatim elsewhere. 3. Is this value taken from a completely unrelated area/label? No, it comes from the correct row. 4. Were two similar candidates confused? No. 5. Is the extracted value fabricated and not visible? No, 'VAT' is visible as part of the printed label. 6. Is the field missing while visible? No. 7. Is it only a format difference? No. 8. Does the text have a character-level omission? Yes, the printed description includes '(20%)' and the extracted description omitted that visible text.",
+          "issue_type": "character_value_mismatch",
+          "description": "The VAT row description is incomplete; the document prints 'VAT(20%)', not just 'VAT'.",
+          "extracted_value": "VAT",
+          "corrected_value": "VAT(20%)",
+          "expected_context": "Fee summary row label between 'Total fees' and 'Total fees (includes VAT)'.",
+          "correction_reasoning": "On a second visual scan of the fee summary block, the full label on this row reads 'VAT(20%)' immediately to the left of the amount '-\u00a310.19'. The extracted description preserved only the first part, while the omitted '(20%)' is clearly printed as part of the same row label. Because the description field should match the line text as printed, 'VAT(20%)' is the correct value.",
+          "visual_evidence": "Located in the center-right fee summary block, directly below 'Total fees -\u00a350.93' and directly above 'Total fees (includes VAT) -\u00a361.12'. The label on that line visibly reads 'VAT(20%)' with the amount '-\u00a310.19' in pink to its right."
+        },
+        {
+          "field": "lineItems.remarks",
+          "row_index": 3,
+          "reasoning": "1. Are MULTIPLE fields in this row displaced or shifted together compared to the document? No, there is no row-level shift. 2. Does the SAME extracted value appear verbatim in another field where it should not? No, the description field contains 'VAT', not the exact same full value. 3. Is a SINGLE field's value taken from a completely unrelated area/label of the document, and not duplicated elsewhere? Yes, the remarks field contains the row label 'VAT(20%)' rather than an actual separate remark.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field incorrectly contains the VAT row label; there is no separate remark text for this line.",
+          "extracted_value": "VAT(20%)",
+          "corrected_value": null,
+          "expected_context": "This row only shows a label and amount, with no subordinate remark or note.",
+          "correction_reasoning": "A dedicated re-scan of the VAT row shows only the line label 'VAT(20%)' and the amount '-\u00a310.19'. Unlike the 'Final Value Fee' row, there is no second descriptive note under or beside the VAT row. Therefore, the text placed into remarks was taken from the row label context and the remarks field should be empty.",
+          "visual_evidence": "In the center-right fee summary block, the VAT row is a single-line label 'VAT(20%)' with amount '-\u00a310.19'. There is no additional smaller text beneath or adjacent to that row that would support a remarks value."
+        }
+      ],
+      "totals": [
+        {
+          "field": "totals.subtotal",
+          "row_index": null,
+          "reasoning": "1. Multiple fields are not displaced or shifted together; the visible totals align with their own labels, so this is not a structural_error. 2. The missing field is not a duplicated extracted value. 3. This is not wrong_context because no incorrect value was extracted into subtotal. 4. There is not a competing similar subtotal label that would make this a multiple_candidates case; the pre-charge amount is clearly shown as 'Total fees for item'. 5. There is no fabricated value present. 6. Yes \u2014 the subtotal field is null, but a clear monetary amount is visible in the totals area next to 'Total fees for item'. Therefore this is a missing_value issue.",
+          "issue_type": "missing_value",
+          "description": "Subtotal was left empty even though the pre-charge amount 'Total fees for item' is clearly shown.",
+          "extracted_value": null,
+          "corrected_value": "-\u00a350.63",
+          "expected_context": "Amount next to the 'Total fees for item' label in the upper totals area; this is the amount before the separate fixed fee and before VAT.",
+          "correction_reasoning": "On a second visual scan, the top-center totals line reads 'Total fees for item' with the amount '-\u00a350.63' in pink on the right. Lower down, a separate fee line 'Final Value Fee' shows '-\u00a30.30', and these two combine to the displayed 'Total fees' of '-\u00a350.93'. That makes '-\u00a350.63' the clear pre-charge base amount and the best match for subtotal.",
+          "visual_evidence": "Located near the upper middle of the page: the bold text 'Total fees for item' appears centered, with the pink amount '-\u00a350.63' immediately to its right."
+        },
+        {
+          "field": "totals.otherCharges",
+          "row_index": null,
+          "reasoning": "1. Multiple fields are not shifted together; the totals block is structurally intact. 2. The missing field is not a duplication of another extracted field. 3. This is not wrong_context because no incorrect value was placed into otherCharges. 4. There are not multiple similar candidate charge labels here; the distinct non-tax charge line is 'Final Value Fee'. 5. There is no fabricated value. 6. Yes \u2014 the field is null while a clearly printed miscellaneous fee amount is visible. Therefore this is a missing_value issue.",
+          "issue_type": "missing_value",
+          "description": "A separate miscellaneous charge line 'Final Value Fee' is visible but was not extracted into otherCharges.",
+          "extracted_value": null,
+          "corrected_value": "-\u00a30.30",
+          "expected_context": "Amount on the 'Final Value Fee' line in the middle-left portion of the totals section; this is a separate fee not represented by shipping, freight, insurance, handling, or surcharge labels.",
+          "correction_reasoning": "A dedicated rescan of the fee lines shows 'Final Value Fee' with the explanatory text 'Per order fixed amount' and the amount '-\u00a30.30' aligned to the right. It is a distinct charge line separate from tax and from the pre-tax total, and it reconciles with the arithmetic: '-\u00a350.63' plus '-\u00a30.30' equals the extracted totalExcludingTax '-\u00a350.93'. Since no more specific charge field fits this label, otherCharges is the appropriate destination.",
+          "visual_evidence": "Located in the left-middle area of the page: the label 'Final Value Fee' appears with smaller text 'Per order fixed amount' below it, and the pink amount '-\u00a30.30' is positioned to the right on the same horizontal band."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 38940,
+      "output_tokens": 6080
+    },
+    "cost": {
+      "input_cost": 0.048675,
+      "output_cost": 0.0456,
+      "total_cost": 0.094275,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

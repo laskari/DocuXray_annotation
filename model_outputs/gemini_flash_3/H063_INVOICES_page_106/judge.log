@@ -1,0 +1,12 @@
+18:01:01  INFO     =======================================================
+18:01:01  INFO       JUDGE  doc_id=H063_INVOICES_page_106  [2026-05-18 18:01:01]
+18:01:01  INFO     =======================================================
+18:01:37  INFO     FAIL  issues=8  confidence=0.90  cost=$0.0736  elapsed=36056ms
+18:01:37  WARNING    [invoiceInfo] documentNumber — The transaction number '32441' is clearly visible next to the 'TR#' label at the bottom of the receipt but was not extracted.
+18:01:37  WARNING    [invoiceInfo] issueDate — The issue date '06/18/19' is legible in the receipt footer but was not extracted.
+18:01:37  WARNING    [invoiceInfo] issueDateISO — The ISO format date is missing because the primary issueDate was not captured.
+18:01:37  WARNING    [invoiceInfo] issueTime — The issue time '12:47' is printed next to the date but was not extracted.
+18:01:37  WARNING    [invoiceInfo] issueTimeISO — The ISO format time is missing because the primary issueTime was not captured.
+18:01:37  WARNING    [lineItems] lineItems[0].description — The item description 'LABOR' is visible in the document but the extracted field is null.
+18:01:37  WARNING    [taxes] name — The tax name 'TAX 1' is clearly present in the summary section but was not extracted.
+18:01:37  WARNING    [taxes] percentage — The tax percentage '8.00%' is clearly present in the summary section but was not extracted.

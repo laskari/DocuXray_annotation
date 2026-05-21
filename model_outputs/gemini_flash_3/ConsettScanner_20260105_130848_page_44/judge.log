@@ -1,0 +1,6 @@
+18:16:34  INFO     =======================================================
+18:16:34  INFO       JUDGE  doc_id=ConsettScanner_20260105_130848_page_44  [2026-05-18 18:16:34]
+18:16:34  INFO     =======================================================
+18:16:58  INFO     FAIL  issues=2  confidence=1.00  cost=$0.0465  elapsed=23774ms
+18:16:58  WARNING    [parties] seller.taxRegistrationNumber — The extracted VAT number is 400104678, but the document consistently shows 400 1046 78 in the footer and 400104678 in the header. The extracted value is technically present but should match the standard 9-digit format often used, however, checking for digit-level accuracy, '400104678' is 9 digits, matching the header label 'VAT Number: 400104678'. Re-evaluating against the footer 'VAT: 400 1046 78', they are the same digits. No issue found.
+18:16:58  WARNING    [totals] balanceDue — The field 'balanceDue' was extracted as '0.00', but this value is not explicitly printed anywhere on the document.

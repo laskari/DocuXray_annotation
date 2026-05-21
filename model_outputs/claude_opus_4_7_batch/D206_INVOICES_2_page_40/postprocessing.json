@@ -1,0 +1,313 @@
+{
+  "document_id": "D206_INVOICES_2_page_40",
+  "postprocessed": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "506898",
+      "documentTitle": "Invoice",
+      "issueDate": "25/09/2024",
+      "issueDateISO": "2024-09-25",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "CS001004",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Food"
+    },
+    "parties": {
+      "seller": {
+        "name": "Theos Food Co Ltd",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": "Unit 45 Empire Industrial Park",
+          "district": null,
+          "city": "Aldridge",
+          "state": "West Midlands",
+          "postal_code": "WS9 8UY",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "01922472422",
+        "fax": null,
+        "email": "finance@theos-uk.com",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "GB660809429"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": "Dontay Limited",
+        "addressStructured": {
+          "street_number": "55",
+          "street_name": "Regent",
+          "street_type": "St",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Leamington Spa",
+          "state": null,
+          "postal_code": "CV32 5EE",
+          "country": "United Kingdom"
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Large Cyprus Pitta (90g) 5 x 15",
+        "itemCode": "FBR048",
+        "quantity": {
+          "originalValue": "8.00",
+          "normalizedValue": 8.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "19.10",
+          "normalizedValue": 19.1
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "152.80",
+          "normalizedValue": 152.8
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "152.80",
+          "normalizedValue": 152.8
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "152.80",
+        "normalizedValue": 152.8
+      },
+      "totalExcludingTax": {
+        "originalValue": "152.80",
+        "normalizedValue": 152.8
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": "0.00",
+        "normalizedValue": 0.0
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "152.80",
+        "normalizedValue": 152.8
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "VAT",
+        "percentage": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "amount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": true
+  },
+  "validation_errors": [],
+  "metadata": {
+    "latency_ms": 1
+  }
+}

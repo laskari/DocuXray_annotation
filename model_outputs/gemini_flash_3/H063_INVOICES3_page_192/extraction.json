@@ -1,0 +1,306 @@
+{
+  "document_id": "H063_INVOICES3_page_192",
+  "file": "H063_INVOICES3_page_192.png",
+  "data": {
+    "currency": null,
+    "invoiceInfo": {
+      "documentNumber": null,
+      "documentTitle": null,
+      "issueDate": null,
+      "issueDateISO": null,
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": null
+    },
+    "parties": {
+      "seller": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": null,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 2990,
+    "latency_ms": 22314,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.00897,
+      "total_cost": 0.013192,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 871,
+        "total_tokens": 2982,
+        "thoughts": "**Analyzing the Blank Invoice Image**\n\nOkay, so I've been given a seemingly blank image of what's supposed to be an invoice. My goal is to extract information and represent it in JSON format based on the defined schema. The initial problem is the complete absence of any actual invoice content within the image itself.\n\nFirst, I need to understand the schema. I've got a `currency` field that can be a string or null, an `invoiceInfo` object containing several potentially null string fields (like document number, issue date, etc.), an `invoiceStatus` enum, and a `hasPaidStamp` boolean.\n\nGiven that the image is literally blank, I can't extract *anything*. Therefore, I need to follow the \"no hallucination\" rule. I *must not* invent any data. Everything should default to null or an appropriate empty state.\n\n*   `currency`: Definitely null.\n*   `invoiceInfo`: Since it is acceptable, it should be null, or all the fields within this object should be null.\n*   `invoiceStatus`: It's impossible to determine the status from a blank image. \"Unknown\" fits the schema.\n*   `hasPaidStamp`: No markings visible. Therefore, this should be false.\n\nI have to carefully construct the JSON, ensuring it's valid, and that all data corresponds to what I can actually extract, which is nothing. I have to go through each field in the schema and ensure that my final output is parseable and doesn't contain any irrelevant text. No comments are allowed.\n\nI've double-checked the image; yep, a blank white page. Confirmed my logic: it's a completely empty canvas, there's nothing to process beyond applying defaults. I've also re-checked the `invoiceStatus` enum - \"unknown\" is, without a doubt, the correct selection for this scenario. I'm confident my structure is correct.\n\nHere's the final JSON, ready to go:\n```json\n{\n  \"currency\": null,\n  \"invoiceInfo\": {\n    \"documentNumber\": null,\n    \"documentTitle\": null,\n    \"issueDate\": null,\n    \"issueDateISO\": null,\n    \"issueTime\": null,\n    \"issueTimeISO\": null,\n    \"dueDate\": null,\n    \"dueDateISO\": null,\n    \"purchaseOrderNumber\": null,\n    \"salesOrderNumber\": null,\n    \"customerNumber\": null,\n    \"paymentTerms\": null,\n    \"customerMemo\": null,\n    \"category\": null\n  },\n  \"invoiceStatus\": \"unknown\",\n  \"hasPaidStamp\": false\n}\n```\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1079,
+        "total_tokens": 3190,
+        "thoughts": "**Blank Invoice Extraction: A Thought Process**\n\nAlright, let's break this down. My task is to extract information from an invoice image and represent it as JSON, adhering to a pre-defined schema. The key challenge? The image is completely blank. Just a white rectangle \u2013 no text, no data, nothing.\n\nMy initial thought is, \"Okay, nothing to extract, set everything to null.\" But it's not quite that simple. I need to make sure I'm following the schema precisely. It provides a specific structure for \"parties\" (seller, buyer, etc.) and \"shippingInfo.\" Given that *nothing* is visible in this image, all data points must be set to `null` or an empty object (based on schema requirements). The schema defines the structure, and I need to return the keys with associated values.\n\nThe schema defines `parties` and `shippingInfo` as either an `object` or `null`. I can either set the entire keys to `null` or fill each key with its sub-keys set to `null` \u2013 but how do I get the most useful and helpful response? The prompt says to include all relevant keys, so this means I should provide the keys specified by the schema and set their value to `null`. This will meet the requirements of the prompt and be most helpful to the user (since the keys are specified in the prompt).\n\nTherefore, my final JSON object will have all the keys as defined by the schema, with all the values set to `null`, effectively communicating \"there's no data here.\"\n\nLet me double-check. Yup, still a blank image.\n\nThis is the final JSON structure I'm going to return.\n\n```json\n{\n  \"parties\": {\n    \"seller\": null,\n    \"buyer\": null,\n    \"billTo\": null,\n    \"customer\": null,\n    \"shipTo\": null,\n    \"shipFrom\": null\n  },\n  \"shippingInfo\": {\n    \"carrier\": null,\n    \"deliveryDate\": null,\n    \"deliveryDateISO\": null,\n    \"trackingNumber\": null\n  }\n}\n```\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 252,
+        "total_tokens": 2363,
+        "thoughts": "**Analyzing the \"Invoice\" Image**\n\nOkay, so the task is to pull data from this image, which the user is calling an \"invoice.\" Right. Let's see... *[pauses, examines the image]*... uh oh. It's totally blank. Just a solid white rectangle. That's... not ideal. The instructions are clear though: missing or uncertain data gets set to `null`.\n\nLooking at the schema for \"Part 3,\" I need to provide `lineItems`, which is an array or `null`, and `isOverflowPage`, which is a boolean or `null`. Since the image is *completely* empty, I'm not going to be able to extract any line items. Given the instructions, I'll go with `lineItems: null` as the most appropriate response here. It's missing, so it gets null.\n\nAnd `isOverflowPage`? Well, there's no way to tell if this is an overflow or not based on a blank image, so that also gets set to `null`.\n\nWait a minute, the prompt did say, \"Extract *ALL* available data\". The image is blank, so there's *no* available data. So I'll return a JSON object with those fields explicitly set to `null` to accurately reflect the emptiness of the input.\n\n*[another quick glance at the image]* Yup. Still just a white box.\n\nAlright, here's what I'm returning, then:\n\n```json\n{\n  \"lineItems\": null,\n  \"isOverflowPage\": null\n}\n```\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 788,
+        "total_tokens": 2899,
+        "thoughts": "**Analyzing a Blank Invoice Image**\n\nOkay, so I'm tasked with extracting financial data from an invoice image. The initial challenge is immediately apparent: the image is essentially blank. It's almost entirely white, making any text, and therefore any useful data, virtually unreadable. My initial thought is to treat this as a straightforward case of missing data. If it's blank, all fields should be null.\n\nI'm carefully re-examining the image, it's a 707x1000 pixel file, almost pure white (#FFFFFF). There are some incredibly faint, almost imperceptible grey artifacts, but absolutely nothing that resembles legible text like \"Total,\" \"Tax,\" or any of the invoice details I need. This presents a tricky edge case. I need to make sure I'm not making assumptions or hallucinating data. I've got to stick to what's present.\n\nI've got to ensure the logic reflects the prompt's instruction: to extract *all* available data. Since *nothing* is available, everything goes to null.\n\nI'm performing a thorough pixel-by-pixel inspection, but I'm not seeing anything of value, even after trying to imagine where text might be. I've re-reviewed the image, top right might be a date? Middle some logo? Bottom right a total? No. Too faint.\n\nI'm double-checking the instructions. It's very clear: \"NEVER invent or hallucinate information.\" So, I must return the schema structure with null values.\n\nI'm now cross-referencing this with the schema definition to ensure the output is structured correctly. `totals` is an object, `taxes` is an array, and `applyTaxAfterDiscount` is a boolean. Since these elements are requested, I can't just send back a null. I must provide these fields in the returned JSON document, and null values for all of them.\n\nFinally, I'm doing one last, final check of the image. It's still definitely blank. I have done my due diligence.\n\nI'm confident in the output:\n\n```json\n{\"totals\": null, \"taxes\": null, \"applyTaxAfterDiscount\": null}\n```\n\n\n"
+      }
+    ]
+  }
+}

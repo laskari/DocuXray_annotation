@@ -1,0 +1,5 @@
+17:28:05  INFO     =======================================================
+17:28:05  INFO       JUDGE  doc_id=H063_INVOICES3_page_148  [2026-05-18 17:28:05]
+17:28:05  INFO     =======================================================
+17:28:22  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0981  elapsed=17199ms
+17:28:22  WARNING    [parties] seller.taxRegistrationNumber — The country code prefix 'GB' is missing from the extracted tax registration number.

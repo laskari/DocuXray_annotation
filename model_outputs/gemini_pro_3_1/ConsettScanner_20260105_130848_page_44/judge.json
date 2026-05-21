@@ -1,0 +1,63 @@
+{
+  "document_id": "ConsettScanner_20260105_130848_page_44",
+  "file": "ConsettScanner_20260105_130848_page_44.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "taxes"
+    ],
+    "confidence": 0.9,
+    "issues": {
+      "taxes": [
+        {
+          "field": null,
+          "row_index": null,
+          "reasoning": "The 'taxes' list is extracted as empty, but the document contains a clear tax amount ('Tax Total' of \u00a38.71). This means an entire row/entry is missing from the extraction, which constitutes a structural_error.",
+          "issue_type": "structural_error",
+          "description": "The taxes list is empty, missing the 'Tax Total' entry present in the document.",
+          "extracted_value": "[]",
+          "corrected_value": "[{\"name\": \"Tax Total\", \"amount\": 8.71}]",
+          "expected_context": "Tax Total \u00a3 8.71",
+          "correction_reasoning": "A 'Tax Total' value of \u00a38.71 is present in the document's totals section, which should be extracted as a tax line.",
+          "visual_evidence": "Located in the totals section on the right side, below Subtotal and above Total."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19358,
+      "output": 4839,
+      "total": 24197
+    },
+    "cost": {
+      "input_tokens": 19358,
+      "output_tokens": 4839,
+      "input_cost": 0.038716,
+      "output_cost": 0.05806800000000001,
+      "total_cost": 0.09678400000000001
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying the Extraction**\n\nI'm currently focused on verifying the data extraction from the image. Specifically, I'm examining the `invoiceInfo` section and all of its nested attributes, ensuring that the fields such as `documentNumber`, `documentTitle`, `issueDate`, and other key fields within this segment, are all accurately captured and formatted correctly. My primary goal is high accuracy and precision in this regard.\n\n\n**Refining the Extraction Process**\n\nI'm now integrating information regarding `TimeISO`, `dueDate`, `dueDateISO`, `purchaseOrderNumber`, `salesOrderNumber`, `customerNumber`, `paymentTerms`, `customerMemo`, and `category` from the image, using conservative extraction rules. I'm focusing on providing correctly extracted values and reporting issues only with clear evidence. There's also a specific JSON schema I'm aiming to match. I'm verifying the document image, confirming the `documentNumber` and `documentTitle` are accurately extracted.\n\n\n**Validating Data Fields**\n\nI'm validating the extracted data, focusing on specific fields within the invoice. The `issueDate` and `dueDate` and their ISO formats are validated as accurate and correct. I'm noting that the `purchaseOrderNumber`, `salesOrderNumber`, `customerNumber`, `paymentTerms`, and `customerMemo` are correctly null, in cases where these are not present, which is acceptable. The `category` is \"Postage\", given the image data.\n\n\n",
+      "parties": "**Verifying Party Details**\n\nI am now focused on validating the extracted seller information (\"Proovia Couriers\") against the source image. Specifically, I'm checking the address data, ensuring its accuracy. I'm prioritizing the structured address elements, like the street number and name, to ensure data integrity.\n\n\n**Confirming Seller Information**\n\nI've shifted my focus to the seller's address and VAT details. I've noted a discrepancy in the address; the extracted street name \"Fort Dunlop\" appears to be part of the larger address \"Fort Dunlop Office 110, Fort Parkway.\" So the street name is \"Fort Parkway\". The VAT number \"400104678\" matches between the header and the footer. Customer details (\"Neil Raine,\" \"ericnealgraham@aol.com\") are also now confirmed to match the source.\n\n\n**Assessing Address Discrepancies**\n\nI'm now investigating potential discrepancies within the seller's address details. \"Proovia Couriers\" and company number \"13009883\" match across header and footer. While the street name \"Fort Dunlop\" is present in the header, I see the actual street is \"Fort Parkway\" across both header and footer. I've noted a potential issue; the country \"GBR\" appears only in the footer's registered office address, not the header. I'm evaluating how to handle the country missing in the header but present in the footer.\n\n\n**Clarifying Missing Data**\n\nI'm now zeroing in on missing address data. I've decided to mark the country as a \"missing_value\" since it's only in the footer. Also, there's a problem with the extracted street name, which is \"Fort Dunlop\" instead of \"Fort Parkway.\" I'm also now going to classify \"Fort Dunlop\" as a `value_not_present` since it's not actually the street name.\n\n\n**Resolving Address Extraction**\n\nI'm now zeroing in on an address parsing issue. I will now classify the extracted street name as problematic because \"Fort Parkway\" is entirely missing, even though it's the actual street name. I will flag it as a missing value since it's missing in the structured extraction.\n\n\n",
+      "lineItems": "**Verifying Line Item Details**\n\nOkay, I'm now focused on validating the `lineItems` section. Specifically, the invoice contains a single item: \"Shelf - 1pcs.\", quantity \"1.00\", unit price \"\u00a3 43.53\", and VAT \"20.00\". I need to confirm that these details are accurately captured from the document image.\n\n\n",
+      "totals": "**Verifying the Totals**\n\nI'm currently focused on the verification of extracted \"totals\" data from invoice images. Specifically, I'm analyzing how to cross-validate financial summary fields such as subtotal, taxes, shipping, and the grand total. I'm exploring various methods to ensure the accuracy of these extracted values by comparing and contrasting data from across the invoice, and am developing a way to make sure there are no errors in our data.\n\n\n",
+      "taxes": "**Verifying Tax Data**\n\nI'm currently focused on the 'taxes' data. Right now, the extraction results are an empty list, so I need to carefully search the document image to identify and confirm any tax breakdown details. I'll meticulously compare the extracted information, or lack thereof, with the image data.\n\n\n**Analyzing Tax Information**\n\nI've discovered the tax details on the right side below the line items: \"Tax Total \u00a3 8.71\" along with a VAT percentage of 20.00% within the line items table. While there isn't an explicit \"VAT\" breakdown, the aggregate \"Tax Total\" exists. The current schema requires a \"name\", \"percentage\", and \"amount\". I'm thinking of adding a missing tax line for the Tax Total, and the amount should be 8.71.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Information**\n\nI am now focused on validating the extracted shipping information from the invoice image. The initial extraction yielded null values for carrier, delivery date, and tracking number. My goal is to confirm the accuracy of these null values, which may suggest this information is absent, or that extraction failed to find it. I am looking for ways to confirm these values.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 29556,
+    "cost": {
+      "input_tokens": 19358,
+      "output_tokens": 4839,
+      "input_cost": 0.038716,
+      "output_cost": 0.05806800000000001,
+      "total_cost": 0.09678400000000001
+    }
+  }
+}

@@ -1,0 +1,785 @@
+{
+  "document_id": "ConsettScanner_20260109_100514_page_36",
+  "postprocessed": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "100244/srsumm10084",
+      "documentTitle": "INVOICE",
+      "issueDate": "23 November 2025",
+      "issueDateISO": "2025-11-23",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "EL30175",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "Summersgills Auctioneers",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "York Road",
+          "street_type": "Road",
+          "unit": null,
+          "building": "Roxby Business Park",
+          "district": null,
+          "city": "Easingwold",
+          "state": "North Yorkshire",
+          "postal_code": "YO61 3FS",
+          "country": "United Kingdom"
+        },
+        "registrationNumber": null,
+        "phone": "01347 821379",
+        "fax": null,
+        "email": "info@summersgills.com",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "196138480"
+      },
+      "buyer": {
+        "name": "Mr Neil Raine",
+        "addressStructured": {
+          "street_number": "8",
+          "street_name": "the avenue",
+          "street_type": "avenue",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "consett",
+          "state": "Durham",
+          "postal_code": "DH8 6NR",
+          "country": "GB"
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": "neil_raine_antiques@yahoo.co.uk",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "A stoneware figure of a nun, possibly Portuguese, mark on base AC. Approx. 38cm high",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a335.00",
+          "normalizedValue": 35.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "16",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Two Georgian Tea Caddys - one Georgian with stepped top with original handle and lock raised on Ogee bracket feet 16cm x 13cm x H14cm plus Domed banded walnut tea caddy 19cm x 11cm x H14cm",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a3120.00",
+          "normalizedValue": 120.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "38",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Victorian Brass-mounted burr Walnut domed tea caddy W23cm x H15.5cm",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a345.00",
+          "normalizedValue": 45.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "40",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Antique Copper and Brass Samovar H31cm",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a345.00",
+          "normalizedValue": 45.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "47",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "A Set of Brass Postal Scales with weights ranging from 1/2 oz to 8oz struck with various marks throughout including T&Co plus Brass and cut glass Inkwell and tray",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a390.00",
+          "normalizedValue": 90.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "52",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Mahogany writing slope from York Minster stamped to base 'York Minster Ref:617' W35cm x D36cm x H18cm",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a345.00",
+          "normalizedValue": 45.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "56",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Continental School, late 19th/early 20th Century, Tyrollean old man and young woman in an interior, oil on canvas, framed. 52cm by 65cm",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a390.00",
+          "normalizedValue": 90.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "531",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Set of eight very good quality Chippendale style Mahogany dining chairs on cabriole legs with ball and claw feet with two carvers and six chairs covered in pinks, blue and red fabric in good condition",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a3400.00",
+          "normalizedValue": 400.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "604",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "A Bretby style torchere with plant pot",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a340.00",
+          "normalizedValue": 40.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "615",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Antique Oak chest of drawers - with geometric mouldings on door fronts - two over three spacious drawers with brass ring handles 109cm x 58cm x H111cm",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a3360.00",
+          "normalizedValue": 360.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "617",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "An early oak dresser with plate rack in the Jacobean style having 3 central drawers and the plate rack having 2 panelled cupboards. 2m long x depth 50cm x 2.2m high",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a3460.00",
+          "normalizedValue": 460.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "636",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Garden statue water feature in 3 sections H93cm",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a320.00",
+          "normalizedValue": 20.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "810",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "M-",
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "validation_errors": [],
+  "metadata": {
+    "latency_ms": 1
+  }
+}

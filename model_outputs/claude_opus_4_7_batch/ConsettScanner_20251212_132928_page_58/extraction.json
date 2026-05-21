@@ -1,0 +1,265 @@
+{
+  "document_id": "ConsettScanner_20251212_132928_page_58",
+  "file": "ConsettScanner_20251212_132928_page_58.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": null,
+      "documentTitle": null,
+      "issueDate": null,
+      "issueDateISO": null,
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": null
+    },
+    "parties": {
+      "seller": {
+        "name": "Argos Limited",
+        "addressStructured": {
+          "street_number": "33",
+          "street_name": "Holborn",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "London",
+          "state": null,
+          "postal_code": "EC1N 2HT",
+          "country": "UK"
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "GB 660 4548 36"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": true,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01SJhwzGKfLnxaFBHxSKTqQP",
+    "note": "Processed via Batch API (50% discount applied)",
+    "prompt_tokens": 24933,
+    "output_tokens": 535,
+    "cost": {
+      "input_cost": 0.0623325,
+      "output_cost": 0.0066875,
+      "total_cost": 0.06902,
+      "model": "claude-opus-4-7"
+    }
+  }
+}

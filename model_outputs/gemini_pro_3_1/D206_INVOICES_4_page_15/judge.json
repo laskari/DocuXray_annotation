@@ -1,0 +1,78 @@
+{
+  "document_id": "D206_INVOICES_4_page_15",
+  "file": "D206_INVOICES_4_page_15.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 2,
+    "sections_with_issues": [
+      "lineItems",
+      "totals"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "lineItems": [
+        {
+          "field": "unitPrice.originalValue",
+          "row_index": 4,
+          "reasoning": "The extracted unit price includes 'CD' which is a code or marker appended to the price in the document, preventing it from being parsed as a clean numeric value. The actual unit price is just 7.99.",
+          "issue_type": "format_error",
+          "description": "Unit price contains non-numeric characters (' CD').",
+          "extracted_value": "7.99 CD",
+          "corrected_value": "7.99",
+          "expected_context": "7.99",
+          "correction_reasoning": "The price is 7.99. 'CD' is likely a code indicating a promotion or specific status and should not be included in the numeric price field.",
+          "visual_evidence": "Under the 'PRICE' column on the last line item, '7.99' is followed by 'CD'."
+        }
+      ],
+      "totals": [
+        {
+          "field": "amountPaid.originalValue",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced? No.\n2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No.\n3. Is a SINGLE field's value taken from a completely unrelated area? No.\n4. Do two similar fields exist in the document and the wrong one was chosen? No.\n5. Is the extracted value completely fabricated? No.\n6. Is the field null/empty but the value IS clearly visible in the document? YES. The amount paid is listed as '36.36' next to the 'D/CARD' payment type, confirming the payment applied.",
+          "issue_type": "missing_value",
+          "description": "The amount paid was omitted despite being clearly visible in the payment breakdown.",
+          "extracted_value": null,
+          "corrected_value": "36.36",
+          "expected_context": "D/CARD 36.36",
+          "correction_reasoning": "The invoice includes a payment breakdown section showing 'D/CARD 36.36', which represents the total amount paid by debit card against this invoice. This should be captured as the amountPaid.",
+          "visual_evidence": "Bottom right corner of the document, in the rightmost column listing payment methods, immediately to the right of the 'D/CARD' label."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 20902,
+      "output": 7257,
+      "total": 28159
+    },
+    "cost": {
+      "input_tokens": 20902,
+      "output_tokens": 7257,
+      "input_cost": 0.041804,
+      "output_cost": 0.08708400000000001,
+      "total_cost": 0.128888
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Invoice Details**\n\nI'm focusing on validating the `invoiceInfo` section against the image. The document number, \"0378543\", checks out with the image. However, the `documentTitle` is currently null, which doesn't seem right. Need to investigate why that data wasn't extracted and how to extract this data correctly.\n\n\n",
+      "parties": "**Defining the Extraction Task**\n\nI'm focusing now on precisely defining the verification task. The key is ensuring extracted \"parties\" data aligns with the document image. I'm prioritizing outlining the format for reporting any discrepancies in a JSON structure. Currently, I'm analyzing how to structure this verification process to be robust.\n\n\n**Analyzing Entity Data**\n\nI've moved on to examining the seller and customer information in detail, specifically their extracted data vs. the document. I've begun parsing the entity details, such as the seller's registration number and the customer's address. I'm noting potential discrepancies or ambiguities to refine the verification strategy. My primary task is to identify key fields such as the company name, address, and VAT number, and ensure they are parsed accurately.\n\n\n**Reviewing Customer Details**\n\nI'm now diving deep into the customer's name extraction. There's a slight reordering issue in the concatenated string: the extracted string is \"HALIKARNAS KEBAB SHOP MR KUMLUCA\", but the original document suggests a more complex structure, with one component on the first line. The spacing seems off, indicating a small character error. I'm trying to decide between `character_value_mismatch` or `wrong_context` as the best fit for this scenario.\n\n\n**Refining Error Classification**\n\nI'm now refining the error classification strategy, specifically for instances of slight format deviations. For the customer name, I've confirmed \"HALIKARNAS KEBAB SHOP MR KUMLUCA\" has been correctly extracted, though with a minor reordering that's acceptable. I've also verified other data points such as phone numbers and the seller name, and found them accurate. I'm focusing on defining the context and classifying any remaining issues.\n\n\n**Evaluating Data Validity**\n\nI'm now focusing on discrepancies, starting with customer and seller names. I've re-examined the customer name and decided on `format_error` due to the misordered concatenation. While \"BOOKER\" and \"Booker Limited\" are both acceptable, I'm validating other fields like the customer address, which is perfect. I've verified the seller registration and tax registration numbers. The seller address is also validated.\n\n\n**Validating Entity Addresses**\n\nI'm now delving into the addresses, confirming \"Warwick\" is correct for the city. I've also verified the postal code \"CV34 5JB\". All phone numbers are accurate, too. Now I'm clarifying the customer name: \"MR KUMLUCA HALIKARNAS KEBAB SHOP\" is more precise. The seller's branch address is used, which is acceptable.\n\n\n**Verifying Extraction Accuracy**\n\nI'm now comparing extracted data against the original document, refining my approach. I've re-examined the customer name and decided that `MR KUMLUCA HALIKARNAS KEBAB SHOP` is the proper ordering. I am correcting the customer name, rather than reporting an issue. The seller's registration number (\"197380\") matches the document (\"Number 197380\"). Similarly, I'm validating the seller's tax registration number.\n\n\n",
+      "lineItems": "**Verifying Line Items**\n\nI'm now diving into the line items. My primary focus is to methodically verify each entry in the \"lineItems\" section. I'll meticulously compare each line item, starting with the first one, against the provided image, checking the CODE, DESCRIPTION and PACK SIZE elements. I'm aiming for complete accuracy in this crucial validation step.\n\n\n**Validating Line Data**\n\nI've just completed a meticulous review of the initial line items. The extraction appears spot-on for the first three entries: \"KTC Lemon Dressing,\" \"Flying Goose Sriracha Mayo,\" and \"LB Choc Chip Brioche Rolls\". I'm now examining the fourth entry, \"CP S/Steel Scourers\", verifying the code, description, quantity, price, value, and VAT.\n\n\n**Analyzing Price Extraction**\n\nI've flagged a potential issue in the fifth line item. The `unitPrice` field extracted \"7.99 CD,\" while the system expects a pure numeric value. I'm treating this as a format error. I am now checking for similar discrepancies in subsequent entries. The extracted value has a non-numeric character. This extraction needs to be normalized by stripping the characters.\n\n\n",
+      "totals": "**Initiating the Verification**\n\nI'm now zeroing in on the request. My primary objective is to authenticate the \"totals\" section of the data that was pulled from an image. I've broken down the inputs into two parts: an image of the document and the extracted JSON. The next step involves rigorously checking for accuracy, offering corrections where necessary, outlining my reasoning process, and ensuring the final result is completely valid.\n\n\n**Validating the Totals**\n\nI've moved on to examining the extracted JSON data, specifically the \"totals\" section. The values for subtotal, total excluding tax, tax total, total including tax, and balance due are present, and I'm currently cross-referencing these against the document image. I've found an initial match. I noticed the total matches the grand total, including VAT. I'm now drilling down further.\n\n\n**Assessing the Correspondences**\n\nI've completed my comparison of the extracted \"totals\" data with the document image. I've validated all values: subtotal, total excluding tax, tax total, total including tax, and balance due. I have a concern: `amountPaid` is null, but the document clearly indicates a payment of 36.36. I must analyze the data context and the document to determine if `amountPaid` should be updated. I also need to ascertain if this represents a missing value.\n\n\n**Revising the Mappings**\n\nI'm now focusing on the mapping of the extracted data fields. Specifically, I'm addressing the issue of `amountPaid`. The document confirms the payment by debit card (D/CARD 36.36) against the total invoice. Thus, I'll update `amountPaid`'s original value to \"36.36\" and note it as a missing value. I've also identified the value extracted for `totalExcludingTax`. Since it's not explicitly labeled on the document, I need to investigate if it should be mapped in the JSON, in line with the established guidelines.\n\n\n**Clarifying the Extractions**\n\nI'm now clarifying the extractions, particularly focusing on the \"totalExcludingTax\" value. I'm verifying its relationship to \"subtotal\" and if this constitutes a duplication. The extracted data has both values as 31.65, which seems correct. I'm also confirming if the 'D/CARD' entry constitutes `amountPaid`. Also, I'm checking other data like the `discountTotal`, `taxTotal`, and `balanceDue`, which are all extracted correctly.\n\n\n**Finalizing the Corrections**\n\nI've just refined the missing value correction for `amountPaid`. I am confirming the specific issue type as \"missing_value\" and have also verified the correct value as \"36.36\". The reasoning process has been detailed. Now, I am formatting the JSON response to strictly adhere to the schema, ensuring all corrections and the reasoning are accurately reflected.\n\n\n",
+      "taxes": "**Defining the Scope**\n\nI'm now zeroing in on defining the precise scope of this verification task. My immediate goal is to scrutinize the \"taxes\" segment from the JSON output and cross-reference it with the document image to catch any extraction errors. The output format is also very important.\n\n\n",
+      "shippingInfo": "**Reviewing Shipping Information**\n\nI'm currently focused on the `shippingInfo` section. I've pinpointed the relevant fields: `carrier`, `deliveryDate`, `deliveryDateISO`, and `trackingNumber`. All extracted data is presently `null`, indicating a need for further investigation within the Booker wholesale document.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 23079,
+    "cost": {
+      "input_tokens": 20902,
+      "output_tokens": 7257,
+      "input_cost": 0.041804,
+      "output_cost": 0.08708400000000001,
+      "total_cost": 0.128888
+    }
+  }
+}

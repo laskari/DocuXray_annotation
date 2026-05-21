@@ -1,0 +1,19 @@
+18:03:33  INFO     =======================================================
+18:03:33  INFO       JUDGE  doc_id=H063_INVOICES3_page_192  [2026-05-18 18:03:33]
+18:03:33  INFO     =======================================================
+18:04:07  INFO     FAIL  issues=15  confidence=0.95  cost=$0.0731  elapsed=33941ms
+18:04:07  WARNING    [invoiceInfo] documentNumber — The invoice number '2012-04-12' is clearly printed next to the 'Invoice #' label but was not extracted.
+18:04:07  WARNING    [invoiceInfo] documentTitle — The document title 'INVOICE' is printed at the top center of the page.
+18:04:07  WARNING    [invoiceInfo] issueDate — The issue date '8/14/2012' is present in the header but missing from extraction.
+18:04:07  WARNING    [invoiceInfo] issueDateISO — The issue date in ISO format is missing.
+18:04:07  WARNING    [invoiceInfo] purchaseOrderNumber — The purchase order number '100' is present in the document columns.
+18:04:07  WARNING    [invoiceInfo] customerNumber — The customer number '101' is present in the document columns.
+18:04:07  WARNING    [invoiceInfo] dueDate — The due date '8/14/2012' is present in the document columns.
+18:04:07  WARNING    [invoiceInfo] dueDateISO — The due date in ISO format is missing.
+18:04:07  WARNING    [parties] seller.name — The seller name is clearly visible at the top of the receipt but was not extracted.
+18:04:07  WARNING    [parties] seller.addressStructured.building — The building/location name for the seller is missing.
+18:04:07  WARNING    [parties] seller.addressStructured.street_name — The street name part of the seller address is missing.
+18:04:07  WARNING    [parties] seller.addressStructured.city — The city of the seller is missing.
+18:04:07  WARNING    [parties] seller.phone — The seller's phone number is missing.
+18:04:07  WARNING    [parties] seller.taxRegistrationNumber — The seller's NPWP (Tax registration number) is missing.
+18:04:07  WARNING    [taxes] None — A tax row containing the tax name 'Tax', a percentage of 10.0, and an amount of 100.0 is present in the document but was not extracted.

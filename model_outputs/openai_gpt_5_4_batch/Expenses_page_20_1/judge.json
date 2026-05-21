@@ -1,0 +1,43 @@
+{
+  "document_id": "Expenses_page_20_1",
+  "file": "Expenses_page_20_1.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.94,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.taxRegistrationNumber",
+          "row_index": null,
+          "reasoning": "1. Are multiple fields displaced or shifted together? No, this is a single field issue. 2. Is the same extracted value duplicated in another field? No. 3. Is it taken from an unrelated section? No, it comes from the VAT registration line for the seller. 4. Were multiple similar candidates present and the wrong one chosen? No, there is only one visible VAT registration number. 5. Is the extracted value completely absent from the document? No, it is a near-match to the visible VAT number. 6. Is the field missing? No. 7. Is it only a format difference? No, the digits differ. 8. Is it a small character typo in text? No, this is a digit error in a numeric identifier. 9. Therefore this is a numeric_value_mismatch.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "The seller VAT registration number has an incorrect digit sequence at the end.",
+          "extracted_value": "GB 698491057",
+          "corrected_value": "GB 698491857",
+          "expected_context": "Seller VAT registration line in the invoice header area.",
+          "correction_reasoning": "I re-checked the small text line to the right side of the page beneath the invoice date. The label reads 'Vat Registration No.' followed by 'GB 698491857'. The extracted value ends with '057', but the printed number clearly ends with '857', so the corrected VAT registration number is the one shown on that header line.",
+          "visual_evidence": "Located in the upper-right header block, directly below 'INVOICE DATE 19/05/2025', on the line labeled 'Vat Registration No.'; the number printed after 'GB' reads '698491857'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 38319,
+      "output_tokens": 4830
+    },
+    "cost": {
+      "input_cost": 0.04789875,
+      "output_cost": 0.036225,
+      "total_cost": 0.08412375,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

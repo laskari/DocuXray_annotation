@@ -1,0 +1,26 @@
+{
+  "document_id": "D206_INVOICES_2_page_40",
+  "file": "D206_INVOICES_2_page_40.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.9,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 67217,
+      "output_tokens": 429
+    },
+    "cost": {
+      "input_cost": 0.16804249999999998,
+      "output_cost": 0.0053625,
+      "total_cost": 0.17340499999999998,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

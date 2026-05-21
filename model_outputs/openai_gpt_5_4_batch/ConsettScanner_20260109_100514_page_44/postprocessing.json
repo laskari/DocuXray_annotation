@@ -1,0 +1,565 @@
+{
+  "document_id": "ConsettScanner_20260109_100514_page_44",
+  "postprocessed": {
+    "currency": null,
+    "invoiceInfo": {
+      "documentNumber": "98",
+      "documentTitle": "INVOICE",
+      "issueDate": "21/4/95",
+      "issueDateISO": null,
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Sales"
+    },
+    "parties": {
+      "seller": {
+        "name": "Elcoate Antiques & Interiors",
+        "addressStructured": {
+          "street_number": "7",
+          "street_name": "Wainstones",
+          "street_type": "Court",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Stokesley",
+          "state": "North Yorkshire",
+          "postal_code": "TS9 5JY",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "07927 964289",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "457107200"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "Rose Antiques Consett",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "TABLE",
+        "itemCode": "0768",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "300",
+          "normalizedValue": 300.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CANVAS",
+        "itemCode": "0761",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "200",
+          "normalizedValue": 200.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CHAIR",
+        "itemCode": "0370",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "125",
+          "normalizedValue": 125.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "WINDOW",
+        "itemCode": "0661",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "400",
+          "normalizedValue": 400.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CHAIR",
+        "itemCode": "0742",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "325",
+          "normalizedValue": 325.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "TABLE",
+        "itemCode": "2648",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "120",
+          "normalizedValue": 120.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "TABLE",
+        "itemCode": "2658",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "175",
+          "normalizedValue": 175.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "1645",
+        "normalizedValue": 1645.0
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "validation_errors": [],
+  "metadata": {
+    "latency_ms": 1
+  }
+}

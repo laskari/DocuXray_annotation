@@ -1,0 +1,89 @@
+{
+  "document_id": "D206_INVOICES_2_page_40",
+  "file": "D206_INVOICES_2_page_40.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "parties",
+      "totals"
+    ],
+    "confidence": 0.9,
+    "issues": {
+      "parties": [
+        {
+          "field": "buyer.name",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced? \u2192 No. 2. Does the SAME extracted value appear verbatim in ANOTHER field? \u2192 No. 3. Is a SINGLE field's value taken from a completely unrelated area? \u2192 No. 4. Do two similar fields exist? \u2192 Yes, 'Dontay Limited' and 'Chip Shops Group' are both potential names for the buyer/customer. The extraction chose 'Dontay Limited', but 'Chip Shops Group' is the more specific customer entity associated with this transaction. However, 'Dontay Limited' is the primary billing name. 5. Is the extracted value completely fabricated? \u2192 No. 6. Is the field null/empty? \u2192 No. 7. Is the correct value present but in a different format? \u2192 No. 8. Does the text value have small character-level typos? \u2192 No. 9. Does the numeric value have small digit-level typos? \u2192 No. The extraction for name is technically correct as it captures the top-level entity, but 'Chip Shops Group' is the actual store branch or customer group name listed below the address box.",
+          "issue_type": "multiple_candidates",
+          "description": "Two potential candidates for the buyer name exist: 'Dontay Limited' (the legal entity) and 'Chip Shops Group' (the specific customer/branch name).",
+          "extracted_value": "Dontay Limited",
+          "corrected_value": "Chip Shops Group",
+          "expected_context": "Located immediately below the address box for Dontay Limited.",
+          "correction_reasoning": "While Dontay Limited is the primary entity, 'Chip Shops Group' is listed specifically as the trading name or customer group for this sale, often preferred in retail/wholesale contexts.",
+          "visual_evidence": "Text 'Chip Shops Group' located below the buyer address box on the left side."
+        },
+        {
+          "field": "buyer.phone",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced? \u2192 No. 2. Does the SAME extracted value appear verbatim in ANOTHER field? \u2192 No. 3. Is a SINGLE field's value taken from a completely unrelated area? \u2192 Yes. The phone number '07872929761' is located on the right side of the line items header, labeled 'Tel:manager', which refers to the store manager/delivery contact, not the primary buyer's phone number.",
+          "issue_type": "wrong_context",
+          "description": "The phone number extracted belongs to a manager contact in the line items section, not the buyer's main address details.",
+          "extracted_value": "07872929761",
+          "corrected_value": null,
+          "expected_context": "The buyer box contains no phone number.",
+          "correction_reasoning": "The extracted value is a management/delivery contact for the specific sale, not a registered phone number for the buyer entity 'Dontay Limited'.",
+          "visual_evidence": "Located on the right side above the line items table, next to the label 'Tel:manager'."
+        }
+      ],
+      "totals": [
+        {
+          "field": "taxableAmount",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together? No.\n2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No (the value 152.80 appears in subtotal and totalExcludingTax, which is correct, but taxableAmount is a specific field requiring a specific label).\n3. Is a SINGLE field's value taken from a completely unrelated area/label of the document, AND the value does NOT also appear duplicated in another extracted field? Yes, the value 152.80 was taken from the 'Net Total' label, but the schema specifies that taxableAmount should only be extracted if explicitly labelled as such (e.g., 'Taxable Amount'). Since no such label exists, the value should be null.",
+          "issue_type": "wrong_context",
+          "description": "The value 152.80 was extracted into taxableAmount from the 'Net Total' label, but the schema requires this field to be populated only if explicitly labelled (e.g., 'Taxable Amount').",
+          "extracted_value": "152.80",
+          "corrected_value": null,
+          "expected_context": "The document contains 'Net Total', 'VAT', and 'Document Total GBP' labels, but lacks an explicit 'Taxable Amount' label.",
+          "correction_reasoning": "According to the field definition, taxableAmount should only be extracted if explicitly labelled on the document. As there is no 'Taxable Amount' or 'Taxable Value' label present, this field should remain null.",
+          "visual_evidence": "The totals section on the right side above the footer contains 'Net Total', 'VAT', and 'Document Total GBP', but no label for taxable amount."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19420,
+      "output": 9614,
+      "total": 29034
+    },
+    "cost": {
+      "input_tokens": 19420,
+      "output_tokens": 9614,
+      "input_cost": 0.00971,
+      "output_cost": 0.028842,
+      "total_cost": 0.038552
+    },
+    "verification_model": "gemini-3-flash-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Invoice Details**\n\nI've begun validating the extracted data against the invoice image. Specifically, the \"documentNumber\" field, which is \"506898\", aligns perfectly with the \"Invoice No\" field on the image. This verification is a success. I'll proceed with checking the other fields.\n\n\n**Confirming Invoice Data**\n\nI have verified the presence of the word \"Invoice\" on the document. I confirmed the issue date as \"25/09/2024,\" and the ISO equivalent, and confirmed null values for issueTime, dueDate, and related ISO conversions. I validated the null values for purchase and sales order numbers. Customer number \"CS001004\" is accurate. I confirmed \"CASH SALE\" as the payment terms and a null customer memo, and the category as \"Food.\"\n\n\n",
+      "lineItems": "**Verifying Data Extraction**\n\nI'm currently focused on verifying the accuracy of extracting the \"lineItems\" data from the invoice. Specifically, I'm checking the values for 'description', 'itemCode', 'quantity', 'unitPrice', and 'lineTotalExcludingTax'. I need to make sure the extraction process is correctly pulling these data points and assigning them to the appropriate keys.\n\n\n**Analyzing Tax Calculations**\n\nI've confirmed the initial data extraction, with values from the first row aligning perfectly. My focus is now on the `lineTotalIncludingTax` field. The document shows no tax applied in this line item, and the total GBP is equivalent to `lineTotalExcludingTax`. The schema specifies this as an optional field and allows `lineTotalIncludingTax` to be null if no tax is present, which aligns with the observed data.\n\n\n**Evaluating Total Calculation**\n\nI'm now examining the \"Total GBP\" figure and its implications given a VAT of 0.00. The JSON currently shows `lineTotalIncludingTax` as null. Rule 6 highlights the issue of missing values but, I must be conservative. The schema considers this field nullable when tax is absent. The \"Total GBP\" value \"152.80\" represents the line total. Given the instructions, I'm verifying if I should flag this as a definite issue or if the current representation aligns with the schema's flexibility.\n\n\n**Assessing Field Accuracy**\n\nI'm now diving deeper into the fields. Specifically, the null `lineTotalIncludingTax` field is proving less of a concern. The schema allows for it to be null when no tax is applied, which is the case here. My focus has shifted to identifying other potential issues. I am evaluating the `unitOfMeasure` which is null, and considering the lack of any units (like \"pcs\", \"boxes\"), given the quantity of \"8.00\". Fields like `serialNumber` and `lotNumber` are all null, and I am assessing whether these nulls are problematic.\n\n\n**Validating Calculations Correctly**\n\nI've re-examined the `lineTotalIncludingTax` field, considering the \"Total\" and 0 VAT context, concluding it's not a `missing_value`. My reasoning involves confirming there's no data shift, duplication, or incorrect context. Extractors often make it null when it is the same as excluding tax. I'm verifying the document for any subtle typos in the \"Total GBP\" figure.\n\n\n**Confirming Invoice Details**\n\nI've just finished a meticulous review, and I'm confident in the data's accuracy. I've rechecked all values within the specific line item, including the quantity, item description, and total, and the unit price calculations are all accurate, and the text values are a match. I'm now certain there are no anomalies.\n\n\n**Finalizing Issue Assessment**\n\nAfter a thorough review, I've confirmed no discrepancies in line with instructions. Given the context, the null `lineTotalIncludingTax` is acceptable, as the text has no tax. Other fields are consistent with the source text. I will confidently return an empty issue list with a confidence of 1.0, based on the final, error-free extraction.\n\n\n**Concluding Data Accuracy**\n\nI've just done a final sweep of the data. I double-checked the description, ensuring no subtle character inconsistencies existed, and the comparison was perfect. I also reviewed `lineTotalIncludingTax` again in the context of the total with 0 VAT. Based on the schema's \"optional\" specification for the field, and following the \"Be conservative\" rule, I won't flag it. I've confirmed that the `itemCode`, `quantity`, `unitPrice` and `lineTotalExcludingTax` are all matching perfectly. The JSON, with an empty issues list and a confidence of 1.0, is ready.\n\n\n**Revisiting Total Tax**\n\nI'm now re-examining the \"Total GBP\" against the `lineTotalIncludingTax` field. The image shows \"152.80\", which is correctly extracted. The value is not explicitly *missing* from this line item. Given the 0.00 VAT, I'm verifying if I should flag it as an issue. I'm choosing to follow the rule to be conservative and not flag the null, as it is logically derived.\n\n\n",
+      "totals": "**Verifying Invoice Totals**\n\nI'm currently focused on verifying the invoice's \"totals\" section. I've analyzed the image and identified the following: Net Total of 152.80, VAT of 0.00, and a Document Total of 15. The next step is to compare these extracted figures against the JSON data.\n\n\n**Validating Total Components**\n\nNow, I'm validating the individual components contributing to the invoice total extracted from JSON data. The discount and other charges are absent, as expected. I've confirmed that the 'subtotal' and 'totalExcludingTax' values, both at 152.80, align with the single line item. This seems appropriate given the invoice's structure.\n\n\n**Reviewing Taxable Amount Field**\n\nI'm revisiting the `taxableAmount` extraction, as the labels don't explicitly match. I've noted \"Net Total,\" which is the \"totalExcludingTax\", a synonym for taxable base, but no \"Taxable Amount\" label. The schema requires explicit labeling. Therefore, despite the potential synonym, I'm confirming that the `taxableAmount` should indeed be `null` in this instance. The other fields align: `taxTotal` (\"0.00\" from VAT), and `totalIncludingTax` (\"152.80\" from Document Total GBP).\n\n\n**Assessing Total and Balance**\n\nI'm now assessing the `tipAmount` and `balanceDue` fields. It appears `tipAmount` is correctly null. I'm hesitant on `balanceDue`. Although \"Document Total GBP\" is the total, I am also considering its relation as the balance. However, I'm being conservative; there's no explicit \"Balance Due\" label. Therefore, I'll keep the value as null.\n\nI've also re-evaluated `taxableAmount`. I will classify the value extracted from \"Net Total\" as a `wrong_context` because there is no explicit label.\n\n\n",
+      "taxes": "**Verifying Tax Information**\n\nI've begun analyzing the extracted data and found a single tax line: \"VAT,\" with a null percentage and a zero amount. My next step is to examine the invoice image to confirm this information.\n\n\n**Confirming Tax Percentage**\n\nI've verified the VAT amount and found it matches the extracted data (0.00). I've checked the line items and confirmed the net total calculation. The document doesn't explicitly state a VAT percentage, but the calculation, and lack of a stated percentage, leads me to conclude the rate is 0%. There's no other tax information. The extracted \"VAT\" name is a match.\n\n\n**Validating the Extraction**\n\nI've validated the zero VAT value and confirmed the extracted data's accuracy against the image. The percentage field being null is also verified, as the document doesn't explicitly state one, which is correct given the `Optional` schema. I've double-checked that there are no hidden taxes, and the net and gross amounts are consistent with 0% VAT. No other tax lines are present, which is also verified.\n\n\n**Clarifying the Schema**\n\nI'm now focusing on the JSON schema. After reviewing, I've confirmed that `taxableAmount` is *not* a required field in the `TaxLine` structure, so I can ignore any instructions about this. I'm confident in the validation of the existing data based on the schema and extraction. The \"VAT\" name and \"0.00\" amount are confirmed as correct.\n\n\n**Analyzing Tax Calculations**\n\nI've carefully considered the schema and the extracted tax line details. The prompt's reference to \"missing taxable amounts\" is not applicable since the schema doesn't include that field. After verifying, the extracted JSON's `name`, `percentage` (null), and `amount` (0.00) perfectly matches the invoice. The \"Net Total\" from the document is the \"taxable amount,\" although it is not in the schema.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Information**\n\nI'm currently focused on verifying the shipping information. I've noted that the \"carrier\" field isn't explicitly present. I'm also cross-referencing the \"Doc. Date\", which is listed as \"25/09/2024\", to see if it implicitly represents a delivery date, given common invoice practices.\n\n\n**Analyzing Delivery Information**\n\nI've been re-examining the document to uncover the delivery information. It seems there's no explicitly labeled delivery date or tracking number. The \"Doc. Date,\" noted as \"25/09/2024,\" *could* be relevant, but is usually the invoice date. I'm investigating if the \"CASH SALE\" notation could indicate pickup or immediate delivery, since no other specific dates are present. I am working on the assumption that if delivery data is not explicitly available, we keep it null.\n\n\n**Confirming Null Values**\n\nI've re-reviewed the definitions for `deliveryDate` and `trackingNumber`. Since no dates are explicitly labeled as delivery or shipping, `null` is the correct value. I've also checked the tracking number definition for potential aliases like \"Delivery No.\", but found nothing. Reviewing the extracted data as a result of that analysis looks correct. Finally, I've checked the document for any hidden shipping information, such as the contact details, but I see no such information.\n\n\n**Finalizing Null Values**\n\nI've performed a final check to confirm the null values are correct, cross-referencing against the document's absence of delivery data. I've re-read the prompt to make sure I am reporting any issues. There are no misattributed fields or missing data that should be present. The extracted JSON, with null values for carrier, delivery date, and tracking number, is accurate. My confidence is 1.0. The schema is correctly followed.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 18316,
+    "cost": {
+      "input_tokens": 19420,
+      "output_tokens": 9614,
+      "input_cost": 0.00971,
+      "output_cost": 0.028842,
+      "total_cost": 0.038552
+    }
+  }
+}

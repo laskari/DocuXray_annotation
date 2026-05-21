@@ -1,0 +1,33 @@
+17:10:58  INFO     =======================================================
+17:10:58  INFO       EXTRACTION  doc_id=ConsettScanner_20260105_131112_page_28  [2026-05-18 17:10:58]
+17:10:58  INFO     =======================================================
+17:10:58  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:10:58  INFO     [ConsettScanner_20260105_131112_page_28] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:10:58  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'general' for doc 'ConsettScanner_20260105_131112_page_28'
+17:10:58  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'parties' for doc 'ConsettScanner_20260105_131112_page_28'
+17:10:58  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'items' for doc 'ConsettScanner_20260105_131112_page_28'
+17:10:58  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'totals' for doc 'ConsettScanner_20260105_131112_page_28'
+17:11:02  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'general' for doc 'ConsettScanner_20260105_131112_page_28'
+17:11:22  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'items' for doc 'ConsettScanner_20260105_131112_page_28'
+17:11:22  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'totals' for doc 'ConsettScanner_20260105_131112_page_28'
+17:11:23  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'parties' for doc 'ConsettScanner_20260105_131112_page_28'
+17:11:23  INFO     [ConsettScanner_20260105_131112_page_28] SUCCESS: Invoice extraction completed | latency_ms=25577
+17:11:23  INFO     OK  elapsed=25653ms  cost=$0.0214
+16:07:49  INFO     =======================================================
+16:07:49  INFO       EXTRACTION  doc_id=ConsettScanner_20260105_131112_page_28  [2026-05-19 16:07:49]
+16:07:49  INFO     =======================================================
+16:07:49  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+16:07:49  INFO     [ConsettScanner_20260105_131112_page_28] [EXTRACTION_START] Starting invoice extraction (part=all)
+16:07:49  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'general' for doc 'ConsettScanner_20260105_131112_page_28'
+16:07:49  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'parties' for doc 'ConsettScanner_20260105_131112_page_28'
+16:07:49  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'items' for doc 'ConsettScanner_20260105_131112_page_28'
+16:07:49  INFO     [ConsettScanner_20260105_131112_page_28] [PART_CALL] Starting part 'totals' for doc 'ConsettScanner_20260105_131112_page_28'
+16:08:15  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'items' for doc 'ConsettScanner_20260105_131112_page_28'
+16:08:18  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'totals' for doc 'ConsettScanner_20260105_131112_page_28'
+16:08:23  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'general' for doc 'ConsettScanner_20260105_131112_page_28'
+16:08:31  INFO     [ConsettScanner_20260105_131112_page_28] [PART_DONE] Completed part 'parties' for doc 'ConsettScanner_20260105_131112_page_28'
+16:08:31  INFO     [ConsettScanner_20260105_131112_page_28] SUCCESS: Invoice extraction completed | latency_ms=42471
+16:08:31  INFO     OK  elapsed=42542ms  cost=$0.0312
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=ConsettScanner_20260105_131112_page_28  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

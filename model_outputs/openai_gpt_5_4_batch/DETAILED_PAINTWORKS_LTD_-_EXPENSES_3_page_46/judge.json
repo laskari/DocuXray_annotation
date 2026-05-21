@@ -1,0 +1,70 @@
+{
+  "document_id": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46",
+  "file": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "lineItems"
+    ],
+    "confidence": 0.9,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.issueDate",
+          "row_index": null,
+          "reasoning": "1. There is no list or row structure involved, so this is not a structural_error. 2. The extracted value is not a duplicated value appearing incorrectly in another extracted field for this section in a way that indicates duplication_error. 3. The date '19 Jul 2024' is visible, but it appears under the labels 'Placed on' and 'Paid on' in the 'Order information' section, not as an invoice issue date. YES -> wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The issueDate was taken from the order's 'Placed on'/'Paid on' date rather than from an explicit invoice issue date.",
+          "extracted_value": "19 Jul 2024",
+          "corrected_value": null,
+          "expected_context": "No explicit invoice issue date is shown anywhere on the document; the only visible dates are 'Placed on' and 'Paid on' in the Order information block.",
+          "correction_reasoning": "I re-scanned the full page for any label such as 'Issue date', 'Invoice date', or similar and found none. The only date occurrences are in the left 'Order information' column beside 'Placed on' and 'Paid on', both showing '19 Jul 2024'. Because the field specifically represents an invoice issue date, and no such date is explicitly printed, this field should be empty.",
+          "visual_evidence": "Top-left area of the page under the bold heading 'Order information'. The date '19 Jul 2024' appears once next to 'Placed on' and again next to 'Paid on'. No 'Issue date' or 'Invoice date' label appears elsewhere on the page."
+        },
+        {
+          "field": "invoiceInfo.issueDateISO",
+          "row_index": null,
+          "reasoning": "1. This is a single scalar field, so no structural_error applies. 2. This is not a duplication_error. 3. The ISO date was derived from a date that is present only under unrelated labels ('Placed on'/'Paid on') rather than from an explicit invoice issue date. YES -> wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The issueDateISO was derived from the order date context, not from an explicit invoice issue date on the document.",
+          "extracted_value": "2024-07-19",
+          "corrected_value": null,
+          "expected_context": "No explicit invoice issue date is printed; only order-related dates are visible in the Order information section.",
+          "correction_reasoning": "On second review, there is no printed ISO-formatted issue date and no invoice-date label anywhere on the document. The source date appears only as '19 Jul 2024' under 'Placed on' and 'Paid on'. Since the document does not explicitly provide an invoice issue date, the normalized ISO field should also be empty rather than populated from order metadata.",
+          "visual_evidence": "In the upper-left 'Order information' block, the only dates visible are '19 Jul 2024' beside 'Placed on' and 'Paid on'. No separate invoice issue date appears anywhere in the header, totals area, or item section."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineItems.remarks",
+          "row_index": 0,
+          "reasoning": "1. I checked whether multiple fields in the row are displaced together; they are not. 2. I checked whether the same extracted value appears duplicated in another extracted field; it does not. 3. The extracted value comes from a different labeled column in the same line-item table: it is the delivery service, not a remark. Therefore this is a wrong_context issue.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the delivery service value from the 'Delivery service' column, but there is no printed line-item remark in this row.",
+          "extracted_value": "Delivery service: Royal Mail 2nd Class",
+          "corrected_value": null,
+          "expected_context": "The row has a separate 'Delivery service' column showing 'Royal Mail 2nd Class'; no remarks value is visible for the line item.",
+          "correction_reasoning": "On a second visual scan of the single line-item row, the text 'Royal Mail 2nd Class' appears under the dedicated 'Delivery service' column, not as a remark attached to the item description. I do not see any separate note or remark text anywhere else in the row, so the correct value for remarks is null.",
+          "visual_evidence": "In the line-items table near the middle of the page, row 1 shows the item description in the 'Item name' column. To its right, under the header 'Delivery service', the text 'Royal Mail 2nd Class' is printed on two lines. There is no remarks column or remark text visible for this row."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 37844,
+      "output_tokens": 5331
+    },
+    "cost": {
+      "input_cost": 0.047305,
+      "output_cost": 0.0399825,
+      "total_cost": 0.08728749999999999,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

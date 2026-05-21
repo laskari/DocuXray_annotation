@@ -1,0 +1,106 @@
+{
+  "document_id": "ConsettScanner_20260109_100426_page_16",
+  "file": "ConsettScanner_20260109_100426_page_16.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 6,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "lineItems"
+    ],
+    "confidence": 0.93,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.documentTitle",
+          "row_index": null,
+          "reasoning": "1. No multiple fields are shifted together, so not structural_error. 2. The extracted value is not duplicated into another extracted field, so not duplication_error. 3. The value 'Your transactions' is taken from a section header above the transaction table rather than from a document-level invoice title, so YES: wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The extracted document title is a transaction-section heading, not the document's invoice/title field.",
+          "extracted_value": "Your transactions",
+          "corrected_value": null,
+          "expected_context": "A document-level invoice title such as an invoice/statement heading; no such invoice title is clearly visible on this page.",
+          "correction_reasoning": "On second review, 'Your transactions' appears inside a shaded banner directly above the columns 'Date', 'Description', 'Money out', 'Money in', and 'Balance'. That placement identifies it as the title of the transactions section, not the overall document title for invoiceInfo. I do not see a separate invoice-style title elsewhere on this page, so the safest correction for this field is null.",
+          "visual_evidence": "Located near the top-left/upper-middle of the page inside a dark rounded header bar immediately above the transaction table columns. It visually labels the list of account transactions rather than the whole document."
+        },
+        {
+          "field": "invoiceInfo.category",
+          "row_index": null,
+          "reasoning": "1. No list structure issue exists, so not structural_error. 2. The extracted value is not a duplicated value from another field, so not duplication_error. 3. It is not taken from another visible section label. 4. There are no multiple similar candidates. 5. The extracted value 'None' does not appear anywhere on the document image, so YES: value_not_present.",
+          "issue_type": "value_not_present",
+          "description": "The extracted category value 'None' is not visibly present on the document.",
+          "extracted_value": "None",
+          "corrected_value": null,
+          "expected_context": "If a category were supported by the document, it would need to be derived from a visible invoice context or line-item classification; no explicit category text is shown here.",
+          "correction_reasoning": "I visually scanned the page header, transaction rows, footer, and margins and found no printed text 'None' and no explicit invoice category field. Since the extracted string is not visible anywhere on the page, it should be removed and set to null.",
+          "visual_evidence": "Across the entire page, including the top header area, the transaction table, and the footer with 'Page 2' and Barclays text, there is no visible printed value 'None' or category label."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineItems[6].remarks",
+          "row_index": 6,
+          "reasoning": "1. No multiple fields across this row are displaced or shifted; the row order matches the document. 2. The extracted remarks value is not duplicated into another field. 3. The value is not taken from an unrelated context. 4. There are not multiple plausible candidates for this exact code line. 5. The value is visible on the document, so it is not fabricated. 6. The field is not missing. 7. This is not just a formatting difference. 8. The problem is not a small text-letter typo. 9. Yes \u2014 the numeric reference inside the remarks is missing a digit compared with the document, so this is a numeric_value_mismatch.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "The reference code in the remarks is missing one digit; the document shows 13662, not 1362.",
+          "extracted_value": "Money out; O*02-1362-34 On 02 Oct",
+          "corrected_value": "Money out; O*02-13662-34 On 02 Oct",
+          "expected_context": "03 Oct row for 'Card Payment to Ebay', second line of the transaction description under the main description.",
+          "correction_reasoning": "I rechecked the 03 Oct Ebay card payment row and read the second line directly beneath the description. The code printed there contains five digits after the first hyphen: 13662. The extracted remarks omitted one of the 6s, so the full remarks string must be corrected to include the complete visible code.",
+          "visual_evidence": "Located in the 03 Oct section, the 'Card Payment to Ebay' row with amount 3.59. On the wrapped line immediately below the description, the text reads 'O*02-13662-34 On 02 Oct'."
+        },
+        {
+          "field": "lineItems[8].remarks",
+          "row_index": 8,
+          "reasoning": "1. No multiple fields across the row are shifted; only this remarks text is wrong. 2. The extracted value is not duplicated in another field for this row. 3. It is not taken from an unrelated section. 4. There are not multiple plausible candidates here; there is a single visible reference text. 5. The extracted value is not fabricated because most of it appears on the document. 6. The field is not empty. 7. This is not merely a formatting change. 8. Yes \u2014 the text has a small character-level typo: 'Sue' instead of 'Suite'.",
+          "issue_type": "character_value_mismatch",
+          "description": "The reference text ends with 'Suite', but the extraction truncated it to 'Sue'.",
+          "extracted_value": "Money in; Ref: Chesterfield Sue; Balance: 1,501.80",
+          "corrected_value": "Money in; Ref: Chesterfield Suite; Balance: 1,501.80",
+          "expected_context": "03 Oct row for 'Bill Payment From Hickson N P', on the reference line beneath the description.",
+          "correction_reasoning": "I performed a second visual scan of the Hickson N P incoming payment row dated 03 Oct. The reference line clearly reads 'Ref: Chesterfield Suite'. The extracted remarks kept the rest of the row correctly, including the balance, but dropped the final letters 'ite'. Therefore the corrected full remarks string should use 'Suite'.",
+          "visual_evidence": "Located in the 03 Oct section, the last transaction row before 06 Oct: 'Bill Payment From Hickson N P' with money in 535.00 and balance 1,501.80. The small line under the description shows 'Ref: Chesterfield Suite'."
+        },
+        {
+          "field": "lineItems[11].remarks",
+          "row_index": 11,
+          "reasoning": "1. No row-level structural shift is present; this is a single-field text issue. 2. The extracted value is not duplicated into another field. 3. It is not from the wrong context; it is the correct reference line with a typo. 4. There are not multiple candidates for this reference. 5. The value is present on the document except for the typo, so it is not fabricated. 6. The field is not missing. 7. This is not just a formatting issue. 8. Yes \u2014 the place/name in the reference line has a character-level typo: 'Buron' instead of 'Bureau'.",
+          "issue_type": "character_value_mismatch",
+          "description": "The reference text should read 'Ercol Bureau', not 'Ercol Buron'.",
+          "extracted_value": "Money in; Giro; Ref: Ercol Buron",
+          "corrected_value": "Money in; Giro; Ref: Ercol Bureau",
+          "expected_context": "06 Oct row for 'Received From P Carmichael', on the reference line directly below the main description.",
+          "correction_reasoning": "I re-read the 06 Oct incoming giro from P Carmichael. The line beneath the description clearly shows 'Ref: Ercol Bureau'. The extraction substituted the ending with 'Buron', which does not match the printed letters. Since the rest of the remarks string is correct, only that word needs correction.",
+          "visual_evidence": "Located in the 06 Oct section, the middle incoming transaction 'Received From P Carmichael' with money in 300.00. The smaller line under the description reads 'Ref: Ercol Bureau'."
+        },
+        {
+          "field": "lineItems[18].remarks",
+          "row_index": 18,
+          "reasoning": "1. No multiple fields in this row are displaced; only the remarks text contains an OCR typo. 2. The extracted value is not duplicated into another field for this row. 3. It is not from an unrelated context. 4. There are not multiple plausible candidates; there is one visible reference line. 5. The extracted text is mostly present on the document, so it is not fabricated. 6. The field is not empty. 7. This is not a format-only difference. 8. Yes \u2014 this is a small character-level typo where 'Suite' was read as 'Sue'.",
+          "issue_type": "character_value_mismatch",
+          "description": "The reference text should be 'Chesterfield Suite', but the extraction reads 'Chesterfield Sue'.",
+          "extracted_value": "Money in; Ref: Chesterfield Sue; Balance: 3,328.77",
+          "corrected_value": "Money in; Ref: Chesterfield Suite; Balance: 3,328.77",
+          "expected_context": "10 Oct row for 'Bill Payment From Hickson N P', on the reference line under the description.",
+          "correction_reasoning": "I checked the 10 Oct Hickson N P incoming payment row separately from the earlier one. The reference line again clearly reads 'Ref: Chesterfield Suite'. The extracted remarks preserved the amount direction and balance correctly, but shortened 'Suite' to 'Sue'. The corrected remarks should therefore restore the full visible word.",
+          "visual_evidence": "Located in the 10 Oct section, the 'Bill Payment From Hickson N P' row with money in 970.00 and balance 3,328.77. The small text directly below the description reads 'Ref: Chesterfield Suite'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 43551,
+      "output_tokens": 8033
+    },
+    "cost": {
+      "input_cost": 0.05443875,
+      "output_cost": 0.0602475,
+      "total_cost": 0.11468625,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

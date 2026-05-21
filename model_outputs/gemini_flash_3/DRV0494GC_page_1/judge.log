@@ -1,0 +1,12 @@
+18:17:33  INFO     =======================================================
+18:17:33  INFO       JUDGE  doc_id=DRV0494GC_page_1  [2026-05-18 18:17:33]
+18:17:33  INFO     =======================================================
+18:18:48  INFO     FAIL  issues=8  confidence=0.95  cost=$0.1173  elapsed=74713ms
+18:18:48  WARNING    [invoiceInfo] documentTitle — The document title field incorrectly includes the vendor name 'RIGRIDER Ltd' and a separator character.
+18:18:48  WARNING    [lineItems] lineItems[0].lineTotalExcludingTax — The line total '1,160.00' is fabricated through calculation and is not present in the document text.
+18:18:48  WARNING    [lineItems] lineItems[0].quantity — The quantity '6' is a calculated sum not found in the document text.
+18:18:48  WARNING    [lineItems] lineItems[0].remarks — The remarks field contains a fabricated explanation of the model's logic.
+18:18:48  WARNING    [lineItems] lineItems[1].lineTotalExcludingTax — The value '0.00' from the quantity field is duplicated into the line total field.
+18:18:48  WARNING    [lineItems] lineItems[2].lineTotalExcludingTax — The line total '25.00' is an inferred calculation not found in the text.
+18:18:48  WARNING    [totals] taxableAmount — The value '£1,185.00' is duplicated from the subtotal. The document lacks an explicit 'Taxable Amount' label required by the schema for this field.
+18:18:48  WARNING    [totals] balanceDue — The value '£1,422.00' is duplicated from 'totalIncludingTax'. The document uses the label 'Total+Expenses' but does not have an explicit 'Due' label required for 'balanceDue'.

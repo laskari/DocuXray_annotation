@@ -1,0 +1,395 @@
+{
+  "document_id": "DEC_24_page_18",
+  "file": "DEC_24_page_18.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": null,
+      "documentTitle": "ASDA Receipt",
+      "issueDate": "05/12/2024",
+      "issueDateISO": "2024-12-05",
+      "issueTime": "16:34:06",
+      "issueTimeISO": "16:34:06",
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": "Please tell us how we did today at www.tellasda.com",
+      "category": "Food"
+    },
+    "parties": {
+      "seller": {
+        "name": "ASDA STORES LTD",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "P BUTTER",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "1.09",
+          "normalizedValue": 1.09
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "OVEN TRAY",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": "2",
+          "normalizedValue": 2.0
+        },
+        "unitOfMeasure": "EACH",
+        "unitPrice": {
+          "originalValue": "1.25",
+          "normalizedValue": 1.25
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "2.50",
+          "normalizedValue": 2.5
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "3.59",
+        "normalizedValue": 3.59
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": "3.59",
+        "normalizedValue": 3.59
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8396,
+    "output_tokens": 947,
+    "latency_ms": 11248,
+    "cost": {
+      "input_cost": 0.016792,
+      "output_cost": 0.011364,
+      "total_cost": 0.028156,
+      "model": "gemini-3.1-pro-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 207,
+        "total_tokens": 2306,
+        "thoughts": null
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 209,
+        "total_tokens": 2308,
+        "thoughts": null
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 436,
+        "total_tokens": 2535,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 95,
+        "total_tokens": 2194,
+        "thoughts": null
+      }
+    ]
+  }
+}

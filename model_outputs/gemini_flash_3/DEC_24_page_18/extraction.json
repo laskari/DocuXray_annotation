@@ -1,0 +1,395 @@
+{
+  "document_id": "DEC_24_page_18",
+  "file": "DEC_24_page_18.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "8518",
+      "documentTitle": null,
+      "issueDate": "05/12/2024",
+      "issueDateISO": "2024-12-05",
+      "issueTime": "16:34:06",
+      "issueTimeISO": "16:34:06",
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": "8518",
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "ASDA STORES LTD",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": "Abbey Park",
+          "city": "Leeds",
+          "state": null,
+          "postal_code": "LS11 5AD",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "362 0127 92"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "P BUTTER",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "\u00a31.09",
+          "normalizedValue": 1.09
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "OVEN TRAY",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": "2",
+          "normalizedValue": 2.0
+        },
+        "unitOfMeasure": "EACH",
+        "unitPrice": {
+          "originalValue": "\u00a31.25",
+          "normalizedValue": 1.25
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "\u00a32.50",
+          "normalizedValue": 2.5
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a33.59",
+        "normalizedValue": 3.59
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": "\u00a33.59",
+        "normalizedValue": 3.59
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8396,
+    "output_tokens": 7631,
+    "latency_ms": 36613,
+    "cost": {
+      "input_cost": 0.004198,
+      "output_cost": 0.022893,
+      "total_cost": 0.027091,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 2296,
+        "total_tokens": 4395,
+        "thoughts": "**JSON Extraction Thought Process**\n\nOkay, the task is to extract information from this ASDA receipt image and format it into a specific JSON structure. I need to be precise and follow the provided schema and instructions very carefully.\n\nFirst, I identified the document as an ASDA receipt, using GBP (\u00a3) as the currency. The main goal here is to get the `currency`, `invoiceInfo`, `invoiceStatus`, and `hasPaidStamp` fields filled correctly. I noted the transaction number (TR. 8518), issue date (05/12/2024), and time (16:34:06). There's no explicit document title, so that will be null. I've noted the seller (ASDA STORES LTD.) and its address.\n\nNext, I needed to figure out what values go into the schema I'm given. The schema defined in the context is the relevant one to answer. I parsed the receipt, matching each field in the required JSON output. I'm noting the document number (\"8518\"), issue date (formatted as \"05/12/2024\") and time (as \"16:34:06\"). I'll make sure to get the ISO formats correct. Because it's a UK receipt, I'm assuming DD/MM/YYYY for the date, and will convert to the correct ISO format. I can safely put the invoice status as \"paid\" because it's a card transaction, and the receipt confirms this. There's no \"PAID\" stamp, so `hasPaidStamp` will be false. The category will be \"Other\" since it contains both food items and kitchenware. The user is asking for specific fields and values.\n\nI'm aware of the instruction not to generate control tokens or comments, and to return only a single parseable JSON object. The instruction also said, \"If a user requests multiple JSON, always return a single parseable JSON array.\" The user is requesting only one JSON object, so I should provide a JSON object, not an array.\n\nI'm verifying the values one last time against the invoice image and ensuring they are accurate and complete. Let's make sure the time and date are formatted correctly. \"05/12/2024\" should be \"2024-12-05\" in ISO format. The \"documentNumber\" will be \"8518\", and the category is \"Other\". There are no payment terms, so it will be null. The `paymentTerms` is not necessarily \"CARD\", and I should follow the schema, so null.\n\nFinally, I'll generate the single, valid JSON object, ensuring it's on a single line with no extra characters. The extracted data is checked again against the schema, for final validation and error check.\n\n```json\n{\"currency\":\"GBP\",\"invoiceInfo\":{\"documentNumber\":\"8518\",\"documentTitle\":null,\"issueDate\":\"05/12/2024\",\"issueDateISO\":\"2024-12-05\",\"issueTime\":\"16:34:06\",\"issueTimeISO\":\"16:34:06\",\"dueDate\":null,\"dueDateISO\":null,\"purchaseOrderNumber\":null,\"salesOrderNumber\":\"8518\",\"customerNumber\":null,\"paymentTerms\":null,\"customerMemo\":null,\"category\":\"Other\"},\"invoiceStatus\":\"paid\",\"hasPaidStamp\":false}\n```\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 3307,
+        "total_tokens": 5406,
+        "thoughts": "**JSON Extraction from ASDA Receipt: A Detailed Thought Process**\n\nAlright, let's break this down systematically. The task is to extract relevant data from this ASDA receipt image and map it to a specific JSON schema, focusing on the `parties` and `shippingInfo` sections. I see this as an `invoice` in the schema documentation, so that is a good starting point.\n\nFirst, I need to identify the key entities involved. The seller is straightforward: \"ASDA STORES LTD.\" The receipt shows \"Abbey Park\" on top. The manager is \"Jatinda Munder\". Also, the address is: \"Asda Stores Ltd, Leeds, LS11 5AD\". The company website is \"WWW.ASDA.COM\".\n\nThe buyer is not explicitly identified on this POS receipt, so it will remain null in the `parties` section. There's no \"billTo\", \"customer\", \"shipTo\" or \"shipFrom\" data either. So these will also be null in the schema.\n\nNow, let's tackle the crucial `parties.seller` details. The seller name is crystal clear: \"ASDA STORES LTD\". The address is a bit more nuanced. There's \"Abbey Park\" on top of the receipt and \"Asda Stores Ltd, Leeds, LS11 5AD\" at the bottom. Since \"Abbey Park\" is likely the store location or a district within Leeds, I'll put that in `addressStructured.district`. The full address is \"Leeds, LS11 5AD\". I'll map those fields as well. The store number \"ST. 4231\" and operator \"OP. 0986\" are not part of the address. The VAT registration number is important: \"VAT Reg No 362 0127 92\". That's a good find!\n\nNow, filling in the `addressStructured` field. I see a `street_number`, `street_name`, `street_type`, `unit`, `building`, `district`, `city`, `state`, `postal_code`, and `country`. \"Abbey Park\" is likely a district or a more general area, and I'll use it for the district. The rest, Leeds, LS11 5AD, is for the full address. This should map correctly, given the information available.\n\nNext, I'll deal with other fields in `parties.seller`, such as `phone`, `fax`, `email`, `whatsappNumber`, and `taxRegistrationNumber`. None of those details are present on the receipt, so they'll be `null`, except for the tax number. The \"VAT Reg No 362 0127 92\" will fill the `taxRegistrationNumber`.\n\nThe `shippingInfo` section is simple for this POS receipt. Since this isn't an online order or delivery receipt, there is no `carrier`, `deliveryDate`, `deliveryDateISO`, or `trackingNumber`. Therefore, all these fields will be null in the `shippingInfo` object.\n\nA quick review of the schema structure confirms that the output needs to be a valid, double-quoted JSON string, without comments or control tokens.\n\nFinally, the completed JSON structure is:\n\n```json\n{\n  \"parties\": {\n    \"seller\": {\n      \"name\": \"ASDA STORES LTD\",\n      \"addressStructured\": {\n        \"street_number\": null,\n        \"street_name\": null,\n        \"street_type\": null,\n        \"unit\": null,\n        \"building\": null,\n        \"district\": \"Abbey Park\",\n        \"city\": \"Leeds\",\n        \"state\": null,\n        \"postal_code\": \"LS11 5AD\",\n        \"country\": null\n      },\n      \"registrationNumber\": null,\n      \"phone\": null,\n      \"fax\": null,\n      \"email\": null,\n      \"whatsappNumber\": null,\n      \"taxRegistrationNumber\": \"362 0127 92\"\n    },\n    \"buyer\": null,\n    \"billTo\": null,\n    \"customer\": null,\n    \"shipTo\": null,\n    \"shipFrom\": null\n  },\n  \"shippingInfo\": {\n    \"carrier\": null,\n    \"deliveryDate\": null,\n    \"deliveryDateISO\": null,\n    \"trackingNumber\": null\n  }\n}\n```\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 438,
+        "total_tokens": 2537,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2099,
+        "output_tokens": 1590,
+        "total_tokens": 3689,
+        "thoughts": "**Receipt Analysis and Data Extraction**\n\nOkay, let's break down this receipt image. My primary goal is to extract key financial data: totals, taxes (if any), and payment details. First, I'm scanning the image for identifiable fields. I see the following: \"P BUTTER: \u00a31.09\", \"OVEN TRAY: 2 @ \u00a31.25 EACH = \u00a32.50\", \"TOTAL: \u00a33.59\", and \"CARD: \u00a33.59\". Immediately, I can map these to their corresponding schema elements. \"TOTAL\" and \"CARD\" clearly indicate a total including tax and the amount paid, both \u00a33.59. There's no explicit \"Balance Due\" line, but since the \"CARD\" payment matches the \"TOTAL,\" I'm inferring the full amount has been settled. No tax breakdown (VAT or similar) is explicitly stated, nor are any discounts listed, therefore taxes will be `null` in my output. The total items sold are 3, but this isn't a financial value as per se.\n\nNow, let's translate this into the structured JSON output requested. The schema requires these specific fields within `totals`: `totalIncludingTax`, `amountPaid`, and the absence of a subtotal, which can be safely inferred from \"TOTAL\". I'll format the data accordingly. The original value will retain the \"\u00a3\" prefix and the normalized value will be a float. Since no discounts were observed, `applyTaxAfterDiscount` is also null.\n\nI'm double-checking the image for any missed details but it's consistent. I can see that the \"TOTAL\" line acts as the subtotal. So, the JSON structure should be:\n\n```json\n{\n  \"totals\": {\n    \"totalIncludingTax\": {\n      \"originalValue\": \"\u00a33.59\",\n      \"normalizedValue\": 3.59\n    },\n    \"amountPaid\": {\n      \"originalValue\": \"\u00a33.59\",\n      \"normalizedValue\": 3.59\n    }\n  },\n  \"taxes\": null,\n  \"applyTaxAfterDiscount\": null\n}\n```\n\nOkay, so I will now map the values and populate it. There are no taxes listed, so `taxes` will be null, and no discount, so `applyTaxAfterDiscount` is null. So now, the final JSON I'm going to output is:\n\n```json\n{\n  \"totals\": {\n    \"totalIncludingTax\": {\n      \"originalValue\": \"\u00a33.59\",\n      \"normalizedValue\": 3.59\n    },\n    \"amountPaid\": {\n      \"originalValue\": \"\u00a33.59\",\n      \"normalizedValue\": 3.59\n    }\n  },\n  \"taxes\": null,\n  \"applyTaxAfterDiscount\": null\n}\n```\n\nNow let's verify if there is any other information.\n\n- \"TOTAL \u00a33.59\"\n- \"CARD \u00a33.59\"\n- The debit card section shows \"TOTAL: GBP3.59\"\n\nSo `totalIncludingTax` and `amountPaid` are definitely 3.59.\n\nNo tax breakdown.\n\nI'll check the schema and make the following assumptions based on the schema:\n\n- `discountTotal`: null\n- `discountPercentage`: null\n- `subtotal`: The \"TOTAL\" line acts as subtotal too, but typically if it's the only one, I'll put it in `totalIncludingTax`.\n- `totalExcludingTax`: null (not listed)\n- `shippingAmount`: null\n- `freightCharges`: null\n- `insuranceAmount`: null\n- `handlingFees`: null\n- `surchargeAmount`: null\n- `otherCharges`: null\n- `taxableAmount`: null\n- `taxTotal`: null\n- `withholdingTax`: null\n- `roundingAdjustment`: null\n- `deposit`: null\n- `creditApplied`: null\n- `returnAmount`: null\n- `tipAmount`: null\n- `balanceDue`: null (paid in full)\n- `exchangeRate`: null\n\nI will provide the most relevant fields.\n\nFinal check on values:\nTotal items: 3 (not in this schema part)\nTotal price: \u00a33.59\nAmount paid: \u00a33.59 (Card)\n\nJSON Construction:\n```json\n{\n  \"totals\": {\n    \"totalIncludingTax\": {\n      \"originalValue\": \"\u00a33.59\",\n      \"normalizedValue\": 3.59\n    },\n    \"amountPaid\": {\n      \"originalValue\": \"\u00a33.59\",\n\n\n"
+      }
+    ]
+  }
+}

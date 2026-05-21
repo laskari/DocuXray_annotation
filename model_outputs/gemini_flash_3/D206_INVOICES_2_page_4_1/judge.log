@@ -1,0 +1,5 @@
+17:24:03  INFO     =======================================================
+17:24:03  INFO       JUDGE  doc_id=D206_INVOICES_2_page_4_1  [2026-05-18 17:24:03]
+17:24:03  INFO     =======================================================
+17:24:30  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0514  elapsed=26701ms
+17:24:30  WARNING    [invoiceInfo] customerMemo — The administrative field 'Order Taken By: LUCY' was incorrectly extracted as a customer memo, including the label in the value.

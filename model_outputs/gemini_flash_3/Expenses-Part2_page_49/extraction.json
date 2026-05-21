@@ -1,0 +1,363 @@
+{
+  "document_id": "Expenses-Part2_page_49",
+  "file": "Expenses-Part2_page_49.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "INV00767",
+      "documentTitle": "Sales Invoice",
+      "issueDate": "22 Sep 2025",
+      "issueDateISO": "2025-09-22",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "P.WHITFIELD & SON",
+        "addressStructured": {
+          "street_number": "61",
+          "street_name": "Keens",
+          "street_type": "Lane",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Guildford",
+          "state": "Surrey",
+          "postal_code": "GU33JS",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "07765466251",
+        "fax": null,
+        "email": "tobywhitfield@msn.com",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "413854695"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "Speciality Cakes",
+        "addressStructured": {
+          "street_number": "9",
+          "street_name": "High",
+          "street_type": "Street",
+          "unit": null,
+          "building": null,
+          "district": "Knaphill",
+          "city": "Woking",
+          "state": null,
+          "postal_code": "GU21 2PG",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Fitting and supplying vinyl flooring in the shop front reception area\n\nVinyl: DeverTex Buckley\nAdhesives\nLabour of two men",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "696.00",
+          "normalizedValue": 696.0
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "580.00",
+          "normalizedValue": 580.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "116.00",
+          "normalizedValue": 116.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "\u00a3580.00",
+        "normalizedValue": 580.0
+      },
+      "totalExcludingTax": {
+        "originalValue": "\u00a3580.00",
+        "normalizedValue": 580.0
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": "\u00a3580.00",
+        "normalizedValue": 580.0
+      },
+      "taxTotal": {
+        "originalValue": "\u00a3116.00",
+        "normalizedValue": 116.0
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a3696.00",
+        "normalizedValue": 696.0
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "Vat",
+        "percentage": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "amount": {
+          "originalValue": "\u00a3116.00",
+          "normalizedValue": 116.0
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": true,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 6704,
+    "latency_ms": 45680,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.020111999999999998,
+      "total_cost": 0.024333999999999998,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1947,
+        "total_tokens": 4058,
+        "thoughts": "**Invoice Data Extraction: A Detailed Walkthrough**\n\nOkay, so I need to take this invoice image and translate the information into a JSON format based on a pre-defined schema, focusing on the first part of the metadata. Let's see... the document is a sales invoice. The seller is P.WHITFIELD & SON, and the buyer is Speciality Cakes. Invoice number is INV00767, with an issue date of September 22, 2025. The currency is GBP, indicated by both the pound symbol and the text.\n\nNow, I'm looking at the line items. One entry describes \"Fitting and supplying vinyl flooring.\" That's the core service described in the invoice.  The amount is \u00a3696.00 and this includes labour of two men. The handwritten note \"Paid online Wed 24th Sept\" is key \u2013 it confirms the 'paid' status and acts as a paid stamp. I should mark this with `hasPaidStamp: true`.\n\nI now have to map the information onto the schema provided. The schema is rather simple so the \"EXTRACTION GUIDELINES\" are not relevant. This \"Part 1\" schema, is just about general invoice metadata, the currency, and the category. So, the currency is \"GBP.\" The `invoiceInfo` block needs the document number which is \"INV00767\", document title (\"Sales Invoice\"), issue date (\"22 Sep 2025\"), and its ISO formatted date which is \"2025-09-22.\" It also requires a category. Based on the description of fitting and supplying flooring, what's the best category? I want to make sure I don't assign something that does not make sense. Let's consider the categories. \"Accommodation\", \"Food\", \"IT & Tech\", \"Motor Expenses\", \"Office Supplies\", \"Other\", \"Other Revenue\", \"Postage\", \"Sales\", \"Telecom and Internet\", \"To Be Allocated\", \"Training and Education\", \"Travel\", \"Utilities and Bills\", \"Medical\", and \"None\". \"Fitting and supplying vinyl flooring\" would be building maintenance, so \"Other\" seems to be the best and safest fit. The invoice status is clearly \"paid\" because of the handwritten note.\n\nOkay, let's build the JSON structure. Based on the \"Part 1\" schema, I'll generate:\n\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": \"INV00767\",\n    \"documentTitle\": \"Sales Invoice\",\n    \"issueDate\": \"22 Sep 2025\",\n    \"issueDateISO\": \"2025-09-22\",\n    \"dueDate\": null,\n    \"dueDateISO\": null,\n    \"purchaseOrderNumber\": null,\n    \"salesOrderNumber\": null,\n    \"customerNumber\": null,\n    \"paymentTerms\": null,\n    \"customerMemo\": null,\n    \"category\": \"Other\"\n  },\n  \"invoiceStatus\": \"paid\",\n  \"hasPaidStamp\": true\n}\n```\n\nNow, the prompt stated \"Extract ALL available data\", but I have the \"Part 1\" schema in the context block. The instruction says \"Structure the data according to the provided JSON schema for this document type\" and the context block is *the* schema. So, I need to stay within this Part 1 scope, and this schema doesn't describe the line items, totals or parties.\n\nLet me just double-check everything: currency is GBP. Document number is INV00767. Document title is \"Sales Invoice\". Issue date is 22 Sep 2025, and ISO is \"2025-09-22\". Category is still \"Other.\" Invoice status is \"paid\", which I derived from the handwritten note. `hasPaidStamp` is true, reflecting the \"Paid online\" annotation. All the other values in the JSON are set to `null` because they are not present in the invoice. I should check the handwritten text again: \"Paid online Wed 24th Sept.\" That confirms the status. And \"Speciality Cakes\" is the buyer.\n\nI'm now confident in this structure. I checked the data against the constraints. No comments, all strings are double-quoted, and it's a single parseable JSON object. The dates are in ISO format.\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": \"INV00767\",\n    \"documentTitle\": \"Sales Invoice\",\n    \"issueDate\": \"22 Sep 2025\",\n    \"issueDateISO\": \"2025-0\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2923,
+        "total_tokens": 5034,
+        "thoughts": "**Invoice Data Extraction: Thought Process**\n\nOkay, I need to extract specific information from this invoice image and format it into a JSON structure, adhering to the provided schema. I'm focusing on the `parties` and `shippingInfo` components as instructed, ignoring any other invoice details.\n\nFirst, I identified the parties involved. Given the standard invoice layout, where the seller is typically on the right and the buyer/customer on the left, and with the presence of a VAT Reg No. associated with the right-hand address, it's clear: `P. WHITFIELD & SON` is the seller and `Speciality Cakes` is the customer/buyer.\n\nNow, I'm checking the schema definitions. The invoice includes no explicit \"Buyer,\" \"Purchaser,\" or \"Sold To\" labels for \"Speciality Cakes,\" nor a \"Bill To\" or \"Invoice To\" label. Since there are no specific labels for Buyer or Bill To, I must use `customer`. The schema says that I should use `customer` if the document doesn't define formal buyer/seller roles. That's a good approach to take. The end consumer description in `customer` seems appropriate in this context. However, I have to map correctly to the address structure.\n\nI'm structuring the seller information: Name, Address (with street number, name, type, district, city, state, postal code), Phone, Email, and Tax ID (VAT Reg No). The customer also gets a Name and structured Address.\n\nThe `shippingInfo` section is straightforward: there's no carrier, no tracking number, and no explicit delivery date. I can confidently set it to `null`.\n\nI keep the data as close to the invoice as possible. I'm taking the full address, rather than making any assumptions.\n\nThe schema requires `parties` to be an object with the nested keys `seller`, `buyer`, `billTo`, `customer`, `shipTo` and `shipFrom`. Since the schema specifies that `buyer` and `billTo` are only explicitly labeled, I'll set them to `null` because they do not have labels on the invoice. I've correctly identified \"Speciality Cakes\" as the customer. `shipTo` and `shipFrom` are not present, therefore will also be set to `null`.\n\nI'm carefully reviewing the schema again to make sure everything matches. The addresses are now correctly structured, with street number, name, type, and district, city, state and postal code. I've re-confirmed that `taxRegistrationNumber` is the correct VAT Reg No. I'll make sure there is no extra text.\n\nI've double-checked my work. There are no labeled delivery dates. I confirmed that the handwritten note \"Paid online Wed 24th Sept\" is not part of the shipping details.\n\nOkay, I'm ready to output the final JSON.\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 219,
+        "total_tokens": 2330,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1615,
+        "total_tokens": 3726,
+        "thoughts": "**Invoice Data Extraction: My Reasoning**\n\nAlright, let's break this down systematically. My objective is to meticulously extract the financial information from this invoice image and represent it according to the specified schema. I need to be exact, so my approach prioritizes accurate data identification and mapping.\n\nFirst, I'm focusing on the \"totals\" section. I've identified the subtotal before tax as \"\u00a3580.00\" \u2013 that's a key piece. Then, the tax, clearly labeled as \"Vat \u00a3116.00\". And the total including tax is represented twice: once as \"\u00a3696.00\" within the description block and again as \"Total Invoice (GBP) \u00a3696.00\". Currency is GBP, confirmed by the label. There's no discount or shipping explicitly mentioned in the printable fields. The \"Amount Paid\" is a tricky one. While there's a handwritten note \"Paid online Wed 24th Sept,\" that's not a *printed* amount, so I'll consider that \"null\" for now, as the instructions are to only normalize from *printed* fields. Balance due isn't explicitly listed, and I won't assume it, as it is an invoice.\n\nNext, I need to analyze the taxes section. The VAT amount is explicitly \"\u00a3116.00\". Although I could calculate the VAT rate from the subtotal and VAT, the schema asks only to provide what is explicitly stated, so I won't infer or calculate the percentage.\n\nNow, let's map these extracted values to the schema fields. I'll translate the financial data into the `originalValue` and `normalizedValue` format that the schema expects. For `totals`, I'll map the subtotal to `totals.subtotal`, the tax amount to `totals.taxTotal`, and the total including tax to `totals.totalIncludingTax`. For `taxes`, I'll create an array containing one object with fields for the tax name (\"VAT\"), amount, and a null for the percentage since it's not explicitly given. I'll also set `applyTaxAfterDiscount` to `null` because no discount information exists.\n\nBefore finalizing the JSON, I'll take a moment for a second pass, and double-check I haven't missed anything obvious. I'll review again: total invoice is indeed \"\u00a3696.00\". I can see subtotal, VAT, and total explicitly.\n\nBased on this, my final JSON construction will look like this:\n\n```json\n{\n  \"totals\": {\n    \"subtotal\": {\n      \"originalValue\": \"\u00a3580.00\",\n      \"normalizedValue\": 580.0\n    },\n    \"taxTotal\": {\n      \"originalValue\": \"\u00a3116.00\",\n      \"normalizedValue\": 116.0\n    },\n    \"totalIncludingTax\": {\n      \"originalValue\": \"\u00a3696.00\",\n      \"normalizedValue\": 696.0\n    }\n  },\n  \"taxes\": [\n    {\n      \"name\": \"Vat\",\n      \"amount\": {\n        \"originalValue\": \"\u00a3116.00\",\n        \"normalizedValue\": 116.0\n      },\n      \"percentage\": null\n    }\n  ],\n  \"applyTaxAfterDiscount\": null\n}\n```\n\nNow, I'll double check for other potential fields in totals, and make sure that all the values are null, unless they are present.\n- `discountTotal`: null\n- `discountPercentage`: null\n- `totalExcludingTax`: I know this is 580.00 but it isn't labeled, so this is null.\n- `shippingAmount`: null\n- `freightCharges`: null\n- `insuranceAmount`: null\n- `handlingFees`: null\n- `surchargeAmount`: null\n- `otherCharges`: null\n- `taxableAmount`: I can see this, but it isn't listed.\n- `withholdingTax`: null\n- `roundingAdjustment`: null\n- `deposit`: null\n- `amountPaid`: null\n- `creditApplied`: null\n- `returnAmount`: null\n- `tipAmount`: null\n- `balanceDue`: null\n- `exchangeRate`: null\n\nI won't include them in the final JSON unless they're explicitly found.\nOkay, that should be a robust and accurate extraction, adhering strictly to the provided image and schema requirements. I believe this captures the information required.\n\n\n"
+      }
+    ]
+  }
+}

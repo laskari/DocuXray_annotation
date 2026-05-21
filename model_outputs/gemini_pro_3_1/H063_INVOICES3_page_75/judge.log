@@ -1,0 +1,6 @@
+17:46:19  INFO     =======================================================
+17:46:19  INFO       JUDGE  doc_id=H063_INVOICES3_page_75  [2026-05-18 17:46:19]
+17:46:19  INFO     =======================================================
+17:46:42  INFO     FAIL  issues=2  confidence=0.95  cost=$0.1381  elapsed=23200ms
+17:46:42  WARNING    [parties] seller.addressStructured.street_number — 'Equity House' is incorrectly classified as a street number; it is a building name.
+17:46:42  WARNING    [parties] seller.addressStructured.building — The building name 'Equity House' was not extracted into the building field.

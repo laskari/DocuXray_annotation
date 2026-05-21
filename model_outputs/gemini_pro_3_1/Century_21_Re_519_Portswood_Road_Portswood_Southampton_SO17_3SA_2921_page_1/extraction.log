@@ -1,0 +1,18 @@
+17:47:06  INFO     =======================================================
+17:47:06  INFO       EXTRACTION  doc_id=Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1  [2026-05-18 17:47:06]
+17:47:06  INFO     =======================================================
+17:47:06  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3.1-pro-preview
+17:47:06  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:47:06  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_CALL] Starting part 'general' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:06  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_CALL] Starting part 'parties' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:06  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_CALL] Starting part 'items' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:06  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_CALL] Starting part 'totals' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:14  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_DONE] Completed part 'general' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:16  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_DONE] Completed part 'items' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:18  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_DONE] Completed part 'totals' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:19  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] [PART_DONE] Completed part 'parties' for doc 'Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1'
+17:47:19  INFO     [Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1] SUCCESS: Invoice extraction completed | latency_ms=13217
+17:47:19  INFO     OK  elapsed=13287ms  cost=$0.0332
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

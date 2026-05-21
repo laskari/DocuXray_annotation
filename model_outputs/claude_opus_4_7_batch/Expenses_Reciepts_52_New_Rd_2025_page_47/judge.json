@@ -1,0 +1,26 @@
+{
+  "document_id": "Expenses_Reciepts_52_New_Rd_2025_page_47",
+  "file": "Expenses_Reciepts_52_New_Rd_2025_page_47.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.9,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 68640,
+      "output_tokens": 433
+    },
+    "cost": {
+      "input_cost": 0.17160000000000003,
+      "output_cost": 0.0054125,
+      "total_cost": 0.17701250000000002,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

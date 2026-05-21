@@ -1,0 +1,43 @@
+{
+  "document_id": "ConsettScanner_20251212_132928_page_58",
+  "file": "ConsettScanner_20251212_132928_page_58.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.85,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.taxRegistrationNumber",
+          "row_index": null,
+          "reasoning": "Document shows 'UK VAT No 660 4548 36'. Extracted value has 'GB' prefix which is not present in the document.",
+          "issue_type": "character_value_mismatch",
+          "description": "Extracted VAT number contains 'GB' prefix not present on the document.",
+          "extracted_value": "GB 660 4548 36",
+          "corrected_value": "660 4548 36",
+          "expected_context": "Under Argos Limited address: 'UK VAT No 660 4548 36'",
+          "correction_reasoning": "Document explicitly states 'UK VAT No 660 4548 36' with no 'GB' prefix.",
+          "visual_evidence": "Below 'Argos Limited, 33 Holborn, London, EC1N 2HT'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 66675,
+      "output_tokens": 743
+    },
+    "cost": {
+      "input_cost": 0.1666875,
+      "output_cost": 0.009287499999999999,
+      "total_cost": 0.175975,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

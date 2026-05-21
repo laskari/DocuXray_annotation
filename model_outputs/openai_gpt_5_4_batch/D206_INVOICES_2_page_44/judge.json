@@ -1,0 +1,26 @@
+{
+  "document_id": "D206_INVOICES_2_page_44",
+  "file": "D206_INVOICES_2_page_44.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.94,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 37947,
+      "output_tokens": 2258
+    },
+    "cost": {
+      "input_cost": 0.047433750000000004,
+      "output_cost": 0.016935,
+      "total_cost": 0.06436875,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

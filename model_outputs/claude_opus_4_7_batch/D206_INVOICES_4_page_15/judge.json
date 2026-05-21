@@ -1,0 +1,43 @@
+{
+  "document_id": "D206_INVOICES_4_page_15",
+  "file": "D206_INVOICES_4_page_15.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.9,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.addressStructured.building",
+          "row_index": null,
+          "reasoning": "The 'Warwick' value in building field is actually the branch name/city, not a building name. Warwick appears as branch name and city.",
+          "issue_type": "wrong_context",
+          "description": "Building field contains 'Warwick' which is the city/branch, not a building name",
+          "extracted_value": "Warwick",
+          "corrected_value": null,
+          "expected_context": "Header shows 'BRANCH 191 WARWICK / Nelson Lane / Warwick / CV34 5JB' - Warwick is the city",
+          "correction_reasoning": "There is no building name in the seller address; Warwick refers to the city.",
+          "visual_evidence": "Top right header: BRANCH 191 WARWICK, Nelson Lane, Warwick, CV34 5JB"
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 69109,
+      "output_tokens": 792
+    },
+    "cost": {
+      "input_cost": 0.1727725,
+      "output_cost": 0.009899999999999999,
+      "total_cost": 0.1826725,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

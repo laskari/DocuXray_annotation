@@ -1,0 +1,8 @@
+17:29:37  INFO     =======================================================
+17:29:37  INFO       JUDGE  doc_id=Expenses_page_9_4  [2026-05-18 17:29:37]
+17:29:37  INFO     =======================================================
+17:30:17  INFO     FAIL  issues=4  confidence=0.95  cost=$0.0817  elapsed=40069ms
+17:30:17  WARNING    [invoiceInfo] documentTitle — The extracted value 'Received the sum of' is a pre-printed text label for the payment amount, not the title of the document.
+17:30:17  WARNING    [invoiceInfo] customerMemo — The extracted value includes the pre-printed label 'for' which should be excluded from the data.
+17:30:17  WARNING    [parties] seller.name — The surname 'Fry' was incorrectly extracted as 'Try'.
+17:30:17  WARNING    [parties] seller.addressStructured.street_name — A business descriptor/occupation ('Mark Landscaper') was extracted into the street name field.

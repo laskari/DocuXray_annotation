@@ -1,0 +1,17 @@
+17:10:16  INFO     =======================================================
+17:10:16  INFO       JUDGE  doc_id=Expenses_page_20_1  [2026-05-18 17:10:16]
+17:10:16  INFO     =======================================================
+17:10:58  INFO     FAIL  issues=7  confidence=0.95  cost=$0.0583  elapsed=41478ms
+17:10:58  WARNING    [invoiceInfo] purchaseOrderNumber — The customer reference 'KEVIN' was not extracted into the purchaseOrderNumber field despite being clearly visible.
+17:10:58  WARNING    [invoiceInfo] category — The category 'Office Supplies' is a fabrication; the invoice is for carpets/flooring.
+17:10:58  WARNING    [parties] seller.registrationNumber — The company registration number is clearly visible in the document footer but was not extracted.
+17:10:58  WARNING    [lineItems] unitOfMeasure — The value '1' is from the 'Unit' column representing the number of items, not the unit of measure.
+17:10:58  WARNING    [lineItems] unitOfMeasure — The value '1' is from the 'Unit' column representing the count of pieces, not the unit of measure.
+17:10:58  WARNING    [totals] taxableAmount — The value 142.64 is incorrectly duplicated in taxableAmount; this field should only be populated if an explicit 'Taxable Amount' label exists.
+17:10:58  WARNING    [totals] balanceDue — The value 171.17 is duplicated in balanceDue; there is no explicit 'Amount Due' or 'Balance Due' label to justify this field being populated separately from the grand total.
+16:07:25  INFO     =======================================================
+16:07:25  INFO       JUDGE  doc_id=Expenses_page_20_1  [2026-05-19 16:07:25]
+16:07:25  INFO     =======================================================
+16:07:49  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0496  elapsed=23728ms
+16:07:49  WARNING    [totals] taxableAmount — The value 142.64 is duplicated from the Goods Total/Total Excluding Tax fields into the taxableAmount field, despite no explicit 'Taxable Amount' label appearing on the document.
+16:07:49  WARNING    [totals] balanceDue — The value 171.17 is duplicated from the Invoice Total field into the balanceDue field, despite no explicit 'Balance Due' or 'Amount Due' label appearing on the document.

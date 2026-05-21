@@ -1,0 +1,18 @@
+18:14:41  INFO     =======================================================
+18:14:41  INFO       EXTRACTION  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4  [2026-05-18 18:14:41]
+18:14:41  INFO     =======================================================
+18:14:41  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+18:14:41  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [EXTRACTION_START] Starting invoice extraction (part=all)
+18:14:41  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_CALL] Starting part 'general' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:14:41  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_CALL] Starting part 'parties' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:14:41  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_CALL] Starting part 'items' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:14:41  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_CALL] Starting part 'totals' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:15:01  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_DONE] Completed part 'items' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:15:01  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_DONE] Completed part 'totals' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:15:06  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_DONE] Completed part 'parties' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:15:15  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] [PART_DONE] Completed part 'general' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4'
+18:15:15  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4] SUCCESS: Invoice extraction completed | latency_ms=34492
+18:15:15  INFO     OK  elapsed=34564ms  cost=$0.0280
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

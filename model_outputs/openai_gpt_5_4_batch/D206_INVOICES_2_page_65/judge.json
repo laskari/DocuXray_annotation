@@ -1,0 +1,55 @@
+{
+  "document_id": "D206_INVOICES_2_page_65",
+  "file": "D206_INVOICES_2_page_65.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 2,
+    "sections_with_issues": [
+      "shippingInfo"
+    ],
+    "confidence": 0.93,
+    "issues": {
+      "shippingInfo": [
+        {
+          "field": "shippingInfo.deliveryDate",
+          "row_index": null,
+          "reasoning": "1. No, this is not a list or row-structure problem. 2. No, there is no duplicated extracted value involved. 3. No, the field is not populated with a value from an unrelated area; it is empty. 4. No, there are not multiple similar shipping-date candidates competing here. 5. No, the correct value is not fabricated because a date is visible on the document. 6. Yes, the field is null while a valid date is clearly visible in the document.",
+          "issue_type": "missing_value",
+          "description": "The delivery date was not extracted even though a visible date appears on the document.",
+          "extracted_value": null,
+          "corrected_value": "13/03/2024",
+          "expected_context": "Date shown in the document header metadata table as 'Doc. Date'.",
+          "correction_reasoning": "I performed a second visual scan of the document header area and found a clearly printed date in the boxed table on the upper right. The label 'Doc. Date' directly precedes the value '13/03/2024'. Since this section allows the expected or actual delivery/shipping date and the extracted field is empty, this visible date is the appropriate value to populate the field in the exact printed format.",
+          "visual_evidence": "Located in the upper-right rectangular table near the top of the page; first populated row shows the label 'Doc. Date' in the left cell and '13/03/2024' in the right cell."
+        },
+        {
+          "field": "shippingInfo.deliveryDateISO",
+          "row_index": null,
+          "reasoning": "1. No, this is not a list or row-structure problem. 2. No, there is no duplicated extracted value involved. 3. No, the field is not populated with a value from an unrelated area; it is empty. 4. No, there are not multiple similar date candidates causing ambiguity. 5. No, the correct source date is visible on the document. 6. Yes, the field is null while a valid source date is clearly visible in the document.",
+          "issue_type": "missing_value",
+          "description": "The ISO delivery date was not extracted even though the source date is visible on the document.",
+          "extracted_value": null,
+          "corrected_value": "2024-03-13",
+          "expected_context": "Derived from the visible 'Doc. Date' value in the header metadata table.",
+          "correction_reasoning": "I rechecked the same visible date source used for the printed-date field. The document shows '13/03/2024' next to 'Doc. Date'. Converting that visible date to the schema-required ISO 8601 format yields '2024-03-13'. Because the field is specifically an ISO-formatted counterpart and the extracted value is null, this is the correct correction.",
+          "visual_evidence": "Located in the upper-right boxed information table; the first row reads 'Doc. Date' with the adjacent value '13/03/2024', which converts to ISO 2024-03-13."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 38811,
+      "output_tokens": 3678
+    },
+    "cost": {
+      "input_cost": 0.048513749999999994,
+      "output_cost": 0.027585,
+      "total_cost": 0.07609874999999999,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "document_id": "Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1",
+  "file": "Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.9,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 67541,
+      "output_tokens": 585
+    },
+    "cost": {
+      "input_cost": 0.16885250000000002,
+      "output_cost": 0.0073125,
+      "total_cost": 0.17616500000000002,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

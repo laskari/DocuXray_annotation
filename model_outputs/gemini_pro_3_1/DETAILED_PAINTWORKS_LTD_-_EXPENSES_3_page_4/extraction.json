@@ -1,0 +1,351 @@
+{
+  "document_id": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4",
+  "file": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "14-11662-18285",
+      "documentTitle": "Order information",
+      "issueDate": "7 Jun 2024",
+      "issueDateISO": "2024-06-07",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": "14-11662-18285",
+      "customerNumber": "wrightyglt",
+      "paymentTerms": "Credit card",
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "deco_matters",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": "wrightyglt",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": "David Wright",
+        "addressStructured": {
+          "street_number": "84",
+          "street_name": "Brooksby",
+          "street_type": "Road",
+          "unit": null,
+          "building": null,
+          "district": "Tilehurst",
+          "city": "Reading",
+          "state": "Berkshire",
+          "postal_code": "RG316LY",
+          "country": "United Kingdom"
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "House Number Plaques Solar Light Door Signs Numbers Outdoor Metal Acrylic Plate (196260237135)",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a313.99",
+          "normalizedValue": 13.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Delivery service: Royal Mail 1st Class Signed For",
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "\u00a313.99",
+        "normalizedValue": 13.99
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a313.99",
+        "normalizedValue": 13.99
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": "Royal Mail",
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 1122,
+    "latency_ms": 11970,
+    "cost": {
+      "input_cost": 0.016888,
+      "output_cost": 0.013464,
+      "total_cost": 0.030352,
+      "model": "gemini-3.1-pro-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 205,
+        "total_tokens": 2316,
+        "thoughts": null
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 391,
+        "total_tokens": 2502,
+        "thoughts": null
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 262,
+        "total_tokens": 2373,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 264,
+        "total_tokens": 2375,
+        "thoughts": null
+      }
+    ]
+  }
+}

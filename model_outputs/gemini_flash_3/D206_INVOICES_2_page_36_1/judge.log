@@ -1,0 +1,7 @@
+18:13:34  INFO     =======================================================
+18:13:34  INFO       JUDGE  doc_id=D206_INVOICES_2_page_36_1  [2026-05-18 18:13:34]
+18:13:34  INFO     =======================================================
+18:13:50  INFO     FAIL  issues=3  confidence=0.95  cost=$0.0367  elapsed=15182ms
+18:13:50  WARNING    [parties] shipTo.name — The shipTo name is present on the document but was not extracted.
+18:13:50  WARNING    [parties] shipTo.addressStructured.city — The shipping city 'Leamington' is present on the document but was not extracted.
+18:13:50  WARNING    [parties] shipTo.phone — The phone number associated with the shipping contact is missing.

@@ -1,0 +1,97 @@
+{
+  "document_id": "ConsettScanner_20260105_130848_page_77",
+  "file": "ConsettScanner_20260105_130848_page_77.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 5,
+    "sections_with_issues": [
+      "totals",
+      "lineItems",
+      "parties"
+    ],
+    "confidence": 0.9,
+    "issues": {
+      "totals": [
+        {
+          "field": "balanceDue",
+          "row_index": null,
+          "reasoning": "Document only shows Subtotal, Tax Total, Total, and Paid lines. There is no 'Balance Due' line printed on the invoice.",
+          "issue_type": "value_not_present",
+          "description": "balanceDue \u00a30.00 is not printed on the document",
+          "extracted_value": "\u00a3 0.00",
+          "corrected_value": null,
+          "expected_context": "No balance due line on invoice",
+          "correction_reasoning": "The totals section shows only Subtotal/Tax Total/Total/Paid; no balance due is printed, so the field should be null.",
+          "visual_evidence": "Right column of totals shows: Subtotal \u00a345.42, Tax Total \u00a39.08, Total \u00a354.50, Paid \u00a354.50 \u2014 no Balance Due line."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineTotalIncludingTax",
+          "row_index": 0,
+          "reasoning": "The Amount column shows \u00a345.42 which equals the Subtotal (excluding tax). Tax of \u00a39.08 is added to reach Total \u00a354.50. So \u00a345.42 is the line total EXCLUDING tax, not including.",
+          "issue_type": "wrong_context",
+          "description": "The \u00a345.42 Amount is the pre-tax line total, mapped to wrong field.",
+          "extracted_value": "\u00a3 45.42",
+          "corrected_value": null,
+          "expected_context": "Amount column = pre-tax subtotal",
+          "correction_reasoning": "Subtotal \u00a345.42 + Tax \u00a39.08 = Total \u00a354.50 confirms \u00a345.42 excludes tax.",
+          "visual_evidence": "Amount column row and Subtotal row both show \u00a345.42; Tax Total \u00a39.08 added separately."
+        },
+        {
+          "field": "lineTotalExcludingTax",
+          "row_index": 0,
+          "reasoning": "Line amount \u00a345.42 excludes the 20% VAT, but field is null.",
+          "issue_type": "missing_value",
+          "description": "lineTotalExcludingTax should be \u00a345.42.",
+          "extracted_value": null,
+          "corrected_value": "\u00a3 45.42",
+          "expected_context": "Amount column",
+          "correction_reasoning": "Amount column value \u00a345.42 matches Subtotal before VAT.",
+          "visual_evidence": "Amount column for Umbrella Stand row: \u00a345.42."
+        },
+        {
+          "field": "lineTaxAmount",
+          "row_index": 0,
+          "reasoning": "Tax Total \u00a39.08 corresponds to this single line's VAT at 20%.",
+          "issue_type": "missing_value",
+          "description": "Line tax amount of \u00a39.08 is shown as Tax Total since there is only one line.",
+          "extracted_value": null,
+          "corrected_value": "\u00a3 9.08",
+          "expected_context": "Tax Total row",
+          "correction_reasoning": "Only one line item exists, so Tax Total \u00a39.08 = line tax amount.",
+          "visual_evidence": "Tax Total row on the right side: \u00a39.08."
+        }
+      ],
+      "parties": [
+        {
+          "field": "customer.taxRegistrationNumber",
+          "row_index": null,
+          "reasoning": "The VAT Number 400104678 belongs to the seller (Proovia), shown in the header next to seller details and repeated in footer as '400 1046 78'. It was duplicated into customer.taxRegistrationNumber although the customer (Neil Raine) has no tax ID on the document.",
+          "issue_type": "duplication_error",
+          "description": "Seller VAT number duplicated into customer field.",
+          "extracted_value": "400104678",
+          "corrected_value": null,
+          "expected_context": "VAT Number belongs to seller Proovia, not customer",
+          "correction_reasoning": "The VAT number is listed in the invoice header (top right) and footer associated with Proovia, not with Neil Raine.",
+          "visual_evidence": "Top-right header 'VAT Number: 400104678' and footer 'VAT: 400 1046 78' both belong to Proovia."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 67275,
+      "output_tokens": 1989
+    },
+    "cost": {
+      "input_cost": 0.1681875,
+      "output_cost": 0.0248625,
+      "total_cost": 0.19305,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

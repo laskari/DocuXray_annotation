@@ -1,0 +1,6 @@
+17:44:44  INFO     =======================================================
+17:44:44  INFO       JUDGE  doc_id=ConsettScanner_20251212_131455_page_8  [2026-05-18 17:44:44]
+17:44:44  INFO     =======================================================
+17:45:11  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0497  elapsed=27051ms
+17:45:11  WARNING    [parties] seller.whatsappNumber — The mobile phone number was incorrectly attributed to the WhatsApp number field.
+17:45:11  WARNING    [totals] balanceDue — The 'Total:' amount of  90.00 is clearly visible and represents the final amount due.

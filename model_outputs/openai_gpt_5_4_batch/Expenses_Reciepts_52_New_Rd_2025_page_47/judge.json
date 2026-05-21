@@ -1,0 +1,55 @@
+{
+  "document_id": "Expenses_Reciepts_52_New_Rd_2025_page_47",
+  "file": "Expenses_Reciepts_52_New_Rd_2025_page_47.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 2,
+    "sections_with_issues": [
+      "invoiceInfo"
+    ],
+    "confidence": 0.91,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.documentTitle",
+          "row_index": null,
+          "reasoning": "1. This is not a structural issue because it is a single scalar field. 2. The extracted value is not duplicated into another title-like extracted field, so this is not a duplication_error. 3. The value comes from a related area of the document (the email header subject), so it is not wrong_context. 4. Two similar title-like candidates are visible: the email Subject 'Refund notification' and the large main heading 'You have received a refund'. The field asks for the document title, and the prominent body heading is the better document-title candidate. Therefore this is a multiple_candidates issue.",
+          "issue_type": "multiple_candidates",
+          "description": "The extractor chose the email subject instead of the main visible document title.",
+          "extracted_value": "Refund notification",
+          "corrected_value": "You have received a refund",
+          "expected_context": "Main document heading in the body of the refund notice, below 'British Homes Direct'.",
+          "correction_reasoning": "On second visual scan, the phrase 'Refund notification' appears only in the email metadata area next to the 'Subject:' label, while 'You have received a refund' is the large, prominent heading introducing the document content. For a documentTitle field, the body heading takes precedence over the email subject because it functions as the actual displayed title of the notice.",
+          "visual_evidence": "Located in the upper-middle left of the page, directly under 'British Homes Direct' in large dark text. The extracted value 'Refund notification' is instead in the top header block on the 'Subject:' line."
+        },
+        {
+          "field": "invoiceInfo.salesOrderNumber",
+          "row_index": null,
+          "reasoning": "1. This is not a structural issue because it is a single scalar field. 2. The same extracted value 'BHD30043' also appears verbatim in another extracted field, invoiceInfo.documentNumber. The document shows this identifier once as 'ORDER BHD30043', so using it again as a separate salesOrderNumber is a duplicated assignment. Because duplication is the first matching rule, this is a duplication_error.",
+          "issue_type": "duplication_error",
+          "description": "The order number was duplicated into salesOrderNumber even though no separate sales order number is shown on the document.",
+          "extracted_value": "BHD30043",
+          "corrected_value": null,
+          "expected_context": "No explicit sales order number is visible; only an order number is shown.",
+          "correction_reasoning": "A dedicated rescan of the header/body area shows a single identifier, 'ORDER BHD30043', in the top-right portion of the notice. There is no label such as 'Sales Order' or any second identifier that could support populating salesOrderNumber separately. Since the same value is already correctly captured as documentNumber, salesOrderNumber should be empty.",
+          "visual_evidence": "The only visible identifier is in light gray text near the top-right of the body: 'ORDER BHD30043'. No separate 'Sales Order' label/value appears anywhere else in the visible document."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 38887,
+      "output_tokens": 4338
+    },
+    "cost": {
+      "input_cost": 0.04860875,
+      "output_cost": 0.032535,
+      "total_cost": 0.08114375,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

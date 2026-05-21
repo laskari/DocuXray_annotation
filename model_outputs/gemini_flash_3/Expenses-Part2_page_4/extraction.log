@@ -1,0 +1,18 @@
+17:50:59  INFO     =======================================================
+17:50:59  INFO       EXTRACTION  doc_id=Expenses-Part2_page_4  [2026-05-18 17:50:59]
+17:50:59  INFO     =======================================================
+17:50:59  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:50:59  INFO     [Expenses-Part2_page_4] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:51:00  INFO     [Expenses-Part2_page_4] [PART_CALL] Starting part 'general' for doc 'Expenses-Part2_page_4'
+17:51:00  INFO     [Expenses-Part2_page_4] [PART_CALL] Starting part 'parties' for doc 'Expenses-Part2_page_4'
+17:51:00  INFO     [Expenses-Part2_page_4] [PART_CALL] Starting part 'items' for doc 'Expenses-Part2_page_4'
+17:51:00  INFO     [Expenses-Part2_page_4] [PART_CALL] Starting part 'totals' for doc 'Expenses-Part2_page_4'
+17:51:10  INFO     [Expenses-Part2_page_4] [PART_DONE] Completed part 'general' for doc 'Expenses-Part2_page_4'
+17:51:13  INFO     [Expenses-Part2_page_4] [PART_DONE] Completed part 'items' for doc 'Expenses-Part2_page_4'
+17:51:15  INFO     [Expenses-Part2_page_4] [PART_DONE] Completed part 'totals' for doc 'Expenses-Part2_page_4'
+17:51:18  INFO     [Expenses-Part2_page_4] [PART_DONE] Completed part 'parties' for doc 'Expenses-Part2_page_4'
+17:51:18  INFO     [Expenses-Part2_page_4] SUCCESS: Invoice extraction completed | latency_ms=18469
+17:51:18  INFO     OK  elapsed=18551ms  cost=$0.0090
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=Expenses-Part2_page_4  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

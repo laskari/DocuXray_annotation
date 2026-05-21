@@ -1,0 +1,329 @@
+{
+  "document_id": "H063_INVOICES3_page_20",
+  "file": "H063_INVOICES3_page_20.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "0128724",
+      "documentTitle": "INVOICE",
+      "issueDate": "25/02/25",
+      "issueDateISO": "2025-02-25",
+      "issueTime": "15:03",
+      "issueTimeISO": "15:03:00",
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "702292292",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Food"
+    },
+    "parties": {
+      "seller": {
+        "name": "BOOKER",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "Irthlingborough Road",
+          "street_type": "Road",
+          "unit": null,
+          "building": "Equity House",
+          "district": null,
+          "city": "Wellingborough",
+          "state": "Northants",
+          "postal_code": "NN8 1LT",
+          "country": null
+        },
+        "registrationNumber": "197380",
+        "phone": "01933 371000",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "GB 229 4302 31"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "MRS S HALL",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": "702292292",
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "197.36",
+        "normalizedValue": 197.36
+      },
+      "totalExcludingTax": {
+        "originalValue": "197.36",
+        "normalizedValue": 197.36
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": "197.36",
+        "normalizedValue": 197.36
+      },
+      "taxTotal": {
+        "originalValue": "12.49",
+        "normalizedValue": 12.49
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "209.85",
+        "normalizedValue": 209.85
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": "209.85",
+        "normalizedValue": 209.85
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": "0.00",
+        "normalizedValue": 0.0
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "A",
+        "percentage": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "amount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        }
+      },
+      {
+        "name": "B",
+        "percentage": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "amount": {
+          "originalValue": "12.49",
+          "normalizedValue": 12.49
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": true,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 7505,
+    "latency_ms": 32695,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.022515,
+      "total_cost": 0.026737,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2214,
+        "total_tokens": 4325,
+        "thoughts": "**Invoice Data Extraction: A Comprehensive Thought Process**\n\nAlright, let's break this down. The objective is clear: extract pertinent information from this invoice image and translate it into a structured JSON format. I'm focusing specifically on the information relevant to this Part 1 schema.\n\nFirst, a deep dive into the image itself. I'm identifying key data points: the document title (which is implicitly \"INVOICE\" given the \"INVOICE NUMBER\" text), the document number (0128724), the issue date (25/02/25) and time (15:03). The seller is Booker, the buyer is MRS S HALL with customer number 702292292. There is also the VAT number, registered office address, phone number, and importantly, the payment details confirming the invoice is paid: Debit Mastercard for \u00a3209.85. The totals section confirms the invoice total, the breakdown of Goods and VAT, and that it is fully paid. Currency is clearly GBP, based on the \u00a3 symbol.\n\nNow, I'm cross-referencing this raw data with the target JSON schema. I'm constructing the JSON step-by-step. The currency is straightforward: \"GBP\". For the `invoiceInfo` object, I'm populating `documentNumber`, `documentTitle` (using \"INVOICE\" as the best fit based on the document), `issueDate`, `issueTime`. I'm also adding `issueDateISO` and `issueTimeISO` fields to comply with the schema. I'll need to transform the date and time to the ISO format. I can use \"2025-02-25\" and \"15:03:00\". Also, because I have the customer number, I am adding the `customerNumber` as \"702292292\". I also need to provide the `category` to the invoice. Booker is a food wholesaler, so \"Food\" is appropriate.\n\nNext, I'm determining the invoice status. Since the invoice shows a total of \u00a3209.85 matching the payment amount on a card, with \"Outstanding\" listed as 0.00, it's definitively \"paid.\" The `hasPaidStamp` field is false, because there is no rubber stamp. It is paid with a Debit Mastercard, as indicated in the payment details.\n\nNow, let's assemble the JSON structure. Based on the \"Part 1\" context, I will create a single JSON object. The other fields in `invoiceInfo` are irrelevant since the instructions did not specify them. I will populate the JSON string with all fields. Now is the time to check the JSON structure, to make sure it is valid, double-quoted, and without any comments or control tokens.\n\nFinally, I'm performing a last sanity check. Is the generated JSON valid? Absolutely. Is it compliant with the requested schema? Yes. Are there any unnecessary elements? No.\n\nThe final JSON should be:\n\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": \"0128724\",\n    \"documentTitle\": \"INVOICE\",\n    \"issueDate\": \"25/02/25\",\n    \"issueDateISO\": \"2025-02-25\",\n    \"issueTime\": \"15:03\",\n    \"issueTimeISO\": \"15:03:00\",\n    \"customerNumber\": \"702292292\",\n    \"category\": \"Food\"\n  },\n  \"invoiceStatus\": \"paid\",\n  \"hasPaidStamp\": false\n}\n```\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 3320,
+        "total_tokens": 5431,
+        "thoughts": "**JSON Extraction Process**\n\nOkay, let's break this down. My goal is to extract information from this invoice image and represent it in a specific JSON format, specifically Part 2: `All participants involved in the transaction`, which includes `parties` (seller, buyer, billTo, customer, shipTo, shipFrom) and `shippingInfo`. I need to ensure a valid, parseable JSON output, with all string values double-quoted and no control tokens allowed. Given my expertise, I'm focusing on meticulous accuracy and adherence to the schema.\n\nFirst, I analyze the image. The seller, BOOKER, has an address, registration number (197380), VAT number (GB 229 4302 31), phone, and an \"Alcohol Wholesale Registration No.\" (XTAW00000102869). The customer is MRS S HALL with customer number 702292292. There's an invoice number (0128724), date, time, and payment details (debit card). No shipping information is explicitly present.\n\nNext, I map the extracted data to the schema. For the seller, the `name` is \"BOOKER\", and the address needs to be structured: `street_name` \"Irthlingborough Road\", `building` \"Equity House\", `city` \"Wellingborough\", `state` \"Northants\", and `postal_code` \"NN8 1LT\". I'll enter the registration number \"197380\", phone number, and tax registration number. I'll note the alcohol registration but hold off for now, as it's not immediately part of the schema's party structure.\n\nThe customer is more straightforward: `name` is \"MRS S HALL\", and the customer number \"702292292\" is the `registrationNumber`. Since there's no separate \"Bill To\" or \"Ship To\", and \"buyer\" isn't explicitly defined, I'll use the `customer` field, following the schema's \"mutually exclusive\" instruction.\n\nI'm aware that the prompt says to extract ALL available data, but the context provides a specific schema `Part 2`, so I'm focusing exclusively on the fields outlined in that schema. This means I will ignore `invoiceInfo`, `lineItems`, `totals`, and `taxes` this time, as they are not explicitly called out by this schema.\n\nThe `shippingInfo` section is all null, as there are no explicit details in the invoice for carrier, delivery date, or tracking number. This is typical for a retail or wholesale point-of-sale invoice.\n\nI need to revisit the seller's address, paying careful attention to formatting and naming. \"Equity House, Irthlingborough Road, Wellingborough, Northants NN8 1LT\" needs to be carefully parsed, making sure I align with the schema. I'll double-check that each field (street, building, city, state, postal code) is entered correctly, following best practices.\n\nI'm making sure that the values for the fields match the prompt's instructions: strings must be double quoted, no control tokens should be there, and everything should be a valid JSON.\n\nNow, for the seller, I'll make sure to put `street_type`: \"Road\" as requested in the schema. I'll need to check the exact wording of `registrationNumber` \"The company registration or license number, if explicitely printed.\" I think the customer number 702292292 is the most appropriate value to place there.\n\nAfter double-checking everything, here is my final JSON output:\n\n```json\n{\"parties\":{\"seller\":{\"name\":\"BOOKER\",\"addressStructured\":{\"street_number\":null,\"street_name\":\"Irthlingborough Road\",\"street_type\":\"Road\",\"unit\":null,\"building\":\"Equity House\",\"district\":null,\"city\":\"Wellingborough\",\"state\":\"Northants\",\"postal_code\":\"NN8 1LT\",\"country\":null},\"registrationNumber\":\"197380\",\"phone\":\"01933 371000\",\"fax\":null,\"email\":null,\"whatsappNumber\":null,\"taxRegistrationNumber\":\"GB 229 4302 31\"},\"buyer\":null,\"billTo\":null,\"customer\":{\"name\":\"MRS S HALL\",\"addressStructured\":null,\"registrationNumber\":\"702292292\",\"phone\":null,\"fax\":null,\"email\":null,\"whatsappNumber\":null,\"taxRegistrationNumber\":null},\"shipTo\":null,\"shipFrom\":null},\"shippingInfo\":null}\n```\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 19,
+        "total_tokens": 2130,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1952,
+        "total_tokens": 4063,
+        "thoughts": "**Invoice Data Extraction: A Refined JSON Structure**\n\nAlright, let's break down this invoice and map the relevant information into the specified JSON schema for financial totals, tax breakdowns, and payments. I'm focusing on the \"Part 4\" elements here.\n\nFirst, I need to extract the key values for the `totals` section. Based on the invoice data, I can see that:\n\n*   The subtotal is the \"Goods\" value, which is 197.36. This also aligns with the `totalExcludingTax`.\n*   The tax total (\"VAT\") is 12.49.\n*   The \"Invoice Total\" and \"Grand Total\" both give us the `totalIncludingTax`, which is 209.85.\n*   The \"Amount Paid\" is 209.85, matching the debit card payment details.\n*   The \"Balance Due\" is 0.00 since \"Outstanding\" and \"Waiting to Pay\" are both zero.\n\nNow, for the `taxes` section, I need to capture the details for each tax rate:\n\n*   Tax Rate A: 0.00%, with an amount of 0.00.\n*   Tax Rate B: 20.00%, with an amount of 12.49.\n\nSince there's no explicit indication of whether the tax is applied after a discount (or if any discount exists), I'll set `applyTaxAfterDiscount` to `null`.\n\nI've also observed payment details: debit card (D/CARD) for 209.85.\n\nNow, I'll structure the data into the JSON format, remembering to normalize the values as needed. I have a good grasp of the schema requirements, so I'll create a valid, parseable JSON object without comments, newlines, or tabs, ensuring string values are double-quoted. I'll make sure to include \"subtotal\" in the `totals` block as that value is readily available in the invoice data.\n\nFinally, I'll go through a final review to ensure accuracy.\n\nHere is the final JSON structure based on the above thought process:\n\n```json\n{\n  \"totals\": {\n    \"subtotal\": {\n      \"originalValue\": \"197.36\",\n      \"normalizedValue\": 197.36\n    },\n    \"totalExcludingTax\": {\n      \"originalValue\": \"197.36\",\n      \"normalizedValue\": 197.36\n    },\n    \"taxTotal\": {\n      \"originalValue\": \"12.49\",\n      \"normalizedValue\": 12.49\n    },\n    \"totalIncludingTax\": {\n      \"originalValue\": \"209.85\",\n      \"normalizedValue\": 209.85\n    },\n    \"amountPaid\": {\n      \"originalValue\": \"209.85\",\n      \"normalizedValue\": 209.85\n    },\n    \"balanceDue\": {\n      \"originalValue\": \"0.00\",\n      \"normalizedValue\": 0.0\n    }\n  },\n  \"taxes\": [\n    {\n      \"name\": \"A\",\n      \"percentage\": {\n        \"originalValue\": \"0.00\",\n        \"normalizedValue\": 0.0\n      },\n      \"amount\": {\n        \"originalValue\": \"0.00\",\n        \"normalizedValue\": 0.0\n      }\n    },\n    {\n      \"name\": \"B\",\n      \"percentage\": {\n        \"originalValue\": \"20.00\",\n        \"normalizedValue\": 20.0\n      },\n      \"amount\": {\n        \"originalValue\": \"12.49\",\n        \"normalizedValue\": 12.49\n      }\n    }\n  ],\n  \"applyTaxAfterDiscount\": null\n}\n```\n\n\n"
+      }
+    ]
+  }
+}

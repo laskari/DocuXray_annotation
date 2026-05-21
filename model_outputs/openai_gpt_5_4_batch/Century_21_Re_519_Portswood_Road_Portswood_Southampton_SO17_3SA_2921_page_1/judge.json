@@ -1,0 +1,70 @@
+{
+  "document_id": "Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1",
+  "file": "Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "parties",
+      "lineItems"
+    ],
+    "confidence": 0.94,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.addressStructured",
+          "row_index": null,
+          "reasoning": "1. This is not a list or row-shift problem. 2. The extracted address does not appear duplicated in another extracted field. 3. Yes \u2014 the extracted address matches a different address block on the document ('Century 21, Unit 4, 72 London Road, Southampton, SO15 2AJ') rather than the seller's own address. The seller's address is printed separately in the footer under 'R P Chase'. Therefore this is a wrong_context issue.",
+          "issue_type": "wrong_context",
+          "description": "The seller address was taken from the recipient/customer address block instead of the seller's footer address.",
+          "extracted_value": "{\"street_number\":\"72\",\"street_name\":\"London\",\"street_type\":\"Road\",\"unit\":\"Unit 4\",\"building\":\"Century 21\",\"district\":null,\"city\":\"Southampton\",\"state\":null,\"postal_code\":\"SO15 2AJ\",\"country\":null}",
+          "corrected_value": "{\"street_number\":\"7\",\"street_name\":\"Maldon\",\"street_type\":\"Road\",\"unit\":null,\"building\":null,\"district\":null,\"city\":\"Southampton\",\"state\":null,\"postal_code\":\"SO19 7AF\",\"country\":null}",
+          "expected_context": "Seller address in the bottom-center footer under the seller name 'R P Chase'.",
+          "correction_reasoning": "I re-scanned the document for the seller's own contact block and found 'R P Chase' followed immediately by '7 Maldon Road, Southampton, SO19 7AF.' in the footer. That footer address is the only address explicitly tied to the seller name. The extracted address instead matches the upper-left recipient block beginning with 'Century 21', so it belongs to a different party context and should not populate seller.addressStructured.",
+          "visual_evidence": "Bottom center of the page in the small footer text: first line 'R P Chase', second line '7 Maldon Road, Southampton, SO19 7AF.' This is separate from the upper-left address block that begins 'Century 21'."
+        },
+        {
+          "field": "seller.phone",
+          "row_index": null,
+          "reasoning": "1. This is not a list or row-shift problem. 2. The extracted phone value is not duplicated elsewhere in the extracted JSON. 3. It is not taken from an unrelated context; it comes from the seller footer contact line. 4. There are not multiple plausible phone candidates competing here. 5. The value is not fabricated because a similar phone string is visible. 6. The field is not missing. 7. This is not just a format difference. 8. It is not primarily a text-character typo. 9. Yes \u2014 the extracted number has a digit-level error in the mobile number portion after the slash.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "The seller phone number is missing a digit in the mobile number portion.",
+          "extracted_value": "02380 446957/0754049627",
+          "corrected_value": "02380 446957/07540049627",
+          "expected_context": "Seller contact line in the footer after the 'Tel:' label.",
+          "correction_reasoning": "On a second visual check of the footer contact line, the landline reads '02380 446957' and the mobile after the slash reads '07540049627'. The extracted value dropped a zero in the mobile segment, producing a shorter incorrect number. The corrected value matches the full phone string printed after 'Tel:'.",
+          "visual_evidence": "Bottom center footer, third line beneath the address, immediately after 'Tel:'. The full line reads 'Tel: 02380 446957/07540049627.'"
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineItems[0].remarks",
+          "row_index": 0,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? No, only the remarks field contains mixed content. 2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No, this combined value does not appear duplicated in another extracted field in this section. 3. Is a SINGLE field's value taken from a completely unrelated area/label of the document, AND the value does NOT also appear duplicated in another extracted field? Yes. The extracted remarks includes the service detail line plus the separate 'Re:' property reference from above the line item area. Therefore this is a wrong_context issue.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field incorrectly includes the separate 'Re:' property reference/address from the document header area instead of only the line-specific service remark.",
+          "extracted_value": "Carry Out Landlords Gas Safety Inspection and Issue Certificate. Re: 519 Portswood Road, Portswood, Southampton SO17 3SA",
+          "corrected_value": "Carry Out Landlords Gas Safety Inspection and Issue Certificate",
+          "expected_context": "The line directly below 'Service Boiler' in the line item/service description area.",
+          "correction_reasoning": "On a second visual scan, the service section shows 'Service Boiler' followed immediately underneath by 'Carry Out Landlords Gas Safety Inspection and Issue Certificate'. The 'Re: 519 Portswood Road, Portswood, Southampton SO17 3SA' text is positioned higher on the page near the invoice heading and acts as a separate reference/property address, not as a remark attached to the line item. Therefore only the service sentence belongs in the line item's remarks.",
+          "visual_evidence": "Mid-left portion of the page: the bold 'Re: 519 Portswood Road, Portswood, Southampton SO17 3SA' appears above the service text and above 'Service Boiler'. Directly beneath 'Service Boiler' is the separate line 'Carry Out Landlords Gas Safety Inspection and Issue Certificate', which is the relevant line-level remark."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 37868,
+      "output_tokens": 5074
+    },
+    "cost": {
+      "input_cost": 0.047335,
+      "output_cost": 0.038055000000000005,
+      "total_cost": 0.08539000000000001,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

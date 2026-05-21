@@ -1,0 +1,6 @@
+17:37:46  INFO     =======================================================
+17:37:46  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_186  [2026-05-18 17:37:46]
+17:37:46  INFO     =======================================================
+17:38:08  INFO     FAIL  issues=2  confidence=0.85  cost=$0.0946  elapsed=21980ms
+17:38:08  WARNING    [lineItems] None — The line items list is empty, but the document clearly contains a single item description and amount.
+17:38:08  WARNING    [totals] totalIncludingTax.originalValue — The currency symbol '£' is missing from the original extracted value.

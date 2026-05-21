@@ -1,0 +1,746 @@
+{
+  "document_id": "H063_INVOICES3_page_157",
+  "refinement": {
+    "refined_data": {
+      "currency": "GBP",
+      "invoiceInfo": {
+        "documentNumber": "0229145",
+        "documentTitle": "Invoice",
+        "issueDate": "27/03/25",
+        "issueDateISO": "2025-03-27",
+        "issueTime": "08:00",
+        "issueTimeISO": "08:00:00",
+        "dueDate": null,
+        "dueDateISO": null,
+        "purchaseOrderNumber": null,
+        "salesOrderNumber": null,
+        "customerNumber": "702292292",
+        "paymentTerms": null,
+        "customerMemo": null,
+        "category": "Food"
+      },
+      "parties": {
+        "seller": {
+          "name": "Booker Limited",
+          "addressStructured": {
+            "street_number": null,
+            "street_name": "Nelson",
+            "street_type": "Lane",
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": "Warwick",
+            "state": null,
+            "postal_code": "CV34 5JB",
+            "country": null
+          },
+          "registrationNumber": "197380",
+          "phone": "01926 495111",
+          "fax": "01926 410392",
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": "GB 220 4302 31"
+        },
+        "buyer": {
+          "name": null,
+          "addressStructured": {
+            "street_number": null,
+            "street_name": null,
+            "street_type": null,
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": null,
+            "state": null,
+            "postal_code": null,
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "billTo": {
+          "name": null,
+          "addressStructured": {
+            "street_number": null,
+            "street_name": null,
+            "street_type": null,
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": null,
+            "state": null,
+            "postal_code": null,
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "customer": {
+          "name": "NICE BITES",
+          "addressStructured": {
+            "street_number": null,
+            "street_name": "TILEMANS",
+            "street_type": "LANE",
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": "SHIPSTON-ON-STOUR",
+            "state": "WARWICKSHIRE",
+            "postal_code": "CV36 4QZ",
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": "07725189911",
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "shipTo": {
+          "name": null,
+          "addressStructured": {
+            "street_number": null,
+            "street_name": null,
+            "street_type": null,
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": null,
+            "state": null,
+            "postal_code": null,
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "shipFrom": {
+          "name": null,
+          "addressStructured": {
+            "street_number": null,
+            "street_name": null,
+            "street_type": null,
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": null,
+            "state": null,
+            "postal_code": null,
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        }
+      },
+      "lineItems": [
+        {
+          "description": "Chefs Larder Butterific",
+          "itemCode": "293919",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "2kg",
+          "unitPrice": {
+            "originalValue": "4.99",
+            "normalizedValue": 4.99
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "4.99",
+            "normalizedValue": 4.99
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": null,
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "Fiorello Grated Mozz 100%",
+          "itemCode": "227569",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "2kg",
+          "unitPrice": {
+            "originalValue": "9.99 CD",
+            "normalizedValue": 9.99
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "9.99",
+            "normalizedValue": 9.99
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "WF Grated Mature Cheddar",
+          "itemCode": "293152",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "2kg",
+          "unitPrice": {
+            "originalValue": "12.49",
+            "normalizedValue": 12.49
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "12.49",
+            "normalizedValue": 12.49
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "LF Triple Choc Flapjack",
+          "itemCode": "290832",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "9x65g",
+          "unitPrice": {
+            "originalValue": "6.25",
+            "normalizedValue": 6.25
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "6.25",
+            "normalizedValue": 6.25
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "CL Baked Beans",
+          "itemCode": "719799",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "2.62kg",
+          "unitPrice": {
+            "originalValue": "4.49",
+            "normalizedValue": 4.49
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "4.49",
+            "normalizedValue": 4.49
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "CL Hash Browns",
+          "itemCode": "263794",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "1.36kg",
+          "unitPrice": {
+            "originalValue": "2.79",
+            "normalizedValue": 2.79
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "2.79",
+            "normalizedValue": 2.79
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "CE U/Smk R/Less Back Bacon",
+          "itemCode": "147175",
+          "quantity": {
+            "originalValue": "2",
+            "normalizedValue": 2.0
+          },
+          "unitOfMeasure": "2kg",
+          "unitPrice": {
+            "originalValue": "9.99",
+            "normalizedValue": 9.99
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "19.98",
+            "normalizedValue": 19.98
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "CL Thick Pork Sausages",
+          "itemCode": "105135",
+          "quantity": {
+            "originalValue": "2",
+            "normalizedValue": 2.0
+          },
+          "unitOfMeasure": "2.27kg",
+          "unitPrice": {
+            "originalValue": "9.49",
+            "normalizedValue": 9.49
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "18.98",
+            "normalizedValue": 18.98
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "40s Baking Potatoes",
+          "itemCode": "103063",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "15kg",
+          "unitPrice": {
+            "originalValue": "14.99",
+            "normalizedValue": 14.99
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "14.99",
+            "normalizedValue": 14.99
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "Mixed Catering Peppers",
+          "itemCode": "107803",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "6s",
+          "unitPrice": {
+            "originalValue": "4.49",
+            "normalizedValue": 4.49
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "4.49",
+            "normalizedValue": 4.49
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A",
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "Jacks Salad Tomatoes",
+          "itemCode": "274797",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1.0
+          },
+          "unitOfMeasure": "300g",
+          "unitPrice": {
+            "originalValue": "0.99",
+            "normalizedValue": 0.99
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "0.99",
+            "normalizedValue": 0.99
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": "VAT code A; STD RRP 1.29; POR 23.3%",
+          "serviceDate": null,
+          "serviceDateISO": null
+        }
+      ],
+      "totals": {
+        "discountTotal": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercentage": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "subtotal": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "totalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "shippingAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "freightCharges": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "insuranceAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "handlingFees": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "surchargeAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "otherCharges": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "taxableAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "taxTotal": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "withholdingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "totalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "roundingAdjustment": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "deposit": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "amountPaid": {
+          "originalValue": "\u00a3100.43",
+          "normalizedValue": 100.43
+        },
+        "creditApplied": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "returnAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "tipAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "balanceDue": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "exchangeRate": {
+          "originalValue": null,
+          "normalizedValue": null
+        }
+      },
+      "taxes": [],
+      "shippingInfo": {
+        "carrier": null,
+        "deliveryDate": null,
+        "deliveryDateISO": null,
+        "trackingNumber": null
+      },
+      "invoiceStatus": "paid",
+      "hasPaidStamp": false,
+      "isOverflowPage": false,
+      "applyTaxAfterDiscount": null
+    },
+    "applied_corrections": 5,
+    "total_issues": 5,
+    "schema_valid": true,
+    "schema_errors": null
+  },
+  "metadata": {
+    "latency_ms": 1
+  }
+}

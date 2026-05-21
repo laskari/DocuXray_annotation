@@ -1,0 +1,7 @@
+18:15:15  INFO     =======================================================
+18:15:15  INFO       JUDGE  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4  [2026-05-18 18:15:15]
+18:15:15  INFO     =======================================================
+18:16:01  INFO     FAIL  issues=3  confidence=0.95  cost=$0.0816  elapsed=45438ms
+18:16:01  WARNING    [invoiceInfo] customerNumber — The buyer username was extracted with a typo: 'l' instead of 't'.
+18:16:01  WARNING    [parties] buyer.name — The buyer's username contains a character typo where 'l' was extracted instead of 't'.
+18:16:01  WARNING    [lineItems] lineItems[0].itemCode — The eBay item ID number is missing from the itemCode field.

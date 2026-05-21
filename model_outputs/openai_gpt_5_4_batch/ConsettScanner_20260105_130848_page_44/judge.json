@@ -1,0 +1,26 @@
+{
+  "document_id": "ConsettScanner_20260105_130848_page_44",
+  "file": "ConsettScanner_20260105_130848_page_44.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.96,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 37963,
+      "output_tokens": 2366
+    },
+    "cost": {
+      "input_cost": 0.047453749999999996,
+      "output_cost": 0.017745,
+      "total_cost": 0.06519875,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

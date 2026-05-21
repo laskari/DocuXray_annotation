@@ -1,0 +1,58 @@
+{
+  "document_id": "H063_INVOICES3_page_75",
+  "file": "H063_INVOICES3_page_75.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 2,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "lineItems"
+    ],
+    "confidence": 0.91,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.customerNumber",
+          "row_index": null,
+          "reasoning": "1. This is not a structural_error because only one field is affected and there is no row/list shift. 2. The extracted value contains duplicated trailing digits within itself: the document shows customer number '702292292' on the CUSTOMER line, while the JSON has '70229229292'. Because the error is a repetition within the same value, the first matching category is duplication_error.",
+          "issue_type": "duplication_error",
+          "description": "The customer number has extra duplicated trailing digits '92'.",
+          "extracted_value": "70229229292",
+          "corrected_value": "702292292",
+          "expected_context": "Customer account number shown on the customer information line after the 'CUSTOMER' label and before 'MRS S HALL'.",
+          "correction_reasoning": "I performed a second visual scan of the customer header line and isolated the numeric string between 'CUSTOMER' and 'MRS'. The visible number ends at '702292292' with clear spacing before 'MRS'; there are no extra trailing digits after that. Therefore the extracted value added an extra '92' and the correct customer number is '702292292'.",
+          "visual_evidence": "Located in the upper-left/middle customer block, first line of customer details. The line reads 'CUSTOMER 702292292 MRS S HALL', with the number immediately following 'CUSTOMER' and preceding 'MRS'."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineItems.description",
+          "row_index": 6,
+          "reasoning": "1. I checked whether multiple fields in this row are shifted together compared with the document; they are not, because the item code, quantity, pack size, price, and value all align to the same bacon row. 2. I checked whether the same extracted value is duplicated elsewhere; it is not. 3. The value is not from an unrelated section; it is the correct row but with character-level OCR mistakes. 4. There are not multiple similar candidate descriptions competing here. 5. The value is visible on the document in near-matching form, so it is not fabricated. 6. The field is not missing. 7. This is not just a formatting difference. 8. The row text shows small character mismatches: 'D/Smk' should be 'U/Smk' and 'R/less' should be 'R/Less'. Therefore the correct issue type is character_value_mismatch.",
+          "issue_type": "character_value_mismatch",
+          "description": "The description for the bacon line has OCR character errors.",
+          "extracted_value": "CE D/Smk R/less Back Bacon",
+          "corrected_value": "CE U/Smk R/Less Back Bacon",
+          "expected_context": "The product description on the line item row with item code 147174 in the MEAT section.",
+          "correction_reasoning": "I rechecked the row beginning with item code 147174 and matched the description across the same line to the right of the code. The first abbreviated token is visibly 'U/Smk', not 'D/Smk', and the second abbreviation reads 'R/Less' with a capital L. The rest of the row, including pack size '5 2kg', quantity '1', price '49.95', and value '49.95', confirms this is the same line item, so the corrected description belongs to this row.",
+          "visual_evidence": "Located in the middle-lower portion of the page under the CONFECTIONERY subtotal, in the MEAT section. On the first MEAT item row, immediately to the right of item code '147174', the printed text reads 'CE U/Smk R/Less Back Bacon'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 42981,
+      "output_tokens": 5769
+    },
+    "cost": {
+      "input_cost": 0.053726249999999996,
+      "output_cost": 0.0432675,
+      "total_cost": 0.09699374999999999,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

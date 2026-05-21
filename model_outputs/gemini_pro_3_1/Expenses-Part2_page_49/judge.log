@@ -1,0 +1,7 @@
+17:33:13  INFO     =======================================================
+17:33:13  INFO       JUDGE  doc_id=Expenses-Part2_page_49  [2026-05-18 17:33:13]
+17:33:13  INFO     =======================================================
+17:33:46  INFO     FAIL  issues=3  confidence=0.95  cost=$0.1146  elapsed=32822ms
+17:33:46  WARNING    [lineItems] lineTotalExcludingTax — Gross amount extracted as the excluding tax amount.
+17:33:46  WARNING    [lineItems] lineTotalIncludingTax — Missing total including tax amount.
+17:33:46  WARNING    [lineItems] lineTaxAmount — Missing tax amount for the line item.

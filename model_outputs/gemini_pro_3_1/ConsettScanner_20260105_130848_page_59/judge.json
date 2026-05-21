@@ -1,0 +1,105 @@
+{
+  "document_id": "ConsettScanner_20260105_130848_page_59",
+  "file": "ConsettScanner_20260105_130848_page_59.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 4,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "lineItems",
+      "totals"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "customerMemo",
+          "row_index": null,
+          "reasoning": "1. Are multiple fields shifted? No.\n2. Is the value duplicated? No.\n3. Is the value from the wrong context? No.\n4. Are there multiple candidates? No.\n5. Is the value not present? No.\n6. Is the field null but the value is visible? Yes. The document clearly contains a 'NOTES TO CUSTOMER' section with payment details and delivery information which fits the customerMemo field definition, but it was extracted as null.",
+          "issue_type": "missing_value",
+          "description": "The customer memo/notes section is clearly visible on the document but was not extracted.",
+          "extracted_value": "null",
+          "corrected_value": "Payment Details\nN C Raine ( Private Account )\nAccount Number 50212237\nSort Code 20-33-51\n\nBarclays Bank\n\nDelivery included",
+          "expected_context": "NOTES TO CUSTOMER",
+          "correction_reasoning": "The text directly under the 'NOTES TO CUSTOMER' heading contains messages and payment instructions intended for the buyer, which aligns with the customerMemo definition. This text should be extracted rather than leaving the field null.",
+          "visual_evidence": "Located in the bottom left corner of the document, below the line items and 'NOTES TO CUSTOMER' header."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "itemCode",
+          "row_index": 0,
+          "reasoning": "1. Are multiple fields shifted? No. 2. Is the value duplicated? No. 3. Is the value taken from an unrelated area? Yes, the value '1' is taken from the 'no' (line number) column, not an item code, SKU, or part number.",
+          "issue_type": "wrong_context",
+          "description": "The line item number ('no') was incorrectly extracted as the itemCode.",
+          "extracted_value": "1",
+          "corrected_value": null,
+          "expected_context": "The 'itemCode' field should be null as no SKU or part number is present for this line item.",
+          "correction_reasoning": "The 'no' column indicates the sequential line number (1, 2, 3, etc.) rather than a unique item identifier (SKU/part number). Since no distinct item code is listed, the field should be empty.",
+          "visual_evidence": "The value '1' is found in the far-left column under the header 'no', directly to the left of the item description."
+        }
+      ],
+      "totals": [
+        {
+          "field": "totalIncludingTax.originalValue",
+          "row_index": null,
+          "reasoning": "1. No structural error. 2. No duplication error. 3. No wrong context. 4. No multiple candidates. 5. Value is present. 6. Field is not null. 7. The correct value is present but the 'GBP' suffix has been removed, making it a format error.",
+          "issue_type": "format_error",
+          "description": "The currency code 'GBP' was omitted from the extracted value.",
+          "extracted_value": "\u00a3550.00",
+          "corrected_value": "\u00a3550.00 GBP",
+          "expected_context": "TOTAL \u00a3550.00 GBP",
+          "correction_reasoning": "The document explicitly includes 'GBP' in the printed string for the TOTAL. The originalValue must capture the exact printed value.",
+          "visual_evidence": "Located at the bottom right of the invoice, directly to the right of the 'TOTAL' label."
+        },
+        {
+          "field": "balanceDue.originalValue",
+          "row_index": null,
+          "reasoning": "1. No structural error. 2. No duplication error. 3. No wrong context. 4. No multiple candidates. 5. Value is present. 6. Field is not null. 7. The correct value is present but the 'GBP' suffix has been removed, making it a format error.",
+          "issue_type": "format_error",
+          "description": "The currency code 'GBP' was omitted from the extracted value.",
+          "extracted_value": "\u00a3550.00",
+          "corrected_value": "\u00a3550.00 GBP",
+          "expected_context": "\u00a3550.00 GBP AMOUNT DUE",
+          "correction_reasoning": "The amount due explicitly includes 'GBP' in the printed string. The originalValue must capture the exact text as it appears on the page.",
+          "visual_evidence": "Located at the top right of the invoice, positioned just above the 'AMOUNT DUE' label."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19424,
+      "output": 6606,
+      "total": 26030
+    },
+    "cost": {
+      "input_tokens": 19424,
+      "output_tokens": 6606,
+      "input_cost": 0.038848,
+      "output_cost": 0.079272,
+      "total_cost": 0.11812
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Initiating Verification Process**\n\nI'm currently focused on dissecting the request. My primary objective is to verify the `invoiceInfo` section. The input consists of an invoice image and a JSON dataset, my task involves checking against specific rules to flag issues, and provide suggested corrections. The final output needs to be a specific JSON format. I am focusing on identifying the core rules and constraints to be tested.\n\n\n**Analyzing Data Integrity**\n\nI'm now deep-diving into the extracted data, comparing each field against the actual document to ensure accuracy. So far, the majority of the fields match perfectly, including the document number, title, issue date, and due date, which also had correct ISO conversions. I've also verified the absence of several fields, like purchase and sales order numbers. I'm taking the conservative route, and trying to determine if I need to flag the \"customerMemo\" field.\n\n\n**Addressing Missing Value**\n\nI've pinpointed a critical missing value: the `customerMemo` field. The document clearly contains a \"NOTES TO CUSTOMER\" section with payment details that are missing from the extracted data, despite the presence of the section title. I've classified this as a `missing_value` issue and formulated a correction. The extracted value is null, but now I know the correct value. The correction includes the full \"Payment Details\" text, exactly as it appears in the document, which must be output.\n\n\n**Finalizing Data Fields**\n\nI've decided on the format for the corrected `customerMemo` field. Previously, I was considering spaces, but I am going with newlines to separate the information. The corrected value now includes the full text from the \"NOTES TO CUSTOMER\" section, formatted with newlines for clarity. I've confirmed that this accurately addresses the missing data and follows the format instructions.\n\n\n",
+      "parties": "**Verifying Party Information**\n\nI'm now focused on understanding the core goal: to accurately verify extracted party details (seller, buyer, etc.) against the source document image. My current focus is to identify the critical criteria for successful verification, ensuring that the output is precise. This includes a robust method for comparing data.\n\n\n**Evaluating Extraction Accuracy**\n\nI'm now diving into assessing the extraction's accuracy, particularly for seller details. I'm cross-referencing the extracted data for \"Harry Raine Antiques\" with the image data to ensure complete and precise information, specifically address, email, and phone number. I am using a valid JSON format and I'm looking for any extraction issues. My focus now is on resolving any discrepancies.\n\n\n",
+      "lineItems": "**Initiating the Verification**\n\nI'm now zeroing in on verifying the `lineItems` data against the invoice image. My focus is on ensuring compliance with the specified JSON schema and leveraging the predefined methods. Currently assessing the best approach for comparing visual and extracted data elements efficiently.\n\n\n**Examining the Invoice Data**\n\nI'm now diving into the specifics of the invoice from Harry Raine Antiques. I've taken a close look at the table headers and the first row of data, noting the column labels and their corresponding values. I've found an initial discrepancy regarding the itemCode, which I'm categorizing as a 'wrong_context' issue. Currently evaluating how to properly represent the line number data in relation to the `itemCode`.\n\n\n**Analyzing the Item Data**\n\nI'm now zeroing in on the item data and considering edge cases. For the first item, `unitOfMeasure` being null is correct, and the `unitPrice` matches. Regarding the `lineTotalIncludingTax`, the \"\u00a3550.00\" value is ambiguous, as tax isn't present, so it might be tax-inclusive, which should map to excluding tax. I'm focusing on the misidentified `itemCode` as a \"wrong\\_context\" issue, as the \"no\" column clearly refers to the line number.\n\n\n",
+      "totals": "**Initiating Analysis Process**\n\nI'm now diving into the analysis. My focus is sharp on verifying the 'totals' section of the Harry Raine Antiques invoice JSON. The goal is to detect any structural inconsistencies or errors\u2014 duplicates, missing data, format issues, and contextual inaccuracies within this vital part of the extracted data. I will be doing this in a strict order of priority.\n\n\n**Evaluating Data Consistency**\n\nI'm now deep-diving into the extracted data points. I've noted a discrepancy regarding the currency formatting; the `totalIncludingTax` field is missing the \"GBP\" currency indicator, while the source document has it. I'm focusing on the formatting of the `balanceDue` field, and whether \"GBP\" should be included.\n\n\n**Assessing Field Accuracy**\n\nI've just assessed field accuracy for `subtotal`, `totalIncludingTax`, and `balanceDue`. The extracted `subtotal` matches the document. However, the `totalIncludingTax` and `balanceDue` fields are missing \" GBP\". I have now marked these issues as `format_error`. I'm now verifying if currency codes should be captured in the `originalValue` field and am considering how to classify the missing \" GBP\".\n\n\n**Refining Error Identification**\n\nI am now refining my error identification process, specifically concerning currency formats. I've pinpointed an issue where the `totalIncludingTax.originalValue` and `balanceDue.originalValue` fields lack the \"GBP\" suffix, which is present in the source document. I'm classifying this as a `format_error`\u2014the correct value is present, but the formatting is incorrect. I'm documenting these issues meticulously.\n\n\n**Clarifying Total Amounts**\n\nI'm now clarifying total amounts, and noticed both \"TOTAL\" and \"AMOUNT DUE\" share the missing \"GBP.\" Subtotal extraction is perfect, but I'm investigating how to classify `shippingAmount` when \"Delivery included\" doesn't have an amount. There are no taxes printed, which means extraction is largely correct except for two currency format errors. This led to a 0.9 confidence on refining the JSON payload with two format errors. My focus is on the `format_error` definition, confirming that the missing \" GBP\" falls under it perfectly.\n\n\n**Defining Currency Extraction**\n\nI'm now defining the currency extraction process in detail. My assessment confirms a `format_error` for the \"TOTAL\" line and `balanceDue.originalValue` due to the missing \"GBP\" suffix. I'm noting that the extracted values are present but lack the necessary currency code as seen in the source document. I'll correct the `originalValue` fields to include \"GBP\". I'm making sure it should also be applied to a visual evidence check.\n\n\n",
+      "taxes": "**Defining the Scope**\n\nI'm now zeroing in on defining the precise scope of this verification task. My immediate focus is on the \"taxes\" section of the JSON. My goal is to rigorously compare the extracted tax data against the source document image, creating an error report in a structured JSON format. I must establish verification rules, which will be the basis for evaluating extraction accuracy.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Information**\n\nI am now focused on validating the extracted shipping information. It seems like the initial extraction returned null values for all fields. I will carefully examine the document image to identify any shipping details like carrier name, delivery date, and tracking number. Then I'll adjust the extraction strategy to capture any new data.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 44814,
+    "cost": {
+      "input_tokens": 19424,
+      "output_tokens": 6606,
+      "input_cost": 0.038848,
+      "output_cost": 0.079272,
+      "total_cost": 0.11812
+    }
+  }
+}

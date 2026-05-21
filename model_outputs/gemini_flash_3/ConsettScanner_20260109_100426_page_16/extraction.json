@@ -1,0 +1,1231 @@
+{
+  "document_id": "ConsettScanner_20260109_100426_page_16",
+  "file": "ConsettScanner_20260109_100426_page_16.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "50212237",
+      "documentTitle": "Your transactions",
+      "issueDate": null,
+      "issueDateISO": null,
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "50212237",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "Barclays Bank PLC",
+        "addressStructured": {
+          "street_number": "1",
+          "street_name": "Churchill",
+          "street_type": "Place",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "London",
+          "state": null,
+          "postal_code": "E14 5HP",
+          "country": null
+        },
+        "registrationNumber": "1026167",
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Card Payment to Proovia.Delivery On 30 Sep",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "59.76",
+          "normalizedValue": 59.76
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "01 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Proovia.Delivery On 30 Sep",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "107.69",
+          "normalizedValue": 107.69
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "01 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Bill Payment to Alan Ramsey Antiqu Ref: 30/09/25",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "162.00",
+          "normalizedValue": 162.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "01 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Bill Payment to Elcoate Antiques Ref: 29/09/25",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "3,102.00",
+          "normalizedValue": 3102.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Balance: 1,767.39",
+        "serviceDate": "01 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "ATM Cash Machine Withdrawal at Cardtronics UK Ltd Cooperative DL13 4 Timed at 14.10 On 02 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "200.00",
+          "normalizedValue": 200.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Balance: 1,567.39",
+        "serviceDate": "02 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Direct Debit to Ifdl Nominees Ref: A10070544A",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "500.00",
+          "normalizedValue": 500.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "03 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Ebay O*02-13662-34 On 02 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "3.59",
+          "normalizedValue": 3.59
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "03 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Fir Tree Filling S On 02 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "97.00",
+          "normalizedValue": 97.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "03 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Bill Payment From Hickson N P Ref: Chesterfield Suite",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "535.00",
+          "normalizedValue": 535.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Balance: 1,501.80",
+        "serviceDate": "03 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Ebay O*12-13659-77 On 05 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "35.81",
+          "normalizedValue": 35.81
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "06 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Giro Received From Ebay Commerce UK L Ref: P*7111112793",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "170.16",
+          "normalizedValue": 170.16
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "06 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Giro Received From P Carmichael Ref: Ercol Bureau",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "300.00",
+          "normalizedValue": 300.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "06 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Giro Received From Ebay Commerce UK L Ref: P*7114242201",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "551.77",
+          "normalizedValue": 551.77
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Balance: 2,487.92",
+        "serviceDate": "06 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Proovia.Delivery On 06 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "48.74",
+          "normalizedValue": 48.74
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "07 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Proovia.Delivery On 06 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "63.08",
+          "normalizedValue": 63.08
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "07 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Proovia.Delivery On 06 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "87.65",
+          "normalizedValue": 87.65
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "07 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Giro Received From Mr Frederick Paul Ref: Paul Stanton",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "150.00",
+          "normalizedValue": 150.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Balance: 2,438.45",
+        "serviceDate": "07 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Proovia.Delivery On 07 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "79.68",
+          "normalizedValue": 79.68
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Balance: 2,358.77",
+        "serviceDate": "08 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Bill Payment From Hickson N P Ref: Chesterfield Suite",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "970.00",
+          "normalizedValue": 970.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Balance: 3,328.77",
+        "serviceDate": "10 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Direct Debit to Keys Premium 2001 Ref: A013957",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "510.88",
+          "normalizedValue": 510.88
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "13 Oct",
+        "serviceDateISO": null
+      },
+      {
+        "description": "Card Payment to Ebay O*27-13667-63 On 12 Oct",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "2.03",
+          "normalizedValue": 2.03
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": "13 Oct",
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": "3,328.77",
+        "normalizedValue": 3328.77
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 18942,
+    "latency_ms": 85373,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.056826,
+      "total_cost": 0.061048000000000005,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 4482,
+        "total_tokens": 6593,
+        "thoughts": "**My Thought Process: Analyzing the Bank Statement as an Invoice**\n\nOkay, the user wants me to treat this bank statement page as an invoice and extract information, using a provided invoice schema. I need to be careful; a bank statement *isn't* an invoice, so I need to adapt the schema. The document type context is \"invoice,\" so I must follow those instructions.\n\nThe schema expects certain fields. I need to determine the best fit for each. Currency? Easy, the UK address and Barclays Bank imply GBP. The `documentNumber`? The account number seems to be the best fit. I'll use it. Title? It's \"Your transactions\" or \"Bank Statement.\" Issue date? Not a single one on this page but rather a range of transaction dates. The category? Since it's a bank statement, I'll go with \"Other.\" The invoice status? Not applicable to a bank statement in the same way, but I will put \"unknown.\" And, of course, no paid stamp.\n\nThe user explicitly stated that I have to follow the instructions: I should set missing fields to null.\n\nNow, wait a minute, maybe the user wants me to extract the transactions as line items. I could map those details from the bank statement to the line items. Each transaction has a date, description, money in, and money out. I could translate money out as negative line total, and money in as positive. But wait, a bank statement as an invoice is usually from the bank's services, and this is a transaction list.\n\nLet's stick with the original schema. If I can't find appropriate invoice fields, I'll set them to null.\n\nLet's confirm the currency, then the document number, which is \"50212237\". I'll use the title \"Your transactions\". I will put \"other\" in category, because this is not an itemized list of invoices or transactions.\n\nThe instructions say the user wants me to extract all visible information, but if the schema is limited, that's what I'll do. The context says this is Part 1 of the schema, with properties: `currency`, `invoiceInfo`, `invoiceStatus`, `hasPaidStamp`. That's it. I will stick to these properties only.\n\nNow, let's look at the dates. The transactions are from October, but the year isn't explicitly shown. No statement date exists on this page, only the transaction dates.\n\nHere we have the issuer: Barclays Bank UK PLC.\n\nI'll build the JSON with these details: `currency` as GBP, the `invoiceInfo` with the account number as the document number, and \"Your transactions\" as the document title, null dates, null quantities, and so on. The category will be \"Other\".\n\nMy challenge here is that bank statements don't fit well into an invoice schema.\n\nI need to stick to the schema and *only* the schema.\n\nThe schema provided in the context is very specific: \"Part 1: General invoice metadata...\". That's all I'm working with. I need to output *only* those properties.\n\nLet's double-check again; currency, `documentNumber`, document title, and then the dates. \"Your transactions\" is the title.\n\nThe prompt specified that I should include \"all visible information\", so I am trying to extract as many fields as possible to fit into the invoice schema, but the given schema doesn't have any place to hold the transactions themselves.\n\nI should make sure I am following all the rules.\n\nBased on the prompt, I am following the instructions for the Part 1 general invoice metadata, which consists of the properties: `currency`, `invoiceInfo`, `invoiceStatus`, `hasPaidStamp`.\n\nI am making a final check for dates. The transactions happen in October. No explicit date.\n\nNow, I will construct the final JSON. I will stick strictly to the schema properties.\n\nOkay, I'm ready. Here's my final JSON output:\n{\"currency\":\"GBP\",\"invoiceInfo\":{\"documentNumber\":\"50212237\",\"documentTitle\":\"Your transactions\",\"issueDate\":null,\"issueDateISO\":null,\"issueTime\":null,\"issueTimeISO\":null,\"dueDate\":null,\"dueDateISO\":null,\"purchaseOrderNumber\":null,\"salesOrderNumber\":null,\"customerNumber\":\"50212237\",\"paymentTerms\":null,\"customerMemo\":null,\"category\":\"Other\"},\"invoiceStatus\":\"unknown\",\"hasPaidStamp\":false}\n\nI've carefully considered the context.\n\nI am now absolutely certain I have correctly interpreted the instructions.\n\nI am checking for extra text - none.\n\nI am checking for comments - none.\n\nI am checking for control characters - none.\n\nI am checking for multiple JSON objects - only 1\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 4846,
+        "total_tokens": 6957,
+        "thoughts": "**Final Data Extraction and JSON Structure**\n\nOkay, I've reviewed the image of the document, which the instructions have classified as an \"invoice\", although its structure appears more like a bank statement or list of transactions. Given this context, I've identified the \"seller\" as \"Barclays Bank PLC\" based on the footer information, including the registered address \"1 Churchill Place, London E14 5HP\" and registration number \"1026167\". I have to use the schema provided, for \"Part 2\" - the only fields present are `parties` and `shippingInfo`.  I need to stick to the exact schema.\n\nThere's no explicit buyer or customer name visible on the provided page of the statement, and therefore I will set these fields, as well as `billTo`, `shipTo`, and `shipFrom` to null.\n\nBased on the footer, I was able to populate the Seller information, structured appropriately with the `addressStructured` fields like `street_number`, `street_name`, and `street_type` as required by the schema. I've specifically set `unit`, `building`, `district`, `state`, and `country` to null because those fields are not explicitly present in the address as printed in the document.\n\nThe document contains no shipping information, so I set the `shippingInfo` object to null.\n\nThe bank details such as sort code and account number are not relevant in this context. Although there's \"Financial Services Register No. 122702\", I am using \"1026167\" as the `registrationNumber` as it is explicitly labeled as the registration number for the company.  I will not include any extra fields or information that is not requested by the schema as per the instruction.\n\nFinally, I will generate the JSON output as a single-line, minified JSON object based on the schema and my extracted information.\n\nHere is the final JSON output:\n\n```json\n{\"parties\":{\"seller\":{\"name\":\"Barclays Bank PLC\",\"addressStructured\":{\"street_number\":\"1\",\"street_name\":\"Churchill\",\"street_type\":\"Place\",\"unit\":null,\"building\":null,\"district\":null,\"city\":\"London\",\"state\":null,\"postal_code\":\"E14 5HP\",\"country\":null},\"registrationNumber\":\"1026167\",\"phone\":null,\"fax\":null,\"email\":null,\"whatsappNumber\":null,\"taxRegistrationNumber\":null},\"buyer\":null,\"billTo\":null,\"customer\":null,\"shipTo\":null,\"shipFrom\":null},\"shippingInfo\":null}\n```\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 4591,
+        "total_tokens": 6702,
+        "thoughts": "**Bank Statement Extraction: Schema Mapping and Transaction Analysis**\n\nOkay, so I've got this bank statement image, and the task is to pull out the relevant data and fit it into a specific JSON schema. The document itself is a page from a bank statement, labeled \"Your transactions,\" which gives me a good starting point. I can see a table format with the columns \"Date,\" \"Description,\" \"Money out,\" \"Money in,\" and \"Balance,\" which clearly indicates transactions. There's also some top information with the sort code and account number and a footer with bank details and \"Page 2,\" which I'll keep in mind for context.\n\nFirst, I need to understand the schema and how it applies to this specific document. The schema uses `lineItems` as the core component for each transaction. I'll translate each row in the statement as a `lineItem`. I need to figure out how the provided schema fields map to the bank statement data. Let's look at the fields: `description`, `itemCode`, `quantity`, `unitPrice`, `lineTotalIncludingTax`, and `lineTotalExcludingTax`. Since this isn't an invoice, the \"Money out\" and \"Money in\" values are the primary values I'll focus on.\n\nSo, I'm going to map each transaction row to a `lineItem`. The `description` will correspond to the description field in the table. The \"Money out\" and \"Money in\" values are the trickier ones. I'll use the  `lineTotalExcludingTax` field, translating \"Money out\" to a positive value and \"Money in\" to a positive value (since it is a transaction - not necessarily the total amount). I'm treating the `Balance` column as a running total, it doesn't really fit neatly into a line item, but it might be useful as part of the `remarks` for each line item where it appears.\n\nThe prompt is also asking about an `isOverflowPage` flag. The description says to set the `isOverflowPage` flag to true if this page is a continuation of a table from the previous page (no new document header, line items continue mid-stream)\". This table has a fresh start with \"Date Description Money out Money in Balance\" headers, so it's a new table. So it is not an overflow, I will set `isOverflowPage` to `false`.\n\nNow, I'm going through the data and figuring out how to construct the JSON. The dates, like \"01 Oct\", are presented without a year. The schema wants a complete ISO date (\"YYYY-MM-DD\"). However, without an explicit year in the document or other contextual information, I'm hesitant to guess the year (e.g., \"30/09/25\" might be a reference number, it can be 2025 but I don't know). I need to determine the format of the ISO date fields. Because of the missing year, I'm going to leave the ISO date fields (`serviceDateISO`) as null or empty, if the schema allows. Otherwise, I might make the date field as partial, if the schema has an option for it, i.e., \"MM-DD\".\n\nAll right, let's start constructing the JSON.\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 5023,
+        "total_tokens": 7134,
+        "thoughts": "**My Analysis of the Bank Statement Data**\n\nOkay, here's the breakdown of my thinking. The user wants me to extract data from a bank statement image and format it as a JSON object, following a specific schema. The tricky part is that the image is a bank statement, but the schema is designed for invoices (\"Part 4: Financial totals, tax breakdowns, and payments\"). This is the context I'm dealing with.\n\nFirst, I examined the image content: I noted the sort code, account number, transaction list (date, description, money out, money in, balance), but crucially, no invoice-like totals (subtotal, tax, etc.). Bank statements don't typically use those terms. Instead, there's a balance column, and I need to map whatever I find to the `totals`, `taxes` and `applyTaxAfterDiscount` fields in the schema.\n\nThe schema expects specific properties within `totals`: `discountTotal`, `subtotal`, `totalExcludingTax`, `taxTotal`, `totalIncludingTax`, `balanceDue`, `amountPaid`, etc. For a bank statement, these don't directly correspond. Total money out *could* be interpreted as an amount paid, but it's not a direct match. The balance, I figured, *could* be mapped to `balanceDue`, but it's not a perfect fit either because the balance is the current account's value, not what's *due*. However, since the prompt specified the document is classified as an \"invoice\", I would try to map everything as best as I could to the requested properties.\n\nI then went through the transactions list to see if I could extract any meaningful totals or tax information. I saw the balance updating with each transaction. The last available balance on the page is `3,328.77`. No explicit totals were present, nor were any taxes.\n\nThe schema has no explicit examples. It just expects a valid JSON object. Since the prompt states that it is an invoice, and also states that I need to \"extract ALL available data\", I must fill in the fields, based on the structure provided in the context.\n\nGiven the contradiction of classifying a bank statement as an invoice, I decided to focus on what I *could* map. I looked at the image again to verify:\n- No invoice-style totals.\n- No explicit tax information.\n- I will therefore try to set `balanceDue` to the last balance of 3,328.77 (because I must map something). If I followed the rules and the document was not an invoice, I would return all nulls.\n- `taxes` will be null, as there are no taxes on the statement.\n- `applyTaxAfterDiscount` is null since there is no tax, and no discount.\n\nI re-read the schema guidelines: \"Extract ALL available data... Structure the data according to the provided JSON schema.\" Then: \"When producing JSON you must follow the schema provided in the context.\"\n\nI reviewed again the `totals` object which has numerous values. None seem to apply. Therefore, I will map the last balance to `balanceDue` as that is the closest.\n\nI will follow the rules and only output the fields for the part provided in the schema context.\n\nTherefore I would return the following:\n\n```json\n{\"totals\": {\"discountTotal\": null, \"discountPercentage\": null, \"subtotal\": null, \"totalExcludingTax\": null, \"shippingAmount\": null, \"freightCharges\": null, \"insuranceAmount\": null, \"handlingFees\": null, \"surchargeAmount\": null, \"otherCharges\": null, \"taxableAmount\": null, \"taxTotal\": null, \"withholdingTax\": null, \"totalIncludingTax\": null, \"roundingAdjustment\": null, \"deposit\": null, \"amountPaid\": null, \"creditApplied\": null, \"returnAmount\": null, \"tipAmount\": null, \"balanceDue\": {\"originalValue\": \"3,328.77\", \"normalizedValue\": 3328.77}, \"exchangeRate\": null}, \"taxes\": null, \"applyTaxAfterDiscount\": null}\n```\n\nI checked again the schema to verify that the format is correct: JSON valid, no comments, double quotes, no control characters, and the structure. It follows the schema provided in the context. No, nothing seems out of place. This satisfies the requirements of the prompt. I will submit.\n\n\n"
+      }
+    ]
+  }
+}

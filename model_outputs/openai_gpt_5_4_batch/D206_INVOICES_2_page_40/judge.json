@@ -1,0 +1,43 @@
+{
+  "document_id": "D206_INVOICES_2_page_40",
+  "file": "D206_INVOICES_2_page_40.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "invoiceInfo"
+    ],
+    "confidence": 0.94,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.paymentTerms",
+          "row_index": null,
+          "reasoning": "1. This is not a list/row shift problem, so structural_error does not apply. 2. The value 'CASH SALE' is not duplicated into another extracted field in this section, so duplication_error does not apply. 3. 'CASH SALE' is taken from a different part of the document and functions as a sale/header label above the item table rather than an explicitly labeled payment terms field, so this is a wrong_context issue.",
+          "issue_type": "wrong_context",
+          "description": "The extracted payment terms value was taken from the 'CASH SALE' heading, which is not an explicit payment terms field on the invoice.",
+          "extracted_value": "CASH SALE",
+          "corrected_value": null,
+          "expected_context": "No explicit payment terms are visible in the invoice info area; the extracted text comes from the centered heading above the line-item table.",
+          "correction_reasoning": "On second look, the invoice info box on the right contains labeled fields for Invoice No, Doc. Date, Order No, and Account Ref only. There is no field labeled payment terms anywhere in the visible invoice header/details. The text 'CASH SALE' is printed separately, centered above the product table, indicating the type/status of the sale rather than formal terms like 'Net 30' or 'Due on receipt'. Therefore this field should be empty/null for this section.",
+          "visual_evidence": "Located in the middle of the page directly above the gray line-item header row, centered between the address block and the phone text on the right. It is visually separate from the boxed invoice details table and has no payment-terms label attached."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 37938,
+      "output_tokens": 3964
+    },
+    "cost": {
+      "input_cost": 0.0474225,
+      "output_cost": 0.029729999999999996,
+      "total_cost": 0.0771525,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

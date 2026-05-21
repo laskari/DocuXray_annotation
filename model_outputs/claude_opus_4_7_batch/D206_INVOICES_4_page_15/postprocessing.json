@@ -1,0 +1,500 @@
+{
+  "document_id": "D206_INVOICES_4_page_15",
+  "postprocessed": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "0378543",
+      "documentTitle": "Invoice",
+      "issueDate": "20/11/24",
+      "issueDateISO": "2024-11-20",
+      "issueTime": "15:31",
+      "issueTimeISO": "15:31:00",
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "726720565",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": null
+    },
+    "parties": {
+      "seller": {
+        "name": "Booker Limited",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "Nelson Lane",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Warwick",
+          "state": null,
+          "postal_code": "CV34 5JB",
+          "country": null
+        },
+        "registrationNumber": "197380",
+        "phone": "01926 495111",
+        "fax": "01926 410392",
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "GB220430231"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "MR KUMLUCA - HALIKARNAS KEBAB SHOP",
+        "addressStructured": {
+          "street_number": "55",
+          "street_name": "Regent",
+          "street_type": "Street",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Leamington Spa",
+          "state": "Warks",
+          "postal_code": "CV32 5EE",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "07511475539",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "KTC Lemon Dressing",
+        "itemCode": "097511",
+        "quantity": {
+          "originalValue": "10",
+          "normalizedValue": 10.0
+        },
+        "unitOfMeasure": "1 400ml",
+        "unitPrice": {
+          "originalValue": "0.39",
+          "normalizedValue": 0.39
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "3.90",
+          "normalizedValue": 3.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Flying Goose Sriracha Mayo",
+        "itemCode": "296263",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "1 455ml",
+        "unitPrice": {
+          "originalValue": "2.99",
+          "normalizedValue": 2.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "2.99",
+          "normalizedValue": 2.99
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "LB Choc Chip Brioche Rolls",
+        "itemCode": "235632",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "1 6pk",
+        "unitPrice": {
+          "originalValue": "1.19",
+          "normalizedValue": 1.19
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "1.19",
+          "normalizedValue": 1.19
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT A; RRP 1.65; POR 27.9%",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CP S/Steel Scourers",
+        "itemCode": "162452",
+        "quantity": {
+          "originalValue": "2",
+          "normalizedValue": 2.0
+        },
+        "unitOfMeasure": "1 10pk",
+        "unitPrice": {
+          "originalValue": "7.79",
+          "normalizedValue": 7.79
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "15.58",
+          "normalizedValue": 15.58
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT B",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Fanta Orange Can",
+        "itemCode": "282707",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "24 330ml",
+        "unitPrice": {
+          "originalValue": "7.99 CD",
+          "normalizedValue": 7.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "7.99",
+          "normalizedValue": 7.99
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT B; RRP 1.20; POR 66.8%",
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "31.65",
+        "normalizedValue": 31.65
+      },
+      "totalExcludingTax": {
+        "originalValue": "31.65",
+        "normalizedValue": 31.65
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": "4.71",
+        "normalizedValue": 4.71
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "36.36",
+        "normalizedValue": 36.36
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": "36.36",
+        "normalizedValue": 36.36
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": "0.00",
+        "normalizedValue": 0.0
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "VAT A (0%)",
+        "percentage": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "amount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        }
+      },
+      {
+        "name": "VAT B (20%)",
+        "percentage": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "amount": {
+          "originalValue": "4.71",
+          "normalizedValue": 4.71
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": true
+  },
+  "validation_errors": [],
+  "metadata": {
+    "latency_ms": 1
+  }
+}

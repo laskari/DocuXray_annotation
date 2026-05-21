@@ -1,0 +1,43 @@
+{
+  "document_id": "Expenses_Reciepts_52_New_Rd_2025_page_186",
+  "file": "Expenses_Reciepts_52_New_Rd_2025_page_186.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "invoiceInfo"
+    ],
+    "confidence": 0.67,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.category",
+          "row_index": null,
+          "reasoning": "1. This is not a list/row structure issue. 2. The extracted value does not appear duplicated in another extracted field. 3. It is not a value taken from another visible label/section; instead the value 'None' is not visible anywhere in the document. 4. There are not multiple visible category candidates to choose from. 5. YES \u2014 the extracted value 'None' is completely fabricated relative to the visible document image, so the correct issue type is value_not_present.",
+          "issue_type": "value_not_present",
+          "description": "The extracted category value 'None' is not visible anywhere in the document image, and no clearly verifiable category text is shown.",
+          "extracted_value": "None",
+          "corrected_value": null,
+          "expected_context": "No explicit invoice category is visible; the only visible text is a memo-like note reading 'Missing reciept Elliotts \u00a347.88'.",
+          "correction_reasoning": "I performed a second visual scan of the entire visible image. The only legible content is the centered red boxed text 'Missing reciept Elliotts \u00a347.88'. There is no visible category label or category value, and nothing on the page explicitly supports the extracted value 'None'. Because the task forbids inferring non-visible values, the safe correction is to remove the category value and set it to null.",
+          "visual_evidence": "In the middle of the image there is a small orange/red rectangle containing three lines of red text: 'Missing', 'reciept Elliotts', and '\u00a347.88'. No other visible text appears elsewhere on the page, and no category wording is present."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 37766,
+      "output_tokens": 1678
+    },
+    "cost": {
+      "input_cost": 0.0472075,
+      "output_cost": 0.012585,
+      "total_cost": 0.0597925,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

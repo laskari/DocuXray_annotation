@@ -1,0 +1,8 @@
+17:21:40  INFO     =======================================================
+17:21:40  INFO       JUDGE  doc_id=D206_INVOICES_4_page_15  [2026-05-18 17:21:40]
+17:21:40  INFO     =======================================================
+17:23:13  INFO     FAIL  issues=4  confidence=0.90  cost=$0.1030  elapsed=92916ms
+17:23:13  WARNING    [parties] customer.name — The customer name 'KUMLUCA' was concatenated with the main business name 'HALIKARNAS KEBAB SHOP' but 'KUMLUCA' belongs to the address block.
+17:23:13  WARNING    [parties] customer.addressStructured.city — The city 'KUMLUCA' was omitted from the city field and merged into the name.
+17:23:13  WARNING    [lineItems] lineTaxPercent — The tax percentage was extracted from the document footer summary rather than the line item row itself, violating the negative constraint to scan only the line row.
+17:23:13  WARNING    [lineItems] unitPrice — The unit price value includes the 'CD' indicator suffix from the document, which should be excluded from the numeric price field.

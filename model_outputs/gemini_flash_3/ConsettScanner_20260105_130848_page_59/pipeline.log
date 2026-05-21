@@ -1,0 +1,14 @@
+18:18:48  INFO     =======================================================
+18:18:48  INFO       GEMINI 3 FLASH PIPELINE START  doc_id=ConsettScanner_20260105_130848_page_59  image=ConsettScanner_20260105_130848_page_59.png  [2026-05-18 18:18:48]
+18:18:48  INFO     =======================================================
+18:18:48  INFO     Step 1/4: extraction (Gemini 3 Flash)
+18:19:24  INFO     Step 2/4: judge (Gemini 3 Flash)
+18:19:57  INFO     Step 3/4: refinement
+18:19:57  INFO     Step 4/4: postprocessing
+18:19:57  INFO     PIPELINE END  status=ok  total=68677ms
+16:09:26  INFO     =======================================================
+16:09:26  INFO       GEMINI 3 FLASH PIPELINE START  doc_id=ConsettScanner_20260105_130848_page_59  image=ConsettScanner_20260105_130848_page_59.png  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================
+16:09:26  INFO     Step 1/4: extraction (Gemini 3 Flash)
+16:09:26  ERROR    Pipeline aborted: No module named 'pymongo'
+16:09:26  INFO     PIPELINE END  status=error  total=0ms

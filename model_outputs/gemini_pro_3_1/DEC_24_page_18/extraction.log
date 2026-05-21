@@ -1,0 +1,18 @@
+17:44:48  INFO     =======================================================
+17:44:48  INFO       EXTRACTION  doc_id=DEC_24_page_18  [2026-05-18 17:44:48]
+17:44:48  INFO     =======================================================
+17:44:48  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3.1-pro-preview
+17:44:48  INFO     [DEC_24_page_18] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:44:48  INFO     [DEC_24_page_18] [PART_CALL] Starting part 'general' for doc 'DEC_24_page_18'
+17:44:48  INFO     [DEC_24_page_18] [PART_CALL] Starting part 'parties' for doc 'DEC_24_page_18'
+17:44:48  INFO     [DEC_24_page_18] [PART_CALL] Starting part 'items' for doc 'DEC_24_page_18'
+17:44:48  INFO     [DEC_24_page_18] [PART_CALL] Starting part 'totals' for doc 'DEC_24_page_18'
+17:44:57  INFO     [DEC_24_page_18] [PART_DONE] Completed part 'general' for doc 'DEC_24_page_18'
+17:44:57  INFO     [DEC_24_page_18] [PART_DONE] Completed part 'totals' for doc 'DEC_24_page_18'
+17:44:58  INFO     [DEC_24_page_18] [PART_DONE] Completed part 'parties' for doc 'DEC_24_page_18'
+17:44:59  INFO     [DEC_24_page_18] [PART_DONE] Completed part 'items' for doc 'DEC_24_page_18'
+17:44:59  INFO     [DEC_24_page_18] SUCCESS: Invoice extraction completed | latency_ms=11248
+17:44:59  INFO     OK  elapsed=11292ms  cost=$0.0282
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=DEC_24_page_18  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

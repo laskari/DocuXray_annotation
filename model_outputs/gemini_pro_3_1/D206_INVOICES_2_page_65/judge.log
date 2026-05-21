@@ -1,0 +1,5 @@
+17:36:02  INFO     =======================================================
+17:36:02  INFO       JUDGE  doc_id=D206_INVOICES_2_page_65  [2026-05-18 17:36:02]
+17:36:02  INFO     =======================================================
+17:36:18  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0752  elapsed=15586ms
+17:36:18  WARNING    [taxes] None — A tax line is present on the document but was completely omitted from the extraction.

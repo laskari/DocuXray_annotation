@@ -1,0 +1,16 @@
+17:51:23  INFO     =======================================================
+17:51:23  INFO       JUDGE  doc_id=ConsettScanner_20260109_100514_page_36  [2026-05-18 17:51:23]
+17:51:23  INFO     =======================================================
+17:51:55  INFO     FAIL  issues=12  confidence=0.95  cost=$0.1278  elapsed=31943ms
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.
+17:51:55  WARNING    [lineItems] itemCode — The Lot No is duplicated into the itemCode field.

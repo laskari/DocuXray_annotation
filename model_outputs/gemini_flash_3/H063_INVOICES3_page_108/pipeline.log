@@ -1,0 +1,14 @@
+17:46:45  INFO     =======================================================
+17:46:45  INFO       GEMINI 3 FLASH PIPELINE START  doc_id=H063_INVOICES3_page_108  image=H063_INVOICES3_page_108.png  [2026-05-18 17:46:45]
+17:46:45  INFO     =======================================================
+17:46:45  INFO     Step 1/4: extraction (Gemini 3 Flash)
+17:47:50  INFO     Step 2/4: judge (Gemini 3 Flash)
+17:48:37  INFO     Step 3/4: refinement
+17:48:37  INFO     Step 4/4: postprocessing
+17:48:37  INFO     PIPELINE END  status=ok  total=112334ms
+16:09:26  INFO     =======================================================
+16:09:26  INFO       GEMINI 3 FLASH PIPELINE START  doc_id=H063_INVOICES3_page_108  image=H063_INVOICES3_page_108.png  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================
+16:09:26  INFO     Step 1/4: extraction (Gemini 3 Flash)
+16:09:26  ERROR    Pipeline aborted: No module named 'pymongo'
+16:09:26  INFO     PIPELINE END  status=error  total=0ms

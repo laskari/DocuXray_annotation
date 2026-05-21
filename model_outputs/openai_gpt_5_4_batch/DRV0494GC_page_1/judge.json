@@ -1,0 +1,67 @@
+{
+  "document_id": "DRV0494GC_page_1",
+  "file": "DRV0494GC_page_1.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "lineItems"
+    ],
+    "confidence": 0.87,
+    "issues": {
+      "lineItems": [
+        {
+          "field": "lineItems[0].lineTaxAmount",
+          "row_index": 0,
+          "reasoning": "1. I checked whether multiple fields across rows are shifted together: no, there is only one extracted row and no row-order problem is visible. 2. I checked for duplication: the extracted tax amount is not duplicated into another extracted field as the same value. 3. I then checked whether this single field was taken from an unrelated area of the document: yes. The value '\u00a3237.00' is visible only in the right-side summary line labeled 'VAT @ 20%', not within the actual line item row itself. Therefore this is a wrong_context issue.",
+          "issue_type": "wrong_context",
+          "description": "The line-level tax amount was taken from the invoice summary VAT line rather than from the specific line item row.",
+          "extracted_value": "{\"originalValue\":\"\u00a3237.00\",\"normalizedValue\":237.0}",
+          "corrected_value": null,
+          "expected_context": "No line-specific tax amount is printed for the item row; the visible '\u00a3237.00' belongs to the summary line labeled 'VAT @ 20%'.",
+          "correction_reasoning": "I re-scanned the 'Fees' section line by line. The item text consists of 'Class 1 driving services w/e 08.11.2025' with rate breakdown lines beneath it. There is no tax amount printed on those item lines. The only tax amount on the page is in the separate right-hand summary area as 'VAT @ 20% \u00a3237.00', so it should not populate a line-level tax field for this item.",
+          "visual_evidence": "On the right side of the fees block, below the 'Amount \u00a31,185.00' line, there is a separate summary line reading 'VAT @ 20%' with '\u00a3237.00' aligned to the far right. It is visually separated from the item description/rate lines on the left."
+        },
+        {
+          "field": "lineItems[0].lineTaxPercent",
+          "row_index": 0,
+          "reasoning": "1. There is no row displacement or list structural problem. 2. The value is not duplicated across extracted fields in a way that makes duplication the primary issue. 3. The extracted '20%' comes from a different context: it is printed only on the summary VAT line, not as a tax percentage attached to the item row. That makes this wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The line-level tax percent was extracted from the invoice summary VAT line, not from the specific line item row.",
+          "extracted_value": "{\"originalValue\":\"20%\",\"normalizedValue\":20.0}",
+          "corrected_value": null,
+          "expected_context": "No line-specific tax percentage is printed on the item row; '20%' appears only in the summary VAT line.",
+          "correction_reasoning": "I specifically looked for any tax percentage on the left-side item lines under 'Fees' and found none. The only percentage shown is '20%' in the separate summary text 'VAT @ 20%'. Because that percentage is not printed against the item line itself, the correct line-level value is empty.",
+          "visual_evidence": "In the right-hand totals block, the text 'VAT @ 20%' appears one line below 'Amount \u00a31,185.00'. No percentage appears on the left-side line item text or its rate-detail lines."
+        },
+        {
+          "field": "lineItems[0].lineTotalIncludingTax",
+          "row_index": 0,
+          "reasoning": "1. No structural row/list error is present. 2. This is not a duplication case. 3. The extracted value '\u00a31,422.00' comes from the document's overall summary line 'Total+Expenses', which is not a line-item field. Since the value was taken from a separate summary context rather than the item row, this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The line total including tax was taken from the invoice summary total rather than from the specific line item row.",
+          "extracted_value": "{\"originalValue\":\"\u00a31,422.00\",\"normalizedValue\":1422.0}",
+          "corrected_value": null,
+          "expected_context": "No line-specific total including tax is explicitly printed for the item row; '\u00a31,422.00' belongs to the summary line labeled 'Total+Expenses'.",
+          "correction_reasoning": "I performed a second scan of the fee lines and the right-side totals. The value '\u00a31,422.00' appears only beside 'Total+Expenses', which is the document-level total. The actual item area shows an 'Amount' of '\u00a31,185.00', but no separate line-item total including tax is printed. Therefore the extracted including-tax value is from the wrong context and should be empty for this line item field.",
+          "visual_evidence": "At the lower right of the fees/totals area, the label 'Total+Expenses' appears with '\u00a31,422.00' aligned to the far right. This is positioned below the VAT line and clearly functions as the overall summary total, not as part of the left-side item row."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 38062,
+      "output_tokens": 6003
+    },
+    "cost": {
+      "input_cost": 0.047577499999999995,
+      "output_cost": 0.0450225,
+      "total_cost": 0.09259999999999999,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

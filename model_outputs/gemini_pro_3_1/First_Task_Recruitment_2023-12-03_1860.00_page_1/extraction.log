@@ -1,0 +1,18 @@
+17:49:16  INFO     =======================================================
+17:49:16  INFO       EXTRACTION  doc_id=First_Task_Recruitment_2023-12-03_1860.00_page_1  [2026-05-18 17:49:16]
+17:49:16  INFO     =======================================================
+17:49:16  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3.1-pro-preview
+17:49:16  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:49:16  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_CALL] Starting part 'general' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:16  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_CALL] Starting part 'parties' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:16  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_CALL] Starting part 'items' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:16  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_CALL] Starting part 'totals' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:26  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_DONE] Completed part 'items' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:27  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_DONE] Completed part 'general' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:27  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_DONE] Completed part 'totals' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:28  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] [PART_DONE] Completed part 'parties' for doc 'First_Task_Recruitment_2023-12-03_1860.00_page_1'
+17:49:28  INFO     [First_Task_Recruitment_2023-12-03_1860.00_page_1] SUCCESS: Invoice extraction completed | latency_ms=11934
+17:49:28  INFO     OK  elapsed=12015ms  cost=$0.0335
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=First_Task_Recruitment_2023-12-03_1860.00_page_1  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

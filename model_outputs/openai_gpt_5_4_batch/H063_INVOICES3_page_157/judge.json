@@ -1,0 +1,97 @@
+{
+  "document_id": "H063_INVOICES3_page_157",
+  "file": "H063_INVOICES3_page_157.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 5,
+    "sections_with_issues": [
+      "parties",
+      "lineItems",
+      "totals"
+    ],
+    "confidence": 0.94,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.registrationNumber",
+          "row_index": null,
+          "reasoning": "1. No \u2014 this is a single scalar field, not a list/row shift affecting multiple fields. 2. No \u2014 the extracted value is not duplicated into another extracted field. 3. No \u2014 the value is intended for the seller registration number field, not taken from an unrelated label. 4. No \u2014 although another registration-like identifier (Alcohol Wholesale Registration No) is present, the extracted value is clearly attempting to capture the company registration number line, not the other identifier. 5. No \u2014 the extracted value is not a completely unrelated fabrication; it is a near-match to the visible company number. 6. No \u2014 the field is not empty. 7. No \u2014 this is not a formatting-only difference. 8. No \u2014 this is numeric, not textual. 9. Yes \u2014 the extracted registration number has a small digit error: '157380' should be '197380'.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "Seller company registration number has an incorrect digit.",
+          "extracted_value": "157380",
+          "corrected_value": "197380",
+          "expected_context": "Seller legal information line containing the company number, next to the VAT number.",
+          "correction_reasoning": "On a second visual scan of the seller fine print, the line reads 'Registered in England. Number 197380, VAT Number GB 220 4302 31'. The extracted value '157380' differs by one digit and is therefore a numeric transcription error rather than a different identifier. This company-number line is the correct source for seller.registrationNumber, so '197380' is the proper correction.",
+          "visual_evidence": "Upper-left area below the BOOKER logo in the small-print seller details. The line beginning 'Registered in England. Number ...' shows '197380' immediately before 'VAT Number GB 220 4302 31'."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineItems[1].description",
+          "row_index": 1,
+          "reasoning": "1. No \u2014 this is not a row/list shift; only one field in this row is affected. 2. No \u2014 the extracted value is not duplicated into another field. 3. No \u2014 the value comes from the correct line-item area, not an unrelated section. 4. No \u2014 there are not multiple similar candidate descriptions on this row. 5. No \u2014 the extracted text is visible on the document in nearly the same form. 6. No \u2014 the field is not empty. 7. No \u2014 this is not just a formatting difference. 8. Yes \u2014 the extracted description has a small character-level typo: the ending is 'Fiorella' instead of the printed 'Fiorello'.",
+          "issue_type": "character_value_mismatch",
+          "description": "Line item description has a minor character error in the product name.",
+          "extracted_value": "Fiorella Grated Mozz 100%",
+          "corrected_value": "Fiorello Grated Mozz 100%",
+          "expected_context": "Second line item in the main items table, under DESCRIPTION, next to item code 227569.",
+          "correction_reasoning": "I rechecked the second product row and the brand/product word clearly ends with an 'o', not an 'a'. The rest of the row matches the extracted item, including code 227569, pack size 2kg, qty 1, and price 9.99, so this correction is tied to the correct line and takes precedence over the typo in the extraction.",
+          "visual_evidence": "Located in the main item table near the top-middle of the page, second row below the headers. To the right of code 227569, the DESCRIPTION text reads 'Fiorello Grated Mozz 100%'."
+        },
+        {
+          "field": "lineItems[4].itemCode",
+          "row_index": 4,
+          "reasoning": "1. No \u2014 there is no evidence of row displacement; only the item code on this row is wrong. 2. No \u2014 the extracted value is not duplicated elsewhere. 3. No \u2014 the code is from the correct line-item context, not another section. 4. No \u2014 there are not multiple plausible item-code candidates for this row. 5. No \u2014 the extracted value is close to the visible code, so it is not fabricated. 6. No \u2014 the field is not empty. 7. No \u2014 this is not a formatting-only issue. 8. No \u2014 this is numeric, not text. 9. Yes \u2014 the item code is missing a digit compared with the printed code.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "Line item code is missing a digit for the CL Baked Beans row.",
+          "extracted_value": "71799",
+          "corrected_value": "719799",
+          "expected_context": "CL Baked Beans row in the main items table, first item after the CHILLED subtotal section.",
+          "correction_reasoning": "I performed a second look at the CL Baked Beans line and the leftmost code is six digits, reading 719799. The extracted 71799 drops the middle '9'. The adjacent description 'CL Baked Beans' and the same row values 2.62kg, qty 1, price 4.49 confirm the corrected code belongs to this row.",
+          "visual_evidence": "Found in the leftmost CODE column on the row reading 'CL Baked Beans', immediately below the 'CHILLED SUB-TOTAL' line. The code printed before the description is '719799'."
+        },
+        {
+          "field": "lineItems[10].itemCode",
+          "row_index": 10,
+          "reasoning": "1. No \u2014 this is not a structural row-order problem; only one field on one row is affected. 2. No \u2014 the extracted value is not duplicated in another field. 3. No \u2014 the value comes from the correct line-item row. 4. No \u2014 there are not multiple similar code candidates on this row. 5. No \u2014 the extracted value is close to the printed one, so it is not fabricated. 6. No \u2014 the field is present. 7. No \u2014 this is not a format-only difference. 8. No \u2014 this is a numeric code issue. 9. Yes \u2014 the final digit of the item code is incorrect compared with the printed row.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "Last line item's item code has an incorrect final digit.",
+          "extracted_value": "274793",
+          "corrected_value": "274797",
+          "expected_context": "Jacks Salad Tomatoes row in the FRUIT & VEG section of the main items table.",
+          "correction_reasoning": "I re-examined the final product row and the code printed before 'Jacks Salad Tomatoes' ends in 7, not 3. The same row also shows pack size 300g, qty 1, price 0.99, and the STD/RRP/POR values to the far right, confirming the corrected code belongs to this item.",
+          "visual_evidence": "Located in the bottom portion of the main item table under the FRUIT & VEG section, on the row 'Jacks Salad Tomatoes'. In the far-left CODE column, the printed code reads '274797'."
+        }
+      ],
+      "totals": [
+        {
+          "field": "totals.totalIncludingTax",
+          "row_index": null,
+          "reasoning": "1. Are multiple fields in a row/list all displaced or shifted together compared to the document? No, this is not a list/row structure issue. 2. Does the same extracted value appear verbatim in another field where it should not? Yes. The extracted value '\u00a3100.43' also appears in 'totals.amountPaid'. The visible source is the payment receipt block, where this amount is shown as the card payment amount/total, not as a distinct invoice grand total in the invoice totals area. By priority, this is a duplication_error.",
+          "issue_type": "duplication_error",
+          "description": "The value '\u00a3100.43' was duplicated into totalIncludingTax from the payment receipt section; the visible evidence supports it as a payment amount, not a clearly printed invoice grand total on this page.",
+          "extracted_value": "\u00a3100.43",
+          "corrected_value": null,
+          "expected_context": "A clearly labelled invoice total/grand total in the invoice totals area; no such overall invoice total is visibly printed on this page.",
+          "correction_reasoning": "I re-checked the document for a dedicated invoice totals area and for labels such as 'Total', 'Grand Total', 'Invoice Total', or a final VAT-inclusive total in the main invoice body. On this page, the only explicit '\u00a3100.43' appears in the lower 'PAYMENT CARD RECEIPT DETAILS' block on the line 'AMOUNT: \u00a3100.43  TOTAL: \u00a3100.43'. That supports the payment transaction amount and aligns with amountPaid. I do not see a separate invoice grand total label in the main invoice section, so totalIncludingTax should not be populated from this payment receipt value.",
+          "visual_evidence": "Located in the lower third of the page under the bold heading 'PAYMENT CARD RECEIPT DETAILS'. The amount appears on the line reading 'AMOUNT: \u00a3100.43  TOTAL: \u00a3100.43'. In the main invoice area above the dashed separator, only category 'SUB-TOTAL' lines are visible; no overall invoice grand total is shown on this page."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 40742,
+      "output_tokens": 8399
+    },
+    "cost": {
+      "input_cost": 0.0509275,
+      "output_cost": 0.0629925,
+      "total_cost": 0.11392000000000001,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

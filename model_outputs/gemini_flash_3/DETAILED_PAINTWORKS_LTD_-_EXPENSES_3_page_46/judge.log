@@ -1,0 +1,6 @@
+18:11:16  INFO     =======================================================
+18:11:16  INFO       JUDGE  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46  [2026-05-18 18:11:16]
+18:11:16  INFO     =======================================================
+18:11:55  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0443  elapsed=38999ms
+18:11:55  WARNING    [invoiceInfo] paymentTerms — The value 'Credit card' is a payment method, not a payment term.
+18:11:55  WARNING    [lineItems] lineItems[0].description — The item number (256560769417) is appended to the description but is also correctly extracted in the itemCode field.

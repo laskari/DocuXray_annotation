@@ -1,0 +1,835 @@
+{
+  "document_id": "ConsettScanner_20260109_100514_page_36",
+  "file": "ConsettScanner_20260109_100514_page_36.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "100244/srsumm10084",
+      "documentTitle": "INVOICE",
+      "issueDate": "23 November 2025",
+      "issueDateISO": "2025-11-23",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": "srsumm10084",
+      "customerNumber": "EL30175",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Sales"
+    },
+    "parties": {
+      "seller": {
+        "name": "Summersgills Auctioneers",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "York Road",
+          "street_type": null,
+          "unit": null,
+          "building": "Roxby Business Park",
+          "district": null,
+          "city": "Easingwold",
+          "state": "North Yorkshire",
+          "postal_code": "YO61 3FS",
+          "country": "United Kingdom"
+        },
+        "registrationNumber": null,
+        "phone": "01347 821379",
+        "fax": null,
+        "email": "info@summersgills.com",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "196138480"
+      },
+      "buyer": {
+        "name": "Mr Neil Raine",
+        "addressStructured": {
+          "street_number": "8",
+          "street_name": "the avenue",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Consett",
+          "state": "Durham",
+          "postal_code": "DH8 6NR",
+          "country": "GB"
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": "neil_raine_antiques@yahoo.co.uk",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "A stoneware figure of a nun, possibly Portuguese, mark on base AC. Approx. 38cm high",
+        "itemCode": "16",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a335.00",
+          "normalizedValue": 35.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "16",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a37.56, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Two Georgian Tea Caddys - one Georgian with stepped top with original handle and lock raised on Ogee bracket feet 16cm x 13cm x H14cm plus Domed banded walnut tea caddy 19cm x 11cm x H14cm",
+        "itemCode": "38",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a3120.00",
+          "normalizedValue": 120.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "38",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a325.92, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Victorian Brass-mounted burr Walnut domed tea caddy W23cm x H15.5cm",
+        "itemCode": "40",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a345.00",
+          "normalizedValue": 45.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "40",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a39.72, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Antique Copper and Brass Samovar H31cm",
+        "itemCode": "47",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a345.00",
+          "normalizedValue": 45.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "47",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a39.72, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "A Set of Brass Postal Scales with weights ranging from 1/2 oz to 8oz struck with various marks throughout including T&Co plus Brass and cut glass Inkwell and tray",
+        "itemCode": "52",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a390.00",
+          "normalizedValue": 90.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "52",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a319.44, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Mahogany writing slope from York Minster stamped to base 'York Minster Ref:617' W35cm x D36cm x H18cm",
+        "itemCode": "56",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a345.00",
+          "normalizedValue": 45.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "56",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a39.72, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Continental School, late 19th/early 20th Century, Tyrollean old man and young woman in an interior, oil on canvas, framed. 52cm by 65cm",
+        "itemCode": "531",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a390.00",
+          "normalizedValue": 90.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "531",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a319.44, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Set of eight very good quality Chippendale style Mahogany dining chairs on cabriole legs with ball and claw feet with two carvers and six chairs covered in pinks, blue and red fabric in good condition",
+        "itemCode": "604",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a3400.00",
+          "normalizedValue": 400.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "604",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a386.40, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "A Bretby style torchere with plant pot",
+        "itemCode": "615",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a340.00",
+          "normalizedValue": 40.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "615",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a38.64, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Antique Oak chest of drawers - with geometric mouldings on door fronts - two over three spacious drawers with brass ring handles 109cm x 58cm x H111cm",
+        "itemCode": "617",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a3360.00",
+          "normalizedValue": 360.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "617",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a377.76, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "An early oak dresser with plate rack in the Jacobean style having 3 central drawers and the plate rack having 2 panelled cupboards. 2m long x depth 50cm x 2.2m high",
+        "itemCode": "636",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a3460.00",
+          "normalizedValue": 460.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "636",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a399.36, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Garden statue water feature in 3 sections H93cm",
+        "itemCode": "810",
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a320.00",
+          "normalizedValue": 20.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a30.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": "810",
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT Code: M-, Buyer's Premium: \u00a34.32, VAT on Buyer's Premium: \u00a30.00",
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 13634,
+    "latency_ms": 49481,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.040902,
+      "total_cost": 0.045124,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1713,
+        "total_tokens": 3824,
+        "thoughts": "**Invoice Data Extraction: Initial Thoughts**\n\nOkay, so the task at hand is to extract specific data points from this Summersgills Auctioneers invoice image and structure them as a clean JSON object according to a predefined schema. My first thought is to break this down methodically. Let's make a mental checklist.\n\nFirst, I need to understand the constraints: it has to be valid JSON, no comments, no arrays, double quotes only, and very specific normalization rules for dates. The input is this invoice image from Summersgills; the output is the JSON. The schema's structure is the guide.\n\nI'm visually scanning the document now. Immediately, the vendor details jump out: Summersgills Auctioneers, address, contact info \u2013 all potentially useful for data enrichment later, but I focus on the schema. The key elements seem to be the invoice header, document number, date, buyer information, and the invoice status (crucial). I'm looking for anything that indicates payment.\n\nFrom what I see, it's an \"INVOICE\" with document number \"100244/srsumm10084\" and an invoice date of \"23 November 2025\". The currency is obviously GBP. There's a buyer number (EL30175) and a buyer's address, though it's not immediately relevant to the Part 1 JSON payload. There's also some auction-specific information: the auction number is \"srsumm10084,\" and the auction date is \"Friday, 21 November 2025.\" This auction number might be useful for sales order number, though.\n\nThe invoice title is \"INVOICE\", and no paid stamp is visible, so I'll set 'hasPaidStamp' to `false` and invoice status to 'unknown'. The category seems appropriate, as it is an auction with collectables, I'll go with 'Sales'.\n\nNow I'm mentally mapping the identified data to the schema. \"GBP\" for the currency, the document number, title and issue date, \"2025-11-23\", I'll create `issueDateISO`. \"srsumm10084\" will be the sales order number. \"EL30175\" customer number. I'll set dueDate fields to `null` since those are not specified. The invoice status is 'unknown' since no indication of status. `hasPaidStamp` defaults to `false`.\n\nBefore I output the JSON, I'll review again: ensure the correct syntax, double-quoted strings, no comments, no control tokens, everything aligned to Part 1 schema. Double-check the date formats.\n\nOnce I'm satisfied that everything is mapped and formatted correctly, I'll produce the JSON.\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": \"100244/srsumm10084\",\n    \"documentTitle\": \"INVOICE\",\n    \"issueDate\": \"23 November 2025\",\n    \"issueDateISO\": \"2025-11-23\",\n    \"issueTime\": null,\n    \"issueTimeISO\": null,\n    \"dueDate\": null,\n    \"dueDateISO\": null,\n    \"purchaseOrderNumber\": null,\n    \"salesOrderNumber\": \"srsumm10084\",\n    \"customerNumber\": \"EL30175\",\n    \"paymentTerms\": null,\n    \"customerMemo\": null,\n    \"category\": \"Sales\"\n  },\n  \"invoiceStatus\": \"unknown\",\n  \"hasPaidStamp\": false\n}\n```\nOkay, that should be correct.\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1426,
+        "total_tokens": 3537,
+        "thoughts": "**Extracting Participant Data from the Invoice Image**\n\nOkay, so I need to translate this invoice information into a specific JSON format, particularly focusing on \"Part 2: All participants involved in the transaction\".  I've got the data from the image: Summersgills Auctioneers is the seller and Mr. Neil Raine is the buyer.\n\nFirst, let's nail down the `parties` section. I'll need to extract and structure the information for the seller and buyer, following the defined schema.\n\nFor the **seller** (\"Summersgills Auctioneers\"):\n*   `name`: \"Summersgills Auctioneers\" is straightforward.\n*   `addressStructured`:  I'll break this down. It lists \"Roxby Business Park,\" \"York Road,\" \"Easingwold,\" \"North Yorkshire,\" \"YO61 3FS,\" and \"United Kingdom.\"  I'll map those appropriately to `building`, `street_name`, `city`, `state`, `postal_code`, and `country` respectively.\n*   `phone`: \"01347 821379\".\n*   `email`: \"info@summersgills.com\".\n*   `taxRegistrationNumber`: \"196138480\"\n\nFor the **buyer** (\"Mr. Neil Raine\"):\n*   `name`: \"Mr Neil Raine\"\n*   `addressStructured`: This is where I have to be careful. The invoice has \"8 the avenue,\" \"Consett,\" \"Durham,\" \"GB,\" and \"DH8 6NR\". I need to identify which is what. I will separate \"8\" (street number) and \"the avenue\" (street name), \"Consett\" (city), \"Durham\" (state) \"GB\" (country) and \"DH8 6NR\" (Postal Code)\n*   `email`: \"neil_raine_antiques@yahoo.co.uk\".\n\nI need to confirm the definitions of \"buyer\" and \"customer.\" According to the schema, \"buyer\" is explicitly labeled as the buyer, which this invoice has using \"Buyer Number\". And because the invoice labels the buyer as such, I can safely use the `buyer` field in my JSON output.\n\nI also need to populate the null fields, and make sure that `billTo`, `customer`, `shipTo`, and `shipFrom` are all null, as well as `shippingInfo`, which has `carrier`, `deliveryDate`, `deliveryDateISO` and `trackingNumber`.\n\nBased on the address layout, I'm confident about the street number and street name, the city, state, postal code, and country for the buyer. And the same for the seller. All set.\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 7397,
+        "total_tokens": 9508,
+        "thoughts": "**Invoice Extraction Process: A Detailed Walkthrough**\n\nOkay, so I'm being asked to transform information from this invoice image into a JSON structure, according to this specific schema. It seems straightforward, but I need to be precise. The core task is to populate the `lineItems` array and determine the `isOverflowPage` boolean.\n\nFirst, I examined the structure. The core of the extraction will be creating 12 line items, each representing a \"lot\" from the auction. The important fields for each item are `description`, `itemCode`, `quantity`, `unitPrice`, `lineTaxAmount`, and `remarks`, and a few more. The challenge will be accurately mapping the invoice data to the schema's elements. I also need to make sure I'm not calculating any values.\n\nI began by systematically going through each row, dissecting it into its components. For each row, I am pulling `description` directly. The `itemCode` is the \"Lot No\". The `unitPrice` will be the \"Hammer\" price, the value listed as the \"price\". The `lineTaxAmount` is \"VAT on Hammer\". The \"Buyer's Premium\" and \"VAT on Buyer's Premium\" values are assigned to a new column. Since there aren't specific fields for them, I will put these into the `remarks` section because there is no other column to put these values.\n\nI noticed that \"VAT: M-\" appears in the invoice. I decided to include this in my mapping. I'll add \"VAT Code: M-\" to remarks.\n\nThe schema includes `quantity`. Based on the invoice structure, I will set `quantity` to null, because the invoice presents each row as a single lot.\n\nAlso, I checked `isOverflowPage`. The document clearly states \"Page 1 of 3\", and the page has a header. This indicates the page is not an overflow. It's the first page, so I'll set it to `false`.\n\nFor each item, I'll organize my thoughts to map the correct values to each field, while ensuring I don't calculate or derive any values. The schema needs the `originalValue` and `normalizedValue` for monetary amounts, so I have to remember that.\n\nMy mental checklist included: ensuring all data is accurate, following the schema precisely, handling missing values as null, and not calculating anything not explicitly provided.\nI now have a clear understanding of what I need to do.\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 3098,
+        "total_tokens": 5209,
+        "thoughts": "**Invoice Data Extraction - Part 4 Summary**\n\nOkay, here's the deal. The user wants me to pull financial data from an invoice image and format it as JSON, specifically focusing on the schema for Part 4: financial totals, tax breakdowns, and payments. My initial scan of this document says that this is Page 1 of 3, meaning the final totals are almost certainly on the later pages, not this one.  The instructions state, \"Extract ALL visible information... structure the data according to the provided JSON schema\", but the schema is very specific to Part 4.\n\nFirst, I examined the image for a \"Totals\" block. Since this is page 1, there are no grand totals on this particular page, which means that the `totals` should be null. The prompt specifically says \"do not calculate, derive, or round,\" so I won't be doing any summing or deriving anything from the tables on this page.  I noted the schema's fields:  `subtotal`, `totalExcludingTax`, `totalIncludingTax`, and `taxTotal`.  Since none are on this page, I will return null for them.\n\nSecond, I looked at the tax breakdowns. The schema includes an array for `taxes`. While there are \"VAT on Hammer\" and \"VAT on Buyer's Premium\" columns, the taxes are listed *per item*, not as a summary on this specific page. There is no tax breakdown or summary on this page. So, for the same reason as before, I have to return null, based on the schema and instructions.\n\nThird, the schema contains a `applyTaxAfterDiscount` boolean field. Since there are no discounts, I am returning null.\n\nI then did a full review of the document, the instructions, and my logic. No fields are shown, so all will be null.\n\nAnd, finally, because the task is specifically \"Part 4: Financial Totals, Tax Breakdowns and Payments,\" and since the image provided is Page 1 of 3, and I found no relevant data on Page 1, I must return the valid JSON, based on the specified schema.\n\nSo, here is the result:\n\n```json\n{\n  \"totals\": null,\n  \"taxes\": null,\n  \"applyTaxAfterDiscount\": null\n}\n```\n\n\n"
+      }
+    ]
+  }
+}

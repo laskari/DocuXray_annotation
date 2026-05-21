@@ -1,0 +1,351 @@
+{
+  "document_id": "Expenses_Reciepts_52_New_Rd_2025_page_186",
+  "file": "Expenses_Reciepts_52_New_Rd_2025_page_186.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": null,
+      "documentTitle": "Missing reciept",
+      "issueDate": null,
+      "issueDateISO": null,
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": "Missing reciept Elliotts \u00a347.88",
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "Elliotts",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Missing reciept Elliotts",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "47.88",
+          "normalizedValue": 47.88
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a347.88",
+        "normalizedValue": 47.88
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 4660,
+    "latency_ms": 21864,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.01398,
+      "total_cost": 0.018202,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1083,
+        "total_tokens": 3194,
+        "thoughts": "**My Analysis of the Receipt Image Data**\n\nOkay, here's the breakdown. The user has given me an image that's acting as a placeholder for a missing receipt.  Inside a red box, I see the text: \"Missing reciept Elliotts \u00a347.88\". My primary task is to extract all the relevant data and map it to the provided schema.\n\nFirst, I need to parse what's there. The currency is clearly GBP, indicated by the \"\u00a3\" symbol. The document itself is labeled \"Missing reciept\". The text also includes \"Elliotts\" which is the seller and the amount is \u00a347.88. I'm going to start by analyzing the available schema properties which are `currency`, `invoiceInfo`, `invoiceStatus`, and `hasPaidStamp`.\n\nI'm initially tempted to consider \"Elliotts\" as a seller and \u00a347.88 as the total, and map the text to `totals` in the schema. But then I noticed that the prompt specifically says \"Extract ALL available data from the provided document image\".\n\nA deeper review of the schema description reveals that it contains fields that are not included in the schema block provided by the user. I must adhere to the provided schema *context*, not the larger system prompt which may have other fields.\n\nGiven that, I'm going to map the information I have onto the context schema. I can infer a currency, so `currency` will be \"GBP.\" The invoice information, I'll take a look at `invoiceInfo`. The document title will be \"Missing reciept\". I need a way to store the seller and the amount. It seems like the best place is `customerMemo` for the full text \"Missing reciept Elliotts \u00a347.88\". For `category`, I will choose \"Other\". The `invoiceStatus` is unclear, so I'll set it to \"unknown.\" Finally, it doesn't appear the receipt has a paid stamp, so `hasPaidStamp` will be false.\n\nI will stick to only the fields in the schema given as context.\n\nMy final mapping looks like this:\n\n-   `currency`: \"GBP\"\n-   `invoiceInfo`: { \"documentTitle\": \"Missing reciept\", \"customerMemo\": \"Missing reciept Elliotts \u00a347.88\", \"category\": \"Other\"}\n-   `invoiceStatus`: \"unknown\"\n-   `hasPaidStamp`: false\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 888,
+        "total_tokens": 2999,
+        "thoughts": "**Analyzing the Receipt Placeholder**\n\nOkay, here's the deal. I've got this image, and it's basically a placeholder for a missing receipt, but it still has some useful information. It's got the text \"Missing reciept Elliotts \u00a347.88\" inside a red box. My goal is to extract the relevant data and structure it according to a specific JSON schema, but I need to make sure I don't go beyond the bounds of what's provided.\n\nFirst, I need to analyze this image. \"Elliotts\" looks like the seller, \"\u00a347.88\" is the total amount, and \"Missing reciept\" is just a status. The instructions clearly state that the document type is an \"invoice\", so this is a placeholder for an invoice.\n\nThe schema I'm provided focuses on \"Part 2: All participants involved in the transaction,\" specifically the `parties` and `shippingInfo` fields. This is important to note since the original prompt refers to `totals`, but that information is outside the scope of *this* schema. I need to make sure I *only* extract according to this schema.\n\nBased on that, I can map the image data to the schema:\n\n*   For the `parties` field:\n    *   `seller.name`: \"Elliotts\" \u2013 that's the only direct match I've got here. I'll need to leave the rest as `null` since the image doesn't provide it.\n    *   `buyer`, `billTo`, `customer`, `shipTo`, and `shipFrom` will all be `null` since there's no information about them in the image.\n*   For `shippingInfo`, there's no information in the image, so I'll set that to `null` as well.\n\nI should also note that the image says \"Missing Receipt\", which might imply an error state, but it doesn't give me any other data points I can extract, or modify in the schema.\n\nThe final step is to make sure the JSON I output is valid and follows the rules: No comments, no control tokens, and only a single object since I'm only asked for one JSON. The final JSON is only Part 2 of the larger set.\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 973,
+        "total_tokens": 3084,
+        "thoughts": "**Analyzing the Invoice Image for Data Extraction**\n\nOkay, so I've got this invoice image, which has been classified as an \"Invoice\" type \u2013 good start. The task is to extract information into a JSON format based on a specific schema. The image contains a small red box with text that says, \"Missing reciept Elliotts \u00a347.88\". This is clearly a placeholder or note, not a typical invoice line item. My focus is on the `lineItems` and `isOverflowPage` elements of the schema.\n\nInitially, I considered trying to extract the vendor (\"Elliotts\") and the amount (\"\u00a347.88\") and parse it as a line item but quickly realised the best way would be as a note. Therefore I decided to create a single entry that represents the total information on the image. The description will be \"Missing reciept Elliotts,\" the lineTotalIncludingTax is 47.88 and there is quantity of 1.\n\nI considered whether this constitutes an overflow page but quickly determined that it is simply a note, so `isOverflowPage` is `false`.\n\nNow to translate this into the required JSON structure. Let's make sure I hit the requirements for the line items array. I'll need to define each key, including the ones that are null. I've re-examined the image and I'll include the vendor (\"Elliotts\") into the description.\n\nAfter reviewing the specific requirements of the schema I've ensured that numerical values must include an original value and a normalised value. I'm now certain this captures the essence of the information and conforms to the structure expected for the invoice. My final JSON should be valid and concise.\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1716,
+        "total_tokens": 3827,
+        "thoughts": "**My Thought Process on Extracting Data from the Invoice Image**\n\nOkay, the user wants me to pull information from an image of a document and structure it as JSON, classifying it as an **invoice**.  The key bit of text I have to work with is \"Missing reciept Elliotts \u00a347.88\". This sounds like a note about a missing receipt from \"Elliotts\" for \u00a347.88. I'm provided with a specific schema snippet, labeled \"Part 4: Financial totals, tax breakdowns, and payments.\" This is the bit I *must* adhere to, even though the user mentions a broader invoice schema.\n\nThe schema's `totals` object is what I need to focus on. Based on the text, \u00a347.88 seems to be a total including tax. I need to map this to `totalIncludingTax`, its `originalValue` will be \"\u00a347.88\", and the `normalizedValue` will be 47.88.\n\nInitially, I looked at a simpler structure, but the prompt's instructions are clear: structure the data *according* to the provided JSON schema. I was presented with just part of an invoice schema, with the fields `totals`, `taxes`, and `applyTaxAfterDiscount`. I will make sure everything conforms to that schema, even if that means populating values with `null` when I don't have the information.\n\nI need to make sure I'm following the explicit instructions: the schema defines the structure. It *doesn't* include \"seller\" or other fields outside this segment, which is unfortunate, but it dictates what I need to generate.\n\nSo, I constructed the JSON structure based on the provided schema, with all fields, even those I don't have information for, populated with `null`. The values I do have get correctly filled into the `totals.totalIncludingTax` object.  I'm being careful to use double quotes for string values, and `normalizedValue` is a number, not a string.\n\nThen, there were more instructions: the JSON must be a valid, parseable JSON and nothing more. No comments, no control tokens, etc. Also, any textual data *not* captured by specific keys \"MUST\" be preserved in \"additionalInfo\", but wait, additionalInfo is *not* in the provided schema. I need to strictly follow that. I will populate the schema segment, following all the instructions, by inserting the values according to the document.\n\nSo, to reiterate, based on the image and schema:\n- The total is \u00a347.88.\n- \"Elliotts\" is the seller.\n- \"Missing reciept\" is additional context.\n\nThe final JSON output will be:\n\n```json\n{\"totals\":{\"discountTotal\":null,\"discountPercentage\":null,\"subtotal\":null,\"totalExcludingTax\":null,\"shippingAmount\":null,\"freightCharges\":null,\"insuranceAmount\":null,\"handlingFees\":null,\"surchargeAmount\":null,\"otherCharges\":null,\"taxableAmount\":null,\"taxTotal\":null,\"withholdingTax\":null,\"totalIncludingTax\":{\"originalValue\":\"\u00a347.88\",\"normalizedValue\":47.88},\"roundingAdjustment\":null,\"deposit\":null,\"amountPaid\":null,\"creditApplied\":null,\"returnAmount\":null,\"tipAmount\":null,\"balanceDue\":null,\"exchangeRate\":null},\"taxes\":null,\"applyTaxAfterDiscount\":null}\n```\n\n\n"
+      }
+    ]
+  }
+}

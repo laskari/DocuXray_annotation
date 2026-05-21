@@ -1,0 +1,75 @@
+{
+  "document_id": "H063_INVOICES3_page_75",
+  "file": "H063_INVOICES3_page_75.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 2,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.addressStructured.street_number",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced? No. 2. Does the SAME extracted value appear verbatim in ANOTHER field? No. 3. Is a SINGLE field's value taken from a completely unrelated area/label? Yes, 'Equity House' is the name of a building, not a street number.",
+          "issue_type": "wrong_context",
+          "description": "'Equity House' is incorrectly classified as a street number; it is a building name.",
+          "extracted_value": "Equity House",
+          "corrected_value": null,
+          "expected_context": "The value 'Equity House' is a building name, so the street number field should be empty.",
+          "correction_reasoning": "Street numbers are numeric. 'Equity House' clearly refers to the building of the registered office and should not be in the street number field.",
+          "visual_evidence": "Located in the top-left of the document, just after 'Registered Office:'."
+        },
+        {
+          "field": "seller.addressStructured.building",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced? No. 2. Does the SAME extracted value appear verbatim in ANOTHER field? No. 3. Is a SINGLE field's value taken from a completely unrelated area/label? No. 4. Do two similar fields exist? No. 5. Is the extracted value completely fabricated? No. 6. Is the field null/empty but the value IS clearly visible in the document? Yes.",
+          "issue_type": "missing_value",
+          "description": "The building name 'Equity House' was not extracted into the building field.",
+          "extracted_value": null,
+          "corrected_value": "Equity House",
+          "expected_context": "Building name part of the address.",
+          "correction_reasoning": "'Equity House' is the first component of the Registered Office address and represents the building name.",
+          "visual_evidence": "Located in the top-left of the document, just after 'Registered Office:'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 25077,
+      "output": 7329,
+      "total": 32406
+    },
+    "cost": {
+      "input_tokens": 25077,
+      "output_tokens": 7329,
+      "input_cost": 0.050154,
+      "output_cost": 0.087948,
+      "total_cost": 0.138102
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Invoice Data**\n\nI'm currently focused on verifying the invoice information fields within the target section. Specifically, I'm examining `documentNumber`, `documentTitle`, `issueDate`, and other related date and time fields. My goal is to ensure their accuracy and consistency.\n\n\n**Analyzing Field Extraction Accuracy**\n\nI've just compared extracted data against the invoice image, focusing on several fields: `documentNumber`, `documentTitle`, `issueDate`, and related date and time information. I verified that all extracted data, including dates, ISO formats, and missing fields (null), are accurately represented based on the invoice image, with the exception of the field `documentTitle`, which has to be implicit from other information.\n\n\n**Refining Category Classification**\n\nI've been reviewing the category classification, and while it extracted \"Other,\" I think \"Food\" is a much better fit given the line items like \"Red Bull,\" \"Milk,\" and \"Beans.\" The schema confirms \"Food\" is a valid category for these groceries. I'm now debating the correct issue type for this misclassification, considering options like `wrong_context` or `value_not_present` to accurately represent this classification challenge.\n\n\n**Revising Category Classification**\n\nI'm now zeroing in on the category classification issue, and after careful re-evaluation and consideration of the examples provided, I will be classifying the invoice as 'wrong_context' given the discrepancy between the extracted category \"Other\" and the more accurate \"Food\" that can be inferred from the itemized groceries, such as \"Red Bull,\" \"Milk,\" and \"Beans,\" as indicated by my prompt. I am considering these rules explicitly.\n\n\n",
+      "parties": "**Verifying Extracted Entities**\n\nI'm currently validating the 'parties' data from the JSON output. Specifically, I've confirmed the \"BOOKER\" seller name, extracted and verified from the top-left section of the document. The structured address, \"Equity House, Irthlingborough Road, Road, Wellingborough, Northants, NN8 1LT\", also matches the image data. Now, I will proceed to validate the other entities of this section.\n\n\n**Refining Address Validation**\n\nI've made progress on the address data. While \"Equity House\" being in the `street_number` field is inaccurate, the schema accepts `building` as null. I've re-examined the entities; the registration number, phone number, and tax number all check out. I've then verified the customer's name, address and phone data as well, and likewise the shipFrom address.\n\n\n**Adjusting Field Context**\n\nI'm now focusing on address field accuracy. I've pinpointed an issue with \"Equity House\" being assigned to `street_number` instead of the `building` field. I'm revising the schema to account for this. The registration number, \"197380\", is correct, and I'll adapt my logic to handle cases where the Alcohol Wholesale Registration No. isn't explicitly captured.\n\n\n**Defining Contextual Errors**\n\nI'm now refining the error categorization. Instead of using `null`, I'll mark the `street_number` field as `wrong_context` due to \"Equity House\" being a building name. For the `building` field, I'll flag it as `missing_value` as it should contain \"Equity House\". This will ensure better clarity and accuracy in my analysis. I'm focusing on defining rules to handle values extracted from unrelated labels.\n\n\n",
+      "lineItems": "**Verifying Data Extraction**\n\nI'm focused on verifying the `lineItems` section from the BOOKER invoice/receipt. I'm cross-referencing the extracted JSON data with the image to check the accuracy. For the first line item, CODE 968313 for Red Bull PACK looks accurate.\n\n\n**Validating More Line Items**\n\nI've continued scrutinizing the line items. The data extraction for \"Red Bull,\" \"Chefs Larder Butterific,\" and \"Fresh Semi Skimmed Milk\" all seem accurate. All extracted values for description, item code, quantity, unit of measure, unit price, and line total excluding tax match the image data. I'm moving on to validating the next item, \"CL Baked Beans.\"\n\n\n**Confirming Line Item Accuracy**\n\nI've verified the data extraction for \"CL Baked Beans\" from the BOOKER receipt, and the extracted values match. I've moved on to scrutinizing \"CL Hash Browns,\" \"Kit Kat 4 Finger,\" and \"CE U/Smk R/Less Back Bacon.\" The corresponding fields of description, item code, quantity, unit of measure, unit price, and line total, including VAT, all appear to be accurately extracted in each case.\n\n\n**Validating Item Extraction**\n\nI've examined the next few line items closely. The \"unitOfMeasure,\" \"unitPrice,\" and \"lineTotalExcludingTax\" for each entry appear correct for \"CL Gammon Joint.\" The \"CL Thick Pork Sausages,\" \"CL Large Eggs,\" and \"FF Closed Cup Mushrooms\" line items' extracted data aligns perfectly with the image. The values of description, item code, quantity, unit of measure, unit price, and line total, including VAT, are all correct.\n\n\n**Assessing Additional Items**\n\nI'm validating the next few line items now. I can confirm that the extraction is looking good: \"Large Mild Onions\", \"Jacks Red Onions\", \"40s Baking Potatoes\", and \"Jacks Iceberg Lettuce\" are all accurately extracted, and I'm ensuring everything matches the image data. The unit price, quantity, and line totals appear correct.\n\n\n**Continuing Item Validation**\n\nI've just confirmed the accurate extraction of data for \"Jacks Iceberg Lettuce\" and then moved on to examine \"Jacks Salad Tomatoes\" and \"Jacks Cucumbers.\" The corresponding attributes for all three, including quantity, and unit price are validated. Finally, I'm verifying \"CE 1Ply Luncheon Napkins\", now.\n\n\n",
+      "totals": "**Verifying the Target**\n\nI'm currently focused on verifying the 'totals' section of the JSON against the Booker receipt. My approach centers on ensuring accuracy. I'm actively developing the verification logic. My goal is to produce a JSON that rigorously adheres to the defined schema.\n\n\n",
+      "taxes": "**Initiating Tax Analysis**\n\nI'm starting the analysis of the tax information. The goal is to identify and extract relevant details from the 'taxes' section. Right now, I'm focused on the fields 'name', 'percentage', and 'amount', and I haven't identified any tax data yet, represented by an empty list. The initial task is to see if any taxes are present.\n\n\n",
+      "shippingInfo": "**Verifying the Shipping Information**\n\nI'm currently focused on the verification process. I'm prioritizing the `shippingInfo` section within the JSON output, comparing it with the document image to ensure it meets the user's requirements and adheres to the specified JSON schema.\n\n\n**Evaluating the Missing Data**\n\nI've been analyzing the extracted JSON structure, specifically the null values for shipping-related fields. I've now assessed these fields against the invoice document. The `carrier` remains null as it's an in-store transaction, not a delivery. The lack of a `deliveryDate` is also correct, as the invoice date corresponds to the purchase, not a delivery. I will continue this evaluation process.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 23200,
+    "cost": {
+      "input_tokens": 25077,
+      "output_tokens": 7329,
+      "input_cost": 0.050154,
+      "output_cost": 0.087948,
+      "total_cost": 0.138102
+    }
+  }
+}

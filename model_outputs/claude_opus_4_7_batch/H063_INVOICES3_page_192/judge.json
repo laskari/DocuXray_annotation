@@ -1,0 +1,26 @@
+{
+  "document_id": "H063_INVOICES3_page_192",
+  "file": "H063_INVOICES3_page_192.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 1.0,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 66534,
+      "output_tokens": 552
+    },
+    "cost": {
+      "input_cost": 0.16633499999999998,
+      "output_cost": 0.0069,
+      "total_cost": 0.17323499999999997,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

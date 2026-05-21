@@ -1,0 +1,451 @@
+{
+  "document_id": "Expenses_Reciepts_52_New_Rd_2025_page_150",
+  "file": "Expenses_Reciepts_52_New_Rd_2025_page_150.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "A23355257331",
+      "documentTitle": "Invoice",
+      "issueDate": "16/10/2025",
+      "issueDateISO": "2025-10-16",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": "N/A",
+      "salesOrderNumber": "1025A23355257331",
+      "customerNumber": "23798744536",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "Screwfix Direct Ltd",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "Mead",
+          "street_type": "Avenue",
+          "unit": null,
+          "building": "Trade House",
+          "district": null,
+          "city": "Yeovil",
+          "state": null,
+          "postal_code": "BA22 8RT",
+          "country": null
+        },
+        "registrationNumber": "3006378",
+        "phone": "03330 112 112",
+        "fax": null,
+        "email": "online@screwfix.com",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "232 5555 75"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "Mr IPT Property Ltd Petkov",
+        "addressStructured": {
+          "street_number": "18",
+          "street_name": "The Copse",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Tadley",
+          "state": "Hampshire",
+          "postal_code": "RG26 4HX",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Central Heating Radiator Plug and Vent Kit",
+        "itemCode": "40972",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "4.09",
+          "normalizedValue": 4.09
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "4.09",
+          "normalizedValue": 4.09
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "3.41",
+          "normalizedValue": 3.41
+        },
+        "discountAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "discountPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.68",
+          "normalizedValue": 0.68
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.0",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Sentinel X100 Inhibitor",
+        "itemCode": "79683",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "13.79",
+          "normalizedValue": 13.79
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "13.79",
+          "normalizedValue": 13.79
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "11.49",
+          "normalizedValue": 11.49
+        },
+        "discountAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "discountPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxAmount": {
+          "originalValue": "2.30",
+          "normalizedValue": 2.3
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.0",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Pennies Charity Donation - Thank You!",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "0.12",
+          "normalizedValue": 0.12
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "0.12",
+          "normalizedValue": 0.12
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.0",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.0",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": "0.00",
+        "normalizedValue": 0.0
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "17.88",
+        "normalizedValue": 17.88
+      },
+      "totalExcludingTax": {
+        "originalValue": "\u00a314.90",
+        "normalizedValue": 14.9
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": "0.12",
+        "normalizedValue": 0.12
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": "\u00a32.98",
+        "normalizedValue": 2.98
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a318.00",
+        "normalizedValue": 18.0
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": "\u00a318.00",
+        "normalizedValue": 18.0
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "VAT",
+        "percentage": {
+          "originalValue": "20.0",
+          "normalizedValue": 20.0
+        },
+        "amount": {
+          "originalValue": "\u00a32.98",
+          "normalizedValue": 2.98
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": "16/10/2025",
+      "deliveryDateISO": "2025-10-16",
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 11652,
+    "latency_ms": 35363,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.034956,
+      "total_cost": 0.039178000000000004,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2950,
+        "total_tokens": 5061,
+        "thoughts": "**Invoice Data Extraction - A Refined Approach**\n\nOkay, here's how I'm approaching this invoice data extraction, step-by-step. The user wants me to pull information from an image and structure it as a JSON object, based on a provided schema. It looks like the user is an expert. Let's see...\n\nFirst, I see the instruction is for *Part 1* of a schema. Hmm, this is the first thing I need to confirm: Am I only expected to output data based on *Part 1*, or the entirety of the schema? Since the prompt provides a Part 1 schema in the context block, but also includes instructions regarding \"KEY SECTIONS\" like line items and totals, there might be other sections, but I *must* stick to what is in the provided context block of Part 1. The instruction also said \"When producing JSON you must follow the schema provided in the context.\" So I will strictly stick to Part 1. I'll focus on these fields: `currency`, `invoiceInfo`, `invoiceStatus`, and `hasPaidStamp`.\n\nI then went about looking at the invoice itself. Based on the presence of the \"\u00a3\" symbol, the `currency` is clearly \"GBP\". The document number is \"A23355257331\", which I will put in `documentNumber`, and the document title is \"Invoice\". The tax point date, \"16/10/2025,\" is the issue date, so I'll create `issueDate` and `issueDateISO`. The customer number is \"23798744536\". The \"Your Reference\" field is \"N/A\" - I'll represent that as \"N/A\" in `purchaseOrderNumber`. The category is tricky because of the enum of the provided schema, and I'll consider if items on the invoice such as \"Central Heating Radiator Plug and Vent Kit\" and \"Sentinel X100 Inhibitor\" fit. They relate to home maintenance, so I'll pick \"Other\". The document shows \"Credit Card: ****6056\" and \"Total Paid: \u00a318.00,\" indicating the `invoiceStatus` is \"paid.\" I also see no paid stamp, so `hasPaidStamp` will be `false`.\n\nNow I need to refine further based on the Part 1 schema. Looking at the invoice, \"Order Date\" and \"Tax Point Date\" are the same, 16/10/2025. This means \"16/10/2025\" in both `issueDate` and in `issueDateISO` as \"2025-10-16\". \"Your Reference\" is \"N/A,\" I'll put it in `purchaseOrderNumber`. I'll consider the category again. Given the choices, \"Other\" is definitely the most appropriate choice.\n\nI had to decide whether to output a `salesOrderNumber`. Although, \"Our Reference: 1025A23355257331\" looked like an internal reference, I would only include it if it's within Part 1. It is not, so I will ignore it.\n\nI'm keeping in mind that I have to strictly follow the schema provided. I need to make sure I am not hallucinating any information, and if something is missing, it should be null as per the instructions.\n\nI will also make sure the key-value pairs are consistent with the \"Part 1\" schema, filling in all possible fields in `invoiceInfo`. Since the schema specifies that the `category` is an enum, I'll review and be sure to select the correct enum value. Because the schema specifies \"Office Supplies\" or \"IT & Tech\" or \"Telecom and Internet\", I will choose \"Other\".\n\nSo, I will generate the final JSON data that strictly follows the Part 1 Schema provided, using the values that I extracted, setting all null values as per the instruction.\n\nFinal JSON:\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": \"A23355257331\",\n    \"documentTitle\": \"Invoice\",\n    \"issueDate\": \"16/10/2025\",\n    \"issueDateISO\": \"2025-10-16\",\n    \"issueTime\": null,\n    \"issueTimeISO\": null,\n    \"dueDate\": null,\n    \"dueDateISO\": null,\n    \"purchaseOrderNumber\": \"N/A\",\n    \"salesOrderNumber\": null,\n    \"customerNumber\": \"23798744536\",\n    \"paymentTerms\":\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 5690,
+        "total_tokens": 7801,
+        "thoughts": "**Invoice Data Extraction: Deep Dive**\n\nOkay, here's the breakdown of my thought process for this data extraction. My goal is to extract information from this invoice image, focusing specifically on the `parties` and `shippingInfo` sections, sticking rigidly to the provided JSON schema. I'm operating under the assumption that the context provided *is* the complete schema, even though it's a subset of an overall invoice structure. I'll adhere to it strictly, not venturing outside of those boundaries. And I need to be *sure* this JSON is valid and parseable on a single line with no extra characters.\n\nFirst, I identified the crucial sections: `parties` and `shippingInfo`.  I started by parsing the seller information: \"SCREWFIX\" (really Screwfix Direct Ltd), including the name, address, registration number, VAT number, phone, and website. I then extracted the customer information. The invoice uses the label \"Customer:\", which, according to the schema description for `customer`, indicates a non-formal buyer/seller relationship, mutually exclusive with the `buyer` and `billTo` fields. No formal \"Bill To\" or \"Sold To\" labels appear, and since no formal buyer/seller roles are specified, the presence of the \"Customer:\" label prompts me to use `customer`.\n\nI then meticulously structured the address information, separating out components like street number, street name, city, state, and postal code for both the seller and the customer. The customer's address is 18 The Copse, Tadley, Hampshire, RG26 4HX. The seller address is Trade House, Mead Avenue, Yeovil, BA22 8RT. I\u2019ve refined the address components to fit the schema, using `street_number`, `street_name`, and `building` where appropriate, along with `city`, `state`, and `postal_code`.\n\nI focused on the `shippingInfo` section. The image uses \"Tax Point Date\" and \"Order Date\". The schema indicates that the \"Tax Point Date\" (or sometimes \"Order Date\") is often used for `deliveryDate`, as they tend to match the supply date. The delivery date is 16/10/2025. I also need to provide the delivery date in ISO format which I did as \"2025-10-16\". There's no carrier or tracking number explicitly mentioned, so I will fill these as `null`.\n\nI then made a critical check. Even though the prompt might refer to a broader invoice structure, the *provided* context defines the available schema. I will *only* populate the fields defined within the schema. I'll omit information such as the invoice number as it is not in the provided schema. The prompts say to extract *all* available data; however, the context provided is a truncated schema. So, I will only output properties included in that context.\n\nI then did a final review. I have now included the email address (online@screwfix.com), and made sure that `buyer`, `billTo`, `shipTo`, and `shipFrom` are `null` as the roles are not relevant, and as the schema says they are mutually exclusive with the `customer` role. I also double-checked that there are no unnecessary nulls when they're not needed. I'm adding `null` for fields that exist according to the JSON format. The customer name is \"Mr IPT Property Ltd Petkov\", the seller phone number is 03330 112 112, etc. I double checked the \"Tax Point Date\" is the `deliveryDate`.\n\nThen I made sure to adhere to the restrictions. \"Do not generate any control token (such as \\n and \\t) at any places.\" - This means I have to produce JSON on a single line. The JSON has to be valid JSON. I made the JSON. Then I double-checked the values again: customer, seller. Then I formatted the addresses according to the schema.\nI carefully reviewed and double-checked the schema again. I verified that all relevant fields were included within the `parties` and `shippingInfo` sections and all the data types (strings, numbers, nulls) are correct. All the field names are present.\n\nI will now generate the JSON.\n```json\n{\"parties\":{\"seller\":{\"name\":\"Screwfix Direct Ltd\",\"addressStructured\":{\"street_number\":null,\"street_name\":\"Mead\",\"street_type\":\"Avenue\",\"unit\":null,\"building\":\"Trade House\",\"district\":null,\"city\":\"Yeovil\",\"state\":null,\"postal_code\":\"BA22 8RT\",\"country\":null},\"registrationNumber\":\"3006378\",\"phone\":\"03330 112 112\",\"fax\":null,\"email\":\"online@screwfix.com\",\"\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 597,
+        "total_tokens": 2708,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2415,
+        "total_tokens": 4526,
+        "thoughts": "**Invoice Data Extraction and JSON Mapping**\n\nOkay, let's break this down. My primary task here is to extract key financial data points from this invoice image and represent them in a structured JSON format. I need to be precise, ensuring that the extracted data accurately reflects the invoice details while adhering strictly to the provided JSON schema.\n\nFirst, I'm identifying the core financial elements: the subtotal, discounts, total excluding tax (net), tax total (VAT), other charges (like the charity donation here), the total including tax (gross), and the amount paid. I'm noting the explicit values provided in the invoice image alongside their corresponding labels. I am also making sure to take the \"Total Paid\" amount into consideration.\n\nThere's some nuance here with how these terms are defined. \"Subtotal\" in this invoice appears to be the sum before tax, but on this invoice, the \"Sub total\" row has the Gross value. This would be unusual, so I will ensure my mapping is accurate. The \"Net\" and \"Gross\" values are clear in their meaning: the former excludes tax, and the latter includes it. I am parsing \"Net\" to \"totalExcludingTax\" because the final \"Net\" value doesn't include the charity donation. There is a charity donation, which has 0% VAT.\n\nThe VAT breakdown is also straightforward: 20% applied to an amount, resulting in a specific tax total. There is a `Pennies Charity Donation` listed separately, and this is treated as an \"Other charge\".\n\nNow, I'm mapping these extracted values to the JSON schema. I need to consider both `originalValue` (the text string from the invoice) and `normalizedValue` (the numeric representation). The schema also has `taxes` and `applyTaxAfterDiscount` fields which I need to extract correctly.\n\nI'm making a point to confirm that the numbers make sense, i.e., adding the VAT amount to the net amount gives the gross. This confirms my calculations. The schema dictates the structure, so I'm aligning each extracted value (subtotal, net, tax, charity donation, total paid) to their respective keys within the \"totals\" object. I am checking the `taxes` array to include the VAT details, `name`, `percentage`, and `amount`. The `applyTaxAfterDiscount` is `null` because no discount was explicitly applied.\n\nFinally, I'm constructing the final JSON output. I'm triple-checking the structure and data types for accuracy and completeness. I am making sure the output is valid and parseable. The goal is a clean, compliant JSON representation of the invoice data.\n\n\n"
+      }
+    ]
+  }
+}

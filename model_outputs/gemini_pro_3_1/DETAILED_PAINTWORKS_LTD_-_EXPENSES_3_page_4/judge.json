@@ -1,0 +1,131 @@
+{
+  "document_id": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4",
+  "file": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 6,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "parties",
+      "lineItems",
+      "totals"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "customerNumber",
+          "row_index": null,
+          "reasoning": "1. Are multiple fields shifted? No.\n2. Is the value duplicated? No.\n3. Is it from an unrelated area? No, it belongs to the buyer.\n4. Are there multiple candidates? No.\n5. Is it fabricated? No.\n6. Is it missing? No.\n7. Is it a format error? No.\n8. Are there small character-level typos? Yes, the username 'wrightygtt' was incorrectly extracted as 'wrightyglt' (substitution of 't' with 'l').",
+          "issue_type": "character_value_mismatch",
+          "description": "The customer number/username has a character typo ('l' instead of 't').",
+          "extracted_value": "wrightyglt",
+          "corrected_value": "wrightygtt",
+          "expected_context": "Buyer username under 'Order information'",
+          "correction_reasoning": "The document clearly shows 'wrightygtt' with two 't's at the end. The extraction misread the first 't' as an 'l'.",
+          "visual_evidence": "Located in the top left section under the 'Order information' heading, next to the label 'Buyer'."
+        },
+        {
+          "field": "paymentTerms",
+          "row_index": null,
+          "reasoning": "1. Are multiple fields shifted? No.\n2. Is the value duplicated? No.\n3. Is it from an unrelated area/label? Yes, 'Credit card' is a payment method, not payment terms (which typically indicate when payment is due, such as 'Net 30').",
+          "issue_type": "wrong_context",
+          "description": "A payment method was extracted as payment terms.",
+          "extracted_value": "Credit card",
+          "corrected_value": null,
+          "expected_context": "The document does not explicitly state payment terms.",
+          "correction_reasoning": "The field 'paymentTerms' expects terms like 'Net 30' or 'Due on receipt'. 'Credit card' represents the payment method, which is distinct. Since no actual payment terms are specified, the field should be null.",
+          "visual_evidence": "Located in the 'Order information' section, next to the label 'Payment method'."
+        }
+      ],
+      "parties": [
+        {
+          "field": "buyer.name",
+          "row_index": null,
+          "reasoning": "1. Not structural. 2. Not duplication. 3. Not wrong context. 4. Not multiple candidates. 5. Not value not present. 6. Not missing value. 7. Not format. 8. The extracted text has a character mismatch; 'wrightyglt' was extracted, but 'wrightygtt' is visible in the document ('l' instead of 't').",
+          "issue_type": "character_value_mismatch",
+          "description": "Small character typo in the buyer's name.",
+          "extracted_value": "wrightyglt",
+          "corrected_value": "wrightygtt",
+          "expected_context": "Buyer: wrightygtt",
+          "correction_reasoning": "The document clearly displays 'wrightygtt' next to 'Buyer' in the 'Order information' section.",
+          "visual_evidence": "Top left of the document, in the 'Order information' section, under the 'Buyer' label."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineTotalIncludingTax",
+          "row_index": 0,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? No.\n2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No.\n3. Is a SINGLE field's value taken from a completely unrelated area/label of the document? No.\n4. Do two similar fields exist in the document and the wrong one was chosen? No.\n5. Is the extracted value completely fabricated and NOT visible anywhere in the document? No.\n6. Is the field null/empty but the value IS clearly visible in the document? Yes. The lineTotalIncludingTax is missing but the value '\u00a313.99' under 'Item price' column is present.",
+          "issue_type": "missing_value",
+          "description": "The line total including tax is missing.",
+          "extracted_value": "null",
+          "corrected_value": "{\"originalValue\": \"\u00a313.99\", \"normalizedValue\": 13.99}",
+          "expected_context": "Item price column, row 1",
+          "correction_reasoning": "The item price is listed as \u00a313.99 for the single item.",
+          "visual_evidence": "Under 'Item price' column, next to the delivery service details."
+        },
+        {
+          "field": "unitPrice",
+          "row_index": 0,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? No.\n2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No.\n3. Is a SINGLE field's value taken from a completely unrelated area/label of the document? No.\n4. Do two similar fields exist in the document and the wrong one was chosen? No.\n5. Is the extracted value completely fabricated and NOT visible anywhere in the document? No.\n6. Is the field null/empty but the value IS clearly visible in the document? No.\n7. Is the correct value present but in a different format? No.\n8. Does the text value have small character-level typos? No.\n9. Does the numeric value have small digit-level typos? No.\nThe value extracted for unitPrice is \u00a313.99. However, the label 'Item price' represents the line total. Since there's no distinct unit price column, it's safer to extract it as line total. The unit price should be null or derived.",
+          "issue_type": "wrong_context",
+          "description": "The unit price was populated using the Item price (line total) column. There is no dedicated unit price column.",
+          "extracted_value": "{\"originalValue\": \"\u00a313.99\", \"normalizedValue\": 13.99}",
+          "corrected_value": "null",
+          "expected_context": "Item price column represents line total.",
+          "correction_reasoning": "The 'Item price' column shows \u00a313.99 which corresponds to the line total. There is no explicit unit price column.",
+          "visual_evidence": "Rightmost column under 'Item price'."
+        }
+      ],
+      "totals": [
+        {
+          "field": "shippingAmount.originalValue",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields displaced? No. 2. Is the SAME extracted value duplicated? No. 3. Is a SINGLE field's value taken from unrelated area? No. 4. Wrong candidate? No. 5. Value fabricated? No. 6. Is the field null/empty but the value IS clearly visible in the document? Yes, the postage is listed as 'Free'.",
+          "issue_type": "missing_value",
+          "description": "The shipping/postage amount is stated as 'Free' on the document but was not extracted.",
+          "extracted_value": null,
+          "corrected_value": "Free",
+          "expected_context": "Postage Free",
+          "correction_reasoning": "The document explicitly shows a 'Postage' line item with the value 'Free' in the order total section. This should be captured as the original shipping amount.",
+          "visual_evidence": "Top right quadrant, in the 'Order total' section, immediately to the right of the word 'Postage'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19295,
+      "output": 5631,
+      "total": 24926
+    },
+    "cost": {
+      "input_tokens": 19295,
+      "output_tokens": 5631,
+      "input_cost": 0.03859,
+      "output_cost": 0.067572,
+      "total_cost": 0.10616199999999999
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying the Task**\n\nI'm now zeroing in on the core task: validating the JSON data specifically against the 'invoiceInfo' section from an eBay order receipt image. The initial stages are focusing on precisely identifying the input and the desired JSON output that flags any discrepancies, or an empty list if it's all good.\n\n\n**Defining the Verification Criteria**\n\nI'm now establishing rigid rules for verification. This includes setting specific issue types and priority, focusing on extracting exact values from the image data. I'm also considering the \"invoiceInfo\" schema. I'm focusing on discrepancies or confirming data integrity for any output JSON.\n\n\n**Analyzing Document Fields**\n\nI'm now focusing on specific fields within the image data, cross-referencing them with potential JSON outputs. I am verifying the \"documentNumber\" based on \"Order number\". I have decided that \"documentTitle\" should be null due to context. I am also planning to determine the \"issueDate\".\n\n\n**Examining Specific Values**\n\nI'm now diving into specific values and performing in-depth validations. For `issueDate`, the format \"2024-06-07\" seems correct. The sales order number matches the document number, which is technically acceptable in this case. However, I have identified a character mismatch: \"wrightygtt\" in the image is extracted as \"wrightyglt\", triggering a `character_value_mismatch` issue, under the \"Buyer\" field.\n\n\n**Clarifying the 'Buyer' Value**\n\nI've refined the approach for the 'customerNumber'. I verified the \"Buyer wrightygtt\" from the image. While it's a username, it functions similarly to a customer ID in this eBay context. So I'll keep the value. I've noted a typo: \"wrightyglt\" versus \"wrightygtt\". The \"paymentTerms\" is flagged as `wrong_context`, as the image's \"Payment method Credit card\" doesn't directly correspond to payment terms.\n\n\n**Refining Data Validation**\n\nI'm now zeroing in on discrepancies. I've confirmed a `character_value_mismatch` in 'customerNumber', identifying \"wrightyglt\" as a typo from the image's \"wrightygtt\". Also, \"Credit card\" for 'paymentTerms' is clearly `wrong_context`; therefore, I'm marking it `null`. Finally, I've confirmed that 'documentTitle' is `wrong_context` as well.\n\n\n**Validating Specific Fields**\n\nI'm now focusing on specific issues within the extracted values. The 'customerNumber' value, \"wrightyglt\", shows a `character_value_mismatch`, as it should be \"wrightygtt\". The `paymentTerms` now has the issue type of `wrong_context`, as it is a payment *method* and should be null. Finally, I confirm that the `documentTitle` is `wrong_context`. I've verified again the \"wrightygtt\" value in the image. I am going to now check `documentNumber`.\n\n\n",
+      "parties": "**Verifying Party Details**\n\nI'm now cross-referencing the extracted party information. The initial check involves matching \"Buyer\" and \"Seller\" details like \"wrightygtt\" and \"deco_matters\" against the visually confirmed details from the document's image. I've located the eBay logo at the top left and confirmed the order information is present in the image. I'm noting the delivery address details as well, to confirm the buyer's name and address against the extraction.\n\n\n",
+      "totals": "**Defining the Scope**\n\nI'm currently focused on defining the verification's scope. My primary goal is to validate the extracted \"totals\" section from the JSON against the information in the provided document image. I need a clear understanding of the specific rules I'll use to identify any errors and report the discrepancies according to those rules.\n\n\n**Evaluating the Schema**\n\nI've been analyzing the extracted JSON and comparing it to the image data. The `subtotal` and `totalIncludingTax` values match up. Now I'm focusing on the `shippingAmount`, which is null in the JSON. The image shows \"Postage Free\". I need to understand if the schema requires a numeric value (0 or null) or if \"Free\" is an acceptable value or not.\n\n\n**Addressing the Null**\n\nI've determined that \"Postage: Free\" should be captured as \"Free\" or 0 in the `shippingAmount`. Analyzing the instructions, I've confirmed that the \"Free\" value is acceptable. Consequently, I'm logging a `missing_value` issue for `shippingAmount.originalValue`, documenting that the field is null, but the visible value in the document is \"Free\". It's a clear discrepancy. I have also verified all other fields; these are correct.\n\n\n",
+      "taxes": "**Verifying JSON Extraction**\n\nI'm currently trying to verify the taxes section from the JSON, but it turns out the section is an empty list, `[]`. Now I'm examining the document to see if I can find any relevant tax information or missing data in the order details, which include buyer, seller, and date placed.\n\n\n",
+      "shippingInfo": "**Analyzing Shipment Data**\n\nI've extracted shipment details, noting the carrier as \"Royal Mail\" with no tracking number or delivery date identified yet. I'm cross-referencing this with the document's line items and see \"Royal Mail 1st Class Signed For\". I am confirming there is still no tracking number or delivery date in the document.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 27818,
+    "cost": {
+      "input_tokens": 19295,
+      "output_tokens": 5631,
+      "input_cost": 0.03859,
+      "output_cost": 0.067572,
+      "total_cost": 0.10616199999999999
+    }
+  }
+}

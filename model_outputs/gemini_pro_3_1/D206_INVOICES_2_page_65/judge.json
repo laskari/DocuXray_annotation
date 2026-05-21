@@ -1,0 +1,60 @@
+{
+  "document_id": "D206_INVOICES_2_page_65",
+  "file": "D206_INVOICES_2_page_65.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "taxes"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "taxes": [
+        {
+          "field": null,
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? Yes, an entire tax row is missing from the list. The document clearly displays a 'Tax' line with an amount of '0.00', but the extracted taxes list is empty. This means the entire row was omitted, which constitutes a structural_error.",
+          "issue_type": "structural_error",
+          "description": "A tax line is present on the document but was completely omitted from the extraction.",
+          "extracted_value": "[]",
+          "corrected_value": "[{\"name\": \"Tax\", \"amount\": 0.00}]",
+          "expected_context": "Tax 0.00",
+          "correction_reasoning": "The document explicitly lists a tax line item. I found the label 'Tax' and the corresponding amount '0.00' in the totals summary block, so it should be represented as a TaxLine object in the taxes list.",
+          "visual_evidence": "Located in the totals section on the middle right of the page, directly below the 'Total' line and above the 'Document Total GBP' line."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 20306,
+      "output": 2881,
+      "total": 23187
+    },
+    "cost": {
+      "input_tokens": 20306,
+      "output_tokens": 2881,
+      "input_cost": 0.040612,
+      "output_cost": 0.034572,
+      "total_cost": 0.075184
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "lineItems": "**Defining the Extraction Task**\n\nI'm currently focused on the core extraction task. I'm aiming to verify the accuracy of the `lineItems` section within extracted JSON data, comparing it against the original document image. This involves identifying any discrepancies or errors that might have occurred during the initial extraction process. The end goal is to ensure the output is precise and reliable.\n\n\n**Reviewing the Extracted Data**\n\nI'm now conducting a line-by-line evaluation of the extracted data, specifically focusing on the `lineItems`. I've started with the first row, verifying that fields like description, item code, quantity, and unit of measure are correctly captured. I'm noting any discrepancies, although so far, the initial review is quite promising. My goal is to determine the extent to which the extraction aligns with the original document. I will continue this evaluation for the other rows.\n\n\n**Validating Row-Level Data**\n\nI've just finished validating the first three rows of the `lineItems` section, checking each field against the source document. So far, the results are extremely encouraging; every field matches perfectly with the document's information. I will now examine all remaining rows to confirm the extraction's consistency and identify any potential errors, looking for any deviations from the original data. I will track item code, quantity, unit price, and overall line totals.\n\n\n**Assessing Data Extraction Accuracy**\n\nI'm now zeroing in on a tricky case: the \"kg\" unit of measure. Initially, I was concerned because \"kg\" is part of the description and not in a separate UOM column, making it a potential extraction error. However, the description string *does* contain \"kg\" at the end, and the extraction has \"kg\" in the UOM field. After review, it does appear to be a correct, albeit nuanced, extraction. I need to keep this subtlety in mind when making an overall assessment. I'm checking if similar scenarios arise in other rows.\n\n\n",
+      "taxes": "**Defining the Scope**\n\nI'm now focused on clarifying the scope. My primary goal is to validate the accuracy of the \"taxes\" segment within the JSON output by cross-referencing it with the original document image, pinpointing any discrepancies and structuring them as a JSON object.\n\n\n**Evaluating the Discrepancy**\n\nI've confirmed the discrepancy: the document clearly states \"Tax 0.00,\" but the JSON extraction shows an empty list for taxes. I'm now classifying this as a \"structural_error\" because the entire tax *row* is missing, as opposed to just a missing value within an existing row. This means I'm focused on the broader extraction process.\n\n\n**Formulating the Correction**\n\nI've determined the JSON should contain `[{\"name\": \"Tax\", \"amount\": 0.00}]`. My focus has shifted to constructing a JSON issue object. The `field` and `row_index` are `null`. The reasoning will be: \"The document contains a dedicated line for tax with the label 'Tax' and amount '0.00'. The extracted list is completely empty, meaning this row was missed. Since an entire row was omitted, this is a structural_error.\" The issue type is \"structural_error\".\n\n\n",
+      "shippingInfo": "**Verifying Shipping Information**\n\nI am now focused on validating the `shippingInfo` section within the JSON data, specifically against the document image. Currently, the extracted JSON shows all fields as null. My next step involves carefully examining the image to determine if there's any shipping-related data present, and if so, how I might extract and map it to those fields.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 15586,
+    "cost": {
+      "input_tokens": 20306,
+      "output_tokens": 2881,
+      "input_cost": 0.040612,
+      "output_cost": 0.034572,
+      "total_cost": 0.075184
+    }
+  }
+}

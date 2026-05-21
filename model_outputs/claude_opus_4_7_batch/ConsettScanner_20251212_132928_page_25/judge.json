@@ -1,0 +1,26 @@
+{
+  "document_id": "ConsettScanner_20251212_132928_page_25",
+  "file": "ConsettScanner_20251212_132928_page_25.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 1.0,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 66534,
+      "output_tokens": 481
+    },
+    "cost": {
+      "input_cost": 0.16633499999999998,
+      "output_cost": 0.0060125,
+      "total_cost": 0.1723475,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

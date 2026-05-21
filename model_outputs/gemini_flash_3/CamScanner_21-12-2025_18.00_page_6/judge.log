@@ -1,0 +1,10 @@
+16:26:15  INFO     =======================================================
+16:26:15  INFO       JUDGE  doc_id=CamScanner_21-12-2025_18.00_page_6  [2026-05-18 16:26:15]
+16:26:15  INFO     =======================================================
+16:27:03  INFO     PASS  issues=0  confidence=1.00  cost=$0.0000  elapsed=48773ms
+17:07:39  INFO     =======================================================
+17:07:39  INFO       JUDGE  doc_id=CamScanner_21-12-2025_18.00_page_6  [2026-05-18 17:07:39]
+17:07:39  INFO     =======================================================
+17:08:34  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0730  elapsed=55759ms
+17:08:34  WARNING    [totals] taxTotal — The total VAT of £12.00 (sum of £11.20 and £0.80) is missing from the taxTotal field.
+17:08:34  WARNING    [totals] otherCharges — The extracted value £72.00 is the Gross Expenditure. To separate taxes, otherCharges should reflect the net total of £60.00.

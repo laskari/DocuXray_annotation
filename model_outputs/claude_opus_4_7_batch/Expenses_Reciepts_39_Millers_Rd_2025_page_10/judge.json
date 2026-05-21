@@ -1,0 +1,26 @@
+{
+  "document_id": "Expenses_Reciepts_39_Millers_Rd_2025_page_10",
+  "file": "Expenses_Reciepts_39_Millers_Rd_2025_page_10.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.95,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 66641,
+      "output_tokens": 407
+    },
+    "cost": {
+      "input_cost": 0.16660250000000001,
+      "output_cost": 0.0050875,
+      "total_cost": 0.17169,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

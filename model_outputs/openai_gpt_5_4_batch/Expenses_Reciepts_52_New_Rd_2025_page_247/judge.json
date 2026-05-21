@@ -1,0 +1,43 @@
+{
+  "document_id": "Expenses_Reciepts_52_New_Rd_2025_page_247",
+  "file": "Expenses_Reciepts_52_New_Rd_2025_page_247.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "totals"
+    ],
+    "confidence": 0.97,
+    "issues": {
+      "totals": [
+        {
+          "field": "totals.taxableAmount",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? No, this is a single scalar field issue, not a list structural problem. 2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No, \u00a3147.86 is not duplicated into another extracted field. 3. Is a SINGLE field's value taken from a completely unrelated area/label of the document, AND the value does NOT also appear duplicated in another extracted field? Yes. The extracted value comes from the descriptive VAT line text 'VAT 5% of \u00a3147.86', not from an explicitly labelled taxable amount field.",
+          "issue_type": "wrong_context",
+          "description": "The taxableAmount field was populated from the VAT description text, but the document does not show an explicitly labelled taxable amount total.",
+          "extracted_value": "\u00a3147.86",
+          "corrected_value": null,
+          "expected_context": "No explicit 'Taxable Amount' or 'Taxable Value' field is present in the totals area; \u00a3147.86 only appears inside the VAT line description.",
+          "correction_reasoning": "I re-checked the entire totals area, especially the 'Summary of charges' block on the left. The visible rows are 'Cost of electricity \u00a355.20', 'Cost of gas \u00a392.66', 'VAT 5% of \u00a3147.86 \u00a37.39', and 'Total charges \u00a3155.25'. There is no separate line labelled 'Taxable Amount' or equivalent. Because this schema says taxableAmount should only be extracted when explicitly labelled, the correct action is to leave this field empty rather than use the amount embedded inside the VAT description.",
+          "visual_evidence": "Located in the left-center 'Summary of charges' section. On the third row, the label reads 'VAT 5% of \u00a3147.86' with '\u00a37.39' aligned on the far right. No standalone taxable amount label appears above or below this row anywhere in the totals section."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 38482,
+      "output_tokens": 4237
+    },
+    "cost": {
+      "input_cost": 0.048102500000000006,
+      "output_cost": 0.0317775,
+      "total_cost": 0.07988,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

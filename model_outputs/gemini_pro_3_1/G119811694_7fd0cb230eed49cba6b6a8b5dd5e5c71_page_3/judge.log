@@ -1,0 +1,6 @@
+17:42:45  INFO     =======================================================
+17:42:45  INFO       JUDGE  doc_id=G119811694_7fd0cb230eed49cba6b6a8b5dd5e5c71_page_3  [2026-05-18 17:42:45]
+17:42:45  INFO     =======================================================
+17:42:57  INFO     FAIL  issues=2  confidence=0.98  cost=$0.0675  elapsed=12467ms
+17:42:57  WARNING    [totals] totalIncludingTax.originalValue — Missing currency code 'GBP' in the extracted total.
+17:42:57  WARNING    [taxes] None — The entire tax line item is missing from the extraction.

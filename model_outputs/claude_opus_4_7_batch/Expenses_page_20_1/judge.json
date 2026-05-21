@@ -1,0 +1,43 @@
+{
+  "document_id": "Expenses_page_20_1",
+  "file": "Expenses_page_20_1.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.85,
+    "issues": {
+      "parties": [
+        {
+          "field": "shipTo.addressStructured.district",
+          "row_index": null,
+          "reasoning": "Document shows 'GODOLMING' but extraction has 'GODALMING' - character substitution O\u2192A.",
+          "issue_type": "character_value_mismatch",
+          "description": "District name has a character mismatch versus what is printed on the document.",
+          "extracted_value": "GODALMING",
+          "corrected_value": "GODOLMING",
+          "expected_context": "Delivery Address section",
+          "correction_reasoning": "The document literally prints 'GODOLMING' (likely a typo of Godalming on the invoice itself); extraction should reflect document text.",
+          "visual_evidence": "Delivery Address block, 3rd line under '97 LONG GORE' and 'FARNCOMBE'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 67768,
+      "output_tokens": 762
+    },
+    "cost": {
+      "input_cost": 0.16942,
+      "output_cost": 0.009525,
+      "total_cost": 0.178945,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

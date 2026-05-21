@@ -1,0 +1,351 @@
+{
+  "document_id": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46",
+  "file": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "27-11821-97780",
+      "documentTitle": "Order information",
+      "issueDate": "19 Jul 2024",
+      "issueDateISO": "2024-07-19",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": "Credit card",
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "wonkycowofficial",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": "wrightygtt",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": "David Wright",
+        "addressStructured": {
+          "street_number": "84",
+          "street_name": "Brooksby",
+          "street_type": "Road",
+          "unit": null,
+          "building": null,
+          "district": "Tilehurst",
+          "city": "Reading",
+          "state": "Berkshire",
+          "postal_code": "RG316LY",
+          "country": "United Kingdom"
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "HAWK TUAH vinyl decal sticker funny viral tiktok for car van camper wall phone (256560769417)",
+        "itemCode": "256560769417",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "\u00a32.45",
+          "normalizedValue": 2.45
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "\u00a32.45",
+          "normalizedValue": 2.45
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Delivery service: Royal Mail 2nd Class",
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "\u00a32.45",
+        "normalizedValue": 2.45
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": "Free",
+        "normalizedValue": 0.0
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a32.45",
+        "normalizedValue": 2.45
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": "Royal Mail",
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 4885,
+    "latency_ms": 32207,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.014654999999999998,
+      "total_cost": 0.018876999999999998,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1532,
+        "total_tokens": 3643,
+        "thoughts": "**JSON Extraction Strategy**\n\nOkay, here's the breakdown of my thought process. The user wants me to extract information from an invoice image and format it as JSON, adhering to a pre-defined schema. The key is to be precise and deliver a valid JSON response without any extraneous text.\n\nFirst, I need to interpret the data from the provided text as though it were the invoice I'm \"reading.\" The currency is easily inferred as GBP, indicated by the \"\u00a3\" symbol. I've got a document number (\"27-11821-97780\"), a document title (\"Order information,\" or something implied), and the issue date \"19 Jul 2024.\" I need to remember the ISO format too for \"2024-07-19.\" The payment method is listed as \"Credit card\". I need to select the right invoice category. Since it's a \"vinyl decal sticker,\" \"Other\" seems the most appropriate category, given the provided options. \"paid\" for invoice status (as explicitly stated), and no visible paid stamp means `hasPaidStamp` will be set to `false`.\n\nNow, I'm carefully reviewing the schema. The user wants me to follow the structure provided, specifically for \"Part 1,\" which is general metadata, currency, and category. I'm going to follow *that* schema, even if there's other information. The schema details a precise structure for the JSON output. I need to output only valid JSON. The schema explicitly mentions `issueTime`, `issueTimeISO`, `dueDate`, `dueDateISO`, `purchaseOrderNumber`, `salesOrderNumber`, `customerNumber`, and `customerMemo`. None of these are in the invoice, so those will be assigned `null`.\n\nI've got a clear understanding of the fields and how to interpret the data. I'm noting that the prompt specifies that I should only generate valid JSON, and that the instructions mention a JSON array if multiple are requested, but that I should still return ONLY valid JSON. I'm mindful of the instructions \"Do not generate any extra text outside of the JSON string\" and to only use double quotes for strings. I am also mindful that there may be multiple requests, in which case I must return a valid, parseable JSON array. However, I am only provided Part 1 of the request and schema, and there is no mention of multiple requests.\n\nI've gone over the item description (\"HAWK TUAH vinyl decal sticker...\") to decide how to assign the category for that item. Since the list has \"Other,\" it seems correct here.\n\nNow, I'm ready to construct the JSON based on the analysis and schema provided. No extra comments, and adhering to strict JSON formatting. Here's the output:\n\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": \"27-11821-97780\",\n    \"documentTitle\": \"Order information\",\n    \"issueDate\": \"19 Jul 2024\",\n    \"issueDateISO\": \"2024-07-19\",\n    \"issueTime\": null,\n    \"issueTimeISO\": null,\n    \"dueDate\": null,\n    \"dueDateISO\": null,\n    \"purchaseOrderNumber\": null,\n    \"salesOrderNumber\": null,\n    \"customerNumber\": null,\n    \"paymentTerms\": \"Credit card\",\n    \"customerMemo\": null,\n    \"category\": \"Other\"\n  },\n  \"invoiceStatus\": \"paid\",\n  \"hasPaidStamp\": false\n}\n```\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1571,
+        "total_tokens": 3682,
+        "thoughts": "**Invoice Data Extraction: Focused on Parties and Shipping**\n\nOkay, so I'm presented with an eBay order summary, essentially an invoice image, and my task is to distill specific information from it into a JSON format. The core of my focus, based on the provided schema context, is on the `parties` and `shippingInfo` sections. I need to ignore other invoice elements because the context is *specifically* the schema for the `parties` and `shippingInfo`. I need to ensure I am using *only* the provided schema, and *only* populate the fields it describes.\n\nFirst, I need to identify the key players. I can clearly see the \"Seller\" is `wonkycowofficial`, the \"Buyer\" is `wrightygtt`, and the \"ShipTo\" name is `David Wright`. I need to correctly parse the address into its structured components: `84 Brooksby Road, Tilehurst, Reading, Berkshire RG316LY, United Kingdom`. I'll decompose this into: street number \"84\", street name \"Brooksby\", street type \"Road\", district \"Tilehurst\", city \"Reading\", state \"Berkshire\", postal code \"RG316LY\", and country \"United Kingdom\".\n\nFor the `shippingInfo`, I observe the \"Carrier\" is \"Royal Mail\" and that the service is \"Royal Mail 2nd Class\". I will populate the `shippingInfo.carrier` with \"Royal Mail\" since the schema does not describe \"service\". Since no explicit delivery date or tracking number is provided, I'll set those fields (`deliveryDate`, `deliveryDateISO`, and `trackingNumber`) to null.\n\nNow, a quick check of the schema to confirm: I need to explicitly differentiate between `buyer` and `customer` based on the document itself. The document has the \"Buyer\" label, so I should set `buyer` and null `customer`. There is no `billTo` so I don't need to populate that.\n\nFinally, a quick review of all the extracted data: `parties.seller.name` is \"wonkycowofficial\", `parties.buyer.name` is \"wrightygtt\", `parties.shipTo.name` is \"David Wright\" and the address is structured correctly, and the `shippingInfo.carrier` is \"Royal Mail\". Now I can construct the JSON.\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 764,
+        "total_tokens": 2875,
+        "thoughts": "**My Analysis of the eBay Order Confirmation**\n\nOkay, here's the breakdown of this eBay order. My task is to extract the relevant data and structure it into a specific JSON format based on a given schema. Let's get to it.\n\nFirst, I need to focus on the `invoiceInfo` section. The order number is `27-11821-97780`, and the payment date is July 19th, 2024. I'll translate that into the ISO format: `2024-07-19`. The payment method used was a Credit Card. The buyer's eBay handle is `wrightygtt`, and the seller is `wonkycowofficial`.\n\nNext, the `parties` section needs attention. The seller's name is `wonkycowofficial`, the buyer is `David Wright`, and the shipping information is also for `David Wright` at `84 Brooksby Road, Tilehurst, Reading, Berkshire RG316LY, United Kingdom`.\n\nNow, the core of the order \u2013 the `lineItems`. It looks like there's just one item here. The description is quite long: \"HAWK TUAH vinyl decal sticker funny viral tiktok for car van camper wall phone\". The item code is `256560769417`. The quantity is 1. The unit price is \u00a32.45, and the line total, including tax, is also \u00a32.45. It shipped via \"Royal Mail 2nd Class\".\n\nFinally, let's look at the `totals` section. The subtotal is \u00a32.45 for one item, shipping was free (\"Postage\"), and the total, including tax, is \u00a32.45. The `isOverflowPage` is set to false, meaning there is no additional data spread over multiple pages.\n\nNow, for structuring the JSON. Based on the schema alignment, I know precisely how to represent the line item details. I'll make sure the `description` combines the item's details with the item code. The `itemCode`, `quantity`, `unitPrice`, `lineTotalIncludingTax`, and `remarks` will be structured in the JSON, as described, with the required formatting. I'm ready to build the JSON with confidence.\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1018,
+        "total_tokens": 3129,
+        "thoughts": "**Analyzing the eBay Order for Data Extraction**\n\nOkay, so I'm tackling this eBay order document and need to extract financial data, specifically focusing on the `totals` section based on the schema I'm given. The schema is straightforward: it wants `totals`, `taxes`, and `applyTaxAfterDiscount`. In this case, the `taxes` and `applyTaxAfterDiscount` fields are null, so that's easy.\n\nNow, for the `totals`. Let's break it down based on the document. I see: \"1 item \u00a32.45\", \"Postage Free\", and \"Order total \u00a32.45.\"  Initially, I thought \"1 item \u00a32.45\" would equate to subtotal, \"Postage Free\" to shipping, and \"Order total \u00a32.45\" to the total with tax. The order total and subtotal appear to be the same amount.\n\nGiven this, I'm going to populate the JSON structure accordingly, converting the strings to numeric values where applicable. The \"Free\" shipping is a 0.0 value, as expected. I'll represent the extracted data in the desired `originalValue` and `normalizedValue` format for clarity.\n\nHere's the JSON structure I'll create:\n\n```json\n{\n  \"totals\": {\n    \"subtotal\": {\n      \"originalValue\": \"\u00a32.45\",\n      \"normalizedValue\": 2.45\n    },\n    \"shippingAmount\": {\n      \"originalValue\": \"Free\",\n      \"normalizedValue\": 0.0\n    },\n    \"totalIncludingTax\": {\n      \"originalValue\": \"\u00a32.45\",\n      \"normalizedValue\": 2.45\n    },\n    \"discountTotal\": null,\n    \"discountPercentage\": null,\n    \"totalExcludingTax\": null,\n    \"freightCharges\": null,\n    \"insuranceAmount\": null,\n    \"handlingFees\": null,\n    \"surchargeAmount\": null,\n    \"otherCharges\": null,\n    \"taxableAmount\": null,\n    \"taxTotal\": null,\n    \"withholdingTax\": null,\n    \"roundingAdjustment\": null,\n    \"deposit\": null,\n    \"amountPaid\": null,\n    \"creditApplied\": null,\n    \"returnAmount\": null,\n    \"tipAmount\": null,\n    \"balanceDue\": null,\n    \"exchangeRate\": null\n  },\n  \"taxes\": null,\n  \"applyTaxAfterDiscount\": null\n}\n```\n\nThis should accurately represent the extracted financial data from this eBay order, addressing all the relevant fields according to the schema.\n\n\n"
+      }
+    ]
+  }
+}

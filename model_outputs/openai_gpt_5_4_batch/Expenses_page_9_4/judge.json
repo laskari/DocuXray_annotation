@@ -1,0 +1,43 @@
+{
+  "document_id": "Expenses_page_9_4",
+  "file": "Expenses_page_9_4.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "invoiceInfo"
+    ],
+    "confidence": 0.64,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.issueDate",
+          "row_index": null,
+          "reasoning": "1. No: this is not a list/row displacement issue. 2. No: the extracted date is not duplicated across other fields. 3. No: the value comes from the date area, not an unrelated section. 4. No: there are not multiple similar date candidates visible in this section. 5. No: a date is clearly present on the document. 6. No: the field is not empty. 7. No: this is not just a formatting change; one of the digits is different. 8. No: this is not a text-letter typo. 9. Yes: the extracted numeric date has a small digit-level error in the year portion.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "The handwritten issue date was extracted as 24/11/65, but the visible final two digits read 25.",
+          "extracted_value": "24/11/65",
+          "corrected_value": "24/11/25",
+          "expected_context": "Handwritten date at the top center of the document.",
+          "correction_reasoning": "I re-checked the handwritten date at the top of the page. The first two parts clearly read 24/11. The final two handwritten digits after the second slash read 25, not 65; the first of those digits has the open curved shape of a 2 rather than the looped form of a 6. Therefore the corrected issue date is 24/11/25.",
+          "visual_evidence": "Located near the top center margin of the page, above the 'Received the sum of' line. The handwritten date is isolated on the page and reads 24/11/25."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 38022,
+      "output_tokens": 4589
+    },
+    "cost": {
+      "input_cost": 0.0475275,
+      "output_cost": 0.034417500000000004,
+      "total_cost": 0.081945,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

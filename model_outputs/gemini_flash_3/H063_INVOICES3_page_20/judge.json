@@ -1,0 +1,77 @@
+{
+  "document_id": "H063_INVOICES3_page_20",
+  "file": "H063_INVOICES3_page_20.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 2,
+    "sections_with_issues": [
+      "parties",
+      "totals"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.taxRegistrationNumber",
+          "row_index": null,
+          "reasoning": "Does the numeric value have small digit-level typos? Yes. The digit '0' was extracted as '9'.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "The VAT number contains a digit error: '229' was extracted instead of '220'.",
+          "extracted_value": "GB 229 4302 31",
+          "corrected_value": "GB 220 4302 31",
+          "expected_context": "The VAT number located in the seller's registration details block in the top left.",
+          "correction_reasoning": "Visual inspection of the document text under the seller logo shows 'VAT Number GB 220 4302 31'. The character is clearly a '0' and not a '9'.",
+          "visual_evidence": "Top-left header area, 4th line of small text below the logo, next to the label 'VAT Number'."
+        }
+      ],
+      "totals": [
+        {
+          "field": "taxableAmount",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together? No.\n2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No.\n3. Is a SINGLE field's value taken from a completely unrelated area/label? No.\n4. Do two similar fields exist and the wrong one was chosen? No.\n5. Is the extracted value completely fabricated and NOT visible anywhere in the document? Yes. The value '197.36' is the 'TOTALS: GOODS' (subtotal), but the document does not have a label explicitly for 'Taxable Amount' or 'Taxable Value'.",
+          "issue_type": "value_not_present",
+          "description": "The field 'taxableAmount' was extracted as 197.36, but there is no explicit 'Taxable Amount' label or value on the document.",
+          "extracted_value": "197.36",
+          "corrected_value": null,
+          "expected_context": null,
+          "correction_reasoning": "Per the schema definition, taxableAmount should only be extracted if explicitly labelled (e.g., 'Taxable Amount', 'Taxable Value'). While the Goods total is the base for tax, it is already captured in 'subtotal' and 'totalExcludingTax'. Without an explicit label, this field should be null.",
+          "visual_evidence": "The bottom right summary section contains labels for 'TOTALS: GOODS', 'VAT', 'INVOICE TOTAL', 'OUTSTANDING', and 'WAITING TO PAY'. There is no 'Taxable Amount' label."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19185,
+      "output": 7868,
+      "total": 27053
+    },
+    "cost": {
+      "input_tokens": 19185,
+      "output_tokens": 7868,
+      "input_cost": 0.0095925,
+      "output_cost": 0.023604,
+      "total_cost": 0.033196500000000004
+    },
+    "verification_model": "gemini-3-flash-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Invoice Data**\n\nI've confirmed the extraction of \"0128724\" as the `documentNumber`, successfully retrieved from the invoice image. I also correctly identified \"INVOICE\" for the `documentTitle`. I'm cross-referencing this against the labeled data on the image for accuracy.\n\n\n**Analyzing Document Elements**\n\nI'm now diving deeper into the specifics. I've correctly extracted \"25/02/25\" as `issueDate`, which formatted to \"2025-02-25\" as `issueDateISO`, and \"15:03\" as `issueTime`, formatting to \"15:03:00\" as `issueTimeISO`. I've also identified \"702292292\" as `customerNumber`. Other fields, like due dates and order numbers, are marked as null, which is correct as the data is not present on the document. I am reconsidering the use of \"INVOICE\" for `documentTitle`.\n\n\n**Re-evaluating Document Title**\n\nI'm reconsidering the `documentTitle`. I initially extracted \"INVOICE,\" but upon closer inspection, it is part of \"INVOICE NUMBER\". While \"INVOICE\" is often accepted as the implied title in such cases, it isn't explicitly present. I'm evaluating if it's fabricated or drawn from an incorrect context, given the document also contains transaction details.\n\n\n**Reviewing Missing Fields**\n\nI'm now focusing on missing fields. I've confirmed the absence of `purchaseOrderNumber`, `salesOrderNumber`, `paymentTerms`, and `customerMemo`. I've also identified \"BRANCH 191\" on the image, which isn't present in the expected invoice information. I also note that the invoice total is \"209.85\", the items are consistent with Booker invoices (Food), and the rates correspond with 0 and 20. I've also checked for the presence of Registration Details in the text. I am satisfied with the current fields.\n\n```\n```\n**Evaluating Information Accuracy**\n\nI've performed several checks for accuracy. I confirmed the dates (25/02/25), times (15:03), customer numbers (702292292), and invoice numbers (0128724) are correctly extracted. I'm noting that \"MRS S HALL\" is the customer name, but it isn't within the `invoiceInfo` section and is in the customer info section, as expected. I'm validating these results against the labeling and structure of the invoice.\n\n\n**Refining Field Validation**\n\nI'm now refining validation rules. The `issueTime`, initially extracted as 15:03, is confirmed as correct, derived from the header. Although there's a transaction time, 15:05:54, it's irrelevant to the invoice issue. I've also verified the header's date format (25/02/25) matches the extracted value. Furthermore, I'm re-evaluating the `documentTitle`, given it isn't explicitly labeled as \"Invoice.\" However, \"INVOICE NUMBER\" is present, making me reconsider whether to label `documentTitle` as \"INVOICE\" or `value_not_present` depending on strictness.\n\n\n**Confirming Field Values**\n\nI've re-examined the key values. I've confirmed that the `documentNumber` is \"0128724\" and the `customerNumber` is \"702292292\". I've double-checked the `issueDate` (25/02/25), `issueDateISO` (2025-02-25), and `issueTime` (15:03), all extracted correctly from the header. The absence of a clear `documentTitle` is noted; I'll infer it from the \"INVOICE NUMBER\" label since a title is not directly present. I'm noting the customer information. I confirm the values.\n\n\n**Inferring Document Category**\n\nI'm now assessing the document category. While \"Food\" isn't explicitly stated, Booker's specialization as a \"Wholesale Food & Drink\" provider and the invoice context support this inference. I'm verifying the data's consistency, noting \"TOTAL ITEMS: 28\" and the Goods value. I've re-examined the fields.\n\n\n**Finalizing Invoice Analysis**\n\nI've re-reviewed the `documentTitle` \u2013 it is inferred based on the presence of \"INVOICE NUMBER,\" therefore, I'll update it to \"INVOICE\". The format of the `issueTimeISO` \"15:03:00\" is correct as the original time is \"15:03\". I've confirmed all values, including `documentNumber` \"0128724\", are accurate, including the ISO date. I am returning an empty issues list, completing this analysis.\n\n\n**Confirming Data Consistency**\n\nI've carefully re-examined the key invoice elements and assessed for consistency. I've noted that \"INVOICE\" appears within labels like \"INVOICE NUMBER\". Therefore, while the term \"INVOICE\" isn't used as a title, I can confidently infer the `documentTitle` as \"INVOICE.\" I can confirm the invoice's consistency and return an empty issues list.\n\n\n",
+      "parties": "**Verifying 'Parties' Details**\n\nI have successfully verified \"BOOKER\" as a correct party name. I also validated the street name, \"Irthlingborough Road\", within the address provided. The document extraction appears accurate for these specific data points so far. I will continue to work on the extraction and verification.\n\n\n**Validating More Data Points**\n\nI've confirmed \"Equity House\", \"Wellingborough\", \"Northants\", and \"NN8 1LT\" are all correct. Company number 197380 and the telephone number are also accurate. However, there's a numeric mismatch in the VAT number; the extraction shows \"229\" instead of \"220\", which requires a closer look at the OCR. I have also verified \"MRS S HALL\" and the Customer ID.\n\n\n**Re-Evaluating VAT & Registration**\n\nI'm revisiting the VAT number. The extraction still shows \"229\", which is a numeric mismatch with \"220\" in the original document. I can clearly see the '0' in the image. I will proceed to double-check the Alcohol Wholesale Registration No. I'm also confirming the extracted seller name \"BOOKER\" and the address.\n\n\n**Addressing Digit Error**\n\nI've identified a digit error in the seller's VAT number; it was extracted as \"GB 229 4302 31\" instead of \"GB 220 4302 31.\" My visual inspection confirms the correct digit is '0', not '9'. I am now checking the customer registration number, and the extracted data point. Also, I am evaluating the context of the customer number.\n\n\n**Clarifying Registration Type**\n\nI'm now clarifying the nature of the \"customer\" field. I've determined the extracted value, 702292292, is a customer ID, not a registration number, and the field attribution is correct given the context. The \"buyer\" and \"customer\" are both Mrs. S Hall in this instance, which is typical for retail scenarios. I've also re-confirmed the seller's address and phone number, and I can confirm that they are accurate. Finally, I confirm the VAT numeric digit \"220\".\n\n\n",
+      "lineItems": "**Verifying Extraction Progress**\n\nI'm currently analyzing the document to verify the `lineItems` extraction. It's an invoice from \"BOOKER,\" and I've identified a table-like structure under \"TOTAL ITEMS: 28.\"\n\n\n**Analyzing Item Data**\n\nI've shifted focus to analyzing individual line item data, which I now realize is absent from this specific page. This page, labeled \"PAGE 02,\" appears to be a summary and payment page rather than a detailed invoice. The \"TOTAL ITEMS: 28\" is present, but I see only tax rate summaries (A and B). I'm examining the whole image to clarify my interpretation. It's a header, payment details, then the rates.\n\n\n**Confirming Schema Adherence**\n\nI've confirmed the initial empty `lineItems` extraction is accurate for this summary page. After reviewing the schema, I questioned whether to include the tax summary lines as \"lineItems\" in the absence of product details. I've concluded that these tax details are usually separate from the individual \"lineItems\", and therefore I will not extract the tax lines as \"lineItems\" based on current schema interpretations. The schema defines the `description` and `itemCode` fields as referring to an item or service. The table at the bottom shows rates, goods, multiples, net, and VAT.\n\n\n",
+      "taxes": "**Verifying Document Details**\n\nOkay, I've got the \"BOOKER\" invoice image in view. I'm focusing on the bottom-left now. My goal is to cross-reference the extracted JSON's \"taxes\" section with the information I can visually confirm here. The column headers are becoming clear: \"RATE\", \"GOODS\", and I'm continuing to scan the image for further details within the tax-related sections.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Data**\n\nI'm currently checking the `shippingInfo` data for discrepancies, specifically the fields for carrier, delivery date, and tracking. Right now, all those fields are null. I'm cross-referencing this null data with company and branch details (BOOKER, 191) as well as the customer number (7022) to see if there are any indications as to why the data is null.\n\n\n**Analyzing Invoice Data**\n\nI've examined invoice number 0128724 for MRS S HALL. The absence of specific shipping information confirms my initial hypothesis about the receipt's nature. It's most likely a cash-and-carry transaction, as indicated by the \"DATE 25/02/25 TIME 15:03\" in the header and the debit card details. I've confirmed that the 'carrier', 'deliveryDate', and 'trackingNumber' fields should be null or omitted as expected.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 18316,
+    "cost": {
+      "input_tokens": 19185,
+      "output_tokens": 7868,
+      "input_cost": 0.0095925,
+      "output_cost": 0.023604,
+      "total_cost": 0.033196500000000004
+    }
+  }
+}

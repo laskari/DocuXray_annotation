@@ -1,0 +1,7 @@
+17:39:59  INFO     =======================================================
+17:39:59  INFO       JUDGE  doc_id=D206_INVOICES_2_page_40  [2026-05-18 17:39:59]
+17:39:59  INFO     =======================================================
+17:40:17  INFO     FAIL  issues=3  confidence=0.90  cost=$0.0386  elapsed=18316ms
+17:40:17  WARNING    [parties] buyer.name — Two potential candidates for the buyer name exist: 'Dontay Limited' (the legal entity) and 'Chip Shops Group' (the specific customer/branch name).
+17:40:17  WARNING    [parties] buyer.phone — The phone number extracted belongs to a manager contact in the line items section, not the buyer's main address details.
+17:40:17  WARNING    [totals] taxableAmount — The value 152.80 was extracted into taxableAmount from the 'Net Total' label, but the schema requires this field to be populated only if explicitly labelled (e.g., 'Taxable Amount').

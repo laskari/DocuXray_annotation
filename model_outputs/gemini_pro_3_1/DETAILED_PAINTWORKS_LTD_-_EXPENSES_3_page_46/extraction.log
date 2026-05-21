@@ -1,0 +1,18 @@
+17:50:10  INFO     =======================================================
+17:50:10  INFO       EXTRACTION  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46  [2026-05-18 17:50:10]
+17:50:10  INFO     =======================================================
+17:50:10  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3.1-pro-preview
+17:50:10  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:50:10  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_CALL] Starting part 'general' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:10  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_CALL] Starting part 'parties' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:10  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_CALL] Starting part 'items' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:10  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_CALL] Starting part 'totals' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:17  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_DONE] Completed part 'general' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:19  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_DONE] Completed part 'totals' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:19  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_DONE] Completed part 'items' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:22  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] [PART_DONE] Completed part 'parties' for doc 'DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46'
+17:50:22  INFO     [DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46] SUCCESS: Invoice extraction completed | latency_ms=12226
+17:50:22  INFO     OK  elapsed=12297ms  cost=$0.0302
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

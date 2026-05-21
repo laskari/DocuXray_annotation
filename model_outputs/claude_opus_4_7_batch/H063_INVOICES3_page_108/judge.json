@@ -1,0 +1,106 @@
+{
+  "document_id": "H063_INVOICES3_page_108",
+  "file": "H063_INVOICES3_page_108.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 6,
+    "sections_with_issues": [
+      "lineItems",
+      "parties"
+    ],
+    "confidence": 0.5,
+    "issues": {
+      "lineItems": [
+        {
+          "field": null,
+          "row_index": null,
+          "reasoning": "The extracted lineItems list is empty, but the document clearly shows multiple line items across sections (CHILLED, CATERING GROCERY, FROZEN FOOD, CONFECTIONERY, MEAT, FRUIT & VEG, NON-FOOD). All rows are missing.",
+          "issue_type": "structural_error",
+          "description": "All line items are missing from the extraction. The invoice contains approximately 15 line items that should be present.",
+          "extracted_value": "[]",
+          "corrected_value": "[{\"description\":\"Chefs Larder Butterific\",\"itemCode\":\"293919\",\"quantity\":1,\"unitOfMeasure\":\"2kg\",\"unitPrice\":4.99,\"lineTotalExcludingTax\":4.99},{\"description\":\"CL Grated Mozz & Chedd Mix\",\"itemCode\":\"095276\",\"quantity\":1,\"unitOfMeasure\":\"2kg\",\"unitPrice\":10.49,\"lineTotalExcludingTax\":10.49},{\"description\":\"WF Grated Mature Cheddar\",\"itemCode\":\"293152\",\"quantity\":1,\"unitOfMeasure\":\"2kg\",\"unitPrice\":10.95,\"lineTotalExcludingTax\":10.95},{\"description\":\"Fresh Semi Skimmed Milk\",\"itemCode\":\"212311\",\"quantity\":1,\"unitOfMeasure\":\"2ltr\",\"unitPrice\":1.39,\"lineTotalExcludingTax\":1.39},{\"description\":\"Hovis Soft White Thick Loaf\",\"itemCode\":\"127574\",\"quantity\":3,\"unitOfMeasure\":\"800g\",\"unitPrice\":1.19,\"lineTotalExcludingTax\":3.57},{\"description\":\"LF Brownie Traybake\",\"itemCode\":\"291097\",\"quantity\":1,\"unitOfMeasure\":\"9x65g\",\"unitPrice\":7.55,\"lineTotalExcludingTax\":7.55},{\"description\":\"LF Millionaire Shortbread\",\"itemCode\":\"291128\",\"quantity\":1,\"unitOfMeasure\":\"9x65g\",\"unitPrice\":7.55,\"lineTotalExcludingTax\":7.55},{\"description\":\"CL Baked Beans\",\"itemCode\":\"719807\",\"quantity\":1,\"unitOfMeasure\":\"2.62kg\",\"unitPrice\":20.99,\"lineTotalExcludingTax\":20.99},{\"description\":\"CL Burger Sauce\",\"itemCode\":\"286855\",\"quantity\":1,\"unitOfMeasure\":\"1ltr\",\"unitPrice\":2.99,\"lineTotalExcludingTax\":2.99},{\"description\":\"CL Hash Browns\",\"itemCode\":\"263794\",\"quantity\":3,\"unitOfMeasure\":\"1.36kg\",\"unitPrice\":2.79,\"lineTotalExcludingTax\":8.37},{\"description\":\"Kit Kat 4 Finger\",\"itemCode\":\"232547\",\"quantity\":1,\"unitOfMeasure\":\"24 41.5g\",\"unitPrice\":10.65,\"lineTotalExcludingTax\":10.65},{\"description\":\"CE U/Smk R/Less Back Bacon\",\"itemCode\":\"147174\",\"quantity\":1,\"unitOfMeasure\":\"5 2kg\",\"unitPrice\":49.95,\"lineTotalExcludingTax\":49.95},{\"description\":\"CL Thick Pork Sausages\",\"itemCode\":\"105135\",\"quantity\":3,\"unitOfMeasure\":\"2.27kg\",\"unitPrice\":9.49,\"lineTotalExcludingTax\":28.47},{\"description\":\"CL Large Barn Eggs\",\"itemCode\":\"273855\",\"quantity\":2,\"unitOfMeasure\":\"60pk\",\"unitPrice\":12.99,\"lineTotalExcludingTax\":25.98},{\"description\":\"FF Closed Cup Mushrooms\",\"itemCode\":\"180479\",\"quantity\":1,\"unitOfMeasure\":\"1.1kg\",\"unitPrice\":4.09,\"lineTotalExcludingTax\":4.09},{\"description\":\"40s Baking Potatoes\",\"itemCode\":\"103063\",\"quantity\":1,\"unitOfMeasure\":\"15kg\",\"unitPrice\":14.99,\"lineTotalExcludingTax\":14.99},{\"description\":\"Bagasse 7in x 5in MediumMeal\",\"itemCode\":\"227362\",\"quantity\":1,\"unitOfMeasure\":\"50s\",\"unitPrice\":7.99,\"lineTotalExcludingTax\":7.99},{\"description\":\"CE Foil 30cm\",\"itemCode\":\"148315\",\"quantity\":1,\"unitOfMeasure\":\"60m\",\"unitPrice\":5.49,\"lineTotalExcludingTax\":5.49}]",
+          "expected_context": "Main item table in the middle of the receipt listing CODE, DESCRIPTION, PACK SIZE, QTY, PRICE, VALUE, VAT",
+          "correction_reasoning": "Scanned the full item table on the receipt and listed each printed line with its code, description, pack size, quantity, price and line value.",
+          "visual_evidence": "The body of the receipt between the header (CUSTOMER/INVOICE info) and the SUB-TOTAL/PAYMENT CARD DETAILS footer, organized into category sections (CHILLED, CATERING GROCERY, FROZEN FOOD, CONFECTIONERY, MEAT, FRUIT & VEG, NON-FOOD)."
+        }
+      ],
+      "parties": [
+        {
+          "field": "customer.addressStructured.street_name",
+          "row_index": null,
+          "reasoning": "Document shows 'TILEMANS LANE' but extraction has 'TILLMANS LANE' - character typo.",
+          "issue_type": "character_value_mismatch",
+          "description": "Street name misspelled",
+          "extracted_value": "TILLMANS LANE",
+          "corrected_value": "TILEMANS LANE",
+          "expected_context": "Customer address line under NICE BITES",
+          "correction_reasoning": "Document clearly reads TILEMANS LANE",
+          "visual_evidence": "Customer block, line below NICE BITES"
+        },
+        {
+          "field": "customer.addressStructured.street_number",
+          "row_index": null,
+          "reasoning": "'40Z' is not a street number; it appears to be a fragment of postcode 'CV36 4QZ' duplicated into street_number.",
+          "issue_type": "duplication_error",
+          "description": "Street number is actually part of the postcode CV36 4QZ",
+          "extracted_value": "40Z",
+          "corrected_value": null,
+          "expected_context": "No street number is given in the customer address",
+          "correction_reasoning": "The only '4QZ' value in document is part of the postcode CV36 4QZ already extracted in postal_code",
+          "visual_evidence": "Customer block, postcode line 'CV36 4QZ'"
+        },
+        {
+          "field": "seller.taxRegistrationNumber",
+          "row_index": null,
+          "reasoning": "VAT Number GB 220 4302 31 is visible in seller footer but not extracted.",
+          "issue_type": "missing_value",
+          "description": "VAT number not extracted for seller",
+          "extracted_value": null,
+          "corrected_value": "GB 220 4302 31",
+          "expected_context": "Booker footer: 'VAT Number GB 220 4302 31'",
+          "correction_reasoning": "Clearly printed in seller's registered office line",
+          "visual_evidence": "Bottom of seller header area"
+        },
+        {
+          "field": "seller.registrationNumber",
+          "row_index": null,
+          "reasoning": "Company registration 'Registered in England, Number 197380' is visible for Booker but not extracted.",
+          "issue_type": "missing_value",
+          "description": "Seller company registration number missing",
+          "extracted_value": null,
+          "corrected_value": "197380",
+          "expected_context": "Booker footer 'Registered in England, Number 197380'",
+          "correction_reasoning": "Explicit company registration printed",
+          "visual_evidence": "Seller footer text"
+        },
+        {
+          "field": "buyer.registrationNumber",
+          "row_index": null,
+          "reasoning": "'70292292' is the CUSTOMER number printed next to MRS S HALL, not a company registration. This is a customer/account number that better fits customer entity, but it was placed on buyer. Also potential digit mismatch.",
+          "issue_type": "wrong_context",
+          "description": "Customer account number put under buyer.registrationNumber",
+          "extracted_value": "70232292",
+          "corrected_value": "70292292",
+          "expected_context": "'CUSTOMER 70292292 MRS S HALL' line",
+          "correction_reasoning": "Document shows CUSTOMER number 70292292",
+          "visual_evidence": "Top of receipt: CUSTOMER 70292292 MRS S HALL"
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 55901,
+      "output_tokens": 4068
+    },
+    "cost": {
+      "input_cost": 0.1397525,
+      "output_cost": 0.05084999999999999,
+      "total_cost": 0.1906025,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

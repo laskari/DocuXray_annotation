@@ -1,0 +1,43 @@
+{
+  "document_id": "H063_INVOICES3_page_20",
+  "file": "H063_INVOICES3_page_20.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.registrationNumber",
+          "row_index": null,
+          "reasoning": "1. This is not a list/row shift affecting multiple fields together, so not structural_error. 2. The extracted value does not appear duplicated into another field, so not duplication_error. 3. The value is from the correct seller registration context, so not wrong_context. 4. There are not multiple similar candidate registration numbers for the seller in the document; the company registration number is explicitly printed once, so not multiple_candidates. 5. The extracted value is not fabricated because a very similar company number is visible in the seller details block. 6. The field is not missing. 7. This is not just a formatting difference. 8. The issue is not textual characters. 9. The numeric digits are slightly transposed: the document shows 197380, but the extraction has 197830.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "Seller company registration number has transposed digits.",
+          "extracted_value": "197830",
+          "corrected_value": "197380",
+          "expected_context": "Seller details block in the top-left company information, on the line beginning 'Registered in England, Number ...'",
+          "correction_reasoning": "I rechecked the small-print seller information beneath the Booker logo. The registration number is printed in the sentence 'Registered in England, Number 197380, VAT Number GB 220 4302 31'. This is the explicit seller company registration number, so it takes precedence over the extracted value with the swapped digits.",
+          "visual_evidence": "Top-left of the page under the BOOKER logo and company address lines; in the fine print line directly below 'Telephone: 01933 371000', the text reads 'Registered in England, Number 197380, VAT Number GB 220 4302 31'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 37710,
+      "output_tokens": 2724
+    },
+    "cost": {
+      "input_cost": 0.0471375,
+      "output_cost": 0.02043,
+      "total_cost": 0.0675675,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

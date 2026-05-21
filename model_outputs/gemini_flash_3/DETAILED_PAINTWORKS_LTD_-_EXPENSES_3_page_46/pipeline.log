@@ -1,0 +1,14 @@
+18:10:43  INFO     =======================================================
+18:10:43  INFO       GEMINI 3 FLASH PIPELINE START  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46  image=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46.png  [2026-05-18 18:10:43]
+18:10:43  INFO     =======================================================
+18:10:43  INFO     Step 1/4: extraction (Gemini 3 Flash)
+18:11:16  INFO     Step 2/4: judge (Gemini 3 Flash)
+18:11:55  INFO     Step 3/4: refinement
+18:11:55  INFO     Step 4/4: postprocessing
+18:11:55  INFO     PIPELINE END  status=ok  total=71288ms
+16:09:26  INFO     =======================================================
+16:09:26  INFO       GEMINI 3 FLASH PIPELINE START  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46  image=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46.png  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================
+16:09:26  INFO     Step 1/4: extraction (Gemini 3 Flash)
+16:09:26  ERROR    Pipeline aborted: No module named 'pymongo'
+16:09:26  INFO     PIPELINE END  status=error  total=1ms

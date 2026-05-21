@@ -1,0 +1,5 @@
+17:44:33  INFO     =======================================================
+17:44:33  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_247  [2026-05-18 17:44:33]
+17:44:33  INFO     =======================================================
+17:44:48  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0942  elapsed=15188ms
+17:44:48  WARNING    [invoiceInfo] documentTitle — The extracted document title is incomplete, missing the date range that is part of the same heading.

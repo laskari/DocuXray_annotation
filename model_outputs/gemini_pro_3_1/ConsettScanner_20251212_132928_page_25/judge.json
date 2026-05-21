@@ -1,0 +1,43 @@
+{
+  "document_id": "ConsettScanner_20251212_132928_page_25",
+  "file": "ConsettScanner_20251212_132928_page_25.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 1.0,
+    "issues": {},
+    "token_usage": {
+      "input": 18833,
+      "output": 903,
+      "total": 19736
+    },
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 903,
+      "input_cost": 0.037666,
+      "output_cost": 0.010836,
+      "total_cost": 0.048501999999999997
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "lineItems": "**Verifying Data Extraction**\n\nI'm currently checking the image for any line items, as the initial extraction yielded an empty list. I'm taking another look at the image to see if any items were missed during the first pass. The goal is to ensure the `lineItems` data accurately reflects the image content.\n\n\n",
+      "taxes": "**Verifying Tax Information**\n\nI'm currently focused on verifying the 'taxes' section within the JSON data, but it's an empty list. My next step is to carefully examine the provided document image to determine if any tax information is present. I'll need to carefully scan the document to see if I can locate any relevant data.\n\n\n",
+      "shippingInfo": "**Verifying Data Extraction**\n\nI'm currently focused on verifying the data extraction process for the `shippingInfo` section. The input data is a JSON object where most of the fields are null. The document is essentially empty or nearly blank. My task is to confirm if the system accurately handles this scenario.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 13587,
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 903,
+      "input_cost": 0.037666,
+      "output_cost": 0.010836,
+      "total_cost": 0.048501999999999997
+    }
+  }
+}

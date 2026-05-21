@@ -1,0 +1,5 @@
+17:41:51  INFO     =======================================================
+17:41:51  INFO       JUDGE  doc_id=Expenses_page_3  [2026-05-18 17:41:51]
+17:41:51  INFO     =======================================================
+17:42:33  INFO     FAIL  issues=1  confidence=0.95  cost=$0.1626  elapsed=42388ms
+17:42:33  WARNING    [parties] seller.taxRegistrationNumber — The seller's EORI number (customs registration/tax identifier) is printed on the document but was not extracted.

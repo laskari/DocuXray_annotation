@@ -1,0 +1,43 @@
+{
+  "document_id": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46",
+  "file": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "totals"
+    ],
+    "confidence": 0.7,
+    "issues": {
+      "totals": [
+        {
+          "field": "balanceDue",
+          "row_index": null,
+          "reasoning": "No 'Balance Due', 'Amount Due', or similar label appears on the document. Only 'Order total' is printed.",
+          "issue_type": "value_not_present",
+          "description": "Balance due is not explicitly printed on the document.",
+          "extracted_value": "\u00a32.45",
+          "corrected_value": null,
+          "expected_context": "Document only shows 'Order total \u00a32.45', no balance due field.",
+          "correction_reasoning": "Field should be null since no balance due label exists on the receipt.",
+          "visual_evidence": "Top right shows 'Order total \u00a32.45' only; no balance/amount due section."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 67138,
+      "output_tokens": 820
+    },
+    "cost": {
+      "input_cost": 0.16784500000000002,
+      "output_cost": 0.01025,
+      "total_cost": 0.17809500000000003,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

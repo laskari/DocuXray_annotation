@@ -1,0 +1,18 @@
+17:40:17  INFO     =======================================================
+17:40:17  INFO       EXTRACTION  doc_id=D206_INVOICES_2_page_65  [2026-05-18 17:40:17]
+17:40:17  INFO     =======================================================
+17:40:17  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:40:17  INFO     [D206_INVOICES_2_page_65] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:40:17  INFO     [D206_INVOICES_2_page_65] [PART_CALL] Starting part 'general' for doc 'D206_INVOICES_2_page_65'
+17:40:17  INFO     [D206_INVOICES_2_page_65] [PART_CALL] Starting part 'parties' for doc 'D206_INVOICES_2_page_65'
+17:40:17  INFO     [D206_INVOICES_2_page_65] [PART_CALL] Starting part 'items' for doc 'D206_INVOICES_2_page_65'
+17:40:17  INFO     [D206_INVOICES_2_page_65] [PART_CALL] Starting part 'totals' for doc 'D206_INVOICES_2_page_65'
+17:40:25  INFO     [D206_INVOICES_2_page_65] [PART_DONE] Completed part 'parties' for doc 'D206_INVOICES_2_page_65'
+17:40:33  INFO     [D206_INVOICES_2_page_65] [PART_DONE] Completed part 'general' for doc 'D206_INVOICES_2_page_65'
+17:40:37  INFO     [D206_INVOICES_2_page_65] [PART_DONE] Completed part 'totals' for doc 'D206_INVOICES_2_page_65'
+17:40:40  INFO     [D206_INVOICES_2_page_65] [PART_DONE] Completed part 'items' for doc 'D206_INVOICES_2_page_65'
+17:40:40  INFO     [D206_INVOICES_2_page_65] SUCCESS: Invoice extraction completed | latency_ms=22821
+17:40:40  INFO     OK  elapsed=22901ms  cost=$0.0113
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=D206_INVOICES_2_page_65  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

@@ -1,0 +1,26 @@
+{
+  "document_id": "G119811694_7fd0cb230eed49cba6b6a8b5dd5e5c71_page_3",
+  "file": "G119811694_7fd0cb230eed49cba6b6a8b5dd5e5c71_page_3.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.95,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 66648,
+      "output_tokens": 504
+    },
+    "cost": {
+      "input_cost": 0.16662,
+      "output_cost": 0.0063,
+      "total_cost": 0.17292,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

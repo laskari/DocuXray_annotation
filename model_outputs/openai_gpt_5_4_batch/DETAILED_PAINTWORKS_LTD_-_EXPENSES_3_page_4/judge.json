@@ -1,0 +1,70 @@
+{
+  "document_id": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4",
+  "file": "DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_4.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "parties"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.issueDate",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? No, this is a single scalar field. 2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No, '7 Jun 2024' is not duplicated verbatim into another inappropriate extracted field. 3. Is a SINGLE field's value taken from a completely unrelated area/label of the document, AND the value does NOT also appear duplicated in another extracted field? Yes. The extracted date matches dates shown under 'Placed on' and 'Paid on' in the 'Order information' section, not an explicit invoice issue date label. Therefore this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The issueDate was taken from the order information dates ('Placed on'/'Paid on') rather than from an explicit invoice issue date.",
+          "extracted_value": "7 Jun 2024",
+          "corrected_value": null,
+          "expected_context": "An explicit invoice/date-issued field; none is visible on this document.",
+          "correction_reasoning": "I re-scanned the page for any label indicating an invoice issuance date, such as 'Issue date', 'Invoice date', or similar, and found none. The only visible dates are both '7 Jun 2024' under 'Placed on' and 'Paid on' in the left-side 'Order information' block. Since those are order lifecycle dates rather than an explicit invoice issue date, this field should be empty for this document.",
+          "visual_evidence": "Top-left section titled 'Order information': the date '7 Jun 2024' appears on the lines labeled 'Placed on' and 'Paid on'. No separate invoice issue date label appears anywhere else on the page."
+        },
+        {
+          "field": "invoiceInfo.issueDateISO",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? No. 2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No. 3. Is a SINGLE field's value taken from a completely unrelated area/label of the document, AND the value does NOT also appear duplicated in another extracted field? Yes. The ISO date corresponds to the visible order date '7 Jun 2024' from 'Placed on'/'Paid on', not to an explicit invoice issue date. So the problem is wrong_context rather than format alone.",
+          "issue_type": "wrong_context",
+          "description": "The issueDateISO was derived from an order date in the 'Order information' section, but no explicit invoice issue date is shown on the document.",
+          "extracted_value": "2024-06-07",
+          "corrected_value": null,
+          "expected_context": "An explicit invoice issue date expressed as the source for ISO normalization; none is visible on the document.",
+          "correction_reasoning": "On second review, the document contains only order-related dates, both reading '7 Jun 2024', under 'Placed on' and 'Paid on'. There is no visible invoice issue date field anywhere on the page. Because issueDateISO should only be populated from an actual invoice issue date, the correct value here is null.",
+          "visual_evidence": "In the upper-left 'Order information' panel, the only dates present are next to 'Placed on' and 'Paid on'. No 'Issue date' or 'Invoice date' appears elsewhere in the document."
+        }
+      ],
+      "parties": [
+        {
+          "field": "buyer.name",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? No, this is a single scalar field in the parties section. 2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? No, the extracted buyer name does not appear duplicated in another field. 3. Is a SINGLE field's value taken from a completely unrelated area/label of the document, AND the value does NOT also appear duplicated in another extracted field? No, it is clearly the buyer username area. 4. Do two similar fields exist in the document and the wrong one was chosen? No, the Buyer label has a single visible username. 5. Is the extracted value completely fabricated and NOT visible anywhere in the document? No, it resembles the visible buyer username. 6. Is the field null/empty but the value IS clearly visible in the document? No. 7. Is the correct value present but in a different format? No. 8. Does the text value have small character-level typos? Yes, the extracted buyer username differs from the visible username by character substitutions/transpositions.",
+          "issue_type": "character_value_mismatch",
+          "description": "The buyer username was extracted with character errors.",
+          "extracted_value": "wrightlygtt",
+          "corrected_value": "wrightytgit",
+          "expected_context": "Order information section, Buyer field",
+          "correction_reasoning": "I re-checked the Buyer line in the Order information block and read the username directly next to the 'Buyer' label. The visible text matches 'wrightytgit', not 'wrightlygtt'. The extraction appears to have misread the middle and ending characters, but the field still corresponds to the correct Buyer label, so this is a character-level mismatch rather than wrong context.",
+          "visual_evidence": "Top-left quarter of the page in the 'Order information' section; on the first row labeled 'Buyer', the username printed to the right reads 'wrightytgit'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 37841,
+      "output_tokens": 4742
+    },
+    "cost": {
+      "input_cost": 0.04730125,
+      "output_cost": 0.035565,
+      "total_cost": 0.08286625,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

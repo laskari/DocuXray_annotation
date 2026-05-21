@@ -1,0 +1,30 @@
+16:27:47  INFO     =======================================================
+16:27:47  INFO       EXTRACTION  doc_id=DRV0494GC_page_1  [2026-05-18 16:27:47]
+16:27:47  INFO     =======================================================
+16:27:48  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+16:27:48  INFO     [DRV0494GC_page_1] [EXTRACTION_START] Starting invoice extraction (part=all)
+16:27:48  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'general' for doc 'DRV0494GC_page_1'
+16:27:48  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'parties' for doc 'DRV0494GC_page_1'
+16:27:48  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'items' for doc 'DRV0494GC_page_1'
+16:27:48  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'totals' for doc 'DRV0494GC_page_1'
+16:28:13  INFO     [DRV0494GC_page_1] [PART_DONE] Completed part 'totals' for doc 'DRV0494GC_page_1'
+16:28:13  INFO     [DRV0494GC_page_1] [PART_DONE] Completed part 'general' for doc 'DRV0494GC_page_1'
+16:28:15  INFO     [DRV0494GC_page_1] [PART_DONE] Completed part 'parties' for doc 'DRV0494GC_page_1'
+18:16:58  INFO     =======================================================
+18:16:58  INFO       EXTRACTION  doc_id=DRV0494GC_page_1  [2026-05-18 18:16:58]
+18:16:58  INFO     =======================================================
+18:16:58  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+18:16:58  INFO     [DRV0494GC_page_1] [EXTRACTION_START] Starting invoice extraction (part=all)
+18:16:58  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'general' for doc 'DRV0494GC_page_1'
+18:16:58  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'parties' for doc 'DRV0494GC_page_1'
+18:16:58  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'items' for doc 'DRV0494GC_page_1'
+18:16:58  INFO     [DRV0494GC_page_1] [PART_CALL] Starting part 'totals' for doc 'DRV0494GC_page_1'
+18:17:07  INFO     [DRV0494GC_page_1] [PART_DONE] Completed part 'items' for doc 'DRV0494GC_page_1'
+18:17:18  INFO     [DRV0494GC_page_1] [PART_DONE] Completed part 'general' for doc 'DRV0494GC_page_1'
+18:17:23  INFO     [DRV0494GC_page_1] [PART_DONE] Completed part 'totals' for doc 'DRV0494GC_page_1'
+18:17:33  INFO     [DRV0494GC_page_1] [PART_DONE] Completed part 'parties' for doc 'DRV0494GC_page_1'
+18:17:33  INFO     [DRV0494GC_page_1] SUCCESS: Invoice extraction completed | latency_ms=35024
+18:17:33  INFO     OK  elapsed=35086ms  cost=$0.0295
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=DRV0494GC_page_1  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

@@ -1,0 +1,86 @@
+{
+  "document_id": "D206_INVOICES_2_page_36_1",
+  "file": "D206_INVOICES_2_page_36_1.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "parties": [
+        {
+          "field": "shipTo.name",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? \u2192 No.\n2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? \u2192 No.\n3. Is a SINGLE field's value taken from a completely unrelated area/label of the document? \u2192 No.\n4. Do two similar fields exist in the document (e.g., shipTo.name vs billTo.name) and the wrong one was chosen? \u2192 No.\n5. Is the extracted value completely fabricated? \u2192 No.\n6. Is the field null/empty but the value IS clearly visible in the document? \u2192 Yes, the shipTo name 'Chip Shops Group' is present.",
+          "issue_type": "missing_value",
+          "description": "The shipTo name is present on the document but was not extracted.",
+          "extracted_value": null,
+          "corrected_value": "Chip Shops Group",
+          "expected_context": "Found below the buyer address box.",
+          "correction_reasoning": "The name 'Chip Shops Group' appears directly below the boxed buyer address and above 'Leamington', indicating a shipping destination or specific branch.",
+          "visual_evidence": "Located on the left side, just below the rectangle containing 'Dontay Limited'."
+        },
+        {
+          "field": "shipTo.addressStructured.city",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? \u2192 No.\n2. Does the SAME extracted value appear verbatim in ANOTHER field where it should not? \u2192 No.\n3. Is a SINGLE field's value taken from a completely unrelated area/label of the document? \u2192 No.\n4. Do two similar fields exist in the document and the wrong one was chosen? \u2192 No.\n5. Is the extracted value completely fabricated? \u2192 No.\n6. Is the field null/empty but the value IS clearly visible in the document? \u2192 Yes, 'Leamington' is the city for the shipTo party.",
+          "issue_type": "missing_value",
+          "description": "The shipping city 'Leamington' is present on the document but was not extracted.",
+          "extracted_value": null,
+          "corrected_value": "Leamington",
+          "expected_context": "Found below 'Chip Shops Group' on the left side.",
+          "correction_reasoning": "The text 'Leamington' is placed below the group name, acting as the city for this delivery site.",
+          "visual_evidence": "Located on the left side, directly below 'Chip Shops Group'."
+        },
+        {
+          "field": "shipTo.phone",
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced? \u2192 No.\n2. Same value in another field? \u2192 No.\n3. Wrong area? \u2192 No.\n4. Multiple candidates? \u2192 No.\n5. Fabricated? \u2192 No.\n6. Is the field null/empty but the value IS clearly visible in the document? \u2192 Yes, the phone number is explicitly listed next to 'Tel:manager'.",
+          "issue_type": "missing_value",
+          "description": "The phone number associated with the shipping contact is missing.",
+          "extracted_value": null,
+          "corrected_value": "07872929761",
+          "expected_context": "To the right of the shipTo address lines.",
+          "correction_reasoning": "The number '07872929761' is preceded by 'Tel:manager', clearly identifying it as a contact phone number for this party.",
+          "visual_evidence": "Located on the right side of the document, on the same line as 'CASH SALE'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19400,
+      "output": 8995,
+      "total": 28395
+    },
+    "cost": {
+      "input_tokens": 19400,
+      "output_tokens": 8995,
+      "input_cost": 0.0097,
+      "output_cost": 0.026985,
+      "total_cost": 0.036684999999999995
+    },
+    "verification_model": "gemini-3-flash-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Invoice Data**\n\nI'm currently focused on verifying the `invoiceInfo` extraction. I've confirmed the initial structure and key extraction of document number, title, and issue date. Next, I plan to validate the data types and formats, cross-referencing against expected patterns for maximum accuracy.\n\n\n**Validating Extracted Fields**\n\nI've just finished a thorough validation of each extracted `invoiceInfo` field. I've verified the accuracy of `documentNumber`, `documentTitle`, `issueDate`, and the corresponding ISO date. All null values for absent fields like `issueTime`, `dueDate`, and order numbers are also confirmed as correct. I'm satisfied with the current state of extraction and data mapping.\n\n\n**Refining Field Categorization**\n\nI'm now re-evaluating the categorization of \"CASH SALE\". While extracted as `customerMemo`, a deeper dive suggests it's a more accurate fit for `paymentTerms`. I'm confirming that \"CASH SALE\" reflects the transaction's payment structure and aligns better with the field's definition. The distinction between memo and payment terms is crucial here, and I am leaning towards re-categorizing.\n\n\n**Re-evaluating \"CASH SALE\"**\n\nI'm now deep-diving again into the \"CASH SALE\" categorization. I'm oscillating over whether extracting it into `customerMemo` constitutes a `wrong_context` issue, despite being a valid piece of information. I'm focusing on the schema definition of `paymentTerms` versus the context of a cash sale to determine if the categorization needs adjustment. Also, I'm checking for `missing_value` in `paymentTerms` now, and I've confirmed that other extracted values like document number, issue date and customer number are correct.\n\n\n**Categorizing Payment Term**\n\nI am now focusing on refining the treatment of \"CASH SALE\". While initially categorized as `customerMemo`, a more precise determination has led me to strongly consider the `paymentTerms` field instead. I've re-examined the context: the text defines the transaction's payment structure. Therefore, the schema fit is better. I am moving towards re-categorizing. I've also checked for other relevant information.\n\n\n**Confirming Final Data Validity**\n\nI've just finished a final check on all extracted fields. I've re-examined the initial extraction, paying specific attention to \"CASH SALE\", and I'm confident in the current categorization. The values for `documentNumber`, `issueDate`, `customerNumber`, and `customerMemo` all match the document accurately. The confidence level is set to 1.0, with no issues detected.\n\n\n**Assessing Contextual Accuracy**\n\nI'm now zeroing in on a tricky edge case. I've re-reviewed \"CASH SALE\" and debated if its placement in `customerMemo` constitutes a `wrong_context` issue, even though the data itself is accurate. I'm focusing on the field definitions and considering a potential schema misalignment. I'm checking for errors such as a `missing_value`. I'm comparing the schema definition of `paymentTerms` versus the context of a cash sale. I will proceed with no detected issues.\n\n\n",
+      "lineItems": "**Verifying the Line Items**\n\nI'm currently analyzing the document image. I've identified the table structure containing the line items. The table header includes \"Qty,\" \"Product Code,\" \"Description,\" \"Price,\" and \"Total GBP.\" Next, I'll examine the individual rows within the table.\n\n\n**Validating the First Row**\n\nI've just finished validating the first row of data against the extracted JSON. The description, item code, quantity, and unit price all match perfectly. The unit of measure is correctly null. I've also verified the line total; since there's no tax, the \"lineTotalExcludingTax\" and \"lineTotalIncludingTax\" should be the same, and they are. The document shows no tax, and the totals support this.\n\n\n**Clarifying the Totals**\n\nI'm now focusing on the handling of line totals, specifically when tax is zero. The document shows \"Total GBP\" as 191.00. I'm confirming that this value represents both `lineTotalIncludingTax` and `lineTotalExcludingTax` given the zero VAT. I'm evaluating how to handle the \"missing_value\" case, since the value is present and should be mapped. The instructions confirm that `lineTotalIncludingTax` can equal `lineTotalExcludingTax` if there's no tax.\n\n\n**Confirming Extraction Integrity**\n\nI've re-read the rules regarding null values. My current assessment is that, even though the `lineTotalIncludingTax` is null in the extraction and the document shows \"Total GBP\" (191.00), there's enough supporting evidence to infer they are the same due to zero VAT. I'll maintain the current values from the extraction, given there's no clear error. I am also checking for other issues and verifying all values. The data extraction is correct across all values. I've finished the data validation on this document.\n\n\n",
+      "totals": "**Verifying Image Data**\n\nI've begun analyzing the provided invoice image to verify the extraction of the \"totals\" section. I've successfully identified and extracted the key values: Net Total of 191.00, VAT of 0.00, and a Document Total of 1 GBP. I am confirming these figures are accurate and correctly linked to their respective labels.\n\n\n**Validating Field Extractions**\n\nI've rigorously validated the extracted data points against the image's values. All fields extracted align precisely with their corresponding values, including the subtotal (191.00, derived from \"Net Total\"), VAT (0.00), and total (191.00, labelled as \"Document Total GBP\"). The null values for discount, shipping, and other charges are also confirmed correct, as these fields are absent on the image.\n\n\n**Assessing Total Accuracy**\n\nI'm now zeroing in on the extracted total values and their associated labels. I've confirmed that the 'Document Total GBP' (191.00) aligns perfectly with the `totalIncludingTax` and that the 'Net Total' (191.00) matches both `totalExcludingTax` and `subtotal`. The VAT (0.00) also checks out as `taxTotal`. I've also verified the absence of a separate 'Balance Due' label. The extraction correctly identifies this as null, given the context. Exchange rate is also correctly null. The extraction results align precisely with the explicit labels.\n\n\n**Reconciling Total Values**\n\nI'm now reconciling the extracted total values to verify consistency. The `taxTotal` is confirmed, and the absence of a \"Balance Due\" label is correctly captured as null. Although \"Document Total GBP\" represents the final total, the schema's nuance dictates that a specific \"Balance Due\" or \"Amount Due\" label is required. I see a \"CASH SALE\" text, so a value for the \"Amount Paid\" would be useful, but is missing. The extracted data passes consistency checks.\n\n\n**Confirming Label Accuracy**\n\nI've just finished a final, exhaustive check to ensure complete accuracy. I've re-examined all the extracted labels against their corresponding values in the image, and everything aligns perfectly. There are no missing labels, and all extracted values\u2014Net Total, VAT, and Document Total GBP\u2014match precisely. The extensive cross-validation confirms extraction accuracy. The `totalIncludingTax`, `taxTotal`, and `totalExcludingTax` are all flawless. My final check confirms that `balanceDue` is correctly null, given the schema. The issues list is empty, with extraction complete.\n\n\n**Finalizing Extraction Details**\n\nI'm now putting the finishing touches on the process. I've re-examined the line items and currency values, confirming the subtotal of 191.00. The \"CASH SALE\" status doesn't explicitly denote an amount paid, so the absence of that field is correct. All extracted values, and their respective labels, have been re-validated, along with numeric formatting and the proper null value for the balance due, given the context. The extraction schema is upheld. I'm confirming there are no errors. My assessment is complete.\n\n\n**Rechecking Entire Document**\n\nI'm revisiting the entire document for a final, comprehensive overview. I confirmed vendor, customer, invoice details, and line item calculations, ensuring data integrity. I'm focusing on \"Document Total GBP,\" confirming \"191.00\" as the correct `originalValue` even if \"GBP\" is part of the label. All total and subtotal values are verified, the formatting is correct, and all values align with the image.\n\n\n",
+      "taxes": "**Verifying Tax Data**\n\nI'm now focused on verifying the 'taxes' section against the extracted data. This section consists of a list of individual tax lines, each identified by name, percentage, and amount. My next step will be to cross-reference the extracted values with the image data to ensure accuracy and consistency.\n\n\n**Reviewing Extracted Data**\n\nI've checked the extracted VAT data against the invoice details from Theos Food Co Ltd. The name \"VAT\" matches. The percentage is correctly identified as `null` since no rate is explicitly shown. The amount \"0.00\" also matches. I see that the overall document layout is consistent so far.\n\n\n**Confirming No VAT Issues**\n\nI have carefully reviewed the VAT data, cross-referencing the extracted JSON with the source document. The name, amount, and null percentage align perfectly. The calculation of Net Total + VAT = Document Total holds true. My analysis shows no missing or incorrect information. The null percentage is justified since there's no visible percentage value on the document. I can confirm the extraction is accurate, which I just double-checked.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Information**\n\nI am now focused on validating the shipping details. I can't find an explicit carrier listed. The \"Doc. Date\", `17/07/2024`, might serve as the delivery date, depending on the document. I need to make sure this is suitable, because I have no other information to use.\n\n\n**Analyzing Date Data**\n\nI've examined the document more closely for potential delivery date indicators. There's no labeled \"Delivery Date\" or \"Shipping Date.\" The \"Doc. Date\", which is the invoice date, `17/07/2024`, is likely the only date related to the transaction. I will have to decide whether that date is an acceptable proxy for the delivery date based on this information. There are no other numerical values that appear to be tracking numbers.\n\n\n**Confirming Missing Data**\n\nI've confirmed the initial assessment: no carrier, delivery date, or tracking number is present. The lack of specific shipping information means the extraction's `null` values are accurate. I'm focusing on the \"Doc. Date\", but it's just the invoice date, and I should leave it as null. The document specifies \"CASH SALE\", which has no impact on shipping. I'll return an empty list of issues as the extraction is correct.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 15182,
+    "cost": {
+      "input_tokens": 19400,
+      "output_tokens": 8995,
+      "input_cost": 0.0097,
+      "output_cost": 0.026985,
+      "total_cost": 0.036684999999999995
+    }
+  }
+}

@@ -1,0 +1,5 @@
+17:13:26  INFO     =======================================================
+17:13:26  INFO       JUDGE  doc_id=ConsettScanner_20260105_131112_page_28  [2026-05-18 17:13:26]
+17:13:26  INFO     =======================================================
+17:13:39  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0922  elapsed=12759ms
+17:13:39  WARNING    [taxes] None — Tax information is present on the document but the taxes list is completely empty.

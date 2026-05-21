@@ -1,0 +1,8 @@
+17:32:08  INFO     =======================================================
+17:32:08  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_150  [2026-05-18 17:32:08]
+17:32:08  INFO     =======================================================
+17:32:48  INFO     FAIL  issues=4  confidence=0.95  cost=$0.1032  elapsed=40619ms
+17:32:48  WARNING    [totals] subtotal — The extracted value 17.88 is the Gross Subtotal (inclusive of tax), but the field definition requires the subtotal before taxes. The Net Subtotal of 14.90 should have been used instead.
+17:32:48  WARNING    [taxes] None — The extraction is missing the 0.0% VAT line item from the VAT Breakdown table.
+17:32:48  WARNING    [shippingInfo] deliveryDate — The 'Order Date' was incorrectly extracted as the 'deliveryDate'.
+17:32:48  WARNING    [shippingInfo] deliveryDateISO — The ISO delivery date is derived from the incorrectly contextualized 'Order Date'.

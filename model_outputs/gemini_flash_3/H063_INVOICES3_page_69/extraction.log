@@ -1,0 +1,18 @@
+18:04:07  INFO     =======================================================
+18:04:07  INFO       EXTRACTION  doc_id=H063_INVOICES3_page_69  [2026-05-18 18:04:07]
+18:04:07  INFO     =======================================================
+18:04:07  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+18:04:07  INFO     [H063_INVOICES3_page_69] [EXTRACTION_START] Starting invoice extraction (part=all)
+18:04:07  INFO     [H063_INVOICES3_page_69] [PART_CALL] Starting part 'general' for doc 'H063_INVOICES3_page_69'
+18:04:07  INFO     [H063_INVOICES3_page_69] [PART_CALL] Starting part 'parties' for doc 'H063_INVOICES3_page_69'
+18:04:07  INFO     [H063_INVOICES3_page_69] [PART_CALL] Starting part 'items' for doc 'H063_INVOICES3_page_69'
+18:04:07  INFO     [H063_INVOICES3_page_69] [PART_CALL] Starting part 'totals' for doc 'H063_INVOICES3_page_69'
+18:04:18  INFO     [H063_INVOICES3_page_69] [PART_DONE] Completed part 'items' for doc 'H063_INVOICES3_page_69'
+18:04:35  INFO     [H063_INVOICES3_page_69] [PART_DONE] Completed part 'totals' for doc 'H063_INVOICES3_page_69'
+18:04:41  INFO     [H063_INVOICES3_page_69] [PART_DONE] Completed part 'general' for doc 'H063_INVOICES3_page_69'
+18:04:53  INFO     [H063_INVOICES3_page_69] [PART_DONE] Completed part 'parties' for doc 'H063_INVOICES3_page_69'
+18:04:53  INFO     [H063_INVOICES3_page_69] SUCCESS: Invoice extraction completed | latency_ms=46240
+18:04:53  INFO     OK  elapsed=46325ms  cost=$0.0377
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=H063_INVOICES3_page_69  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

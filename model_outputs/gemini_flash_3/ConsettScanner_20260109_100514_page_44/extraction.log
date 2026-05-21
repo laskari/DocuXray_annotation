@@ -1,0 +1,18 @@
+18:05:52  INFO     =======================================================
+18:05:52  INFO       EXTRACTION  doc_id=ConsettScanner_20260109_100514_page_44  [2026-05-18 18:05:52]
+18:05:52  INFO     =======================================================
+18:05:52  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+18:05:52  INFO     [ConsettScanner_20260109_100514_page_44] [EXTRACTION_START] Starting invoice extraction (part=all)
+18:05:52  INFO     [ConsettScanner_20260109_100514_page_44] [PART_CALL] Starting part 'general' for doc 'ConsettScanner_20260109_100514_page_44'
+18:05:52  INFO     [ConsettScanner_20260109_100514_page_44] [PART_CALL] Starting part 'parties' for doc 'ConsettScanner_20260109_100514_page_44'
+18:05:52  INFO     [ConsettScanner_20260109_100514_page_44] [PART_CALL] Starting part 'items' for doc 'ConsettScanner_20260109_100514_page_44'
+18:05:52  INFO     [ConsettScanner_20260109_100514_page_44] [PART_CALL] Starting part 'totals' for doc 'ConsettScanner_20260109_100514_page_44'
+18:06:18  INFO     [ConsettScanner_20260109_100514_page_44] [PART_DONE] Completed part 'general' for doc 'ConsettScanner_20260109_100514_page_44'
+18:06:23  INFO     [ConsettScanner_20260109_100514_page_44] [PART_DONE] Completed part 'totals' for doc 'ConsettScanner_20260109_100514_page_44'
+18:06:28  INFO     [ConsettScanner_20260109_100514_page_44] [PART_DONE] Completed part 'parties' for doc 'ConsettScanner_20260109_100514_page_44'
+18:06:50  INFO     [ConsettScanner_20260109_100514_page_44] [PART_DONE] Completed part 'items' for doc 'ConsettScanner_20260109_100514_page_44'
+18:06:50  INFO     [ConsettScanner_20260109_100514_page_44] SUCCESS: Invoice extraction completed | latency_ms=57907
+18:06:50  INFO     OK  elapsed=57984ms  cost=$0.0487
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=ConsettScanner_20260109_100514_page_44  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

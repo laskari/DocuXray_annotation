@@ -1,0 +1,85 @@
+{
+  "document_id": "Expenses_page_9_4",
+  "file": "Expenses_page_9_4.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 4,
+    "sections_with_issues": [
+      "parties",
+      "totals",
+      "lineItems"
+    ],
+    "confidence": 0.6,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.name",
+          "row_index": null,
+          "reasoning": "The document's Address line reads 'Mark Landscaper' (appears to be a trade name). The extracted name 'Landseeger' is a character-level misreading of 'Landscaper'.",
+          "issue_type": "character_value_mismatch",
+          "description": "Seller name has character typos - 'Landseeger' should be 'Landscaper'.",
+          "extracted_value": "Mark Landseeger",
+          "corrected_value": "Mark Landscaper",
+          "expected_context": "Handwritten on the Address line near bottom of form",
+          "correction_reasoning": "Visual inspection of the handwriting shows 'Landscaper' (with 'sc' and 'p'), not 'Landseeger'.",
+          "visual_evidence": "Bottom of the page on the 'Address' line, handwritten text following 'Mark'."
+        }
+      ],
+      "totals": [
+        {
+          "field": "totalIncludingTax.originalValue",
+          "row_index": null,
+          "reasoning": "The document shows 'Received the sum of \u00a3105' written as '\u00a3 1.0.5' where dots are just separators/decoration on the line. The amount is \u00a3105, not \u00a31.05.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "Total amount misread \u2014 the handwritten value is \u00a3105, not 1.05. The dots between digits are line markers, not decimal points.",
+          "extracted_value": "1.0.5",
+          "corrected_value": "105",
+          "expected_context": "Top of document: 'Received the sum of \u00a3105'",
+          "correction_reasoning": "The handwriting clearly shows \u00a3105 (one hundred and five pounds), consistent with a receipt for 180 granite setts and 1 drainage sump & cover.",
+          "visual_evidence": "Top line of the document next to 'Received the sum of'."
+        },
+        {
+          "field": "totalIncludingTax.normalizedValue",
+          "row_index": null,
+          "reasoning": "Normalized value follows the original misreading.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "Normalized total should be 105, not 1.05.",
+          "extracted_value": "1.05",
+          "corrected_value": "105",
+          "expected_context": "Top line: '\u00a3105'",
+          "correction_reasoning": "Correct interpretation of the handwritten amount \u00a3105.",
+          "visual_evidence": "Top of document, amount field."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "quantity.originalValue",
+          "row_index": 0,
+          "reasoning": "The document shows '180 Granite setts' but extraction shows quantity 120.",
+          "issue_type": "numeric_value_mismatch",
+          "description": "Quantity for Granite setts is 180, not 120.",
+          "extracted_value": "120",
+          "corrected_value": "180",
+          "expected_context": "First line item: '180 Granite setts'",
+          "correction_reasoning": "Handwritten quantity reads 180.",
+          "visual_evidence": "First line of items list, beginning with '180 Granite setts'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 67380,
+      "output_tokens": 1752
+    },
+    "cost": {
+      "input_cost": 0.16845,
+      "output_cost": 0.021900000000000003,
+      "total_cost": 0.19035,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

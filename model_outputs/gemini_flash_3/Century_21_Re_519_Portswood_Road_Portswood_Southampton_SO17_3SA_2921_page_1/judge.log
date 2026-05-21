@@ -1,0 +1,8 @@
+18:02:27  INFO     =======================================================
+18:02:27  INFO       JUDGE  doc_id=Century_21_Re_519_Portswood_Road_Portswood_Southampton_SO17_3SA_2921_page_1  [2026-05-18 18:02:27]
+18:02:27  INFO     =======================================================
+18:03:11  INFO     FAIL  issues=4  confidence=0.95  cost=$0.0727  elapsed=43605ms
+18:03:11  WARNING    [lineItems] remarks — The site address reference from the document header is incorrectly extracted and duplicated into the remarks field of multiple line items.
+18:03:11  WARNING    [lineItems] remarks — The site address header is duplicated in the remarks field of the second line item.
+18:03:11  WARNING    [lineItems] lineTotalIncludingTax — The grand total of the invoice is incorrectly extracted as a specific line item's total.
+18:03:11  WARNING    [totals] balanceDue — The value '£70.00' is duplicated across two fields but appears only once in the document under the label 'Total'.

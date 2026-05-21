@@ -1,0 +1,43 @@
+{
+  "document_id": "H063_INVOICES3_page_75",
+  "file": "H063_INVOICES3_page_75.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "parties"
+    ],
+    "confidence": 0.8,
+    "issues": {
+      "parties": [
+        {
+          "field": "seller.addressStructured.state",
+          "row_index": null,
+          "reasoning": "State extracted as 'Warwick' but Warwick is the city; no state shown, county would be Warwickshire but not printed for seller.",
+          "issue_type": "wrong_context",
+          "description": "State should not duplicate city name",
+          "extracted_value": "Warwick",
+          "corrected_value": null,
+          "expected_context": "Seller address only shows Nelson Lane, Warwick, CV34 5JB",
+          "correction_reasoning": "No state/county printed for the seller address",
+          "visual_evidence": "Top right header: WARWICK / Nelson Lane / Warwick / CV34 5JB"
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 64610,
+      "output_tokens": 671
+    },
+    "cost": {
+      "input_cost": 0.161525,
+      "output_cost": 0.0083875,
+      "total_cost": 0.1699125,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

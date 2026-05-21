@@ -1,0 +1,7 @@
+17:27:31  INFO     =======================================================
+17:27:31  INFO       JUDGE  doc_id=ConsettScanner_20260109_100426_page_16  [2026-05-18 17:27:31]
+17:27:31  INFO     =======================================================
+17:27:51  INFO     FAIL  issues=3  confidence=0.95  cost=$0.1001  elapsed=19413ms
+17:27:51  WARNING    [invoiceInfo] customerNumber — The customer/account number is present in the document but was missing from the extraction.
+17:27:51  WARNING    [lineItems] lineTotalIncludingTax — The transaction amount was not extracted.
+17:27:51  WARNING    [lineItems] description — Typo in the extracted time format.

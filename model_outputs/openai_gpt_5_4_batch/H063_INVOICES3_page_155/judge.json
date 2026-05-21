@@ -1,0 +1,115 @@
+{
+  "document_id": "H063_INVOICES3_page_155",
+  "file": "H063_INVOICES3_page_155.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 7,
+    "sections_with_issues": [
+      "lineItems"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "lineItems": [
+        {
+          "field": "lineItems[3].description",
+          "row_index": 3,
+          "reasoning": "1. No multiple fields in this row are displaced or shifted; the row order and the other columns align with the document. 2. The value is not duplicated into another extracted field. 3. The value is not from an unrelated section. 4. There are not multiple similar candidate descriptions in this row. 5. The extracted value is visible on the document except for a small spelling difference. 6. The field is not missing. 7. This is not a format-only difference. 8. Yes \u2014 this is a small character-level text mismatch: the brand name was extracted as 'Lotus' instead of 'Lutosa'.",
+          "issue_type": "character_value_mismatch",
+          "description": "The line item description has a spelling error in the brand name.",
+          "extracted_value": "Lotus 14mm Chips 4x2.5kg",
+          "corrected_value": "Lutosa 14mm Chips 4x2.5kg",
+          "expected_context": "Fourth line item, Description column.",
+          "correction_reasoning": "On a second visual scan of the fourth row in the items table, the description clearly begins with 'Lutosa', followed by '14mm Chips 4x2.5kg'. All other row values (qty 4, unit price 17.99, net 71.96) match this row, confirming the corrected description belongs here.",
+          "visual_evidence": "In the line items table near the middle of the page, fourth row under the 'Description' column, the printed text reads 'Lutosa 14mm Chips 4x2.5kg'."
+        },
+        {
+          "field": "lineItems[0].remarks",
+          "row_index": 0,
+          "reasoning": "1. No multiple fields are shifted across rows; the row structure is intact. 2. The extracted value is not a duplicated value copied into another field in this row. 3. Yes \u2014 the value comes from a different column context: it is built from the VAT Code column, not from any remarks text. Therefore this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT Code column value rather than an actual line-item remark.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "No remark is printed for the first line item; the visible '0' belongs to the VAT Code column.",
+          "correction_reasoning": "A dedicated re-scan of the first line item shows only quantity, description, unit price, VAT code, and net amount. There is no free-text note or comment attached to the row. The extracted text 'VAT Code: 0' was assembled from the separate VAT Code column and should not populate remarks, so the correct remarks value is null.",
+          "visual_evidence": "First row of the line items table: between 'Unit Price' and 'Net' there is a narrow 'VAT Code' column showing '0'. No separate remarks text appears anywhere on that row."
+        },
+        {
+          "field": "lineItems[1].remarks",
+          "row_index": 1,
+          "reasoning": "1. No multiple fields are shifted across rows; the row structure is intact. 2. The extracted value is not a duplicated value copied into another field in this row. 3. Yes \u2014 the value comes from a different column context: it is built from the VAT Code column, not from any remarks text. Therefore this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT Code column value rather than an actual line-item remark.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "No remark is printed for the second line item; the visible '0' belongs to the VAT Code column.",
+          "correction_reasoning": "A second look at the second row confirms the row contains the description '90 Burger KF x48' with quantity 3, unit price 21.00, VAT code 0, and net 63.00. There is no remarks area or note text on that line. Since the extracted remarks came from the VAT Code column, remarks should be null.",
+          "visual_evidence": "Second row of the line items table: the narrow column labeled 'VAT Code' contains '0'. No other annotation or remark text is printed on that row."
+        },
+        {
+          "field": "lineItems[2].remarks",
+          "row_index": 2,
+          "reasoning": "1. No multiple fields are shifted across rows; the row structure is intact. 2. The extracted value is not a duplicated value copied into another field in this row. 3. Yes \u2014 the value comes from a different column context: it is built from the VAT Code column, not from any remarks text. Therefore this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT Code column value rather than an actual line-item remark.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "No remark is printed for the third line item; the visible '0' belongs to the VAT Code column.",
+          "correction_reasoning": "Re-checking the third row shows the item description and numeric columns only. The only standalone value between unit price and net is the VAT code '0'. There is no line-level note or remark printed. Therefore the remarks field should be empty/null.",
+          "visual_evidence": "Third row of the items table for '4oz Battered CBs (x10 per Bag) GREEN': the 'VAT Code' column shows '0'; no remarks text appears in or around the row."
+        },
+        {
+          "field": "lineItems[3].remarks",
+          "row_index": 3,
+          "reasoning": "1. No multiple fields are shifted across rows; the row structure is intact. 2. The extracted value is not a duplicated value copied into another field in this row. 3. Yes \u2014 the value comes from a different column context: it is built from the VAT Code column, not from any remarks text. Therefore this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT Code column value rather than an actual line-item remark.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "No remark is printed for the fourth line item; the visible '0' belongs to the VAT Code column.",
+          "correction_reasoning": "In the fourth line, the table shows quantity 4, description 'Lutosa 14mm Chips 4x2.5kg', unit price 17.99, VAT code 0, and net 71.96. There is no printed remarks text. The extracted remarks value is therefore from the wrong column and should be null.",
+          "visual_evidence": "Fourth row of the items table: under the 'VAT Code' header the entry is '0', positioned between unit price 17.99 and net 71.96. No remark text is present."
+        },
+        {
+          "field": "lineItems[4].remarks",
+          "row_index": 4,
+          "reasoning": "1. No multiple fields are shifted across rows; the row structure is intact. 2. The extracted value is not a duplicated value copied into another field in this row. 3. Yes \u2014 the value comes from a different column context: it is built from the VAT Code column, not from any remarks text. Therefore this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT Code column value rather than an actual line-item remark.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "No remark is printed for the fifth line item; the visible '0' belongs to the VAT Code column.",
+          "correction_reasoning": "A dedicated scan of the fifth row shows only the standard columns for quantity, description, unit price, VAT code, and net amount. No free-text remark is printed for this line. Because the extracted value is from the VAT Code column, the correct remarks value is null.",
+          "visual_evidence": "Fifth row of the line items table for 'Cheese Slices x112 Kerrymaid': the 'VAT Code' column entry is '0'. There is no separate remarks text in the row."
+        },
+        {
+          "field": "lineItems[5].remarks",
+          "row_index": 5,
+          "reasoning": "1. No multiple fields are shifted across rows; the row structure is intact. 2. The extracted value is not a duplicated value copied into another field in this row. 3. Yes \u2014 the value comes from a different column context: it is built from the VAT Code column, not from any remarks text. Therefore this is wrong_context.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT Code column value rather than an actual line-item remark.",
+          "extracted_value": "VAT Code: 1",
+          "corrected_value": null,
+          "expected_context": "No remark is printed for the sixth line item; the visible '1' belongs to the VAT Code column.",
+          "correction_reasoning": "The sixth line item shows quantity 1, description 'Easy Bags No1 x100 (sml)', unit price 14.69, VAT code 1, and net 14.69. There is no note or remarks text anywhere on that row. Since the extracted remarks value comes from the VAT Code column, remarks should be null.",
+          "visual_evidence": "Last row of the line items table: under the 'VAT Code' header the value is '1', between unit price 14.69 and net 14.69. No remarks text appears on that row."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 39430,
+      "output_tokens": 5552
+    },
+    "cost": {
+      "input_cost": 0.0492875,
+      "output_cost": 0.041639999999999996,
+      "total_cost": 0.0909275,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

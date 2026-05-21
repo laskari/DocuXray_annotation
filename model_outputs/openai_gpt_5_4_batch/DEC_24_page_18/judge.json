@@ -1,0 +1,70 @@
+{
+  "document_id": "DEC_24_page_18",
+  "file": "DEC_24_page_18.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "lineItems"
+    ],
+    "confidence": 0.88,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "invoiceInfo.issueTime",
+          "row_index": null,
+          "reasoning": "1. No: this is not a list/row shift issue. 2. No: the problem is not an accidental duplication into another unrelated field. 3. No: the extracted value is a real time on the document, so it is not from a completely unrelated context. 4. Yes: two similar time candidates are visible on the document\u2014the card-payment section shows 'Time: 16:34:06', while the receipt footer shows the document date/time as '05/12/2024 16:34'. For the invoice/receipt issue time, the footer timestamp is the better match, so this is a multiple_candidates issue.",
+          "issue_type": "multiple_candidates",
+          "description": "The extracted issueTime used the card transaction time instead of the receipt's own printed footer time.",
+          "extracted_value": "16:34:06",
+          "corrected_value": "16:34",
+          "expected_context": "Receipt footer date/time line for the overall document, below the barcode and promotional text.",
+          "correction_reasoning": "On a second visual scan, I found two explicit times. The mid-page payment block contains 'Time: 16:34:06' as part of the card authorization details, while the bottom of the receipt shows the document timestamp '05/12/2024    16:34'. Because this field is for the document's issue time, the footer timestamp is the stronger contextual match and should take precedence over the payment-subsection time.",
+          "visual_evidence": "Near the very bottom of the receipt, beneath the barcode and under the line 'Shop online at Asda.com for easy home delivery or collection in store', the last line shows '05/12/2024     16:34'."
+        },
+        {
+          "field": "invoiceInfo.issueTimeISO",
+          "row_index": null,
+          "reasoning": "1. No: this is not a structural/list issue. 2. No: this is not an erroneous duplication problem. 3. No: the extracted value comes from a visible time on the document. 4. Yes: there are two plausible time candidates on the receipt, and the extracted value uses the card-payment time rather than the receipt footer time. Therefore this is a multiple_candidates issue.",
+          "issue_type": "multiple_candidates",
+          "description": "The ISO issue time was derived from the card transaction time instead of the receipt footer time.",
+          "extracted_value": "16:34:06",
+          "corrected_value": "16:34:00",
+          "expected_context": "Derived from the receipt footer time printed with the document date at the bottom of the receipt.",
+          "correction_reasoning": "The visible receipt footer shows the overall document time as '16:34'. Since this field requires ISO 8601 time format (HH:MM:SS), the correct normalized value is '16:34:00'. The currently extracted '16:34:06' matches the payment section's card-processing time, not the receipt footer timestamp intended for the document issue time.",
+          "visual_evidence": "At the bottom of the image, directly below the barcode and promotional sentence, the final line prints '05/12/2024     16:34'. This footer time is the source for the corrected ISO value."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "lineItems[0].description",
+          "row_index": 0,
+          "reasoning": "1. No\u2014this is not a row-level shift or reordering; only the description text of the first line item is affected. 2. No\u2014the extracted value is not duplicated into another field. 3. No\u2014the value is from the correct line-item area, not another section. 4. No\u2014there are not multiple similar candidate descriptions for this row. 5. No\u2014the value is largely present on the document, but one character is wrong. 6. No\u2014the field is not empty. 7. No\u2014this is not a formatting difference. 8. Yes\u2014the first character is a small character-level mismatch: the receipt shows 'P BUTTER', not 'F BUTTER'.",
+          "issue_type": "character_value_mismatch",
+          "description": "The first line item description has an incorrect initial character.",
+          "extracted_value": "F BUTTER",
+          "corrected_value": "P BUTTER",
+          "expected_context": "First merchandise line directly below the dotted separator, with price \u00a31.09 aligned on the right.",
+          "correction_reasoning": "I rechecked the first item row in the item list area. The word before 'BUTTER' begins with a rounded vertical-stem character consistent with 'P', not 'F'. The remainder of the text and the aligned price \u00a31.09 match the same row, so the corrected description for this line item is 'P BUTTER'.",
+          "visual_evidence": "Located in the line-items section below the store/reference lines and dotted divider. On the first item row, the text at the left reads 'P BUTTER' and the corresponding price '\u00a31.09' appears at the far right of the same row."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 30689,
+      "output_tokens": 4401
+    },
+    "cost": {
+      "input_cost": 0.03836125,
+      "output_cost": 0.0330075,
+      "total_cost": 0.07136875000000001,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

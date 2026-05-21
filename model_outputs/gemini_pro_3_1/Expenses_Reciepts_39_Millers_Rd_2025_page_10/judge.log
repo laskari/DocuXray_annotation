@@ -1,0 +1,5 @@
+17:36:30  INFO     =======================================================
+17:36:30  INFO       JUDGE  doc_id=Expenses_Reciepts_39_Millers_Rd_2025_page_10  [2026-05-18 17:36:30]
+17:36:30  INFO     =======================================================
+17:36:43  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0781  elapsed=12204ms
+17:36:43  WARNING    [totals] amountPaid.originalValue — The Order Total amount was duplicated into the amountPaid field.

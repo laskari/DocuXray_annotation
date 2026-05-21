@@ -1,0 +1,351 @@
+{
+  "document_id": "ConsettScanner_20251212_131455_page_5",
+  "file": "ConsettScanner_20251212_131455_page_5.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "377",
+      "documentTitle": null,
+      "issueDate": "10.12.2024",
+      "issueDateISO": "2024-12-10",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "Millhouse Builders",
+        "addressStructured": {
+          "street_number": "223",
+          "street_name": "Durham",
+          "street_type": "Road",
+          "unit": null,
+          "building": null,
+          "district": "Blackhill",
+          "city": "Consett",
+          "state": "Co Durham",
+          "postal_code": "DH8 5UQ",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "01207 507702",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": "07960 956164",
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "Miss S Burns",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "Arnold Close",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Stanley",
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Reskim Fireplace",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": "\u00a3 200.00",
+          "normalizedValue": 200.0
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a3 200.00",
+        "normalizedValue": 200.0
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 7493,
+    "latency_ms": 44789,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.022479,
+      "total_cost": 0.026701,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 112,
+        "total_tokens": 2223,
+        "thoughts": null
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 3035,
+        "total_tokens": 5146,
+        "thoughts": "**My Thought Process on Extracting Invoice Data**\n\nOkay, here's how I'm approaching this: The user wants me to pull information from this invoice image and format it as JSON, following the specified schema \u2013 specifically, the `parties` and `shippingInfo` parts. I need to be precise, complete, and adhere strictly to the schema's definitions.\n\nFirst, I need to look over the document and identify key elements. I've identified the seller (\"Millhouse Builders\") and buyer (\"Miss S Burns\"), along with their addresses, and contact info, and the invoice date/number. I've also found the line item for the service rendered. My focus is on extracting the *participants* involved in the transaction, particularly seller and buyer information, and I need to determine the best method to map the data based on the provided schema.\n\nNext, it's about mapping these extracted elements to the JSON schema. Here's where I need to be careful and make smart choices. The schema has `seller`, `buyer`, `billTo`, and `customer` within `parties`. The address structure is important too. I need to make sure I split up the address correctly. I also need to make sure I don't use 'Mob' as a phone number.\n\nI need to map the address and ensure it fits the schema correctly. I break down the address of \"Millhouse Builders\" and \"Miss S Burns\".\n\nLet's double-check the labels. The document says \"Name: Miss S Burns\". According to the schema, `customer` is used \"where the document uses the label 'Customer' and does not define formal buyer/seller roles.\" But the document *doesn't* use the label \"Customer\", just \"Name\". However, `customer` is also for POS/retail.\n\nI see there's a mobile number for Millhouse Builders (\"Mob: 07960 956164\"). I must decide where this goes. Usually 'Mob' is mobile, and the schema has `whatsappNumber` so let's use it for the mobile number.\n\nA final check on the data: Ensure the address is structured according to the schema. \"Arnold Close\" goes to `street_name` and \"Stanley\" goes to `city`. No \"ShippingInfo\" exists in this document.\n\nLet's ensure the output is valid JSON, no comments, and correctly formatted, and adhere to the single parseable object format.\n\nI've also made sure I didn't misinterpret the buyer and customer. I kept double checking to make sure it was `customer` since the label is \"Name\", and not a formal \"Buyer\", \"Purchaser\" etc.\n\nAnd finally I build the JSON as follows:\n\n```json\n{\n  \"parties\": {\n    \"seller\": {\n      \"name\": \"Millhouse Builders\",\n      \"addressStructured\": {\n        \"street_number\": \"223\",\n        \"street_name\": \"Durham\",\n        \"street_type\": \"Road\",\n        \"unit\": null,\n        \"building\": null,\n        \"district\": \"Blackhill\",\n        \"city\": \"Consett\",\n        \"state\": \"Co Durham\",\n        \"postal_code\": \"DH8 5UQ\",\n        \"country\": null\n      },\n      \"registrationNumber\": null,\n      \"phone\": \"01207 507702\",\n      \"fax\": null,\n      \"email\": null,\n      \"whatsappNumber\": \"07960 956164\",\n      \"taxRegistrationNumber\": null\n    },\n    \"buyer\": null,\n    \"billTo\": null,\n    \"customer\": {\n      \"name\": \"Miss S Burns\",\n      \"addressStructured\": {\n        \"street_number\": null,\n        \"street_name\": \"Arnold Close\",\n        \"street_type\": null,\n        \"unit\": null,\n        \"building\": null,\n        \"district\": null,\n        \"city\": \"Stanley\",\n        \"state\": null,\n        \"postal_code\": null,\n        \"country\": null\n      },\n      \"registrationNumber\": null,\n      \"phone\": null,\n      \"fax\": null,\n      \"email\": null,\n      \"whatsappNumber\": null,\n      \"taxRegistrationNumber\": null\n    },\n    \"shipTo\": null,\n    \"shipFrom\": null\n  },\n  \"shippingInfo\": null\n}\n```\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1935,
+        "total_tokens": 4046,
+        "thoughts": "**Invoice Analysis and JSON Construction**\n\nOkay, here's the breakdown. This looks like a standard invoice from Millhouse Builders to Miss S Burns for a single line item: Reskim Fireplace. The total is \u00a3200.00.\n\nI'm focusing on the provided schema, which specifies the line item details (Part 3). Even though the prompt mentions extracting *all* data, I need to stick to the schema I've been given, which dictates the structure and key names. The prompt also states I need to return *all* line item details in a single, parseable JSON.\n\nThe key considerations here are the line item fields: `description`, `lineTotalIncludingTax`. `isOverflowPage` is also needed, and is clearly false.\n\nThe invoice number, \"377\", is present in the table, but I can see it's typically a document header, *not* a line item itself. So, I will extract \"Reskim Fireplace\" as the description, with a `lineTotalIncludingTax` of 200.00. The provided schema asks for all fields, even if they're null, so I'll include the other null keys.\n\nThe line item extraction:\n-   `description`: \"Reskim Fireplace\"\n-   `lineTotalIncludingTax`: { \"originalValue\": \"\u00a3 200.00\", \"normalizedValue\": 200.0 }\n-   `isOverflowPage`: false\n\nI am sure the original and normalized values of the price are correct.\n\nRemembering the rules: no comments, no control tokens like newlines or tabs, and double-quoted strings. I will return the complete JSON object, as per the schema.\n\n```json\n{\n  \"lineItems\": [\n    {\n      \"description\": \"Reskim Fireplace\",\n      \"itemCode\": null,\n      \"quantity\": null,\n      \"unitOfMeasure\": null,\n      \"unitPrice\": null,\n      \"lineTotalIncludingTax\": {\n        \"originalValue\": \"\u00a3 200.00\",\n        \"normalizedValue\": 200.0\n      },\n      \"lineTotalExcludingTax\": null,\n      \"discountAmount\": null,\n      \"discountPercent\": null,\n      \"lineTaxAmount\": null,\n      \"lineTaxPercent\": null,\n      \"serialNumber\": null,\n      \"lotNumber\": null,\n      \"gtin\": null,\n      \"hsCode\": null,\n      \"remarks\": null,\n      \"serviceDate\": null,\n      \"serviceDateISO\": null\n    }\n  ],\n  \"isOverflowPage\": false\n}\n```\n\nI have checked every field to ensure it is compliant with the schema. I'm ready to generate this.\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2411,
+        "total_tokens": 4522,
+        "thoughts": "**My Thought Process on Extracting Data and Generating JSON**\n\nOkay, the task is to get data from this invoice image and put it into a specific JSON format. The tricky part is the schema. I've got a schema for \"Part 4: Financial totals, tax breakdowns, and payments\", but the prompt hints that there might be more to the schema, like for `invoiceInfo`, `parties`, and `lineItems`. However, the prompt *specifically* says I need to follow the provided schema when generating the JSON. Since the context *only* contains the Part 4 schema, that's what I'll stick to. I'm inferring the intention: only build part 4. It might be unusual, because normally I'd expect the full schema.\n\nFirst, I looked at the image and identified the \"Total: \u00a3 200.00.\" I see a line item \"Reskim Fireplace \u00a3 200.00\", which likely leads to the total. Now I need to map this data to the fields in the schema. The `totalIncludingTax` field seems like the obvious choice for \"Total,\" especially since no tax information is explicitly given.\n\nI need to create the JSON object with the \"totals\", \"taxes\", and \"applyTaxAfterDiscount\" fields according to the schema. I'll make sure to use `null` for values I can't find in the image. The \"Total\" value I found in the image is straightforwardly mapped to the `totalIncludingTax` field. I'm going to only map values that are explicitly labeled. There's no subtotal, no tax information, so I will populate `totalIncludingTax`.\n\nThen, I double-checked the schema, verifying the structure and field names. I paid close attention to fields like `discountTotal`, `taxTotal`, `subtotal`, and `totalExcludingTax`, but since the image doesn't offer this information, I can set them to `null`. I also considered mapping the amount to `subtotal` but will only map the final amount to `totalIncludingTax`.\n\nI then generated the JSON object, meticulously matching each data point to its corresponding field in the schema. Before I submit, I'm going to double check it: parseable, no comments, proper quoting, null values where appropriate, and that it conforms strictly to the provided \"Part 4\" schema. I'm prioritizing accuracy and adherence to the prompt's instructions, even if the result feels incomplete from a full invoice perspective.\n\n\n"
+      }
+    ]
+  }
+}

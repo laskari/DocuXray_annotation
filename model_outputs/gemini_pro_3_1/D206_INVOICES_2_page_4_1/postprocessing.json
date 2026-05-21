@@ -1,0 +1,961 @@
+{
+  "document_id": "D206_INVOICES_2_page_4_1",
+  "postprocessed": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "24617",
+      "documentTitle": "INVOICE",
+      "issueDate": "14/02/2024",
+      "issueDateISO": "2024-02-14",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "HAL001",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Food"
+    },
+    "parties": {
+      "seller": {
+        "name": "Nazar Wholesale Ltd",
+        "addressStructured": {
+          "street_number": "1-2",
+          "street_name": "Holbrook",
+          "street_type": "Lane",
+          "unit": "Unit 5",
+          "building": "Status Business Park",
+          "district": null,
+          "city": "Coventry",
+          "state": "West Midlands",
+          "postal_code": "CV6 4AF",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "02477 988091",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "183388573"
+      },
+      "buyer": {
+        "name": "DONTAY LIMITED T/A HALIKARNAS KEBAB",
+        "addressStructured": {
+          "street_number": "55",
+          "street_name": "Regent",
+          "street_type": "Street",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Leamington Spa",
+          "state": "Warwickshire",
+          "postal_code": "CV32 5EE",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "01926435588/07488964423",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": "DONTAY LIMITED T/A HALIKARNAS KEBAB",
+        "addressStructured": {
+          "street_number": "55",
+          "street_name": "Regent",
+          "street_type": "Street",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Leamington Spa",
+          "state": "Warwickshire",
+          "postal_code": "CV32 5EE",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": "01926435588/07488964423",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "KTC LEMON DRESSING 24 x 400 ML",
+        "itemCode": "DRS0006",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "10.90",
+          "normalizedValue": 10.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "10.90",
+          "normalizedValue": 10.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "AMERICAN CHICKEN TRAIN SFC BREADING 1 x 20 KG",
+        "itemCode": "FLO0025",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "39.00",
+          "normalizedValue": 39.0
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "39.00",
+          "normalizedValue": 39.0
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "KTC PLASTIC VEGETABLE OIL 1 x 20 LT",
+        "itemCode": "OIL00002",
+        "quantity": {
+          "originalValue": "2.00",
+          "normalizedValue": 2.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "41.90",
+          "normalizedValue": 41.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "83.80",
+          "normalizedValue": 83.8
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "ANTICA TRADIZIONE EXTRA VIRGIN OLIVE OIL 1 x 5 LT",
+        "itemCode": "OIL0019",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "43.90",
+          "normalizedValue": 43.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "43.90",
+          "normalizedValue": 43.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "PEPPER PASTE MILD ONCU 1 x 4.3 KG",
+        "itemCode": "SAU0002",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "24.90",
+          "normalizedValue": 24.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "24.90",
+          "normalizedValue": 24.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "LIONS PIRI PIRI HOT SAUCE 2 x 2.27 KG",
+        "itemCode": "SAU0085",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "16.90",
+          "normalizedValue": 16.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "16.90",
+          "normalizedValue": 16.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "LEMON PEPPER SFC 1.6 KG",
+        "itemCode": "SPI0050",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "15.90",
+          "normalizedValue": 15.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "15.90",
+          "normalizedValue": 15.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "HAYAT WATER 24 x 500 ML",
+        "itemCode": "DRI0005",
+        "quantity": {
+          "originalValue": "6.00",
+          "normalizedValue": 6.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "4.90",
+          "normalizedValue": 4.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "29.40",
+          "normalizedValue": 29.4
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "5.88",
+          "normalizedValue": 5.88
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "COCA COLA CAN 24 x 330 ML (GB)",
+        "itemCode": "DRI0036",
+        "quantity": {
+          "originalValue": "4.00",
+          "normalizedValue": 4.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "14.30",
+          "normalizedValue": 14.3
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "57.20",
+          "normalizedValue": 57.2
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "11.44",
+          "normalizedValue": 11.44
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "COCA COLA DIET CAN 24 x 330 ML (GB)",
+        "itemCode": "DRI0041",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "13.60",
+          "normalizedValue": 13.6
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "13.60",
+          "normalizedValue": 13.6
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "2.72",
+          "normalizedValue": 2.72
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "FANTA ORANGE CAN 24 x 330 ML (GB)",
+        "itemCode": "DRI0061",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "11.95",
+          "normalizedValue": 11.95
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "11.95",
+          "normalizedValue": 11.95
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "2.39",
+          "normalizedValue": 2.39
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "RIO TROPICAL 24 x 330 ML (GB)",
+        "itemCode": "DRI0093",
+        "quantity": {
+          "originalValue": "2.00",
+          "normalizedValue": 2.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "11.90",
+          "normalizedValue": 11.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "23.80",
+          "normalizedValue": 23.8
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "4.76",
+          "normalizedValue": 4.76
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "DIMES MIXED FRUIT JUICE 27 x 200 ML",
+        "itemCode": "DRI0223",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "8.90",
+          "normalizedValue": 8.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "8.90",
+          "normalizedValue": 8.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "1.78",
+          "normalizedValue": 1.78
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "YAYLA AYRAN BOTTLE 20 x 250 ML",
+        "itemCode": "DAI0024",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "9.90",
+          "normalizedValue": 9.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "9.90",
+          "normalizedValue": 9.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "ZEYBEK NATURAL SET YOGHURT 1 x 5 KG",
+        "itemCode": "DAI0036",
+        "quantity": {
+          "originalValue": "1.00",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "12.90",
+          "normalizedValue": 12.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "12.90",
+          "normalizedValue": 12.9
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "LETSDOUGH 5\" SEEDED BUN",
+        "itemCode": "BUN0005",
+        "quantity": {
+          "originalValue": "4.00",
+          "normalizedValue": 4.0
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "15.90",
+          "normalizedValue": 15.9
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "63.60",
+          "normalizedValue": 63.6
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "lineTaxPercent": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalExcludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "validation_errors": [],
+  "metadata": {
+    "latency_ms": 2
+  }
+}

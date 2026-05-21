@@ -1,0 +1,29 @@
+17:15:25  INFO     =======================================================
+17:15:25  INFO       EXTRACTION  doc_id=D206_INVOICES_4_page_15  [2026-05-18 17:15:25]
+17:15:25  INFO     =======================================================
+17:15:25  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:15:25  INFO     [D206_INVOICES_4_page_15] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:15:25  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'general' for doc 'D206_INVOICES_4_page_15'
+17:15:25  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'parties' for doc 'D206_INVOICES_4_page_15'
+17:15:25  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'items' for doc 'D206_INVOICES_4_page_15'
+17:15:25  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'totals' for doc 'D206_INVOICES_4_page_15'
+17:15:29  INFO     [D206_INVOICES_4_page_15] [PART_DONE] Completed part 'general' for doc 'D206_INVOICES_4_page_15'
+17:15:52  INFO     [D206_INVOICES_4_page_15] [PART_DONE] Completed part 'totals' for doc 'D206_INVOICES_4_page_15'
+17:20:39  INFO     =======================================================
+17:20:39  INFO       EXTRACTION  doc_id=D206_INVOICES_4_page_15  [2026-05-18 17:20:39]
+17:20:39  INFO     =======================================================
+17:20:40  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:20:40  INFO     [D206_INVOICES_4_page_15] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:20:40  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'general' for doc 'D206_INVOICES_4_page_15'
+17:20:40  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'parties' for doc 'D206_INVOICES_4_page_15'
+17:20:40  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'items' for doc 'D206_INVOICES_4_page_15'
+17:20:40  INFO     [D206_INVOICES_4_page_15] [PART_CALL] Starting part 'totals' for doc 'D206_INVOICES_4_page_15'
+17:20:54  INFO     [D206_INVOICES_4_page_15] [PART_DONE] Completed part 'general' for doc 'D206_INVOICES_4_page_15'
+17:21:10  INFO     [D206_INVOICES_4_page_15] [PART_DONE] Completed part 'totals' for doc 'D206_INVOICES_4_page_15'
+17:21:14  INFO     [D206_INVOICES_4_page_15] [PART_DONE] Completed part 'parties' for doc 'D206_INVOICES_4_page_15'
+17:21:40  INFO     [D206_INVOICES_4_page_15] [PART_DONE] Completed part 'items' for doc 'D206_INVOICES_4_page_15'
+17:21:40  INFO     [D206_INVOICES_4_page_15] SUCCESS: Invoice extraction completed | latency_ms=59503
+17:21:40  INFO     OK  elapsed=59589ms  cost=$0.0382
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=D206_INVOICES_4_page_15  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

@@ -1,0 +1,7 @@
+17:31:06  INFO     =======================================================
+17:31:06  INFO       JUDGE  doc_id=H063_INVOICES3_page_155  [2026-05-18 17:31:06]
+17:31:06  INFO     =======================================================
+17:31:32  INFO     FAIL  issues=3  confidence=0.95  cost=$0.0438  elapsed=26606ms
+17:31:32  WARNING    [parties] buyer.addressStructured.district — The value 'Shipston on Stour' appears twice in the buyer's address fields ('district' and 'city').
+17:31:32  WARNING    [lineItems] lineTaxPercent — The value '1' in lineTaxPercent is the VAT Code index, not the actual tax percentage (which is 20.00% for this line).
+17:31:32  WARNING    [totals] taxableAmount — The field 'taxableAmount' was populated with the net total value '268.23', but the document does not contain an explicit 'Taxable Amount' label as required by the schema.

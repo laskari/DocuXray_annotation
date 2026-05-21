@@ -130,8 +130,19 @@ class AnnotationApp(tk.Tk):
                     font=(FONT, 15, "bold"))
         s.configure("Status.TLabel", background="#1e1e2e", foreground="#a0a0c0", font=(FONT, 11))
         s.configure("Primary.TButton", font=(FONT, 12, "bold"), padding=6)
-        s.configure("TCombobox", font=(FONT, 12))
-        s.map("TCombobox", fieldbackground=[("readonly", "#2a2a3e")])
+        self.option_add("*TCombobox*Listbox.background", "white")
+        self.option_add("*TCombobox*Listbox.foreground", "black")
+        self.option_add("*TCombobox*Listbox.selectBackground", "#2563eb")
+        self.option_add("*TCombobox*Listbox.selectForeground", "white")
+
+        s.configure("TCombobox", font=(FONT, 12),
+                    fieldbackground="white", background="white", foreground="black",
+                    selectbackground="#2563eb", selectforeground="white")
+        s.map("TCombobox",
+              fieldbackground=[("readonly", "white")],
+              foreground=[("readonly", "black")],
+              selectbackground=[("readonly", "#2563eb")],
+              selectforeground=[("readonly", "white")])
 
     # ── UI Build ─────────────────────────────────────────────────────────────
 
@@ -158,15 +169,15 @@ class AnnotationApp(tk.Tk):
         nav = tk.Frame(left, bg="#2a2a3e", pady=6, padx=8)
         nav.pack(fill="x", pady=(0, 6))
         tk.Button(nav, text="◀ Prev", command=self._prev,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11, "bold"), padx=8
                   ).pack(side="left", padx=2)
         tk.Button(nav, text="Next ▶", command=self._next,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11, "bold"), padx=8
                   ).pack(side="left", padx=2)
         tk.Button(nav, text="⏭ Skip", command=self._next,
-                  bg="#2a2a3e", fg="#e0e0f0", activebackground="#3a3a5e", activeforeground="#ffffff", relief="flat",
+                  bg="#2a2a3e", fg="#2563eb", activebackground="#3a3a5e", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 10), padx=6
                   ).pack(side="left", padx=2)
 
@@ -193,13 +204,13 @@ class AnnotationApp(tk.Tk):
         zoom_bar = tk.Frame(img_frame, bg="#0e0e1a")
         zoom_bar.pack(fill="x")
         tk.Button(zoom_bar, text="+", command=lambda: self._zoom(1.25),
-                  bg="#2a2a4e", fg="#ffffff", activebackground="#3d3d66", activeforeground="#ffffff", relief="flat", font=(FONT, 12, "bold"), width=2
+                  bg="#2a2a4e", fg="#2563eb", activebackground="#3d3d66", activeforeground="#1d4ed8", relief="flat", font=(FONT, 12, "bold"), width=2
                   ).pack(side="left", padx=2, pady=1)
         tk.Button(zoom_bar, text="−", command=lambda: self._zoom(0.8),
-                  bg="#2a2a4e", fg="#ffffff", activebackground="#3d3d66", activeforeground="#ffffff", relief="flat", font=(FONT, 12, "bold"), width=2
+                  bg="#2a2a4e", fg="#2563eb", activebackground="#3d3d66", activeforeground="#1d4ed8", relief="flat", font=(FONT, 12, "bold"), width=2
                   ).pack(side="left", padx=2, pady=1)
         tk.Button(zoom_bar, text="↺ Reset", command=self._zoom_reset,
-                  bg="#2a2a4e", fg="#ffffff", activebackground="#3d3d66", activeforeground="#ffffff", relief="flat", font=(FONT, 11), padx=4
+                  bg="#2a2a4e", fg="#2563eb", activebackground="#3d3d66", activeforeground="#1d4ed8", relief="flat", font=(FONT, 11), padx=4
                   ).pack(side="left", padx=4, pady=1)
         self.zoom_lbl = tk.Label(zoom_bar, text="100%", bg="#0e0e1a",
                                  fg="#cbd5e1", font=(FONT, 11))
@@ -278,27 +289,27 @@ class AnnotationApp(tk.Tk):
 
         tk.Button(bottom, text="👁 Preview",
                   command=self._open_preview,
-                  bg="#3b82f6", fg="#ffffff", activebackground="#2563eb", activeforeground="#ffffff", relief="flat",
+                  bg="#3b82f6", fg="#2563eb", activebackground="#2563eb", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11, "bold"), padx=12, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="💾 Save & Next",
                   command=self._save_and_next,
-                  bg="#10b981", fg="#ffffff", activebackground="#059669", activeforeground="#ffffff", relief="flat",
+                  bg="#10b981", fg="#2563eb", activebackground="#059669", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11, "bold"), padx=12, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="💾 Save Only",
                   command=self._save_only,
-                  bg="#059669", fg="#ffffff", activebackground="#047857", activeforeground="#ffffff", relief="flat",
+                  bg="#059669", fg="#2563eb", activebackground="#047857", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11), padx=10, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="🔀 Save Combinations",
                   command=self._open_save_combinations,
-                  bg="#8b5cf6", fg="#ffffff", activebackground="#7c3aed", activeforeground="#ffffff", relief="flat",
+                  bg="#8b5cf6", fg="#2563eb", activebackground="#7c3aed", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11), padx=10, pady=4
                   ).pack(side="left", padx=4)
         tk.Button(bottom, text="📦 Export JSONL",
                   command=self._export,
-                  bg="#4b5563", fg="#ffffff", activebackground="#374151", activeforeground="#ffffff", relief="flat",
+                  bg="#4b5563", fg="#2563eb", activebackground="#374151", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11), padx=8, pady=4
                   ).pack(side="right", padx=4)
         self.save_msg = tk.Label(bottom, text="", bg="#12121e", fg="#5dade2",
@@ -565,7 +576,7 @@ class AnnotationApp(tk.Tk):
         tk.Button(
             fv_frame, text="Submit",
             command=lambda p=path, ev=entry_var: self._on_submit(p, ev.get()),
-            bg="#3b82f6", fg="#ffffff", relief="flat",
+            bg="#3b82f6", fg="#2563eb", relief="flat",
             font=(FONT, 10, "bold"), padx=10, pady=2
         ).pack(side="left")
 
@@ -784,11 +795,11 @@ class AnnotationApp(tk.Tk):
         btn_row = tk.Frame(win, bg="#1e1e2e")
         btn_row.pack(pady=8)
         tk.Button(btn_row, text="💾 Save Selected", command=do_save_combos,
-                  bg="#10b981", fg="#ffffff", activebackground="#059669", activeforeground="#ffffff", relief="flat",
+                  bg="#10b981", fg="#2563eb", activebackground="#059669", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11, "bold"), padx=12, pady=4
                   ).pack(side="left", padx=6)
         tk.Button(btn_row, text="Close", command=win.destroy,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11), padx=10, pady=4
                   ).pack(side="left", padx=6)
 
@@ -900,7 +911,7 @@ class AnnotationApp(tk.Tk):
         count_lbl.pack(pady=(0, 4))
 
         tk.Button(win, text="Close", command=win.destroy,
-                  bg="#3a3a5e", fg="#ffffff", activebackground="#4f4f7a", activeforeground="#ffffff", relief="flat",
+                  bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11), padx=12, pady=4
                   ).pack(pady=(0, 8))
 

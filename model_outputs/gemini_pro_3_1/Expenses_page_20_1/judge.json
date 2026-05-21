@@ -1,0 +1,90 @@
+{
+  "document_id": "Expenses_page_20_1",
+  "file": "Expenses_page_20_1.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 3,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "parties"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "purchaseOrderNumber",
+          "row_index": null,
+          "reasoning": "1. No structural error. 2. No duplication error. 3. No wrong context. 4. No multiple candidates. 5. No value not present. 6. Is the field null/empty but the value IS clearly visible in the document? YES. The 'Customer Ref' field contains 'KEVIN', which serves as the customer's purchase order/reference number for this transaction.",
+          "issue_type": "missing_value",
+          "description": "The purchase order number (labeled as Customer Ref) is present on the document but was not extracted.",
+          "extracted_value": "null",
+          "corrected_value": "KEVIN",
+          "expected_context": "Customer Ref column",
+          "correction_reasoning": "The invoice includes a column header 'Customer Ref' with the value 'KEVIN' below it. In B2B invoicing, the customer reference typically acts as the Purchase Order number.",
+          "visual_evidence": "Located in the first column of the main line items table, below the 'Customer Ref' header."
+        },
+        {
+          "field": "paymentTerms",
+          "row_index": null,
+          "reasoning": "1. No structural error. 2. No duplication error. 3. Is a SINGLE field's value taken from a completely unrelated area/label of the document? YES. The extracted text is a label/condition phrase from the discount section, not actual payment terms.",
+          "issue_type": "wrong_context",
+          "description": "The extracted value is a conditional phrase regarding a settlement discount, not the actual payment terms.",
+          "extracted_value": "If paid to agreed settlement terms",
+          "corrected_value": "null",
+          "expected_context": "Discount section label",
+          "correction_reasoning": "The phrase 'If paid to agreed settlement terms' is part of a sentence indicating when a discount applies. The actual payment terms are not explicitly defined on the document (it just refers to 'agreed settlement terms'). Therefore, the field should be null.",
+          "visual_evidence": "Located in the bottom left section, under the 'Discounted price:' label."
+        }
+      ],
+      "parties": [
+        {
+          "field": "shipTo.addressStructured.city",
+          "row_index": null,
+          "reasoning": "The extracted value 'GODALMING' has a small text typo. The document explicitly spells the city as 'GODOLMING' with an 'O' in the middle, located in the Delivery Address block.",
+          "issue_type": "character_value_mismatch",
+          "description": "City name has a typo, swapping 'O' for 'A'.",
+          "extracted_value": "GODALMING",
+          "corrected_value": "GODOLMING",
+          "expected_context": "Delivery Address:",
+          "correction_reasoning": "The corrected value reflects the exact spelling found in the Delivery Address block on the image.",
+          "visual_evidence": "Located in the 'Delivery Address' block on the right, specifically the 4th line down reading 'GODOLMING'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19846,
+      "output": 5760,
+      "total": 25606
+    },
+    "cost": {
+      "input_tokens": 19846,
+      "output_tokens": 5760,
+      "input_cost": 0.039692,
+      "output_cost": 0.06912,
+      "total_cost": 0.10881199999999999
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Defining the Extraction Task**\n\nI'm focusing now on the user's goal: validating the `invoiceInfo` data extracted from the JSON against the source image. The core challenge is to identify any discrepancies or extraction failures based on established rules. This involves a clear definition of what constitutes an acceptable vs. problematic extraction.\n\n\n**Refining the Extraction Logic**\n\nI'm now diving deeper into document analysis, specifically mapping extracted data to the expected JSON structure. I'm verifying the \"INVOICE\" title, invoice number, account number, and invoice date are extracted accurately. The \"Due Date\" seems to require more nuanced interpretation based on the provided text, so I'm setting it to null. There's a debate about \"Customer Ref\" and whether it is a PO number; that field is null in the JSON, so I'll leave it as is, and flag it as a potential field.\n\n\n**Investigating Potential Fields**\n\nI'm now investigating other potential fields and have identified some possibilities related to Purchase Order number. The prompt includes \"purchaseOrderNumber\" as optional. I'm checking for Sales Order Number, which is not explicitly labeled. The Payment Terms, as extracted, present a nuanced challenge because the extracted \"If paid to agreed settlement terms\" appears conditional, and not a standard \"Net 30\" style term, so further evaluation is required. The extracted document number, title, and issue date are correct.\n\n\n**Analyzing Extraction Errors**\n\nI'm now identifying and categorizing discrepancies found during validation. The `paymentTerms` field extraction presents a clear issue: the extracted value is taken from a discount box, rather than the actual payment terms, which are not explicitly defined. This is categorized as a \"wrong_context\" issue. I am also planning how to flag the \"Customer Ref\" as a potential \"missing_value\" if not mapped to a Purchase Order Number.\n\n\n",
+      "parties": "**Defining the Scope**\n\nI'm zeroing in on defining the precise goal: validating extracted \"parties\" data against the image, flagging issues based on priority. My focus now is clearly on the scope of the verification process.\n\n\n**Validating the JSON**\n\nI've moved on from simple JSON validation, and now I'm diving deep into analyzing the extracted data. Specifically, I am cross-referencing extracted information against the actual document, focusing on the \"seller\" data, to identify potential inconsistencies. So far the \"Mercado\" data is matching up very well against the given document. I have started by looking at a variety of fields such as name, address, phone number, and tax registration number. So far the buyer has been identified as empty, which is appropriate, as indicated.\n\n\n**Pinpointing Data Discrepancies**\n\nI've discovered a critical character value mismatch within the \"shipTo\" address. While the extracted data lists the city as \"GODALMING\", the document clearly states \"GODOLMING\". This demands immediate attention as a 'character_value_mismatch'. The buyer and shipFrom data remain appropriately empty, reinforcing the accuracy of earlier assessments.\n\n\n",
+      "lineItems": "**Verifying Line Item Extraction**\n\nI'm focused on verifying the `lineItems` extraction. The document's line item header is: Customer Ref | Order | Quality | Design | Length | Width | Qty | Unit. I'm checking the extracted data's accuracy against this structure.\n\n\n**Analyzing Data Mapping Accuracy**\n\nI'm now diving deeper into the accuracy of the data mapping. It appears the extraction is successful, mapping the relevant fields correctly like description, itemCode, quantity, unitOfMeasure, unitPrice, lineTotalExcludingTax, and lineTaxAmount. Additionally, the algorithm effectively captures unmapped columns as remarks to retain all information. The unitOfMeasure extraction is a little less clear, I am not sure if \"1\" is a good unit of measure, but is valid due to the structure.\n\n\n",
+      "totals": "**Verifying the Totals**\n\nI'm currently focused on the verification process for the extracted `totals` data. My initial assessment is that the user desires a method to validate the structure of the JSON array, ensuring accuracy and consistency with the invoice data. This needs to be a strictly formatted JSON array, so I must prioritize the required format.\n\n\n**Analyzing Discount Application**\n\nI'm now examining the document's totals section and the application of discounts. I've noted the \"INVOICE TOTALS\" and \"Discounted price\" boxes and their respective values. I'm focusing on the \"A settlement discount of 2.50%...\" text, considering whether it qualifies as an explicit total discount percentage based on the rules. The `discountTotal` appears correct as `null`, but the `discountPercentage` is still under scrutiny due to its location within the document.\n\n\n**Validating Specific Fields**\n\nI've confirmed the initial assessment regarding the discount percentage's explicit presence in the totals section. The values for `subtotal`, `totalExcludingTax`, `shippingAmount`, `taxTotal`, and `totalIncludingTax` have also been validated against the corresponding fields in the document; all are now confirmed as correct. I am now considering what \"Balance Due\" should be, as it is not explicitly labeled. The invoice does not explicitly label \u201cBalance Due\u201d or \u201cTotal Due\u201d. However, \"INVOICE TOTAL 171.17\" is printed.\n\n\n",
+      "taxes": "**Defining the Approach**\n\nI'm currently focused on defining the verification approach for the tax data. My understanding is that extraction errors must be identified and a corresponding JSON response returned. I'm prioritizing accuracy in this process.\n\n\n**Validating the Extraction**\n\nI've validated the extracted data against the invoice. The \"VAT\" name, \"20.00%\" percentage, and \"28.53\" amount are all confirmed against the document's \"INVOICE TOTALS\" and \"VAT indicator 1\" sections. I'm satisfied with the accuracy of these extractions.\n\n\n",
+      "shippingInfo": "**Reviewing Data Fields**\n\nI'm currently reviewing the extracted data, specifically the `shippingInfo` section. The fields identified are `carrier`, `deliveryDate`, `deliveryDateISO`, and `trackingNumber`, but they're all null at the moment. My immediate task is to verify if any of these fields require additional processing or have potential sources for data.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 16481,
+    "cost": {
+      "input_tokens": 19846,
+      "output_tokens": 5760,
+      "input_cost": 0.039692,
+      "output_cost": 0.06912,
+      "total_cost": 0.10881199999999999
+    }
+  }
+}

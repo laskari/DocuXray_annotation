@@ -1,0 +1,791 @@
+{
+  "document_id": "H063_INVOICES3_page_157",
+  "file": "H063_INVOICES3_page_157.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "0229145",
+      "documentTitle": null,
+      "issueDate": "27/03/25",
+      "issueDateISO": "2025-03-27",
+      "issueTime": "08:00",
+      "issueTimeISO": "08:00:00",
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "702292292",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Food"
+    },
+    "parties": {
+      "seller": {
+        "name": "BOOKER",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "Nelson Lane",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Warwick",
+          "state": null,
+          "postal_code": "CV34 5JB",
+          "country": null
+        },
+        "registrationNumber": "197380 / XTAW00000102869",
+        "phone": "01926 495111",
+        "fax": "01926 410392",
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "GB 220 4302 31"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "MRS S HALL NICE BITES",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "TILEMANS LANE",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "SHIPSTON-ON-STOUR",
+          "state": "WARWICKSHIRE",
+          "postal_code": "CV36 4QZ",
+          "country": null
+        },
+        "registrationNumber": "702292292",
+        "phone": "07725189911",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Chefs Larder Butterific",
+        "itemCode": "293919",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "2kg",
+        "unitPrice": {
+          "originalValue": "4.99",
+          "normalizedValue": 4.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "4.99",
+          "normalizedValue": 4.99
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Fiorello Grated Mozz 100%",
+        "itemCode": "227569",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "2kg",
+        "unitPrice": {
+          "originalValue": "9.99 CD",
+          "normalizedValue": 9.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "9.99",
+          "normalizedValue": 9.99
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "WF Grated Mature Cheddar",
+        "itemCode": "293152",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "2kg",
+        "unitPrice": {
+          "originalValue": "12.49",
+          "normalizedValue": 12.49
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "12.49",
+          "normalizedValue": 12.49
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "LF Triple Choc Flapjack",
+        "itemCode": "290832",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "9x65g",
+        "unitPrice": {
+          "originalValue": "6.25",
+          "normalizedValue": 6.25
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "6.25",
+          "normalizedValue": 6.25
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CL Baked Beans",
+        "itemCode": "719799",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "2.62kg",
+        "unitPrice": {
+          "originalValue": "4.49",
+          "normalizedValue": 4.49
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "4.49",
+          "normalizedValue": 4.49
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CL Hash Browns",
+        "itemCode": "263794",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "1.36kg",
+        "unitPrice": {
+          "originalValue": "2.79",
+          "normalizedValue": 2.79
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "2.79",
+          "normalizedValue": 2.79
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CE U/Smk R/Less Back Bacon",
+        "itemCode": "147175",
+        "quantity": {
+          "originalValue": "2",
+          "normalizedValue": 2.0
+        },
+        "unitOfMeasure": "2kg",
+        "unitPrice": {
+          "originalValue": "9.99",
+          "normalizedValue": 9.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "19.98",
+          "normalizedValue": 19.98
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "CL Thick Pork Sausages",
+        "itemCode": "105135",
+        "quantity": {
+          "originalValue": "2",
+          "normalizedValue": 2.0
+        },
+        "unitOfMeasure": "2.27kg",
+        "unitPrice": {
+          "originalValue": "9.49",
+          "normalizedValue": 9.49
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "18.98",
+          "normalizedValue": 18.98
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "40s Baking Potatoes",
+        "itemCode": "103063",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "15kg",
+        "unitPrice": {
+          "originalValue": "14.99",
+          "normalizedValue": 14.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "14.99",
+          "normalizedValue": 14.99
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Mixed Catering Peppers",
+        "itemCode": "107803",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "6s",
+        "unitPrice": {
+          "originalValue": "4.49",
+          "normalizedValue": 4.49
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "4.49",
+          "normalizedValue": 4.49
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Jacks Salad Tomatoes",
+        "itemCode": "274797",
+        "quantity": {
+          "originalValue": "1",
+          "normalizedValue": 1.0
+        },
+        "unitOfMeasure": "300g",
+        "unitPrice": {
+          "originalValue": "0.99",
+          "normalizedValue": 0.99
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "0.99",
+          "normalizedValue": 0.99
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "VAT: A, STD RRP: 1.29, POR: 23.3%",
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "100.43",
+        "normalizedValue": 100.43
+      },
+      "totalExcludingTax": {
+        "originalValue": "100.43",
+        "normalizedValue": 100.43
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "100.43",
+        "normalizedValue": 100.43
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": "100.43",
+        "normalizedValue": 100.43
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 10244,
+    "latency_ms": 52304,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.030732,
+      "total_cost": 0.034954,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1563,
+        "total_tokens": 3674,
+        "thoughts": "**Invoice Data Extraction - My Thought Process**\n\nOkay, here's the breakdown of my thinking as I work through this invoice data extraction problem. The goal is a clean JSON output, adhering to a specific schema.\n\nFirst, I need to figure out the currency. The presence of \"VAT GB\" and an address suggesting the UK strongly hints at GBP. However, I want to be *certain*, so I'm looking for the currency symbol. I don't see one alongside the amounts in the line items, but the payment section at the bottom confirms \"AMOUNT: \u00a3100.43\". So, GBP it is. I'm noting that down.\n\nNext, I'll move on to the `invoiceInfo`. I'm extracting:\n*   `documentNumber`: Easily identified as \"0229145\".\n*   `documentTitle`: Initially, it reads \"INVOICE NUMBER\". But generally, the title is just \"Invoice\", which can be handled as `null` in the JSON.\n*   `issueDate`: \"27/03/25\". I will also create `issueDateISO`: \"2025-03-27\".\n*   `issueTime`: \"08:00\". I'll create `issueTimeISO`: \"08:00:00\" too.\n*   `customerNumber`: \"702292292\"\n*   `category`: Based on the invoice items (Food), the category is \"Food\".\n\nThe `invoiceStatus` seems straightforward. The payment receipt confirms \"PIN VERIFIED\", \"AMOUNT: \u00a3100.43\", and \"Registration successful\". It looks paid, so I'll mark `invoiceStatus` as \"paid\".\n\nFinally, I'm checking for a paid stamp. I don't see one, so `hasPaidStamp` will be `false`.\n\nNow, I'm reminding myself of the explicit instructions - I can't generate newlines or tabs, and all non-scalar values need to be double-quoted strings. This is important for a valid and parseable JSON.\n\nSo, the first iteration of the JSON is:\n\n*   `currency`: \"GBP\"\n*   `invoiceInfo`: { \"documentNumber\": \"0229145\", \"documentTitle\": \"INVOICE\", \"issueDate\": \"27/03/25\", \"issueDateISO\": \"2025-03-27\", \"issueTime\": \"08:00\", \"issueTimeISO\": \"08:00:00\", \"dueDate\": null, \"dueDateISO\": null, \"purchaseOrderNumber\": null, \"salesOrderNumber\": null, \"customerNumber\": \"702292292\", \"paymentTerms\": null, \"customerMemo\": null, \"category\": \"Food\" }\n*   `invoiceStatus`: \"paid\"\n*   `hasPaidStamp`: false\n\nI'm double-checking. The instructions specified a *single* JSON object. I need to make sure I represent the structure correctly. The schema will guide me.\n\nThe Schema gives me the type and structure:\n\n*   `type`: \"object\"\n*   `properties`:\n    *   `currency`: string/null\n    *   `invoiceInfo`: object/null\n        *   `documentNumber`, `documentTitle`, `issueDate`, `issueDateISO`, `issueTime`, `issueTimeISO`, `dueDate`, `dueDateISO`, `purchaseOrderNumber`, `salesOrderNumber`, `customerNumber`, `paymentTerms`, `customerMemo`, `category` (enum)\n    *   `invoiceStatus`: enum\n    *   `hasPaidStamp`: boolean/null\n\nSo let's build this:\n\n*   `currency`: \"GBP\"\n*   `invoiceInfo`:\n    *   `documentNumber`: \"0229145\"\n    *   `documentTitle`: null\n    *   `issueDate`: \"27/03/25\"\n    *   `issueDateISO`: \"2025-03-27\"\n    *   `issueTime`: \"08:00\"\n    *   `issueTimeISO`: \"08:00:00\"\n    *   `dueDate`: null\n    *   `dueDateISO`: null\n    *   `purchaseOrderNumber`: null\n    *   `salesOrderNumber`: null\n    *   `customerNumber`: \"702292292\"\n    *   `paymentTerms`: null\n    *   `customerMemo`: null\n    *   `category`: \"Food\"\n*   `invoiceStatus`: \"paid\"\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 4451,
+        "total_tokens": 6562,
+        "thoughts": "**JSON Extraction & Schema Mapping**\n\nOkay, the task is to extract specific information from this invoice and structure it into a JSON format based on a provided schema, keeping in mind that the user is an expert in this field, so I should be precise. This looks like a straightforward invoice parsing job.\n\nFirst, I need to analyze the invoice image. I've identified the document type as an invoice from \"BOOKER\". The schema provided is Part 2. It contains seller, buyer, customer, billTo, shipTo and shipFrom. And `shippingInfo`. Since the document presents a customer, and no specific buyer or bill-to, I will populate the `customer` field. There is no `shippingInfo` provided, so I will populate that as `null`.\n\nI've extracted the seller's details: \"BOOKER\" (trading name of Booker Limited), the branch address (since that's the point of contact on the invoice) is Nelson Lane, Warwick, CV34 5JB, phone is 01926 495111, fax 01926 410392, and the VAT number is GB 220 4302 31. The registration number is 197380. The alcohol registration number is XTAW00000102869. I will include the registration number and tax registration number.\n\nFor the customer, the invoice clearly labels \"CUSTOMER\". The customer details are: MRS S HALL NICE BITES, TILEMANS LANE, SHIPSTON-ON-STOUR, WARWICKSHIRE, CV36 4QZ, with a phone number of 07725189911, and a customer number of 702292292.\n\nNow, I'll map these extracted fields to the JSON schema. I'll need to create a JSON object with `parties` and `shippingInfo` fields. Since there's no explicitly defined buyer or bill-to, I will leave those as null.\n\nI need to construct the `seller` object within `parties`. The name is \"BOOKER\". The `addressStructured` needs the street name as \"Nelson Lane\", city as \"Warwick\", and postal code as \"CV34 5JB\". The registrationNumber is \"197380\", the phone is \"01926 495111\", the fax is \"01926 410392\", and the taxRegistrationNumber will be \"GB 220 4302 31\". The alcohol registration number \"XTAW00000102869\" I'll include in the registration number. I'll need to check the exact schema definition for how to include multiple reg numbers and stick to the definition.\n\nWithin `parties`, I'll create the `customer` object. The customer name is \"MRS S HALL NICE BITES\". The address components are: TILEMANS LANE (street), SHIPSTON-ON-STOUR (city), WARWICKSHIRE (state), and CV36 4QZ (postal code). The customer registration number is \"702292292\" (though it's a customer number, it can go in registrationNumber), and the phone number is \"07725189911\".\n\nFinally, I will set `shippingInfo` to `null` because there's no shipping information in the invoice. I need to make sure the final JSON is valid and parseable, following all the instructions, including no comments, no control tokens, and double-quoted strings.\n\n```json\n{\n  \"parties\": {\n    \"seller\": {\n      \"name\": \"BOOKER\",\n      \"addressStructured\": {\n        \"street_number\": null,\n        \"street_name\": \"Nelson Lane\",\n        \"street_type\": null,\n        \"unit\": null,\n        \"building\": null,\n        \"district\": null,\n        \"city\": \"Warwick\",\n        \"state\": null,\n        \"postal_code\": \"CV34 5JB\",\n        \"country\": null\n      },\n      \"registrationNumber\": \"197380 / XTAW00000102869\",\n      \"phone\": \"01926 495111\",\n      \"fax\": \"01926 410392\",\n      \"email\": null,\n      \"whatsappNumber\": null,\n      \"taxRegistrationNumber\": \"GB 220 4302 31\"\n    },\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1901,
+        "total_tokens": 4012,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2329,
+        "total_tokens": 4440,
+        "thoughts": "**Invoice Analysis for Part 4 - Financial Extraction**\n\nOkay, let's break this down. My goal is to extract the financial information (totals, taxes, payments) from this invoice image and fit it into the 'Part 4' schema.\n\nFirst, I need to find the key totals. There's no clear, single \"Discount Total\" field. However, there are some \"CD\" markers which might indicate discounts applied to individual items.  I'll need to remember that.  I see multiple sub-totals for different categories: Chilled, Catering Grocery, Frozen Food, Meat, and Fruit & Veg.  I'll add those up. Okay, that sum of the \"EXC. VAT\" sub-totals comes to 100.43.\n\nThe \"AMOUNT\" and \"TOTAL\" fields at the bottom both say \u00a3100.43. The \"EXC. VAT\" labels confirm that the sub-totals listed are indeed excluding VAT. Because the bottom total matches the summed sub-totals, the VAT is either zero or it's not being broken out on this page.  The presence of \"/CONT\" on the page suggests a continuation, so I'll stay vigilant about more pages.\n\nSo, I've got:\n\n*   \"Subtotal (Goods)\": 100.43\n*   \"Total Including Tax\": 100.43 (from the card receipt)\n*   \"amountPaid\": 100.43\n*   \"balanceDue\": I can infer this is 0.00 since it was paid by card, but I need to make sure I don't calculate fields unless they are explicit.\n\nNow, taxes.  All items are marked with VAT code 'A'. Code 'A' is usually zero-rated for food items in the UK, especially for Booker invoices. Given that the sub-totals equal the \"TOTAL\" on the receipt, and VAT code A is for food, it's very likely VAT is zero-rated on this invoice. Let's keep that in mind. There are no explicit tax amounts on this page, which I'll have to deal with in the schema. I'll need to check for a tax summary on any further pages.\n\nNow, let's start mapping to the schema's specific fields, let's make sure that I get it right:\n\n*   **`totals`:**\n    *   `subtotal`: 100.43.  (Sum of \"EXC. VAT\" goods totals).\n    *   `totalExcludingTax`: 100.43 (This matches the sub-totals, as expected).\n    *   `totalIncludingTax`: 100.43 (This matches the card receipt).\n    *   `amountPaid`: 100.43.\n    *   `balanceDue`: 0.00. (Inferred based on \"paid\" status but will proceed with caution)\n*   `taxes`:  No tax lines on this page, so I'll deal with this accordingly, either null or an empty array.\n*   `applyTaxAfterDiscount`:  `null` because there's no clear \"apply after discount\" instruction.\n\nLet me double-check those sub-totals... 33.72 + 4.49 + 2.79 + 38.96 + 20.47 does indeed equal 100.43.  And the receipt confirms that. OKAY.  VAT is zero-rated. I'm going to lock this down as such.\n\nI'm seeing a \"VAT Number GB 220 4302 31\" listed as well as \"Registered in England\", the VAT code A is indeed the food items with no tax or zero-rated tax.\n\nSo, the final selection:\n\n*   `subtotal`: 100.43\n*   `totalExcludingTax`: 100.43\n*   `totalIncludingTax`: 100.43\n*   `amountPaid`: 100.43\n*   `balanceDue`: 0.00\n\nThere's the CD for cash discount next to item 227569. This isn't a separate discount value, but applied to the item. No separate value.\n\nNow, let's map this into a JSON structure, ensuring the `originalValue` and `normalizedValue` are correct:\n\n```json\n{\n  \"totals\": {\n    \"subtotal\": { \"originalValue\": \"100.43\", \"normalizedValue\": 100.43 },\n    \"totalExcludingTax\": { \"originalValue\n\n"
+      }
+    ]
+  }
+}

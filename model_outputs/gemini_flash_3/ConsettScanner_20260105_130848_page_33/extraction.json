@@ -1,0 +1,407 @@
+{
+  "document_id": "ConsettScanner_20260105_130848_page_33",
+  "file": "ConsettScanner_20260105_130848_page_33.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": null,
+      "documentTitle": null,
+      "issueDate": null,
+      "issueDateISO": null,
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": null,
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "eBay",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Total fees for item",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "-\u00a350.63",
+          "normalizedValue": -50.63
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Final Value Fee Per order fixed amount",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "-\u00a30.30",
+          "normalizedValue": -0.3
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "-\u00a350.93",
+        "normalizedValue": -50.93
+      },
+      "totalExcludingTax": {
+        "originalValue": "-\u00a350.93",
+        "normalizedValue": -50.93
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": "-\u00a350.93",
+        "normalizedValue": -50.93
+      },
+      "taxTotal": {
+        "originalValue": "-\u00a310.19",
+        "normalizedValue": -10.19
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "-\u00a361.12",
+        "normalizedValue": -61.12
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "VAT",
+        "percentage": {
+          "originalValue": "20%",
+          "normalizedValue": 20.0
+        },
+        "amount": {
+          "originalValue": "-\u00a310.19",
+          "normalizedValue": -10.19
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": true,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 7114,
+    "latency_ms": 33843,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.021342,
+      "total_cost": 0.025564,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1835,
+        "total_tokens": 3946,
+        "thoughts": "**My Thought Process on Extracting Invoice Information**\n\nOkay, so I need to get information from this eBay fee summary image and structure it according to the provided JSON schema. My initial thought is to map the visible fields to the schema's fields. I'm seeing amounts, like \"Total fees for item,\" \"Final Value Fee,\" \"VAT,\" and totals. I can see the currency is GBP based on the \"\u00a3\" symbol.\n\nI'm focusing on the first part of the schema provided. It includes `currency`, `invoiceInfo`, `invoiceStatus`, and `hasPaidStamp`. The image doesn't show dates, document numbers, or a clear invoice title, but it mentions VAT, and other fees so I'll go with \"Other\" for the category.\n\nNow, wait, the prompt asks for the full schema but only gives a partial schema (\"Part 1\") in the context. I must follow the schema that's *provided* in context. So, I will **only** extract those fields from the image, based on the Part 1 JSON schema provided.\n\nThe provided schema only contains `currency`, `invoiceInfo`, `invoiceStatus`, `hasPaidStamp`. I need to ensure I am following the instructions given in context. No line items, parties, totals, taxes, shipping, etc. based on the given context.\n\nThe image is just a partial view, not a full invoice. It's more of a summary. I will follow the context and not assume more data.\n\nI'm now getting ready to construct the JSON. Based on the \"Part 1\" schema, the `documentTitle` will be null, since there's no clear title. I'll make the `category` \"Other.\" It could be \"Sales\", but \"Other\" seems more appropriate for a fee summary, given that I don't have the full context of a sales-related invoice.\n\nI need to make sure I am following all the constraints, especially about outputting only a single JSON array, without any control characters or comments. The context dictates I must follow the schema provided in the context exactly.\n\nFinally, I'm generating the JSON output, double-checking that I've mapped everything correctly to the \"Part 1\" schema. I've considered that \"Total fees (includes VAT)\" could be the total, and \"VAT(20%)\" is the tax, but this isn't relevant to my task.\n\nI've made a final check on the context schema to ensure correct values, and I have generated a single-line, valid JSON output based on the provided schema.\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1638,
+        "total_tokens": 3749,
+        "thoughts": "**My Thought Process: Extracting Data and Adhering to the Schema**\n\nOkay, the task is to pull data from this invoice snippet and structure it as JSON, but the core challenge is the schema. The user, or rather the system, wants me to follow a *specific* schema provided in the \"context.\" My immediate focus is the given schema: It seems to be limited to just \"Part 2: All participants involved in the transaction.\" Specifically, it defines `parties` and `shippingInfo`. I need to remember this because, while the prompt mentions using a full nested invoice schema including various elements, the constraint is *explicit*: the JSON must conform to the provided schema in the context. I have to prioritize this constraint.\n\nNow, let's look at the data. I've got fee details, seemingly from eBay (\"Learn more about eBay selling fees poli\"). I need to identify the seller, buyer, and any shipping information based on this snippet. From the context, and by interpreting \"Learn more about eBay selling fees poli\", I can infer that the seller is eBay. The buyer is not explicitly provided, so it remains null in my output. There is no shipping information to be found, so it is null too. I could extract other information, such as fee amounts, tax, etc. These don't fit into the schema I am given and therefore I cannot include them.\n\nThe instructions emphasize that I need to provide *only* valid JSON. No comments, no extra text, and no control tokens. Just clean, parseable JSON.\n\nSo, I check the provided schema again. I have a `parties` object, and within that, I must include `seller`, `buyer`, etc., and also `shippingInfo`. The schema does not specify the presence of all these fields, it only says that it is a *part* of the schema.\n\nThe schema only includes `parties` and `shippingInfo`. I'll focus on these two elements. The seller's name will be \"eBay\", and since no buyer or shipping info is available from the text, I set those values to `null`. I must output a full JSON object conforming to the schema I was provided. The structure needs to be correct to be successfully parsed. I make sure to include all sub-elements within the `parties` and `seller` objects, setting those for which I have no data to `null` too. I check the JSON elements' types.\n\nThe generated JSON, which, I am convinced, conforms to the schema provided, is as follows:\n\n```json\n{\n  \"parties\": {\n    \"seller\": {\n      \"name\": \"eBay\",\n      \"addressStructured\": null,\n      \"registrationNumber\": null,\n      \"phone\": null,\n      \"fax\": null,\n      \"email\": null,\n      \"whatsappNumber\": null,\n      \"taxRegistrationNumber\": null\n    },\n    \"buyer\": null,\n    \"billTo\": null,\n    \"customer\": null,\n    \"shipTo\": null,\n    \"shipFrom\": null\n  },\n  \"shippingInfo\": null\n}\n```\n\nI re-read all the instructions to make sure I am providing exactly what is needed, and nothing else. I check to make sure the structure is correct. I am ready to output the JSON.\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2439,
+        "total_tokens": 4550,
+        "thoughts": "**Invoice Data Extraction: My Reasoning**\n\nOkay, so the task is to pull structured data from this eBay invoice snippet, focusing on the line items. The schema defines `lineItems` and `isOverflowPage`, so that's the framework I'll use.\n\nFirst, I need to identify the line items. Looking at the data, I see: \"Total fees for item,\" \"Final Value Fee / Per order fixed amount,\" and various totals and VAT information. Initially, \"Total fees for item\" looks like a potential header or subtotal, but it has an associated value, so I'll treat it as a line item for now. I'll stick to what is directly presented for this stage.\n\nLine item 1 is \"Total fees for item\" with a value of -\u00a350.63.\nLine item 2 is \"Final Value Fee Per order fixed amount\" at -\u00a30.30.\n\nThe \"Total fees\" value is the sum of these, and the VAT is applied to that total. Given that this seems to be a continuation of a longer invoice (no header, just a snippet of fees), `isOverflowPage` should be set to true.\n\nI also have to address the VAT. Since it's provided as a single percentage applied to the total, I won't attempt to distribute it among the individual line items; that calculation is not presented to me. If the schema allowed for line-level taxes, I would have considered it, but I'll stick to providing what is visible for each line.\n\nSo, the resulting JSON structure, based on the provided schema, will be:\n\n```json\n{\n  \"lineItems\": [\n    {\n      \"description\": \"Total fees for item\",\n      \"itemCode\": null,\n      \"quantity\": null,\n      \"unitOfMeasure\": null,\n      \"unitPrice\": null,\n      \"lineTotalIncludingTax\": null,\n      \"lineTotalExcludingTax\": {\n        \"originalValue\": \"-\u00a350.63\",\n        \"normalizedValue\": -50.63\n      },\n      \"discountAmount\": null,\n      \"discountPercent\": null,\n      \"lineTaxAmount\": null,\n      \"lineTaxPercent\": null,\n      \"serialNumber\": null,\n      \"lotNumber\": null,\n      \"gtin\": null,\n      \"hsCode\": null,\n      \"remarks\": null,\n      \"serviceDate\": null,\n      \"serviceDateISO\": null\n    },\n    {\n      \"description\": \"Final Value Fee Per order fixed amount\",\n      \"itemCode\": null,\n      \"quantity\": null,\n      \"unitOfMeasure\": null,\n      \"unitPrice\": null,\n      \"lineTotalIncludingTax\": null,\n      \"lineTotalExcludingTax\": {\n        \"originalValue\": \"-\u00a30.30\",\n        \"normalizedValue\": -0.30\n      },\n      \"discountAmount\": null,\n      \"discountPercent\": null,\n      \"lineTaxAmount\": null,\n      \"lineTaxPercent\": null,\n      \"serialNumber\": null,\n      \"lotNumber\": null,\n      \"gtin\": null,\n      \"hsCode\": null,\n      \"remarks\": null,\n      \"serviceDate\": null,\n      \"serviceDateISO\": null\n    }\n  ],\n  \"isOverflowPage\": true\n}\n```\n\nThe values are negative, representing fees, which I have to keep track of. The \"Learn more about eBay selling fees poli\" is likely a footer or remark, but it's not a relevant data point for the requested structure.\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1202,
+        "total_tokens": 3313,
+        "thoughts": "**Invoice Data Extraction and Schema Mapping**\n\nOkay, I need to get this financial data from the invoice image. First, I need to recognize and map the key financial values. Let's see, I've got \"Total fees for item\" at -\u00a350.63, a \"Final Value Fee\" of -\u00a30.30, resulting in \"Total fees\" of -\u00a350.93. Then there's \"VAT(20%)\" at -\u00a310.19, and the \"Total fees (includes VAT)\" at -\u00a361.12. Right, standard stuff. And I have that eBay link, but I'm just after the numbers here, so let's set it aside.\n\nNow, let's map these to the schema. The initial mapping suggests `totals.totalExcludingTax` as -\u00a350.93, `totals.taxTotal` as -\u00a310.19, and `totals.totalIncludingTax` as -\u00a361.12. The `taxes` array should include VAT details, name \"VAT\", a percentage of 20%, and an amount of -\u00a310.19. The schema also notes `applyTaxAfterDiscount`, but that's not specified here, so it's `null`.\n\nLooking at the totals, I'm thinking about including a `subtotal` field. I see that \"Total fees\" is -\u00a350.93, but I am looking at it now and realising the numbers in that area. \"Total fees for item\" (-\u00a350.63) and \"Final Value Fee\" (-\u00a30.30) add up to that \"Total fees\" value. So, -\u00a350.93, which is the total excluding tax, should become `subtotal` or `totalExcludingTax`.\n\nOkay, I'll refine this a bit. So `totals` now includes `subtotal` with a value of -\u00a350.93, `taxTotal` with -\u00a310.19, and `totalIncludingTax` with -\u00a361.12. The `taxes` array will contain a single object detailing the VAT. The percentage is 20.0, which I can normalize, and the amount is -\u00a310.19.\n\nI need to confirm all of this to be correct.\n\n**Final Check:**\n\n-   Total fees for item: -\u00a350.63\n-   Final Value Fee: -\u00a30.30\n-   Total fees: -\u00a350.93\n-   VAT(20%): -\u00a310.19\n-   Total fees (includes VAT): -\u00a361.12\n\nAlright. It seems correct. I'm ready to construct the JSON structure. I'll include both `subtotal` and `totalExcludingTax` but I understand `subtotal` is enough.\n\n\n"
+      }
+    ]
+  }
+}

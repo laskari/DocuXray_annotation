@@ -1,0 +1,26 @@
+{
+  "document_id": "First_Task_Recruitment_2023-12-03_1860.00_page_1",
+  "file": "First_Task_Recruitment_2023-12-03_1860.00_page_1.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.98,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 37943,
+      "output_tokens": 1613
+    },
+    "cost": {
+      "input_cost": 0.04742875,
+      "output_cost": 0.0120975,
+      "total_cost": 0.05952625,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

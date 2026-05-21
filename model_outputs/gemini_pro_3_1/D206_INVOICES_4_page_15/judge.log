@@ -1,0 +1,6 @@
+17:25:17  INFO     =======================================================
+17:25:17  INFO       JUDGE  doc_id=D206_INVOICES_4_page_15  [2026-05-18 17:25:17]
+17:25:17  INFO     =======================================================
+17:25:40  INFO     FAIL  issues=2  confidence=0.95  cost=$0.1289  elapsed=23079ms
+17:25:40  WARNING    [lineItems] unitPrice.originalValue — Unit price contains non-numeric characters (' CD').
+17:25:40  WARNING    [totals] amountPaid.originalValue — The amount paid was omitted despite being clearly visible in the payment breakdown.

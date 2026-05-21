@@ -1,0 +1,494 @@
+{
+  "document_id": "Expenses_Part2_page_33",
+  "refinement": {
+    "refined_data": {
+      "currency": "GBP",
+      "invoiceInfo": {
+        "documentNumber": "PSISPE003-25-0279491",
+        "documentTitle": "SALES INVOICE",
+        "issueDate": "20/10/25",
+        "issueDateISO": "2025-10-20",
+        "issueTime": null,
+        "issueTimeISO": null,
+        "dueDate": "27/10/25",
+        "dueDateISO": "2025-10-27",
+        "purchaseOrderNumber": "PHONE",
+        "salesOrderNumber": "SOSPE003-25-0279491",
+        "customerNumber": "SPE003",
+        "paymentTerms": null,
+        "customerMemo": null,
+        "category": "Food"
+      },
+      "parties": {
+        "seller": {
+          "name": "bfp",
+          "addressStructured": {
+            "street_number": "1",
+            "street_name": "Marchfield",
+            "street_type": "Drive",
+            "unit": null,
+            "building": "Albex House",
+            "district": null,
+            "city": "Paisley",
+            "state": null,
+            "postal_code": "PA3 2RB",
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": "(0044) 01924 223 710",
+          "fax": null,
+          "email": "CreditControl@bfp.uk.com",
+          "whatsappNumber": null,
+          "taxRegistrationNumber": "GB870521927"
+        },
+        "buyer": {
+          "name": null,
+          "addressStructured": {
+            "street_number": null,
+            "street_name": null,
+            "street_type": null,
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": null,
+            "state": null,
+            "postal_code": null,
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "billTo": {
+          "name": "SPECIALITY CAKES (MRS ROSEMARY",
+          "addressStructured": {
+            "street_number": "9",
+            "street_name": "HIGH",
+            "street_type": "STREET",
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": "KNAPHILL",
+            "state": "SURREY",
+            "postal_code": "GU21 2PG",
+            "country": "GREAT BRITAIN"
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": "specialitycakes9@yahoo.co.uk",
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "customer": {
+          "name": null,
+          "addressStructured": {
+            "street_number": null,
+            "street_name": null,
+            "street_type": null,
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": null,
+            "state": null,
+            "postal_code": null,
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "shipTo": {
+          "name": "SPECIALITY CAKES (MRS ROSEMARY TRUDGETT T/A)",
+          "addressStructured": {
+            "street_number": "9",
+            "street_name": "HIGH",
+            "street_type": "STREET",
+            "unit": null,
+            "building": null,
+            "district": "KNAPHILL",
+            "city": "WOKING",
+            "state": "SURREY",
+            "postal_code": "GU21 2PG",
+            "country": "GREAT BRITAIN"
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        },
+        "shipFrom": {
+          "name": null,
+          "addressStructured": {
+            "street_number": null,
+            "street_name": null,
+            "street_type": null,
+            "unit": null,
+            "building": null,
+            "district": null,
+            "city": null,
+            "state": null,
+            "postal_code": null,
+            "country": null
+          },
+          "registrationNumber": null,
+          "phone": null,
+          "fax": null,
+          "email": null,
+          "whatsappNumber": null,
+          "taxRegistrationNumber": null
+        }
+      },
+      "lineItems": [
+        {
+          "description": "12.5KG MARVEL NH CAKE MARG HXH MB 10143110",
+          "itemCode": "FAT00081",
+          "quantity": {
+            "originalValue": "2",
+            "normalizedValue": 2
+          },
+          "unitOfMeasure": null,
+          "unitPrice": {
+            "originalValue": "28.16",
+            "normalizedValue": 28.16
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "56.32",
+            "normalizedValue": 56.32
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": "0.00",
+            "normalizedValue": 0.0
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": null,
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "72X44G DF PL RING DONUT SG 15513",
+          "itemCode": "FRZ00106",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1
+          },
+          "unitOfMeasure": null,
+          "unitPrice": {
+            "originalValue": "26.88",
+            "normalizedValue": 26.88
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "26.88",
+            "normalizedValue": 26.88
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": "0.00",
+            "normalizedValue": 0.0
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": null,
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "12.5KG MADEIRA CAKE 10143090",
+          "itemCode": "GEM00075",
+          "quantity": {
+            "originalValue": "5",
+            "normalizedValue": 5
+          },
+          "unitOfMeasure": null,
+          "unitPrice": {
+            "originalValue": "49.72",
+            "normalizedValue": 49.72
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "248.60",
+            "normalizedValue": 248.6
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": "0.00",
+            "normalizedValue": 0.0
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": null,
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "25KG BRIT CP ICING SUG 55437",
+          "itemCode": "SUG00005",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1
+          },
+          "unitOfMeasure": null,
+          "unitPrice": {
+            "originalValue": "28.60",
+            "normalizedValue": 28.6
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "28.60",
+            "normalizedValue": 28.6
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": "0.00",
+            "normalizedValue": 0.0
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": null,
+          "serviceDate": null,
+          "serviceDateISO": null
+        },
+        {
+          "description": "12X250G JET BLACK REN PR 02945",
+          "itemCode": "SUG00671",
+          "quantity": {
+            "originalValue": "1",
+            "normalizedValue": 1
+          },
+          "unitOfMeasure": null,
+          "unitPrice": {
+            "originalValue": "21.82",
+            "normalizedValue": 21.82
+          },
+          "lineTotalIncludingTax": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTotalExcludingTax": {
+            "originalValue": "21.82",
+            "normalizedValue": 21.82
+          },
+          "discountAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "discountPercent": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxAmount": {
+            "originalValue": null,
+            "normalizedValue": null
+          },
+          "lineTaxPercent": {
+            "originalValue": "0.00",
+            "normalizedValue": 0.0
+          },
+          "serialNumber": null,
+          "lotNumber": null,
+          "gtin": null,
+          "hsCode": null,
+          "remarks": null,
+          "serviceDate": null,
+          "serviceDateISO": null
+        }
+      ],
+      "totals": {
+        "discountTotal": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercentage": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "subtotal": {
+          "originalValue": "382.22",
+          "normalizedValue": 382.22
+        },
+        "totalExcludingTax": {
+          "originalValue": "382.22",
+          "normalizedValue": 382.22
+        },
+        "shippingAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "freightCharges": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "insuranceAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "handlingFees": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "surchargeAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "otherCharges": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "taxableAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "taxTotal": {
+          "originalValue": "0.00",
+          "normalizedValue": 0.0
+        },
+        "withholdingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "totalIncludingTax": {
+          "originalValue": "382.22",
+          "normalizedValue": 382.22
+        },
+        "roundingAdjustment": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "deposit": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "amountPaid": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "creditApplied": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "returnAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "tipAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "balanceDue": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "exchangeRate": {
+          "originalValue": null,
+          "normalizedValue": null
+        }
+      },
+      "taxes": [
+        {
+          "name": "VAT",
+          "percentage": {
+            "originalValue": "0.00",
+            "normalizedValue": 0.0
+          },
+          "amount": {
+            "originalValue": "0.00",
+            "normalizedValue": 0.0
+          }
+        }
+      ],
+      "shippingInfo": {
+        "carrier": null,
+        "deliveryDate": null,
+        "deliveryDateISO": null,
+        "trackingNumber": null
+      },
+      "invoiceStatus": "unpaid",
+      "hasPaidStamp": false,
+      "isOverflowPage": false,
+      "applyTaxAfterDiscount": true
+    },
+    "applied_corrections": 0,
+    "total_issues": 0,
+    "schema_valid": true,
+    "schema_errors": null
+  },
+  "metadata": {
+    "latency_ms": 0
+  }
+}

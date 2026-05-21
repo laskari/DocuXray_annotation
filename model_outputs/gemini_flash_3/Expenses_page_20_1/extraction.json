@@ -1,0 +1,407 @@
+{
+  "document_id": "Expenses_page_20_1",
+  "file": "Expenses_page_20_1.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": "6927017",
+      "documentTitle": "INVOICE",
+      "issueDate": "19/05/2025",
+      "issueDateISO": "2025-05-19",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "211099",
+      "paymentTerms": "A settlement discount of 2.50% of the full price applies if payment is made within your agreed settlement terms.",
+      "customerMemo": "Please quote your account number 211099",
+      "category": "Other"
+    },
+    "parties": {
+      "seller": {
+        "name": "Mercado",
+        "addressStructured": {
+          "street_number": null,
+          "street_name": "Relay Park, Relay Drive",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "Tamworth",
+          "state": null,
+          "postal_code": "B77 5PR",
+          "country": null
+        },
+        "registrationNumber": "2674152",
+        "phone": "03300 244500",
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "GB 698491857"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": "IMPRESSIVE CARPETS",
+        "addressStructured": {
+          "street_number": "3",
+          "street_name": "HEATHCOTE ROAD",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": "ASH",
+          "city": "ALDERSHOT",
+          "state": null,
+          "postal_code": "GU12 5BH",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": "IMPRESSIVE CARPETS",
+        "addressStructured": {
+          "street_number": "97",
+          "street_name": "LONG GORE",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": "FARNCOMBE",
+          "city": "GODALMING",
+          "state": "SURREY",
+          "postal_code": "GU7 3TW",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "REVOLUTION HEATHERS PARCHMENT 2.60 x 4.00",
+        "itemCode": "22650215",
+        "quantity": {
+          "originalValue": "10.40",
+          "normalizedValue": 10.4
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "8.49",
+          "normalizedValue": 8.49
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "88.30",
+          "normalizedValue": 88.3
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "17.66",
+          "normalizedValue": 17.66
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00%",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Customer Ref: KEVIN",
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "REVOLUTION HEATHERS PARCHMENT 1.60 x 4.00",
+        "itemCode": "22650216",
+        "quantity": {
+          "originalValue": "6.40",
+          "normalizedValue": 6.4
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": "8.49",
+          "normalizedValue": 8.49
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "54.34",
+          "normalizedValue": 54.34
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "10.87",
+          "normalizedValue": 10.87
+        },
+        "lineTaxPercent": {
+          "originalValue": "20.00%",
+          "normalizedValue": 20.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": "Customer Ref: KEVIN",
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": "2.50%",
+        "normalizedValue": 2.5
+      },
+      "subtotal": {
+        "originalValue": "142.64",
+        "normalizedValue": 142.64
+      },
+      "totalExcludingTax": {
+        "originalValue": "142.64",
+        "normalizedValue": 142.64
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": "142.64",
+        "normalizedValue": 142.64
+      },
+      "taxTotal": {
+        "originalValue": "28.53",
+        "normalizedValue": 28.53
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "171.17",
+        "normalizedValue": 171.17
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "creditApplied": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": "171.17",
+        "normalizedValue": 171.17
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "VAT",
+        "percentage": {
+          "originalValue": "20.00%",
+          "normalizedValue": 20.0
+        },
+        "amount": {
+          "originalValue": "28.53",
+          "normalizedValue": 28.53
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "unknown",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": false
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 10352,
+    "latency_ms": 38838,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.031056,
+      "total_cost": 0.035278000000000004,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2113,
+        "total_tokens": 4224,
+        "thoughts": "**Invoice Data Extraction and JSON Mapping**\n\nOkay, so the task at hand is to extract relevant data from this invoice image and represent it in a specific JSON format, based on the schema I've been given. Let's break this down systematically.\n\nFirst, I need to thoroughly analyze the invoice content. I'm noting the document title \"INVOICE,\" seller information (Mercado), the \"Bill To\" and \"Ship To\" addresses for the customer (IMPRESSIVE CARPETS), and all the key identifiers like invoice number (6927017), account number (211099), and the invoice date (19/05/2025). The currency isn't explicitly stated but the UK addresses and the presence of VAT point towards GBP, which I'll translate to its ISO 4217 code. I see there's a reference to a settlement discount as well.\n\nNext, I'll identify the line items, extracting all the details like customer reference, order number, product quality, design, dimensions (length, width), quantity, unit, unit price, goods value, VAT, and any other relevant indicators. I'll need to remember these and map them to the proper fields in the output object schema.\n\nI'm paying attention to the totals section for goods, VAT, and the overall invoice total. There's also some important settlement discount information.\n\nNow, I'll start mapping the extracted data to the JSON schema. The currency will be \"GBP.\" The `invoiceInfo` object requires the document number, title, issue date (and its ISO format), customer number, and a category. The schema doesn't specify an exact category, and it's not a common category like \"Food\" or \"Travel,\" nor \"Office Supplies,\" \"IT,\" etc. This is for carpets and flooring, so I'll probably classify this as \"Other\" (for now) as it's a sales invoice, but maybe in a sales context, sales is more appropriate. I'll revisit this later.\n\nBased on the image, the invoice status is unknown, as there is no \"PAID\" stamp. And there is no indication that it has been paid, so hasPaidStamp will be false.\n\nI will construct the JSON object, following the schema. I'll make sure to use `null` for any fields that I can't populate or can't extract, such as `issueTime`, `dueDate`, `purchaseOrderNumber`, and `salesOrderNumber`. The `paymentTerms` will be the provided text regarding settlement discount and the `customerMemo` will be \"Please quote your account number 211099\" that is clearly written.\n\nI'll then carefully double-check the values and the structure. It needs to be a valid and parseable JSON string, without comments or control tokens, and all strings need to be double-quoted. I'll also do a last check of the category enum. \"Other\" seems to be the best.\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": \"6927017\",\n    \"documentTitle\": \"INVOICE\",\n    \"issueDate\": \"19/05/2025\",\n    \"issueDateISO\": \"2025-05-19\",\n    \"issueTime\": null,\n    \"issueTimeISO\": null,\n    \"dueDate\": null,\n    \"dueDateISO\": null,\n    \"purchaseOrderNumber\": null,\n    \"salesOrderNumber\": null,\n    \"customerNumber\": \"211099\",\n    \"paymentTerms\": \"A settlement discount of 2.50% of the full price applies if payment is made within your agreed settlement terms.\",\n    \"customerMemo\": \"Please quote your account number 211099\",\n    \"category\": \"Other\"\n  },\n  \"invoiceStatus\": \"unknown\",\n  \"hasPaidStamp\": false\n}\n```\n\nOkay, the data is properly formatted, according to the schema.\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2598,
+        "total_tokens": 4709,
+        "thoughts": "**Invoice Data Extraction and JSON Formatting**\n\nOkay, here's how I'm approaching this. The user wants me to extract data from this invoice image and represent it in a specific JSON format, specifically focusing on \"Part 2\" of a presumed larger schema. First, I need to thoroughly analyze the invoice to identify all the relevant data points. The image shows a Mercado invoice with details like the seller's information, invoice number, account details, invoice date, VAT information, buyer and shipping addresses, line items, totals, discount information, and even bank details.\n\nNow, I'll translate the data into the requested format based on the \"Part 2\" schema which focuses on `parties` and `shippingInfo`. I'm starting by identifying the seller, bill-to, and ship-to parties. Mercado is the seller, and I need to parse its full address, phone number, and VAT registration number. The buyer is \"IMPRESSIVE CARPETS\", which is the \"billTo\" party. I'll need to accurately extract the street number, street name, district, city, and postal code from both the bill-to and ship-to addresses. The shipping information, according to the schema, is pretty straightforward. I'm going to set carrier, delivery date, delivery date ISO and tracking number to `null` because they're not explicitly stated on the invoice.\n\nI'm making sure that I have all the available data and am double-checking for any information that might be relevant. I will also check to make sure that \"Mercado\" (or is it Headlam Group?) isn't a department, I might need to put a more comprehensive address together. The registered office information is listed at the bottom, which is good. I need to note the registered address and the company registration number, which are also part of the full address.\n\nOk, now, I'm constructing the final JSON object, ensuring the data is correctly mapped to the fields in the schema. I'm going to start with the `parties` object, and within it, I'm defining the `seller`, `billTo`, and `shipTo` objects, I'll set buyer, customer, and shipFrom to `null`. Inside each, I'm putting the corresponding structured address and other details I've extracted. For the `shippingInfo` object, I'll populate it with null values since that data isn't present in the provided invoice. I have to check the schema to make sure I am following instructions to give a final JSON structure containing `parties` and `shippingInfo`.\n\nI'm doing a final check to make sure I've captured everything accurately and that the data is correctly formatted within the JSON structure according to the specified schema. And finally, I'm outputting the JSON.\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2643,
+        "total_tokens": 4754,
+        "thoughts": "**Invoice Data Extraction - My Thought Process**\n\nAlright, let's break this down. My goal is to extract specific data from this invoice image and translate it into a structured JSON format, following a predefined schema. I need to focus on two key areas: the line items and a top-level flag for overflow pages.\n\nFirst, I need to thoroughly analyze this invoice image. I've got to identify the key elements: the seller's information (Mercado, address, phone, VAT), the buyer's details (IMPRESSIVE CARPETS, both account and delivery addresses), and then, the crucial line items table.\n\nThis line items table is where the core data lies. I see the headers: Customer Ref, Order, Quality, Design, Length, Width, Qty, Unit, Price, %, Goods, Vat, and IND. Each column is important. Now, I have to map these columns to the required schema fields for each line item.\n\nLet's start mapping. \"Description\" seems to be a combination of \"Quality\" and \"Design,\" perhaps including the dimensions, like \"REVOLUTION HEATHERS PARCHMENT 2.60 x 4.00.\" I'll consider that as the most descriptive name for the product. \"Order\" is looking like an item-specific code, so that should be the \"itemCode.\" \"Qty\" is clearly the \"quantity,\" and from my observation it's calculated from Length x Width. The \"Unit\" column is 1, and the price is the \"unitPrice.\" \"Goods\" is obviously the \"lineTotalExcludingTax,\" and \"Vat\" is the \"lineTaxAmount.\" Finally, the \"IND\" along with the VAT indicator note (VAT indicator 1 = 20.00%) gives me the \"lineTaxPercent.\"\n\nOkay, let's create the JSON structure.\n\nFor the first item, I've got:\n\n*   `description`: \"REVOLUTION HEATHERS PARCHMENT 2.60 x 4.00\"\n*   `itemCode`: \"22650215\"\n*   `quantity`: 10.40\n*   `unitPrice`: 8.49\n*   `lineTotalExcludingTax`: 88.30\n*   `lineTaxAmount`: 17.66\n*   `lineTaxPercent`: 20.0\n*   `remarks`: \"Customer Ref: KEVIN\"\n\nAnd for the second item:\n\n*   `description`: \"REVOLUTION HEATHERS PARCHMENT 1.60 x 4.00\"\n*   `itemCode`: \"22650216\"\n*   `quantity`: 6.40\n*   `unitPrice`: 8.49\n*   `lineTotalExcludingTax`: 54.34\n*   `lineTaxAmount`: 10.87\n*   `lineTaxPercent`: 20.0\n*   `remarks`: \"Customer Ref: KEVIN\"\n\nNow, I'm checking the data consistency and schema compliance. The \"Unit\" column confirms the `unitPrice` is for each item, and the math works (quantity * unit price = excluding tax). Everything aligns with the schema requirements - `originalValue` is captured as a string, and `normalizedValue` must be a number (I'll output only the normalizedValue as the response). I don't see any control characters, and no extra text outside the JSON structure.\n\nFinally, the `isOverflowPage` flag. Since the image includes header, logo, seller and buyer info, it's a complete invoice, not an overflow. Thus, `isOverflowPage` is `false`.\n\nNow, I am ready to convert my thoughts into code and output the JSON.\n\n\n"
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 2998,
+        "total_tokens": 5109,
+        "thoughts": "**Invoice Data Extraction: Thought Process**\n\nOkay, here's how I'm approaching this invoice data extraction, working through the required JSON schema. The goal is to provide a comprehensive and accurate summary of the financial totals and tax information.\n\nFirst, I need to understand what the user wants: Extract financial totals, taxes, and payment info based on a given JSON schema. Got it. So I'll be focused on extracting specific information.\n\nI'm starting by identifying the key fields. The schema defines a `totals` object which includes `discountTotal`, `discountPercentage`, `subtotal`, `totalExcludingTax`, `taxTotal`, and `totalIncludingTax`, among others. I will identify all the visible items. From the image, I see \"GOODS TOTAL\" (I'll extract `subtotal`, which seems to match the Goods Total), and \"INVOICE TOTAL\" (which is `totalIncludingTax`). There's also \"VAT TOTAL,\" which directly corresponds to `taxTotal`. I'm also seeing \"2.50%\" mentioned which looks like the `discountPercentage`.\n\nI'll start with those and build the extraction.\n\nNow, I'm thinking about the \"Discounted price\" box. The text says \"A settlement discount of 2.50% of the full price applies if payment is made within your agreed settlement terms.\" This suggests a conditional discount. Tax rules are complex, I'm thinking whether tax applies before or after the discount, and there are two sets of totals: before and after the discount.\n\nThe provided example shows two \"Goods Total\" amounts: one at 142.64, and the other at 139.07, and two tax totals. I need to be careful. I have to figure out how this discount works to set `applyTaxAfterDiscount`. I'm calculating the VAT at 20% to check whether it's before or after. It's *after*.\n\nLet's carefully analyze the discount structure: the discount *is* conditional. The primary totals are without the discount. I'm going to set `applyTaxAfterDiscount` based on where the tax is being calculated. The main invoice totals are without the discount.\n\nI'm thinking: The tax on the \"Discounted price\" box is calculated on the discounted amount. However, the main totals appear to calculate tax before the discount. Since the question asks about *all* visible info, I'll extract both totals. But I must be true to the schema.\n\nOkay, let's look at what the schema says about \"applyTaxAfterDiscount\". It tells me that a `true` value means the discount is applied first, then tax. A `false` value, or absent value, means tax comes first. Since the VAT on the main total is calculated on the *full* amount, even though a discount might exist, I will use `false`. I must set `applyTaxAfterDiscount` to `false`.\n\nNow I need to refine the values. Based on the available data:\n\n-   `totals`: I need `subtotal`, `totalExcludingTax`, `taxTotal`, `totalIncludingTax`, and `discountPercentage`.\n    -   `subtotal`: This is \"GOODS TOTAL\" and should match \"totalExcludingTax\" which is 142.64.\n    -   `taxTotal`: \"VAT TOTAL\" is 28.53.\n    -   `totalIncludingTax`: \"INVOICE TOTAL\" is 171.17.\n    -   `discountPercentage`: \"2.50%\".\n-   `taxes`: VAT is the only tax I see. The schema needs name, percentage, and amount.\n    -   Name: \"VAT\".\n    -   Percentage: \"20.00%\".\n    -   Amount: 28.53.\n-   `applyTaxAfterDiscount`: `false` as tax is calculated on the full amount.\n\nI'm going to set up the structure. Also, I'm going to check the schema requirements again for the data types, since the instructions are to follow schema.\n\nI'm thinking about the \"Discounted Price\" section again. I need to handle `discountTotal`. Usually, this refers to a discount that's *already* applied. The text explicitly calls this a \"settlement discount.\" The way I read it, it's a *conditional* amount. The conditional values (166.88) aren't the primary invoice total. So, I will set `discountTotal` as `null` and focus on the `discountPercentage`. This will match the format of an invoice that does *not* have the discount already applied.\n\nNow I double-check again the JSON formatting: double quotes, no comments,\n\n"
+      }
+    ]
+  }
+}

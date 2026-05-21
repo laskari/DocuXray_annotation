@@ -1,0 +1,62 @@
+{
+  "document_id": "ConsettScanner_20260105_130848_page_77",
+  "file": "ConsettScanner_20260105_130848_page_77.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 1,
+    "sections_with_issues": [
+      "taxes"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "taxes": [
+        {
+          "field": null,
+          "row_index": null,
+          "reasoning": "1. Are MULTIPLE fields in a row/list all displaced or shifted together compared to the document? Yes, the entire tax breakdown list is missing. The document clearly contains a tax amount ('Tax Total \u00a3 9.08') and a tax percentage ('VAT % 20.00').",
+          "issue_type": "structural_error",
+          "description": "The taxes list is empty, but tax information is present in the document totals.",
+          "extracted_value": "[]",
+          "corrected_value": "[{\"name\": \"Tax Total\", \"percentage\": 20.0, \"amount\": 9.08}]",
+          "expected_context": "Tax Total \u00a3 9.08",
+          "correction_reasoning": "The document has a distinct 'Tax Total' of 9.08. Additionally, the line item indicates a VAT of 20.00%. This should be captured as a tax line.",
+          "visual_evidence": "Located below the line items, on the right side under the 'Amount' column, labeled 'Tax Total'."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 19375,
+      "output": 3459,
+      "total": 22834
+    },
+    "cost": {
+      "input_tokens": 19375,
+      "output_tokens": 3459,
+      "input_cost": 0.03875,
+      "output_cost": 0.041507999999999996,
+      "total_cost": 0.080258
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Invoice Details**\n\nI'm now focused on cross-referencing the `invoiceInfo` data I've extracted, specifically the document number (\"INV-0385149\") and document title (\"INVOICE\"), with the original image. My goal is to confirm the data's accuracy and integrity through visual comparison. So far I have found and reviewed the details requested.\n\n\n**Validating Date Attributes**\n\nI'm now verifying the accuracy of extracted date attributes. I've confirmed the \"issueDateISO\" matches the \"Invoice Date\" on the document and the \"dueDateISO\" with the \"Due Date\", which both seem correct. I am also currently checking if \"Reference\" is the Purchase Order Number or not. It's the only PO field provided.\n\n\n",
+      "parties": "**Defining the Validation Task**\n\nI'm now zeroing in on defining the validation task, specifically focusing on the \"parties\" JSON section. I need to figure out how to verify its structure, identify any duplications, flag content in the wrong context, identify multiple candidates that would meet a specific criteria, and discover fabricated information.\n\n\n**Refining the JSON Schema**\n\nI'm now zeroing in on defining the JSON Schema for validation. The schema's goal is to ensure the output is well-formed. It also must ensure that the output contains all expected fields, and addresses data type considerations. I'm focusing specifically on validation for values, missing values, format errors, or typo-related issues.\n\n\n**Validating for Accuracy**\n\nI've just finished a meticulous review for accuracy across several fields, and it all checks out. The registration and VAT numbers align perfectly with the source documents. I've also verified the structured address details. There are only minor differences, likely due to formatting, such as the VAT number format. I'm satisfied that the extracted information is precise, given the data sources.\n\n\n",
+      "lineItems": "**Verifying Extraction Accuracy**\n\nI'm now focused on the crucial task of validating the extracted line items. My plan involves a thorough field-by-field verification against the original invoice image. I want to ensure each piece of information, like description, quantity, and unit price, matches precisely to prevent downstream errors. I'm building this verification procedure now.\n\n\n",
+      "taxes": "**Analyzing Tax Data**\n\nI've hit a snag. The \"taxes\" data extracted is an empty list, even though the document clearly shows a VAT percentage of 20% in the line items. The subtotal is \u00a345.42, and the total tax is \u00a39.08. I need to figure out why the extraction failed and how to reconcile the discrepancy.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Data**\n\nI'm currently analyzing the shipping information request. The target is the `shippingInfo` section with specific fields: `carrier`, `deliveryDate`, `deliveryDateISO`, and `trackingNumber`. Initially, the extracted data is null for all those fields. The immediate goal is to verify any shipping information is available based on these null values.\n\n\n**Investigating Invoice Data**\n\nI've moved on to examining the invoice details now. I've identified key fields like the header, customer, invoice and due dates, a reference number, and a VAT number. A line item is present for an umbrella stand. I see \"Proovia Couriers\" is the vendor issuing the invoice. I'm checking if the reference \"25-PR208717\" can be confirmed as a tracking number. So far, the delivery date isn't immediately obvious.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 14730,
+    "cost": {
+      "input_tokens": 19375,
+      "output_tokens": 3459,
+      "input_cost": 0.03875,
+      "output_cost": 0.041507999999999996,
+      "total_cost": 0.080258
+    }
+  }
+}

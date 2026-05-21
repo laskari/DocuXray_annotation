@@ -1,0 +1,8 @@
+17:55:29  INFO     =======================================================
+17:55:29  INFO       JUDGE  doc_id=ConsettScanner_20260105_130848_page_59  [2026-05-18 17:55:29]
+17:55:29  INFO     =======================================================
+17:56:14  INFO     FAIL  issues=4  confidence=0.95  cost=$0.1181  elapsed=44814ms
+17:56:14  WARNING    [invoiceInfo] customerMemo — The customer memo/notes section is clearly visible on the document but was not extracted.
+17:56:14  WARNING    [lineItems] itemCode — The line item number ('no') was incorrectly extracted as the itemCode.
+17:56:14  WARNING    [totals] totalIncludingTax.originalValue — The currency code 'GBP' was omitted from the extracted value.
+17:56:14  WARNING    [totals] balanceDue.originalValue — The currency code 'GBP' was omitted from the extracted value.

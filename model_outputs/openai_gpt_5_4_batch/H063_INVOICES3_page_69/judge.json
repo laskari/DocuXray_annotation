@@ -1,0 +1,115 @@
+{
+  "document_id": "H063_INVOICES3_page_69",
+  "file": "H063_INVOICES3_page_69.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 7,
+    "sections_with_issues": [
+      "lineItems"
+    ],
+    "confidence": 0.96,
+    "issues": {
+      "lineItems": [
+        {
+          "field": "lineItems.description",
+          "row_index": 1,
+          "reasoning": "1. Are multiple fields in this row displaced or shifted together compared to the document? No; quantity, unit price, VAT code context, and net all align with the same visual row. 2. Does the same extracted value appear verbatim in another field where it should not, or is it duplicated? No. 3. Is this value taken from a completely unrelated area/label? No; it is the line description from the correct row. 4. Do two similar candidate fields exist and the wrong one was chosen? No. 5. Is the extracted value completely fabricated and not visible anywhere? No; it closely matches the visible description. 6. Is the field missing while the value is visible? No. 7. Is it only a format difference? No. 8. Does the text have a small character-level typo? Yes; the visible text is '90 Burger KF x48' but extraction has '90 Burger FK x48'.",
+          "issue_type": "character_value_mismatch",
+          "description": "The item description has the letters 'K' and 'F' transposed.",
+          "extracted_value": "90 Burger FK x48",
+          "corrected_value": "90 Burger KF x48",
+          "expected_context": "Second line item description in the Description column.",
+          "correction_reasoning": "I re-checked the second row of the items table and matched the quantity 2, unit price 21.00, VAT code 0, and net 42.00 to ensure the row alignment is correct. In that row, the description clearly reads '90 Burger KF x48', so the extracted text contains a minor character-order error rather than a row shift or wrong-field issue.",
+          "visual_evidence": "Located in the line-items table near the middle of the page, second row under the 'Description' column, aligned with quantity '2', unit price '21.00', and net '42.00'."
+        },
+        {
+          "field": "lineItems.remarks",
+          "row_index": 0,
+          "reasoning": "1. Are multiple fields in this row displaced or shifted together compared to the document? No; the row data is otherwise aligned correctly. 2. Does the same extracted value appear verbatim in another field where it should not, or is it duplicated? No; this is not a duplicated value across different extracted fields for the same row. 3. Is a single field's value taken from a completely unrelated area/label of the document, and not also duplicated elsewhere? Yes; 'VAT Code: 0' comes from the dedicated VAT Code column, not from a remarks field.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the row's VAT code value instead of an actual remark. No line-item remark is printed for this row.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "There is no remarks text for the first line item; the visible '0' belongs to the dedicated 'VAT Code' column.",
+          "correction_reasoning": "I performed a second scan across the first row from left to right. The row shows quantity, description, unit price, VAT code, and net. The only text between unit price and net is the VAT code '0' under the 'VAT Code' header. There is no separate remark text anywhere on that row, so the remarks field should be empty.",
+          "visual_evidence": "In the first line item row, the value '0' appears in the narrow column headed 'VAT Code' between 'Unit Price' and 'Net'. No remarks area or extra free-text appears on that row."
+        },
+        {
+          "field": "lineItems.remarks",
+          "row_index": 1,
+          "reasoning": "1. Are multiple fields in this row displaced or shifted together compared to the document? No; the row alignment is intact. 2. Does the same extracted value appear verbatim in another field where it should not, or is it duplicated? No. 3. Is a single field's value taken from a completely unrelated area/label of the document, and not also duplicated elsewhere? Yes; 'VAT Code: 0' is from the VAT Code column, not a remarks field.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT code from the row instead of an actual remark. No line-item remark is printed for this row.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "There is no remarks text for the second line item; the visible '0' belongs to the dedicated 'VAT Code' column.",
+          "correction_reasoning": "I re-checked the second row and confirmed the visible row contents are quantity 2, description '90 Burger KF x48', unit price 21.00, VAT code 0, and net 42.00. The '0' is positioned under the 'VAT Code' header, so it should not populate remarks. Since no separate remark text is visible on the row, the correct remarks value is null.",
+          "visual_evidence": "In the second line item row, the '0' is centered in the 'VAT Code' column between unit price '21.00' and net '42.00'; there is no remarks text elsewhere on that line."
+        },
+        {
+          "field": "lineItems.remarks",
+          "row_index": 2,
+          "reasoning": "1. Are multiple fields in this row displaced or shifted together compared to the document? No. 2. Does the same extracted value appear verbatim in another field where it should not, or is it duplicated? No. 3. Is a single field's value taken from a completely unrelated area/label of the document, and not also duplicated elsewhere? Yes; the extracted remarks value is actually the VAT code from the dedicated column.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the VAT code value rather than a true line-item remark. No remark is shown for this row.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "There is no remarks text for the third line item; the visible '0' belongs to the 'VAT Code' column.",
+          "correction_reasoning": "I verified the third row containing '4oz Battered CBS (x10 per Bag) GREEN'. The only standalone value between the unit price 6.99 and net 27.96 is '0' under the VAT Code header. No other annotation or remarks text appears in that row, so remarks should be empty.",
+          "visual_evidence": "Third line item row in the table: the value '0' is printed in the column labeled 'VAT Code', between '6.99' and '27.96'."
+        },
+        {
+          "field": "lineItems.remarks",
+          "row_index": 3,
+          "reasoning": "1. Are multiple fields in this row displaced or shifted together compared to the document? No. 2. Does the same extracted value appear verbatim in another field where it should not, or is it duplicated? No. 3. Is a single field's value taken from a completely unrelated area/label of the document, and not also duplicated elsewhere? Yes; 'VAT Code: 0' comes from the dedicated VAT Code column, not from a remarks area.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field incorrectly contains the VAT code. There is no actual remark printed for this line item.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "No remarks text is present for the fourth line item; the visible '0' belongs to the VAT Code column.",
+          "correction_reasoning": "I checked the fourth row with description 'Lutosa 14mm Chips 4x2.5kg'. The row structure clearly shows the column sequence quantity, description, unit price, VAT code, net. The '0' is the VAT code in its own column, and there is no remarks text on the row. Therefore remarks should be null.",
+          "visual_evidence": "Fourth line item row, to the right of unit price '15.99' and left of net '47.97', the value '0' sits directly under the 'VAT Code' header; no remarks text is visible on that line."
+        },
+        {
+          "field": "lineItems.remarks",
+          "row_index": 4,
+          "reasoning": "1. Are multiple fields in this row displaced or shifted together compared to the document? No. 2. Does the same extracted value appear verbatim in another field where it should not, or is it duplicated? No. 3. Is a single field's value taken from a completely unrelated area/label of the document, and not also duplicated elsewhere? Yes; the remarks field has been filled with the VAT code from the dedicated column.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field contains the line's VAT code instead of an actual remark. No remark text is visible for this row.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "There is no remarks text for the fifth line item; the visible '0' belongs in the VAT Code column only.",
+          "correction_reasoning": "I re-scanned the fifth row containing 'McCain Vegi Burger 3x10'. The row shows quantity 1, unit price 19.99, VAT code 0, and net 19.99. The only candidate for the extracted remarks value is the VAT code cell, and no notes or comments appear on the same row. So the remarks field should be empty.",
+          "visual_evidence": "Fifth line item row: the '0' is printed in the 'VAT Code' column between unit price '19.99' and net '19.99'; no separate remark text appears."
+        },
+        {
+          "field": "lineItems.remarks",
+          "row_index": 5,
+          "reasoning": "1. Are multiple fields in this row displaced or shifted together compared to the document? No. 2. Does the same extracted value appear verbatim in another field where it should not, or is it duplicated? No. 3. Is a single field's value taken from a completely unrelated area/label of the document, and not also duplicated elsewhere? Yes; 'VAT Code: 0' belongs to the VAT Code column, not the remarks field.",
+          "issue_type": "wrong_context",
+          "description": "The remarks field incorrectly contains the VAT code value. No actual line-item remark is printed for this row.",
+          "extracted_value": "VAT Code: 0",
+          "corrected_value": null,
+          "expected_context": "There is no remarks text for the sixth line item; the visible '0' belongs to the dedicated VAT Code column.",
+          "correction_reasoning": "I reviewed the last row with description 'Cheese Slices x112 Kerrymaid'. Its row contains quantity 3, unit price 9.49, VAT code 0, and net 28.47. The extracted remarks text is not a remark but the VAT code label/value taken from the table structure. Because no separate remark text appears on the row, the correct remarks value is null.",
+          "visual_evidence": "Last line item row near the bottom of the line-items table: the value '0' appears under the 'VAT Code' header between '9.49' and '28.47', with no remark text visible elsewhere on the row."
+        }
+      ]
+    },
+    "token_usage": {
+      "input_tokens": 39413,
+      "output_tokens": 4894
+    },
+    "cost": {
+      "input_cost": 0.04926625,
+      "output_cost": 0.036705,
+      "total_cost": 0.08597125,
+      "model": "gpt-5.4"
+    },
+    "verification_model": "gpt-5.4"
+  },
+  "metadata": {
+    "batch_id": "batch_6a0b0161707881909c104be09efb3634",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "document_id": "H063_INVOICES3_page_108",
+  "file": "H063_INVOICES3_page_108.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 5,
+    "sections_with_issues": [
+      "parties",
+      "lineItems",
+      "totals"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "parties": [
+        {
+          "field": "customer.registrationNumber",
+          "row_index": null,
+          "reasoning": "1. Is it a structural error? No.\n2. Duplication? No.\n3. Wrong context? Yes, the value '702292292' appears immediately after 'CUSTOMER' and represents a customer account number, not a company registration or license number.",
+          "issue_type": "wrong_context",
+          "description": "Customer account number incorrectly extracted as company registration number.",
+          "extracted_value": "702292292",
+          "corrected_value": null,
+          "expected_context": null,
+          "correction_reasoning": "The 'registrationNumber' field is intended for official company registration or license numbers. The extracted value is clearly labelled as the customer account number, so this field should be null.",
+          "visual_evidence": "Located in the top left under 'CUSTOMER 702292292 MRS S HALL'."
+        }
+      ],
+      "lineItems": [
+        {
+          "field": "unitOfMeasure",
+          "row_index": 1,
+          "reasoning": "The pack size/unit of measure column in the document explicitly says '1 2kg', but the leading '1 ' was omitted in the extraction.",
+          "issue_type": "character_value_mismatch",
+          "description": "Leading '1 ' missing from unit of measure.",
+          "extracted_value": "2kg",
+          "corrected_value": "1 2kg",
+          "expected_context": "Pack size column for 'CL Grated Mozz & Chedd Mix'",
+          "correction_reasoning": "The document visibly prints '1 2kg' in the PACK SIZE column. The extraction should capture the complete string as printed.",
+          "visual_evidence": "Second line item under CHILLED section, in the PACK SIZE column between the description and QTY."
+        },
+        {
+          "field": "unitOfMeasure",
+          "row_index": 8,
+          "reasoning": "The document explicitly says '1 1ltr' in the pack size column, but the leading '1 ' was omitted in the extraction.",
+          "issue_type": "character_value_mismatch",
+          "description": "Leading '1 ' missing from unit of measure.",
+          "extracted_value": "1ltr",
+          "corrected_value": "1 1ltr",
+          "expected_context": "Pack size column for 'CL Burger Sauce'",
+          "correction_reasoning": "The document visibly prints '1 1ltr' in the PACK SIZE column. The extraction should capture the complete string as printed.",
+          "visual_evidence": "Second line item under CATERING GROCERY section, in the PACK SIZE column."
+        }
+      ],
+      "totals": [
+        {
+          "field": "subtotal.originalValue",
+          "row_index": null,
+          "reasoning": "1. Not structural. 2. Not duplication. 3. Not wrong context. 4. Not multiple candidates. 5. Is the extracted value completely fabricated and NOT visible anywhere in the document? YES. The value '218.42' is not explicitly printed as a subtotal (or anywhere) on the visible page. The page ends before a final grand total or subtotal is shown.",
+          "issue_type": "value_not_present",
+          "description": "The extracted subtotal value is not visible on the document.",
+          "extracted_value": "218.42",
+          "corrected_value": null,
+          "expected_context": "No overall subtotal is visible on this page of the document.",
+          "correction_reasoning": "A final overall subtotal is not explicitly printed on this page, which appears to be a continuation or ends before the grand totals.",
+          "visual_evidence": "The bottom of the document only lists sub-totals per category (e.g., CHILLED, MEAT) but no final subtotal is present before the 'PAYMENT CARD RECEIPT DETAILS' section."
+        },
+        {
+          "field": "totalExcludingTax.originalValue",
+          "row_index": null,
+          "reasoning": "1. Not structural. 2. Not duplication. 3. Not wrong context. 4. Not multiple candidates. 5. Is the extracted value completely fabricated and NOT visible anywhere in the document? YES. The value '218.42' is not printed on the document.",
+          "issue_type": "value_not_present",
+          "description": "The extracted total excluding tax value is not visible on the document.",
+          "extracted_value": "218.42",
+          "corrected_value": null,
+          "expected_context": "No overall total excluding tax is visible on this page of the document.",
+          "correction_reasoning": "No explicit final total excluding tax is printed on this page.",
+          "visual_evidence": "The bottom of the page lacks any final aggregate totals."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 24981,
+      "output": 7151,
+      "total": 32132
+    },
+    "cost": {
+      "input_tokens": 24981,
+      "output_tokens": 7151,
+      "input_cost": 0.049962,
+      "output_cost": 0.085812,
+      "total_cost": 0.135774
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Defining the Validation Task**\n\nI'm now zeroing in on defining the validation task, specifically verifying the `invoiceInfo` section extracted from an image. My aim is to spot discrepancies, issues, or rule violations, and output a structured JSON array of these problems. I'm focusing on setting up the framework.\n\n\n**Evaluating Data Integrity**\n\nI've been analyzing the invoice image to cross-reference extracted data. I've validated the document number, confirming it matches what's extracted. The image itself explicitly shows the invoice number. I'm moving on to validating the other fields to ensure accuracy and consistency.\n\n\n**Assessing Label Accuracy**\n\nI'm now deep-diving into the extracted data to assess its accuracy. Specifically, I'm examining the `documentTitle`, realizing that while \"INVOICE\" is derived, the label actually states \"INVOICE NUMBER\". However, since the image confirms the information is that of an invoice, and not a receipt, it appears correct to classify the \"INVOICE\" label. I've also confirmed that the `issueDate`, `issueDateISO`, `issueTime`, and `issueTimeISO` fields match their corresponding values in the image. The absent `dueDate`, `dueDateISO`, `purchaseOrderNumber`, and `salesOrderNumber` fields are also validated as not present in the invoice image.\n\n\n",
+      "parties": "**Identifying Key Entities**\n\nI've pinpointed the key entities within this document. The primary focus appears to be on a seller, identified as BOOKER, along with their branch details: 191 in Warwick. This includes their address, contact information (telephone and fax), and registration specifics. I'm noting the distinction between the physical branch and the registered office for BOOKER.\n\n\n**Refining Customer Details**\n\nI'm now diving deeper into customer data. I've flagged a potential issue with the customer's name, as the extracted value combines different data points. I need to determine if \"MRS S HALL\" and \"NICE BITES\" should be treated separately, and may need to investigate whether that is normal behavior or not. Also, the customer registration number is actually a customer number, so I'm flagging this as well. I will assess if the format is standard or not.\n\n\n**Clarifying Geographic Data**\n\nI'm working to clarify the geographic details. \"Warwick\" appears both as a city and as a branch location, causing some ambiguity. I will denote the state as null, and \"Warwick\" as the town. I've also identified a mislabeled customer registration number and correctly flagged it as \"wrong_context\". The extracted seller and customer phone numbers, along with tax and registration numbers, all appear accurate. I'm noting the address is the customer's: TILEMANS LANE, SHIP.\n\n\n",
+      "lineItems": "**Verifying Extracted Line Items**\n\nI'm currently focused on validating the extracted line items from the BOOKER receipt image. My primary task is to cross-reference each entry (CODE, DESCRIPTION, PACK SIZE, etc.) against the original image to ensure accuracy. I will need to use image processing techniques to confirm the correct data.\n\n\n**Analyzing Line Item Details**\n\nI'm now diving deep into the structure of each extracted line item. I'm noting the \"VALUE\" column corresponds to the line total. I'm focusing on the \"remarks\" field to evaluate if promotional indicators (like \"P\") or VAT codes are properly separated and understood. For example, \"P A\" in Item 2 is tricky, but I think I can handle it.\n\n\n**Refining Data Extraction Strategy**\n\nI've checked some extracted line items, and the initial extraction strategy is mostly sound. My primary focus now is handling the merged `remarks` column, which includes VAT codes, RRP, and POR. For instance, item 4 extracts \"A 1.69 29.6%\", which I can interpret. I am also investigating whether the extracted `PACK SIZE` is correct, and I am finding it to be correct as well. I'm reviewing the structure of the data based on the extracted values.\n\n\n**Clarifying Unit of Measure**\n\nI'm now zeroing in on the `unitOfMeasure` field, specifically when the image shows a format like \"1 1ltr\". The initial extraction is dropping the leading \"1\", which is incorrect, as the \"1 \" is part of pack size. I've re-examined several items and the data shows PACK SIZE column often has \"1 1ltr\" in this format. I'm updating my extraction logic to address this oversight to prevent incorrect interpretations, for instance \"1 1.36kg\", and \"24 41.5g\".\n\n\n**Flagging Extraction Mismatches**\n\nI'm systematically identifying mismatches in `unitOfMeasure` where a leading \"1 \" is present in the original image but absent in the extracted value. This includes examples like \"1 15kg\" extracted as \"15kg\". I will flag all examples to ensure that the extraction logic is adjusted to include the leading \"1\". The issue is the OCR removed this value.\n\n\n\n",
+      "totals": "**Verifying Totals Accurately**\n\nI'm focusing on validating the 'totals' section. The extracted subtotal and total excluding tax are both 218.42. The image, which I now realize is upside down, is next for scrutiny. I'll need to rotate it to confirm these values accurately represent what's displayed. It's a key step to ensure data integrity.\n\n\n**Re-evaluating Subtotal Accuracy**\n\nI've hit a snag. The initial subtotal of 218.42 doesn't align with the sum of the extracted sub-totals by category, which comes to 226.45. It seems like the categories are important! The image, although cut off at the bottom, does contain sub-totals for each of the categories, such as CHILLED: sub-total 46.49. I need to figure out why there is this discrepancy. I need to keep checking the image to verify it.\n\n\n",
+      "taxes": "**Verifying Taxes Extraction**\n\nI'm currently focused on the verification process for the \"taxes\" section, ensuring the extracted information aligns with the provided empty list `[]`. My primary goal is to identify any discrepancies and format them into the required JSON output, highlighting the issues. I'm taking a close look at how to ensure the JSON adheres to the specified requirements.\n\n\n**Investigating Document Data**\n\nI'm now diving into the document to find the tax details, even though the text is upside down. It's a bit challenging, but I'm trying to mentally rotate it. I've noted down some basic customer and invoice info. Now I'm focusing on the line items, the sub-totals, and all the columns, in hopes of finding the taxes information, since the extraction is empty. I'm also checking the very bottom and see a barcode there.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Information**\n\nI am now focused on the shipping information. I've examined the extracted JSON, which includes `carrier`, `deliveryDate`, `deliveryDateISO`, and `trackingNumber`. All values are null. Considering this is an upside-down receipt, I'm verifying if this reflects accurate null values for the shipping details or if more data needs to be extracted.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 24691,
+    "cost": {
+      "input_tokens": 24981,
+      "output_tokens": 7151,
+      "input_cost": 0.049962,
+      "output_cost": 0.085812,
+      "total_cost": 0.135774
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "document_id": "ConsettScanner_20260109_100514_page_44",
+  "file": "ConsettScanner_20260109_100514_page_44.png",
+  "judge": {
+    "judge_passed": false,
+    "total_issues": 2,
+    "sections_with_issues": [
+      "invoiceInfo",
+      "parties"
+    ],
+    "confidence": 0.95,
+    "issues": {
+      "invoiceInfo": [
+        {
+          "field": "issueDateISO",
+          "row_index": null,
+          "reasoning": "1. Not a structural error. 2. Not a duplication error. 3. Not wrong context. 4. Not multiple candidates. 5. Not value_not_present. 6. The issueDate is extracted as '21/10/25', which corresponds to a clear date visible in the document. The corresponding ISO formatted date (YYYY-MM-DD) is missing from the extraction. -> missing_value",
+          "issue_type": "missing_value",
+          "description": "The ISO format for the issue date is missing despite the date being present and extracted.",
+          "extracted_value": null,
+          "corrected_value": "2025-10-21",
+          "expected_context": "21/10/25",
+          "correction_reasoning": "The issue date is written as '21/10/25' (DD/MM/YY), which translates to the ISO format '2025-10-21'.",
+          "visual_evidence": "Handwritten on the middle right side of the document, inside a box below the top-right number."
+        }
+      ],
+      "parties": [
+        {
+          "field": "buyer.name",
+          "row_index": null,
+          "reasoning": "1. Are multiple fields shifted? No. 2. Is it duplicated? No. 3. Wrong context? No. 4. Multiple candidates? No. 5. Fabricated? No. 6. Missing? No. 7. Format error? No. 8. Character typos? Yes. The handwritten buyer name has misread letters. 'Rose' was extracted as 'Roane', and 'Consett' was extracted as 'Consect'.",
+          "issue_type": "character_value_mismatch",
+          "description": "The handwritten buyer name contains character-level misreadings (e.g., 'Roane' instead of 'Rose', 'Consect' instead of 'Consett').",
+          "extracted_value": "Roane Antiques Consect",
+          "corrected_value": "Rose Antiques Consett",
+          "expected_context": "Rose Antiques Consett",
+          "correction_reasoning": "Comparing the handwritten letters: the 's' in the first word matches the 's' in 'Antiques', indicating 'Rose'. The last word ends in a crossed double 't' ('tt'), spelling 'Consett' (a town in the UK), rather than 'Consect'.",
+          "visual_evidence": "Handwritten on the first line below the printed seller information block and above the line items table."
+        }
+      ]
+    },
+    "token_usage": {
+      "input": 20918,
+      "output": 5087,
+      "total": 26005
+    },
+    "cost": {
+      "input_tokens": 20918,
+      "output_tokens": 5087,
+      "input_cost": 0.041836,
+      "output_cost": 0.061044,
+      "total_cost": 0.10288
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying Invoice Data**\n\nI'm now cross-referencing the extracted JSON with the image. Initial checks focus on validating the `invoiceInfo` section. I've pinpointed `documentNumber` \"98\" in the top right and `documentTitle` \"INVOICE\" centered at the top. Next, I'll attempt to extract and verify the `issueDate`.\n\n\n",
+      "parties": "**Defining the Scope**\n\nI'm currently focused on defining the scope: verifying the 'parties' section of extracted JSON against a document image. I'm prioritizing the identification of structural, duplication, contextual, and value-based discrepancies between the two data sources.\n\n\n**Refining the Approach**\n\nI'm now diving into the rules and document image analysis. I need to ensure the final JSON is valid and avoid any guesswork, prioritizing issues as specified. I'm focusing on providing clear visual evidence and complete field paths for each discrepancy. The document image has revealed some challenging handwritten text to decipher, particularly the third word in \"Rose Antiques Consort\". It seems close, but not quite identical to the extracted text.\n\n\n**Analyzing the Text**\n\nI've made a breakthrough! I think I've deciphered the handwriting: it's \"Rose Antiques Consett,\" which seems to be a valid business name/location. I am now working on verifying the extracted data, the seller information is matching, so I can start on line item verification. The items seem to be line items which I am matching and calculating the total.\n\n\n**Formulating Specific Issues**\n\nI've formulated a `character_value_mismatch` issue for the buyer's name. The extracted text has errors, I've identified \"Roane\" instead of \"Rose\" and \"Consect\" instead of \"Consett\". I'm specifying the field and reasoning, and describing the context. I've confirmed that the mobile number matches the printed text. The image makes it clear how the errors occurred, which I am specifying.\n\n\n",
+      "lineItems": "**Verifying Data Extraction**\n\nI'm now tasked with verifying the data extraction from the handwritten table. The line items look like this: 0768 TABLE 300, 0769 CHAIRS 200, 0770 CHAIR 125, and 0661 Lindow 4. My goal is to confirm these interpretations are accurate, and that I've correctly understood the handwritten entries. I will need to devise tests.\n\n\n**Validating Line Totals**\n\nI'm now cross-referencing extracted data with additional handwritten rows. I've validated the initial JSON output against rows 5, 6, and 7. The total of 1645 matches what I extracted. I'm focusing on the descriptions. Specifically, I'm examining the potential mismatch of \"Lindow\" vs. \"hudson\" (or \"Window\"), and I've started examining the handwritten characters more closely. I've decided to ignore minor handwriting ambiguity.\n\n\n",
+      "totals": "**Defining the Objective**\n\nI'm zeroing in on verifying the accuracy of extracted \"totals\" data against a document image, aiming to generate a JSON list of identified discrepancies. The initial focus is on correctly interpreting the goal, ensuring a well-defined output format.\n\n\n**Interpreting the Data**\n\nI'm now diving into the specifics of the data, focusing on the meaning of \"Total = 1645\". It appears to be the sum of line items. While the text reads \"Total =\", I'm leaning toward defining this as the subtotal or total excluding tax, which is acceptable. I'm noting the empty VAT and TOTAL fields at the document's bottom. I'm making progress, now let's explore different possibilities.\n\n\n**Clarifying the Value**\n\nI'm now refining my understanding of \"1645\" \u2013 it seems the appropriate label is `subtotal`. The document's structure reinforces this, with \"Total =\" directly following the line items and empty \"V.A.T.\" and \"TOTAL\" fields at the bottom. The extracted data's `subtotal` key appears to be a good fit, as it correctly represents the sum of line items before tax, which this \"Total\" value essentially is. I'm focusing on validating the appropriate key for this case now.\n\n\n",
+      "taxes": "**Verifying Tax Data**\n\nI'm now focused on verifying the 'taxes' section within the JSON extraction. Currently, the extracted data for taxes is just an empty list, so my first step is to analyze the document for relevant information. I've identified the vendor as \"Elcoate Antiques & Interiors\" and their VAT Number is 457. This is the starting point for my verification.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Data**\n\nI'm now cross-referencing the 'shippingInfo' data extracted from the JSON with the details gleaned from the invoice image. The image is from \"Elcoate Antiques & Interiors\" and shows a date of \"2\". Further image analysis is needed to identify the fields to verify against the JSON data.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 17087,
+    "cost": {
+      "input_tokens": 20918,
+      "output_tokens": 5087,
+      "input_cost": 0.041836,
+      "output_cost": 0.061044,
+      "total_cost": 0.10288
+    }
+  }
+}

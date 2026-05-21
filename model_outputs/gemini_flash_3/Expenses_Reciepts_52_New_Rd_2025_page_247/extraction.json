@@ -1,0 +1,451 @@
+{
+  "document_id": "Expenses_Reciepts_52_New_Rd_2025_page_247",
+  "file": "Expenses_Reciepts_52_New_Rd_2025_page_247.png",
+  "data": {
+    "currency": "GBP",
+    "invoiceInfo": {
+      "documentNumber": null,
+      "documentTitle": "Your energy charges for 26th Nov - 25th Dec 2025",
+      "issueDate": "31st December 2025",
+      "issueDateISO": "2025-12-31",
+      "issueTime": null,
+      "issueTimeISO": null,
+      "dueDate": null,
+      "dueDateISO": null,
+      "purchaseOrderNumber": null,
+      "salesOrderNumber": null,
+      "customerNumber": "27548376",
+      "paymentTerms": null,
+      "customerMemo": null,
+      "category": "Utilities and Bills"
+    },
+    "parties": {
+      "seller": {
+        "name": "OVO Energy Ltd.",
+        "addressStructured": {
+          "street_number": "1",
+          "street_name": "Rivergate",
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": "Temple Quay",
+          "city": "Bristol",
+          "state": null,
+          "postal_code": "BS1 6ED",
+          "country": null
+        },
+        "registrationNumber": "06890795",
+        "phone": "0330 303 5063",
+        "fax": null,
+        "email": "hello@ovoenergy.com",
+        "whatsappNumber": null,
+        "taxRegistrationNumber": "100119879"
+      },
+      "buyer": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "billTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "customer": {
+        "name": "Mr Atanas Petkov",
+        "addressStructured": {
+          "street_number": "52",
+          "street_name": "NEW",
+          "street_type": "ROAD",
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": "HAMPSHIRE",
+          "state": null,
+          "postal_code": "RG263AN",
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipTo": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      },
+      "shipFrom": {
+        "name": null,
+        "addressStructured": {
+          "street_number": null,
+          "street_name": null,
+          "street_type": null,
+          "unit": null,
+          "building": null,
+          "district": null,
+          "city": null,
+          "state": null,
+          "postal_code": null,
+          "country": null
+        },
+        "registrationNumber": null,
+        "phone": null,
+        "fax": null,
+        "email": null,
+        "whatsappNumber": null,
+        "taxRegistrationNumber": null
+      }
+    },
+    "lineItems": [
+      {
+        "description": "Cost of electricity",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a355.20",
+          "normalizedValue": 55.2
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "Cost of gas",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": "\u00a392.66",
+          "normalizedValue": 92.66
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      },
+      {
+        "description": "VAT 5% of \u00a3147.86",
+        "itemCode": null,
+        "quantity": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "unitOfMeasure": null,
+        "unitPrice": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalIncludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTotalExcludingTax": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountAmount": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "discountPercent": {
+          "originalValue": null,
+          "normalizedValue": null
+        },
+        "lineTaxAmount": {
+          "originalValue": "\u00a37.39",
+          "normalizedValue": 7.39
+        },
+        "lineTaxPercent": {
+          "originalValue": "5%",
+          "normalizedValue": 5.0
+        },
+        "serialNumber": null,
+        "lotNumber": null,
+        "gtin": null,
+        "hsCode": null,
+        "remarks": null,
+        "serviceDate": null,
+        "serviceDateISO": null
+      }
+    ],
+    "totals": {
+      "discountTotal": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "discountPercentage": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "subtotal": {
+        "originalValue": "\u00a3147.86",
+        "normalizedValue": 147.86
+      },
+      "totalExcludingTax": {
+        "originalValue": "\u00a3147.86",
+        "normalizedValue": 147.86
+      },
+      "shippingAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "freightCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "insuranceAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "handlingFees": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "surchargeAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "otherCharges": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "taxableAmount": {
+        "originalValue": "\u00a3147.86",
+        "normalizedValue": 147.86
+      },
+      "taxTotal": {
+        "originalValue": "\u00a37.39",
+        "normalizedValue": 7.39
+      },
+      "withholdingTax": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "totalIncludingTax": {
+        "originalValue": "\u00a3155.25",
+        "normalizedValue": 155.25
+      },
+      "roundingAdjustment": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "deposit": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "amountPaid": {
+        "originalValue": "\u00a3111.00",
+        "normalizedValue": 111.0
+      },
+      "creditApplied": {
+        "originalValue": "\u00a3153.97",
+        "normalizedValue": 153.97
+      },
+      "returnAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "tipAmount": {
+        "originalValue": null,
+        "normalizedValue": null
+      },
+      "balanceDue": {
+        "originalValue": "\u00a3109.72 in credit",
+        "normalizedValue": -109.72
+      },
+      "exchangeRate": {
+        "originalValue": null,
+        "normalizedValue": null
+      }
+    },
+    "taxes": [
+      {
+        "name": "VAT",
+        "percentage": {
+          "originalValue": "5%",
+          "normalizedValue": 5.0
+        },
+        "amount": {
+          "originalValue": "\u00a37.39",
+          "normalizedValue": 7.39
+        }
+      }
+    ],
+    "shippingInfo": {
+      "carrier": null,
+      "deliveryDate": null,
+      "deliveryDateISO": null,
+      "trackingNumber": null
+    },
+    "invoiceStatus": "paid",
+    "hasPaidStamp": false,
+    "isOverflowPage": false,
+    "applyTaxAfterDiscount": null
+  },
+  "metadata": {
+    "model": "gemini-3-flash-preview",
+    "parts_run": [
+      "general",
+      "parties",
+      "items",
+      "totals"
+    ],
+    "prompt_tokens": 8444,
+    "output_tokens": 13175,
+    "latency_ms": 66717,
+    "cost": {
+      "input_cost": 0.004222,
+      "output_cost": 0.039525,
+      "total_cost": 0.043746999999999994,
+      "model": "gemini-3-flash-preview"
+    },
+    "fallback_parts": [],
+    "per_part": [
+      {
+        "part": "general",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 1987,
+        "total_tokens": 4098,
+        "thoughts": "**My Analysis of the Utility Bill**\n\nOkay, let's break this down. First, I see it's an OVO Energy utility bill or possibly invoice \u2013 let's assume it's a summary of energy charges, so I'll call it a utility bill. The customer is Mr. Atanas Petkov with account number 27548376. The generation date is 31st December 2025, and the billing period covers 26th November to 25th December 2025. It's in GBP (\u00a3), so the `currency` is clearly \"GBP\". The `category` should be \"Utilities and Bills\" since it's an energy statement.\n\nThe important parts are now: `currency`, `invoiceInfo`, `invoiceStatus`, and `hasPaidStamp`. I need to match the schema provided in the system instruction.\n\nLooking more closely, there isn't a dedicated \"Invoice Number\", though there *is* an \"Account Number\", which I'll use. The `documentTitle` is \"Your energy charges for 26th Nov - 25th Dec 2025\", and the issue date is \"31st December 2025\", with its ISO format \"2025-12-31\".\n\nSo, let's assemble the `invoiceInfo` structure. Fields such as \"issueTime\", \"issueTimeISO\", \"dueDate\", \"dueDateISO\", \"purchaseOrderNumber\", \"salesOrderNumber\", \"paymentTerms\", and \"customerMemo\" are null because they are not provided in the document.\n\nNow, for the critical part: `invoiceStatus`. It says \"Direct Debit 1st December +\u00a3111.00 in\", so a credit balance exists. A credit is available, and charges were deducted, so it means the balance has been paid for. Even without a explicit \"PAID\" stamp, the balance is a strong indicator that the charges are settled. Thus, I'll go with \"paid\" in this situation. It's a summary document, and the balance is a positive credit, meaning the customer has paid, or is in credit. Had it been an outstanding amount, it would have been \"unpaid\" or \"partially-paid\". Since I don't see an explicit stamp, `hasPaidStamp` will be `false`.\n\nFinal check to make sure I don't miss anything. Also, to remember the double quotes around strings. Looking at the schema, all seems valid.\n\nSo, here's my final JSON structure, accounting for ISO 4217, the correct \"paid\" status:\n\n```json\n{\n  \"currency\": \"GBP\",\n  \"invoiceInfo\": {\n    \"documentNumber\": null,\n    \"documentTitle\": \"Your energy charges for 26th Nov - 25th Dec 2025\",\n    \"issueDate\": \"31st December 2025\",\n    \"issueDateISO\": \"2025-12-31\",\n    \"issueTime\": null,\n    \"issueTimeISO\": null,\n    \"dueDate\": null,\n    \"dueDateISO\": null,\n    \"purchaseOrderNumber\": null,\n    \"salesOrderNumber\": null,\n    \"customerNumber\": \"27548376\",\n    \"paymentTerms\": null,\n    \"customerMemo\": null,\n    \"category\": \"Utilities and Bills\"\n  },\n  \"invoiceStatus\": \"paid\",\n  \"hasPaidStamp\": false\n}\n```\n\n\n"
+      },
+      {
+        "part": "parties",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 6433,
+        "total_tokens": 8544,
+        "thoughts": "**Final Thoughts on Data Extraction**\n\nOkay, here's my final breakdown of this OVO Energy invoice, keeping in mind the schema provided. My primary focus will be on extracting the data within the `parties` and `shippingInfo` keys, as defined in the context. I'll meticulously adhere to the schema provided in the context, even though the broader instructions mention a more extensive schema.  The key is to strictly follow the provided context.\n\nFirstly, I'll structure the data according to the `parties` object:\n\n*   **Seller:**  This will be OVO Energy Ltd. and I'll extract all the available details: name, structured address (street number, street name, district, city, postal code), registration number, phone number, email, and the VAT number, which fits within the `taxRegistrationNumber` field. I'm noting the district is \"Temple Quay\", and the city is \"Bristol\", per the provided address, and adhering to the schema's field names.\n*   **Customer:** Since this is a utility bill and I don't see any explicit labels such as 'Customer', 'Buyer', or 'Bill To', based on the context, I'll label the recipient as `customer`. I will extract the name, and structured address. Hampshire is going in the `city` field since there's no distinct city listed.\n*   **Buyer, BillTo, ShipTo, ShipFrom:** Since this is a B2C transaction I am leaving these as null, according to the `parties` schema constraints. The schema states these are mutually exclusive with `customer`.\n\nSecondly, the `shippingInfo` section will be null. This is a utility bill, not a shipment, so there's no delivery address or tracking information to capture.\n\nI've carefully double-checked the addresses.  I've verified that the registration number (06890795) and the VAT number (100119879) are extracted correctly. I am also double checking that Hampshire is the city, since no city is present, and keeping the customer name and address as is.\n\nThe street details are key. I'm interpreting \"NEW ROAD\" as `street_name`: \"NEW\", `street_type`: \"ROAD\". Also \"Rivergate\" is the actual street name.\n\nI'm keeping in mind that I need to provide the JSON as a single line, adhering to the constraint of not generating control tokens.\n\nHere's the final JSON, formatted to be a single, long string as per the requirements:\n\n```json\n{\"parties\":{\"seller\":{\"name\":\"OVO Energy Ltd.\",\"addressStructured\":{\"street_number\":\"1\",\"street_name\":\"Rivergate\",\"street_type\":null,\"unit\":null,\"building\":null,\"district\":\"Temple Quay\",\"city\":\"Bristol\",\"state\":null,\"postal_code\":\"BS1 6ED\",\"country\":null},\"registrationNumber\":\"06890795\",\"phone\":\"0330 303 5063\",\"fax\":null,\"email\":\"hello@ovoenergy.com\",\"whatsappNumber\":null,\"taxRegistrationNumber\":\"100119879\"},\"buyer\":null,\"billTo\":null,\"customer\":{\"name\":\"Mr Atanas Petkov\",\"addressStructured\":{\"street_number\":\"52\",\"street_name\":\"NEW\",\"street_type\":\"ROAD\",\"unit\":null,\"building\":null,\"district\":null,\"city\":\"HAMPSHIRE\",\"state\":null,\"postal_code\":\"RG263AN\",\"country\":null},\"registrationNumber\":null,\"phone\":null,\"fax\":null,\"email\":null,\"whatsappNumber\":null,\"taxRegistrationNumber\":null},\"shipTo\":null,\"shipFrom\":null},\"shippingInfo\":null}\n```\n\n\n"
+      },
+      {
+        "part": "items",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 373,
+        "total_tokens": 2484,
+        "thoughts": null
+      },
+      {
+        "part": "totals",
+        "fallback_used": false,
+        "prompt_tokens": 2111,
+        "output_tokens": 4382,
+        "total_tokens": 6493,
+        "thoughts": "**Final JSON Extraction Thoughts**\n\nOkay, the task is clear: extract financial information from this invoice image and format it into a specific JSON structure, specifically focusing on the financial totals, tax breakdowns, and payment details. I need to be precise and follow the provided schema strictly.\n\nFirst, I analyzed the schema, understanding the fields required within the `totals` object (discount, subtotal, totalExcludingTax, various charges, taxes, payments, etc.), the `taxes` array (name, percentage, amount), and the `applyTaxAfterDiscount` boolean.\n\nNow, I'm carefully examining the invoice text. I identified the key information: cost of electricity, cost of gas, VAT details (5% of \u00a3147.86 equaling \u00a37.39), and the total charges (\u00a3155.25). I noted the balance section: starting balance of \u00a3153.97 in credit, a direct debit of \u00a3111.00, and a closing balance of \u00a3109.72 in credit.\n\nNext, I need to map this data to the schema.\nI decided that the taxable amount is the amount before tax (\u00a3147.86), and the tax amount is \u00a37.39. Subtotal is the sum of electricity and gas (or the taxable amount). Total including tax is \u00a3155.25. The amount paid is \u00a3111.00, and the balance due is \u00a3109.72 *in credit*, which means it's a negative balance due, so I will normalize it to -109.72. The credit in the starting balance is also to be considered (or credit applied). No discount is mentioned, so `applyTaxAfterDiscount` is null.\n\nLet's refine and check the values, the total charge is \u00a3155.25. The VAT tax is \u00a37.39 which is a 5% of \u00a3147.86, then the total charge is indeed \u00a3155.25. The starting and closing balances are consistent with the payments.\n\nI'm constructing the JSON step-by-step.\n-   `discountTotal` and `discountPercentage` are null.\n-   `subtotal`: is the sum of the items before tax.\n-   `totalExcludingTax` : matches the subtotal and the taxable amount.\n-   `taxableAmount`: is \u00a3147.86, directly from the VAT calculation.\n-   `taxTotal`: is \u00a37.39, the calculated VAT amount.\n-   `totalIncludingTax`: is \u00a3155.25 from the text.\n-   `amountPaid`: is \u00a3111.00.\n-   `creditApplied`: is the starting balance \u00a3153.97 from the previous credit.\n-   `balanceDue`: the closing balance of \u00a3109.72 in credit, becomes -109.72.\n\nNow, I will construct the `taxes` array:\n-   `name`: \"VAT\"\n-   `percentage`: 5%\n-   `amount`: \u00a37.39.\n\nNo discount, so `applyTaxAfterDiscount` is null.\n\nI double checked the schema for formatting guidelines: no control characters, and that strings are properly double-quoted.\n\nThe \"in credit\" is part of the original value of `balanceDue`. It's essential to convey the nature of the debt (or credit). I've normalized it as a negative value. I will populate `totalExcludingTax` as well as `subtotal` for completeness, as the text contains amounts to use for both.\n\nFinal JSON structure, checking that the extracted information is in the correct format.\n\n```json\n{\n  \"totals\": {\n    \"discountTotal\": null,\n    \"discountPercentage\": null,\n    \"subtotal\": { \"originalValue\": \"\u00a3147.86\", \"normalizedValue\": 147.86 },\n    \"totalExcludingTax\": { \"originalValue\": \"\u00a3147.86\", \"normalizedValue\": 147.86 },\n    \"shippingAmount\": null,\n    \"freightCharges\": null,\n    \"insuranceAmount\": null,\n    \"handlingFees\": null,\n    \"surchargeAmount\": null,\n    \"otherCharges\": null,\n    \"taxableAmount\": { \"originalValue\": \"\u00a3147.86\", \"normalizedValue\": 147.86 },\n    \"taxTotal\": { \"originalValue\": \"\u00a37.39\", \"normalizedValue\": 7.39 },\n    \"withholdingTax\": null,\n    \"totalIncludingTax\n\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+17:55:16  INFO     =======================================================
+17:55:16  INFO       EXTRACTION  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_247  [2026-05-18 17:55:16]
+17:55:16  INFO     =======================================================
+17:55:16  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:55:16  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:55:16  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_CALL] Starting part 'general' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:55:16  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_CALL] Starting part 'parties' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:55:16  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_CALL] Starting part 'items' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:55:16  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_CALL] Starting part 'totals' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:55:24  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_DONE] Completed part 'items' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:55:39  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_DONE] Completed part 'general' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:56:00  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_DONE] Completed part 'totals' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:56:23  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] [PART_DONE] Completed part 'parties' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_247'
+17:56:23  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_247] SUCCESS: Invoice extraction completed | latency_ms=66717
+17:56:23  INFO     OK  elapsed=66783ms  cost=$0.0437
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_247  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

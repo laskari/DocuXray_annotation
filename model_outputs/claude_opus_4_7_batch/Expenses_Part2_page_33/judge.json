@@ -1,0 +1,26 @@
+{
+  "document_id": "Expenses_Part2_page_33",
+  "file": "Expenses_Part2_page_33.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 0.9,
+    "issues": {},
+    "token_usage": {
+      "input_tokens": 69141,
+      "output_tokens": 429
+    },
+    "cost": {
+      "input_cost": 0.1728525,
+      "output_cost": 0.0053625,
+      "total_cost": 0.17821499999999998,
+      "model": "claude-opus-4-7"
+    },
+    "verification_model": "claude-opus-4-7"
+  },
+  "metadata": {
+    "batch_id": "msgbatch_01DXeHTDXi8zf2pXHFMqi4Pu",
+    "note": "Processed via Batch API (50% discount applied)"
+  }
+}

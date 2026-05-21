@@ -1,0 +1,42 @@
+{
+  "document_id": "Expenses-Part2_page_4",
+  "file": "Expenses-Part2_page_4.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 1.0,
+    "issues": {},
+    "token_usage": {
+      "input": 18833,
+      "output": 588,
+      "total": 19421
+    },
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 588,
+      "input_cost": 0.037666,
+      "output_cost": 0.007056,
+      "total_cost": 0.044722
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "totals": "**Verifying Image Contents**\n\nI'm currently trying to verify the 'totals' section, but the image is blank except for a faint red smudge. There's nothing to analyze for totals as far as I can tell.\n\n\n",
+      "shippingInfo": "**Verifying Shipping Details**\n\nI'm now analyzing the user's request, specifically focusing on validating the extracted \"shippingInfo\" data against a document image. My task is to identify and structure any discrepancies based on pre-defined rules. The goal is pinpointing extraction errors for the document's shipping information.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 6026,
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 588,
+      "input_cost": 0.037666,
+      "output_cost": 0.007056,
+      "total_cost": 0.044722
+    }
+  }
+}

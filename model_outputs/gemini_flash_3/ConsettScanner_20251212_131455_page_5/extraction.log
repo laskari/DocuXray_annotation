@@ -1,0 +1,18 @@
+17:12:06  INFO     =======================================================
+17:12:06  INFO       EXTRACTION  doc_id=ConsettScanner_20251212_131455_page_5  [2026-05-18 17:12:06]
+17:12:06  INFO     =======================================================
+17:12:06  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:12:06  INFO     [ConsettScanner_20251212_131455_page_5] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:12:06  INFO     [ConsettScanner_20251212_131455_page_5] [PART_CALL] Starting part 'general' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:06  INFO     [ConsettScanner_20251212_131455_page_5] [PART_CALL] Starting part 'parties' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:06  INFO     [ConsettScanner_20251212_131455_page_5] [PART_CALL] Starting part 'items' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:06  INFO     [ConsettScanner_20251212_131455_page_5] [PART_CALL] Starting part 'totals' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:09  INFO     [ConsettScanner_20251212_131455_page_5] [PART_DONE] Completed part 'general' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:37  INFO     [ConsettScanner_20251212_131455_page_5] [PART_DONE] Completed part 'totals' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:39  INFO     [ConsettScanner_20251212_131455_page_5] [PART_DONE] Completed part 'items' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:50  INFO     [ConsettScanner_20251212_131455_page_5] [PART_DONE] Completed part 'parties' for doc 'ConsettScanner_20251212_131455_page_5'
+17:12:50  INFO     [ConsettScanner_20251212_131455_page_5] SUCCESS: Invoice extraction completed | latency_ms=44789
+17:12:50  INFO     OK  elapsed=44866ms  cost=$0.0267
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=ConsettScanner_20251212_131455_page_5  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================

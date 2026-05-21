@@ -1,0 +1,43 @@
+{
+  "document_id": "H063_INVOICES3_page_192",
+  "file": "H063_INVOICES3_page_192.png",
+  "judge": {
+    "judge_passed": true,
+    "total_issues": 0,
+    "sections_with_issues": [],
+    "confidence": 1.0,
+    "issues": {},
+    "token_usage": {
+      "input": 18833,
+      "output": 904,
+      "total": 19737
+    },
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 904,
+      "input_cost": 0.037666,
+      "output_cost": 0.010848,
+      "total_cost": 0.048514
+    },
+    "verification_model": "gemini-3.1-pro-preview",
+    "prompt_version": "judge_v1",
+    "thoughts": {
+      "invoiceInfo": "**Verifying the Extraction**\n\nI'm verifying the data extraction for the `invoiceInfo` section and the process is proving straightforward. The task is to check the data extraction; the result is a JSON object with all null values, which is logical, considering the provided document image is blank. This verifies my initial assessment.\n\n\n",
+      "totals": "**Verifying Extracted Data**\n\nI've begun to analyze the data. Currently, every field within the \"totals\" section is returning a `null` value. I've also examined the document image; it's entirely blank. I'm moving toward cross referencing these findings and preparing for the next step.\n\n\n",
+      "taxes": "**Verifying Empty Data**\n\nI'm currently verifying the \"taxes\" section of the data, but it seems there's no extracted data to validate yet; the list is empty. I'm focusing on confirming this apparent absence against the source document. The document image looks, for now, completely blank. I need to figure out why no data was extracted before I can move forward.\n\n\n"
+    }
+  },
+  "metadata": {
+    "model": "gemini-3.1-pro-preview",
+    "prompt_tokens": null,
+    "output_tokens": null,
+    "latency_ms": 6289,
+    "cost": {
+      "input_tokens": 18833,
+      "output_tokens": 904,
+      "input_cost": 0.037666,
+      "output_cost": 0.010848,
+      "total_cost": 0.048514
+    }
+  }
+}

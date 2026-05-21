@@ -1,0 +1,18 @@
+17:33:54  INFO     =======================================================
+17:33:54  INFO       EXTRACTION  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_25  [2026-05-18 17:33:54]
+17:33:54  INFO     =======================================================
+17:33:54  INFO     GeminiInvoiceExtractionService initialized | model=gemini-3-flash-preview
+17:33:54  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [EXTRACTION_START] Starting invoice extraction (part=all)
+17:33:55  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_CALL] Starting part 'general' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:33:55  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_CALL] Starting part 'parties' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:33:55  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_CALL] Starting part 'items' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:33:55  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_CALL] Starting part 'totals' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:34:17  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_DONE] Completed part 'totals' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:34:25  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_DONE] Completed part 'parties' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:34:33  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_DONE] Completed part 'general' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:34:49  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] [PART_DONE] Completed part 'items' for doc 'Expenses_Reciepts_52_New_Rd_2025_page_25'
+17:34:49  INFO     [Expenses_Reciepts_52_New_Rd_2025_page_25] SUCCESS: Invoice extraction completed | latency_ms=53994
+17:34:49  INFO     OK  elapsed=54063ms  cost=$0.0361
+16:09:26  INFO     =======================================================
+16:09:26  INFO       EXTRACTION  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_25  [2026-05-19 16:09:26]
+16:09:26  INFO     =======================================================
