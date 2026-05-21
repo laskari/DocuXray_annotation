@@ -116,6 +116,8 @@ class AnnotationApp(tk.Tk):
 
         self._build_styles()
         self._build_ui()
+        self._doc_stats = {}
+        self._init_doc_stats()
         self._load_doc(0)
 
     # ── Styles ───────────────────────────────────────────────────────────────
@@ -144,6 +146,10 @@ class AnnotationApp(tk.Tk):
         self.progress_lbl = tk.Label(top, text="", bg="#12121e", fg="#a0a0c0",
                                      font=(FONT, 12))
         self.progress_lbl.pack(side="right", padx=10)
+
+        self.verified_lbl = tk.Label(top, text="", bg="#12121e", fg="#34d399",
+                                     font=(FONT, 12, "bold"))
+        self.verified_lbl.pack(side="right", padx=20)
 
         # Main panes
         paned = tk.PanedWindow(self, orient="horizontal", bg="#1e1e2e",
@@ -408,6 +414,26 @@ class AnnotationApp(tk.Tk):
         # Status bar
         self._update_status()
 
+    def _init_doc_stats(self):
+        for doc_id in DOC_IDS:
+            try:
+                model_flat = load_all_model_flat(doc_id)
+                all_paths = set()
+                for flat in model_flat.values():
+                    all_paths.update(flat.keys())
+                total = len(all_paths)
+                
+                existing = load_existing_annotation(doc_id)
+                verified = 0
+                if existing:
+                    meta = existing.get("annotation_meta", {})
+                    field_meta = meta.get("field_metadata", [])
+                    verified = sum(1 for item in field_meta if item.get("key") in all_paths and item.get("last_updated"))
+                self._doc_stats[doc_id] = (verified, total)
+            except Exception as e:
+                print(f"Error loading stats for {doc_id}: {e}")
+                self._doc_stats[doc_id] = (0, 0)
+
     def _update_status(self):
         c = {"conflict": 0, "partial": 0, "agree": 0, "missing": 0}
         all_null_count = 0
@@ -417,10 +443,23 @@ class AnnotationApp(tk.Tk):
             if self.null_var.get() or not r["all_null"]:
                 c[r["status"]] = c.get(r["status"], 0) + 1
         total = sum(c.values())
+
+        doc_id = DOC_IDS[self.doc_idx]
+        current_verified = sum(1 for r in self.all_rows if r["path"] in self.timestamps)
+        current_total = len(self.all_rows)
+        self._doc_stats[doc_id] = (current_verified, current_total)
+
+        global_verified = sum(stats[0] for stats in self._doc_stats.values())
+        global_total = sum(stats[1] for stats in self._doc_stats.values())
+
         self.status_bar.config(
-            text=f"{total} keys  |  ‼ {c['conflict']} conflict  "
+            text=f"{total} keys  |  Verified: {current_verified}/{current_total}  |  ‼ {c['conflict']} conflict  "
                  f"~ {c['partial']} partial  ✓ {c['agree']} agree  "
                  f"∅ {c['missing']} missing  |  ∅ {all_null_count} all null"
+        )
+
+        self.verified_lbl.config(
+            text=f"Verified: {current_verified}/{current_total} (doc)  |  {global_verified}/{global_total} (app)"
         )
 
     # ── Filter ───────────────────────────────────────────────────────────────
@@ -607,6 +646,7 @@ class AnnotationApp(tk.Tk):
             lbl = self._verified_labels.get(path)
             if lbl:
                 lbl.config(text=f"✓ Verified: {now}", fg="#34d399")
+            self._update_status()
 
         self.final_vals[path] = val
         ev = self._entry_vars.get(path)
