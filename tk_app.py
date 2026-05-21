@@ -452,14 +452,23 @@ class AnnotationApp(tk.Tk):
         global_verified = sum(stats[0] for stats in self._doc_stats.values())
         global_total = sum(stats[1] for stats in self._doc_stats.values())
 
+        sec = self.sec_filter_var.get()
+        if sec and sec != "All":
+            sec_rows = [r for r in self.all_rows if r["path"].split(".")[0] == sec]
+            sec_verified = sum(1 for r in sec_rows if r["path"] in self.timestamps)
+            sec_total = len(sec_rows)
+            sec_text = f"  |  {sec_verified}/{sec_total} ({sec})"
+        else:
+            sec_text = ""
+
         self.status_bar.config(
-            text=f"{total} keys  |  Verified: {current_verified}/{current_total}  |  ‼ {c['conflict']} conflict  "
+            text=f"{total} keys  |  Verified: {current_verified}/{current_total}{sec_text}  |  ‼ {c['conflict']} conflict  "
                  f"~ {c['partial']} partial  ✓ {c['agree']} agree  "
                  f"∅ {c['missing']} missing  |  ∅ {all_null_count} all null"
         )
 
         self.verified_lbl.config(
-            text=f"Verified: {current_verified}/{current_total} (doc)  |  {global_verified}/{global_total} (app)"
+            text=f"Verified: {current_verified}/{current_total} (doc){sec_text}  |  {global_verified}/{global_total} (app)"
         )
 
     # ── Filter ───────────────────────────────────────────────────────────────
