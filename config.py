@@ -1,0 +1,50 @@
+"""
+config.py  –  Edit your paths and model sources here.
+Replaces "Cell 3" from the original Colab notebook.
+"""
+from pathlib import Path
+
+# ── Project root ────────────────────────────────────────────────────────────
+# Change this to wherever your annotation project lives on your machine.
+PROJECT_ROOT = Path(r"/Users/xelpmoc/Documents/Xelp_work/DocuXray/SKS_Annotation/")
+# On Mac/Linux use a plain forward-slash path, e.g.:
+# PROJECT_ROOT = Path("/home/yourname/DocuXray_testset_annotation")
+
+# ── One entry per model ─────────────────────────────────────────────────────
+# Key   = display name shown in the UI
+# Value = folder that contains <doc_id>/ sub-folders with refinement.json
+MODEL_SOURCES: dict[str, Path] = {
+    "Claude": PROJECT_ROOT / "model_outputs" / "claude_opus_4_7_batch",
+    "Gemini": PROJECT_ROOT / "model_outputs" / "gemini_pro_3_1",
+    "GPT":    PROJECT_ROOT / "model_outputs" / "openai_gpt_5_4_batch",
+    # Add or comment-out models as needed:
+    # "Model D": PROJECT_ROOT / "model_outputs" / "model_d",
+}
+
+# ── Images directory ────────────────────────────────────────────────────────
+# Set to None if you have no invoice images.
+IMAGES_DIR: Path | None = PROJECT_ROOT / "sks_50"
+
+# ── Where annotations are written ──────────────────────────────────────────
+ANNOTATIONS_DIR: Path = PROJECT_ROOT / "annotations"
+
+# ── UI default ─────────────────────────────────────────────────────────────
+# Show keys where every model returned null?
+SHOW_ALL_NULL_KEYS: bool = False
+
+
+# ── Validation (printed on import) ─────────────────────────────────────────
+def _validate():
+    print(f"Project root : {PROJECT_ROOT}  (exists={PROJECT_ROOT.exists()})")
+    for label, p in MODEL_SOURCES.items():
+        n = len([x for x in p.iterdir() if x.is_dir()]) if p.exists() else 0
+        print(f"  {'OK     ' if p.exists() else 'MISSING'} {label}: {p}  ({n} docs)")
+    if IMAGES_DIR:
+        n = len(list(IMAGES_DIR.iterdir())) if IMAGES_DIR.exists() else 0
+        print(f"  Images : {IMAGES_DIR}  ({n} files)")
+    else:
+        print("  Images : (disabled)")
+
+
+if __name__ == "__main__":
+    _validate()
