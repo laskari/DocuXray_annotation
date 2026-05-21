@@ -1,0 +1,17 @@
+# Ignore annotation data directory
+SKS_Annotation/
+
+# Ignore allowed documents JSON
+data2.json
+
+# Ignore Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+.venv/
+venv/
+env/
+ENV/
