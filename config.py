@@ -8,7 +8,7 @@ from pathlib import Path
 # Change this to wherever your annotation project lives on your machine.
 # PROJECT_ROOT = Path(__file__).resolve().parent / "DocuXray_annotation"
 # On Mac/Linux use a plain forward-slash path, e.g.:        
-PROJECT_ROOT = Path("/Users/xelpmoc/Documents/Xelp_work/DocuXray/DocuXray_annotation")
+PROJECT_ROOT = Path(__file__).resolve().parent / "SKS_Annotation"
 
 # ── One entry per model ─────────────────────────────────────────────────────
 # Key   = display name shown in the UI

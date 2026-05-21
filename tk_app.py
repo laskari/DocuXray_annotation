@@ -93,6 +93,9 @@ class AnnotationApp(tk.Tk):
         self.sec_filter_var = tk.StringVar(value="All")
         self.subsec_filter_var = tk.StringVar(value="All")
 
+        self.current_page = 0
+        self.ITEMS_PER_PAGE = 50
+
         # Image zoom state
         self._zoom_scale = 1.0
         self._zoom_offset = [0, 0]  # x, y pan offset
@@ -104,6 +107,8 @@ class AnnotationApp(tk.Tk):
         self.timestamps = {}      # path → timestamp string
         self._verified_labels = {} # path → tk.Label widget
         self._field_frames = []   # all rendered field frame widgets
+        self._render_job = None
+
 
         # Save combinations options
         self.save_opts = []
@@ -269,6 +274,21 @@ class AnnotationApp(tk.Tk):
             activebackground="#12121e", activeforeground="#ffffff", font=(FONT, 12)
         ).pack(side="right", padx=8)
 
+        # Pagination row
+        self.page_row = tk.Frame(right, bg="#12121e", pady=2, padx=8)
+        self.page_row.pack(fill="x")
+        
+        self.btn_prev_page = tk.Button(self.page_row, text="◀ Prev Page", command=self._prev_page,
+                                       bg="#2a2a3e", fg="#2563eb", activebackground="#3a3a5e", activeforeground="#1d4ed8", relief="flat", font=(FONT, 11))
+        self.btn_prev_page.pack(side="left", padx=4)
+        
+        self.page_lbl = tk.Label(self.page_row, text="Page 1 of 1", bg="#12121e", fg="#a0a0c0", font=(FONT, 11))
+        self.page_lbl.pack(side="left", padx=10)
+        
+        self.btn_next_page = tk.Button(self.page_row, text="Next Page ▶", command=self._next_page,
+                                       bg="#2a2a3e", fg="#2563eb", activebackground="#3a3a5e", activeforeground="#1d4ed8", relief="flat", font=(FONT, 11))
+        self.btn_next_page.pack(side="left", padx=4)
+
         # Scrollable fields area
         fields_outer = tk.Frame(right, bg="#1e1e2e")
         fields_outer.pack(fill="both", expand=True)
@@ -427,23 +447,30 @@ class AnnotationApp(tk.Tk):
 
     def _init_doc_stats(self):
         for doc_id in DOC_IDS:
-            try:
-                model_flat = load_all_model_flat(doc_id)
-                all_paths = set()
-                for flat in model_flat.values():
-                    all_paths.update(flat.keys())
-                total = len(all_paths)
-                
-                existing = load_existing_annotation(doc_id)
-                verified = 0
-                if existing:
-                    meta = existing.get("annotation_meta", {})
-                    field_meta = meta.get("field_metadata", [])
-                    verified = sum(1 for item in field_meta if item.get("key") in all_paths and item.get("last_updated"))
-                self._doc_stats[doc_id] = (verified, total)
-            except Exception as e:
-                print(f"Error loading stats for {doc_id}: {e}")
-                self._doc_stats[doc_id] = (0, 0)
+            self._doc_stats[doc_id] = (0, 0)
+            
+        def worker():
+            for doc_id in DOC_IDS:
+                try:
+                    model_flat = load_all_model_flat(doc_id)
+                    all_paths = set()
+                    for flat in model_flat.values():
+                        all_paths.update(flat.keys())
+                    total = len(all_paths)
+                    
+                    existing = load_existing_annotation(doc_id)
+                    verified = 0
+                    if existing:
+                        meta = existing.get("annotation_meta", {})
+                        field_meta = meta.get("field_metadata", [])
+                        verified = sum(1 for item in field_meta if item.get("key") in all_paths and item.get("last_updated"))
+                    self._doc_stats[doc_id] = (verified, total)
+                except Exception as e:
+                    print(f"Error loading stats for {doc_id}: {e}")
+                    self._doc_stats[doc_id] = (0, 0)
+            self.after(0, self._update_status)
+            
+        threading.Thread(target=worker, daemon=True).start()
 
     def _update_status(self):
         c = {"conflict": 0, "partial": 0, "agree": 0, "missing": 0}
@@ -512,8 +539,20 @@ class AnnotationApp(tk.Tk):
                     
             self.vis_rows.append(r)
             
+        self.current_page = 0
         self._render_fields()
         self._update_status()
+
+    def _prev_page(self):
+        if self.current_page > 0:
+            self.current_page -= 1
+            self._render_fields()
+
+    def _next_page(self):
+        max_page = (len(self.vis_rows) - 1) // self.ITEMS_PER_PAGE
+        if self.current_page < max_page:
+            self.current_page += 1
+            self._render_fields()
 
     def _on_sec_filter_change(self, event=None):
         self._apply_filter()
@@ -521,6 +560,15 @@ class AnnotationApp(tk.Tk):
     # ── Fields rendering ─────────────────────────────────────────────────────
 
     def _render_fields(self):
+        # Cancel any pending rendering tasks
+        if hasattr(self, "_render_job") and self._render_job:
+            self.after_cancel(self._render_job)
+            self._render_job = None
+
+        # Sync any un-submitted edits before clearing variables
+        for path, ev in self._entry_vars.items():
+            self.final_vals[path] = ev.get()
+
         # Destroy old widgets
         for w in self.fields_inner.winfo_children():
             w.destroy()
@@ -529,10 +577,31 @@ class AnnotationApp(tk.Tk):
         self._verified_labels.clear()
         self._field_frames.clear()
 
-        for row in self.vis_rows:
-            self._render_field_row(row)
-
         self.fields_canvas.yview_moveto(0)
+
+        total_pages = max(1, (len(self.vis_rows) + self.ITEMS_PER_PAGE - 1) // self.ITEMS_PER_PAGE)
+        self.page_lbl.config(text=f"Page {self.current_page + 1} of {total_pages}")
+        
+        self.btn_prev_page.config(state="normal" if self.current_page > 0 else "disabled")
+        self.btn_next_page.config(state="normal" if self.current_page < total_pages - 1 else "disabled")
+
+        start_idx = self.current_page * self.ITEMS_PER_PAGE
+        end_idx = min(start_idx + self.ITEMS_PER_PAGE, len(self.vis_rows))
+
+        # Start progressive rendering of visible rows in batches of 20
+        self._render_batch(start_idx, 20, end_idx)
+
+    def _render_batch(self, start_idx: int, batch_size: int, absolute_end: int):
+        self._render_job = None
+        end_idx = min(start_idx + batch_size, absolute_end)
+        
+        for idx in range(start_idx, end_idx):
+            self._render_field_row(self.vis_rows[idx])
+            
+        if end_idx < absolute_end:
+            # Schedule the next batch after a brief delay to allow UI to breathe
+            self._render_job = self.after(1, self._render_batch, end_idx, batch_size, absolute_end)
+
 
     def _render_field_row(self, row: dict):
         path   = row["path"]
