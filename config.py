@@ -6,7 +6,7 @@ from pathlib import Path
 
 # ── Project root ────────────────────────────────────────────────────────────
 # Change this to wherever your annotation project lives on your machine.
-PROJECT_ROOT = Path(r"/Users/xelpmoc/Documents/Xelp_work/DocuXray/SKS_Annotation/")
+PROJECT_ROOT = Path(__file__).resolve().parent / "SKS_Annotation"
 # On Mac/Linux use a plain forward-slash path, e.g.:
 # PROJECT_ROOT = Path("/home/yourname/DocuXray_testset_annotation")
 
@@ -24,6 +24,10 @@ MODEL_SOURCES: dict[str, Path] = {
 # ── Images directory ────────────────────────────────────────────────────────
 # Set to None if you have no invoice images.
 IMAGES_DIR: Path | None = PROJECT_ROOT / "sks_50"
+
+# ── Allowed Documents JSON ──────────────────────────────────────────────────
+# Filter list of images/documents to consider (only those listed in this JSON)
+ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data2.json"
 
 # ── Where annotations are written ──────────────────────────────────────────
 ANNOTATIONS_DIR: Path = PROJECT_ROOT / "annotations"

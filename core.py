@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from config import ANNOTATIONS_DIR, IMAGES_DIR, MODEL_SOURCES
+from config import ANNOTATIONS_DIR, IMAGES_DIR, MODEL_SOURCES, ALLOWED_DOCS_JSON
 
 IMAGE_EXTS = [".jpg", ".jpeg", ".png", ".webp", ".tiff"]
 
@@ -116,6 +116,16 @@ def get_document_ids() -> list[str]:
         for p in root.iterdir():
             if p.is_dir() and (p / "refinement.json").exists():
                 ids.add(p.name)
+
+    if ALLOWED_DOCS_JSON and ALLOWED_DOCS_JSON.exists():
+        try:
+            with open(ALLOWED_DOCS_JSON, encoding="utf-8") as f:
+                allowed_names = json.load(f)
+            allowed_stems = {Path(name).stem for name in allowed_names}
+            ids = ids.intersection(allowed_stems)
+        except Exception as e:
+            print(f"Error filtering document IDs: {e}")
+
     return sorted(ids)
 
 
@@ -163,7 +173,7 @@ def load_existing_annotation(doc_id: str) -> dict | None:
     return None
 
 
-def save_annotation(doc_id: str, flat_edits: dict[str, str]) -> str:
+def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[str, str] | None = None) -> str:
     """
     Reconstruct original schema from base model, apply edits, save.
     Output is identical in structure to refinement.json input.
@@ -185,6 +195,9 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str]) -> str:
         for path, val_str in flat_edits.items()
     }
 
+    if timestamps is None:
+        timestamps = {}
+
     field_metadata = []
     model_flat = load_all_model_flat(doc_id)
     for path, val_str in typed_edits.items():
@@ -202,7 +215,8 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str]) -> str:
         field_metadata.append({
             "key": path,
             "final_value": val_str,
-            "selected_from": selected_from
+            "selected_from": selected_from,
+            "last_updated": timestamps.get(path)
         })
 
     out = copy.deepcopy(base_raw)
