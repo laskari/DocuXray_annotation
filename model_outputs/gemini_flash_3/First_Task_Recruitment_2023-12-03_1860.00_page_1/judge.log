@@ -1,9 +1,0 @@
-18:08:30  INFO     =======================================================
-18:08:30  INFO       JUDGE  doc_id=First_Task_Recruitment_2023-12-03_1860.00_page_1  [2026-05-18 18:08:30]
-18:08:30  INFO     =======================================================
-18:09:07  INFO     FAIL  issues=5  confidence=0.95  cost=$0.0561  elapsed=36301ms
-18:09:07  WARNING    [invoiceInfo] invoiceInfo.customerMemo — The 'Reference' value from the document was incorrectly mapped to 'customerMemo'.
-18:09:07  WARNING    [parties] seller.addressStructured.street_name — The buyer address (KMM CIVIL ENGINEERING LTD) is missing although it is the only main party address listed on the left, but there is no address for them. However, looking at the PAYMENT ADVICE section, the customer address '24 Fairykirk Road...' is for the seller (To: First Task Recruitment Limited). The 'Customer' is 'KMM CIVIL ENGINEERING LTD'. The buyer's address is not present on the document.
-18:09:07  WARNING    [totals] taxableAmount — The value '1,550.00' was extracted into 'taxableAmount' despite the document lacking the required explicit label. This value is already correctly captured in the 'subtotal' field.
-18:09:07  WARNING    [shippingInfo] deliveryDate — The extracted value is the week ending date for a service period, not a shipment delivery date.
-18:09:07  WARNING    [shippingInfo] deliveryDateISO — The field is based on an incorrect context (week ending date instead of delivery date).

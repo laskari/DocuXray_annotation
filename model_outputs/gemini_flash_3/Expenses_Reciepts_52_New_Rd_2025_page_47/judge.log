@@ -1,6 +1,0 @@
-17:43:02  INFO     =======================================================
-17:43:02  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_47  [2026-05-18 17:43:02]
-17:43:02  INFO     =======================================================
-17:44:07  INFO     FAIL  issues=2  confidence=0.95  cost=$0.1140  elapsed=64913ms
-17:44:07  WARNING    [invoiceInfo] documentNumber — The value 'BHD30043' is labeled as an order number and should not be in the documentNumber field.
-17:44:07  WARNING    [invoiceInfo] salesOrderNumber — The sales order number 'BHD30043' was not extracted into the correct field.

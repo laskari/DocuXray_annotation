@@ -1,6 +1,0 @@
-17:14:35  INFO     =======================================================
-17:14:35  INFO       JUDGE  doc_id=H063_INVOICES3_page_157  [2026-05-18 17:14:35]
-17:14:35  INFO     =======================================================
-17:15:07  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0621  elapsed=32282ms
-17:15:07  WARNING    [parties] customer.registrationNumber — The customer account number '702292292' was extracted into the registrationNumber field.
-17:15:07  WARNING    [lineItems] lineTaxPercent — The tax percentage (23.3%) for the last line item was not extracted into the dedicated lineTaxPercent field.

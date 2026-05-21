@@ -1,5 +1,0 @@
-17:37:22  INFO     =======================================================
-17:37:22  INFO       JUDGE  doc_id=ConsettScanner_20251212_132928_page_58  [2026-05-18 17:37:22]
-17:37:22  INFO     =======================================================
-17:37:37  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0237  elapsed=14234ms
-17:37:37  WARNING    [parties] seller.taxRegistrationNumber — Tax registration number contains unnecessary spaces.

@@ -1,5 +1,0 @@
-17:14:58  INFO     =======================================================
-17:14:58  INFO       JUDGE  doc_id=ConsettScanner_20251212_131455_page_5  [2026-05-18 17:14:58]
-17:14:58  INFO     =======================================================
-17:15:15  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0737  elapsed=17100ms
-17:15:15  WARNING    [parties] seller.whatsappNumber — A mobile phone number was incorrectly extracted into the whatsappNumber field.

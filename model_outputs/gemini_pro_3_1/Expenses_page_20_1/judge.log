@@ -1,7 +1,0 @@
-17:11:56  INFO     =======================================================
-17:11:56  INFO       JUDGE  doc_id=Expenses_page_20_1  [2026-05-18 17:11:56]
-17:11:56  INFO     =======================================================
-17:12:12  INFO     FAIL  issues=3  confidence=0.95  cost=$0.1088  elapsed=16481ms
-17:12:12  WARNING    [invoiceInfo] purchaseOrderNumber — The purchase order number (labeled as Customer Ref) is present on the document but was not extracted.
-17:12:12  WARNING    [invoiceInfo] paymentTerms — The extracted value is a conditional phrase regarding a settlement discount, not the actual payment terms.
-17:12:12  WARNING    [parties] shipTo.addressStructured.city — City name has a typo, swapping 'O' for 'A'.

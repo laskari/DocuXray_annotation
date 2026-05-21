@@ -1,6 +1,0 @@
-17:38:51  INFO     =======================================================
-17:38:51  INFO       JUDGE  doc_id=ConsettScanner_20260105_130848_page_49  [2026-05-18 17:38:51]
-17:38:51  INFO     =======================================================
-17:39:24  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0485  elapsed=33119ms
-17:39:24  WARNING    [parties] seller.addressStructured.street_name — The street name 'Fort' is incomplete; it should be 'Fort Dunlop'.
-17:39:24  WARNING    [parties] seller.addressStructured.street_type — The street name 'Parkway' is incomplete; it should be 'Fort Parkway'.

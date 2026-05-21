@@ -1,6 +1,0 @@
-17:52:09  INFO     =======================================================
-17:52:09  INFO       JUDGE  doc_id=D206_INVOICES_2_page_36_1  [2026-05-18 17:52:09]
-17:52:09  INFO     =======================================================
-17:52:23  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0846  elapsed=14317ms
-17:52:23  WARNING    [parties] shipTo.phone — Phone number includes extra text ('manager').
-17:52:23  WARNING    [taxes] None — The extracted taxes list is empty, but the document explicitly lists a VAT line with an amount of 0.00 in the totals section.

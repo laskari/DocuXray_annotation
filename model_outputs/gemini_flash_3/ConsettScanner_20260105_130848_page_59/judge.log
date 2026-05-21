@@ -1,5 +1,0 @@
-18:19:24  INFO     =======================================================
-18:19:24  INFO       JUDGE  doc_id=ConsettScanner_20260105_130848_page_59  [2026-05-18 18:19:24]
-18:19:24  INFO     =======================================================
-18:19:57  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0544  elapsed=32083ms
-18:19:57  WARNING    [lineItems] lineItems[0].itemCode — The value '1' is the line sequence number from the 'no' column, not a product item code or SKU.

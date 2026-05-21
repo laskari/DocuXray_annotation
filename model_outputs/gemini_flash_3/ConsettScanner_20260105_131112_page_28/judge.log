@@ -1,9 +1,0 @@
-17:11:23  INFO     =======================================================
-17:11:23  INFO       JUDGE  doc_id=ConsettScanner_20260105_131112_page_28  [2026-05-18 17:11:23]
-17:11:23  INFO     =======================================================
-17:12:06  INFO     FAIL  issues=2  confidence=1.00  cost=$0.0910  elapsed=42134ms
-17:12:06  WARNING    [totals] taxableAmount — The value £ 73.04 is a duplication of the subtotal value and is incorrectly extracted here despite the lack of an explicit 'Taxable Amount' label.
-17:12:06  WARNING    [totals] totalExcludingTax — The value £ 73.04 is duplicated from the subtotal field without a distinct label being present for 'Total Excluding Tax'.
-16:08:31  INFO     =======================================================
-16:08:31  INFO       JUDGE  doc_id=ConsettScanner_20260105_131112_page_28  [2026-05-19 16:08:31]
-16:08:31  INFO     =======================================================

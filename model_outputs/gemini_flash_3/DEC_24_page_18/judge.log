@@ -1,5 +1,0 @@
-17:57:57  INFO     =======================================================
-17:57:57  INFO       JUDGE  doc_id=DEC_24_page_18  [2026-05-18 17:57:57]
-17:57:57  INFO     =======================================================
-17:58:35  INFO     FAIL  issues=1  confidence=1.00  cost=$0.0726  elapsed=38562ms
-17:58:35  WARNING    [invoiceInfo] invoiceInfo.salesOrderNumber — The transaction number '8518' is duplicated in both the documentNumber and salesOrderNumber fields.

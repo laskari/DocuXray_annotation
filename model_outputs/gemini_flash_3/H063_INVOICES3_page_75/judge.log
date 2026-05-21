@@ -1,5 +1,0 @@
-17:59:20  INFO     =======================================================
-17:59:20  INFO       JUDGE  doc_id=H063_INVOICES3_page_75  [2026-05-18 17:59:20]
-17:59:20  INFO     =======================================================
-17:59:48  INFO     FAIL  issues=1  confidence=0.99  cost=$0.0525  elapsed=27977ms
-17:59:48  WARNING    [lineItems] unitPrice.originalValue — The extracted value '4.99 P' contains a 'P' marker indicating a promotional price which should be removed from the raw unit price.

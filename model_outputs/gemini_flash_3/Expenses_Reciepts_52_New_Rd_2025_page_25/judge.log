@@ -1,6 +1,0 @@
-17:34:49  INFO     =======================================================
-17:34:49  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_25  [2026-05-18 17:34:49]
-17:34:49  INFO     =======================================================
-17:35:19  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0555  elapsed=29989ms
-17:35:19  WARNING    [parties] seller.phone — The phone number '01189 230022' was incorrectly assigned to the corporate seller entity instead of the specific shipping/collection store.
-17:35:19  WARNING    [parties] shipFrom.phone — The phone number for the store location (shipFrom) was missing from the extraction.

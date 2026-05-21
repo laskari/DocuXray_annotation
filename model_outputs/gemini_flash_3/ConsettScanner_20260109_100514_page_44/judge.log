@@ -1,8 +1,0 @@
-18:06:50  INFO     =======================================================
-18:06:50  INFO       JUDGE  doc_id=ConsettScanner_20260109_100514_page_44  [2026-05-18 18:06:50]
-18:06:50  INFO     =======================================================
-18:07:51  INFO     FAIL  issues=4  confidence=0.90  cost=$0.0783  elapsed=61233ms
-18:07:51  WARNING    [parties] buyer.name — The buyer's name 'Consett' is missing the final 't'.
-18:07:51  WARNING    [lineItems] lineItems[3].itemCode — The item code was extracted as '0881' but it is '0661' on the document.
-18:07:51  WARNING    [totals] totalExcludingTax — The value '1645' from the 'Total =' line is duplicated into the 'totalExcludingTax' field without a corresponding label such as 'Net Total'.
-18:07:51  WARNING    [totals] balanceDue — The grand total '1645' is duplicated into the 'balanceDue' field despite the absence of an explicit 'Balance Due' label.

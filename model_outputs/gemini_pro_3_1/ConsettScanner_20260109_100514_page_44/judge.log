@@ -1,6 +1,0 @@
-17:48:59  INFO     =======================================================
-17:48:59  INFO       JUDGE  doc_id=ConsettScanner_20260109_100514_page_44  [2026-05-18 17:48:59]
-17:48:59  INFO     =======================================================
-17:49:16  INFO     FAIL  issues=2  confidence=0.95  cost=$0.1029  elapsed=17087ms
-17:49:16  WARNING    [invoiceInfo] issueDateISO — The ISO format for the issue date is missing despite the date being present and extracted.
-17:49:16  WARNING    [parties] buyer.name — The handwritten buyer name contains character-level misreadings (e.g., 'Roane' instead of 'Rose', 'Consect' instead of 'Consett').

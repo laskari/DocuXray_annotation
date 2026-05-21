@@ -1,6 +1,0 @@
-18:14:22  INFO     =======================================================
-18:14:22  INFO       JUDGE  doc_id=H063_INVOICES3_page_20  [2026-05-18 18:14:22]
-18:14:22  INFO     =======================================================
-18:14:41  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0332  elapsed=18316ms
-18:14:41  WARNING    [parties] seller.taxRegistrationNumber — The VAT number contains a digit error: '229' was extracted instead of '220'.
-18:14:41  WARNING    [totals] taxableAmount — The field 'taxableAmount' was extracted as 197.36, but there is no explicit 'Taxable Amount' label or value on the document.

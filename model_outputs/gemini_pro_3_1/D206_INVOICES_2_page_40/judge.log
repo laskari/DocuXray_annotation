@@ -1,6 +1,0 @@
-17:35:17  INFO     =======================================================
-17:35:17  INFO       JUDGE  doc_id=D206_INVOICES_2_page_40  [2026-05-18 17:35:17]
-17:35:17  INFO     =======================================================
-17:35:37  INFO     FAIL  issues=2  confidence=0.95  cost=$0.1015  elapsed=20072ms
-17:35:37  WARNING    [invoiceInfo] paymentTerms — The payment terms were not extracted despite 'CASH SALE' being clearly printed on the document.
-17:35:37  WARNING    [taxes] None — The tax line for VAT is completely missing from the extracted data.

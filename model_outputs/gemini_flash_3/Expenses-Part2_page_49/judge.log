@@ -1,5 +1,0 @@
-17:36:04  INFO     =======================================================
-17:36:04  INFO       JUDGE  doc_id=Expenses-Part2_page_49  [2026-05-18 17:36:04]
-17:36:04  INFO     =======================================================
-17:36:50  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0657  elapsed=46166ms
-17:36:50  WARNING    [totals] taxableAmount — The value '£580.00' was extracted into 'taxableAmount' despite the field's schema requirement for an explicit label (like 'Taxable Amount') which is not present in the document. This value is already correctly assigned to 'subtotal'.

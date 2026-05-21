@@ -1,8 +1,0 @@
-17:56:23  INFO     =======================================================
-17:56:23  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_247  [2026-05-18 17:56:23]
-17:56:23  INFO     =======================================================
-17:57:20  INFO     FAIL  issues=4  confidence=0.95  cost=$0.0585  elapsed=57155ms
-17:57:20  WARNING    [parties] customer.addressStructured.city — The county name 'HAMPSHIRE' was incorrectly extracted into the city field.
-17:57:20  WARNING    [parties] customer.addressStructured.state — The state/county 'HAMPSHIRE' is missing from the state field.
-17:57:20  WARNING    [totals] taxableAmount — The value 147.86 is derived from the VAT calculation line 'VAT 5% of 147.86' but is not explicitly labeled as 'Taxable Amount' or similar.
-17:57:20  WARNING    [totals] creditApplied — The starting balance (153.97 in credit) was extracted as 'creditApplied'.

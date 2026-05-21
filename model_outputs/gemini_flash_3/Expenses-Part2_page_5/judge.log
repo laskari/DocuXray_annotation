@@ -1,5 +1,0 @@
-18:10:03  INFO     =======================================================
-18:10:03  INFO       JUDGE  doc_id=Expenses-Part2_page_5  [2026-05-18 18:10:03]
-18:10:03  INFO     =======================================================
-18:10:43  INFO     FAIL  issues=1  confidence=1.00  cost=$0.0642  elapsed=39954ms
-18:10:43  WARNING    [invoiceInfo] invoiceInfo.documentTitle — The extracted value is a sentence summarizing the transaction rather than a classification title like 'Invoice' or 'Receipt'. Since no formal title is present on the document, this field should be null.

@@ -1,5 +1,0 @@
-17:52:35  INFO     =======================================================
-17:52:35  INFO       JUDGE  doc_id=H063_INVOICES3_page_20  [2026-05-18 17:52:35]
-17:52:35  INFO     =======================================================
-17:52:49  INFO     FAIL  issues=1  confidence=0.95  cost=$0.1035  elapsed=13844ms
-17:52:49  WARNING    [parties] seller.registrationNumber — Digit typo in the company registration number.

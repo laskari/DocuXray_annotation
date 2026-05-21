@@ -1,5 +1,0 @@
-17:33:22  INFO     =======================================================
-17:33:22  INFO       JUDGE  doc_id=ConsettScanner_20260105_130848_page_33  [2026-05-18 17:33:22]
-17:33:22  INFO     =======================================================
-17:33:54  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0499  elapsed=32167ms
-17:33:54  WARNING    [totals] taxableAmount — The value -£50.93 was incorrectly extracted into taxableAmount despite the absence of an explicit label; this value is already correctly captured in subtotal and totalExcludingTax.

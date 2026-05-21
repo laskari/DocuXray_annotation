@@ -1,5 +1,0 @@
-17:44:01  INFO     =======================================================
-17:44:01  INFO       JUDGE  doc_id=Expenses_Part2_page_33  [2026-05-18 17:44:01]
-17:44:01  INFO     =======================================================
-17:44:18  INFO     FAIL  issues=1  confidence=0.95  cost=$0.1004  elapsed=16789ms
-17:44:18  WARNING    [taxes] None — The taxes list is empty, missing the VAT tax line present in the document's totals section.

@@ -1,5 +1,0 @@
-17:37:01  INFO     =======================================================
-17:37:01  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_47  [2026-05-18 17:37:01]
-17:37:01  INFO     =======================================================
-17:37:15  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0995  elapsed=13852ms
-17:37:15  WARNING    [taxes] taxes — The taxes list is empty, but a 'Taxes' row with an amount of 0.00 is present in the document.

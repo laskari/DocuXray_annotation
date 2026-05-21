@@ -1,7 +1,0 @@
-17:44:59  INFO     =======================================================
-17:44:59  INFO       JUDGE  doc_id=DEC_24_page_18  [2026-05-18 17:44:59]
-17:44:59  INFO     =======================================================
-17:45:15  INFO     FAIL  issues=3  confidence=0.85  cost=$0.0855  elapsed=16159ms
-17:45:15  WARNING    [invoiceInfo] documentTitle — The document title 'ASDA Receipt' was extracted but is not explicitly printed on the document.
-17:45:15  WARNING    [invoiceInfo] documentNumber — The document number (TC#) is present on the receipt but was not extracted.
-17:45:15  WARNING    [parties] seller.addressStructured.street_name — The store location/address was not extracted.

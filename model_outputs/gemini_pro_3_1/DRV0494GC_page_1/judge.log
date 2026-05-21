@@ -1,6 +1,0 @@
-17:55:01  INFO     =======================================================
-17:55:01  INFO       JUDGE  doc_id=DRV0494GC_page_1  [2026-05-18 17:55:01]
-17:55:01  INFO     =======================================================
-17:55:12  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0790  elapsed=11221ms
-17:55:12  WARNING    [lineItems] lineTaxPercent.originalValue — Tax percentage was present on the line but not extracted.
-17:55:12  WARNING    [lineItems] lineTaxAmount.originalValue — Tax amount was present on the line but not extracted.

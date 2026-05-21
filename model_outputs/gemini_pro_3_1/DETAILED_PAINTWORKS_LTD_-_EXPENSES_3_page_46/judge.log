@@ -1,5 +1,0 @@
-17:50:22  INFO     =======================================================
-17:50:22  INFO       JUDGE  doc_id=DETAILED_PAINTWORKS_LTD_-_EXPENSES_3_page_46  [2026-05-18 17:50:22]
-17:50:22  INFO     =======================================================
-17:50:35  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0827  elapsed=12801ms
-17:50:35  WARNING    [invoiceInfo] paymentTerms — The value 'Credit card' is the payment method, not payment terms.

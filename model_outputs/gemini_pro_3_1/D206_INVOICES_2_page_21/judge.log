@@ -1,6 +1,0 @@
-17:38:25  INFO     =======================================================
-17:38:25  INFO       JUDGE  doc_id=D206_INVOICES_2_page_21  [2026-05-18 17:38:25]
-17:38:25  INFO     =======================================================
-17:38:46  INFO     FAIL  issues=2  confidence=0.95  cost=$0.0890  elapsed=20082ms
-17:38:46  WARNING    [totals] freightCharges.originalValue — The 'Carriage Net' amount was incorrectly extracted into 'freightCharges' instead of 'shippingAmount'.
-17:38:46  WARNING    [totals] shippingAmount.originalValue — The 'Carriage Net' amount was missed for 'shippingAmount' and incorrectly placed in 'freightCharges'.

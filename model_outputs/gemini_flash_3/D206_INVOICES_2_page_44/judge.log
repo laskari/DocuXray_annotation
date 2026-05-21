@@ -1,8 +1,0 @@
-17:52:31  INFO     =======================================================
-17:52:31  INFO       JUDGE  doc_id=D206_INVOICES_2_page_44  [2026-05-18 17:52:31]
-17:52:31  INFO     =======================================================
-17:53:19  INFO     FAIL  issues=4  confidence=0.95  cost=$0.0808  elapsed=48070ms
-17:53:19  WARNING    [parties] seller.addressStructured.street_name — The street name abbreviation 'Ind' was incorrectly expanded to 'Industrial Park'. 'Park' is not visible on the document.
-17:53:19  WARNING    [parties] buyer.phone — The phone number '07872929761' is attributed to the buyer 'Dontay Limited', but it is clearly associated with the shipping branch 'Chip Shops Group'.
-17:53:19  WARNING    [parties] shipTo.phone — The phone number for the shipping destination is missing from the shipTo object despite being visible in the document.
-17:53:19  WARNING    [lineItems] lineItems[0].lineTotalIncludingTax — The line total including tax is missing from the extraction but clearly visible as 133.70 in the Total GBP column.

@@ -1,7 +1,0 @@
-17:21:37  INFO     =======================================================
-17:21:37  INFO       JUDGE  doc_id=H063_INVOICES3_page_157  [2026-05-18 17:21:37]
-17:21:37  INFO     =======================================================
-17:22:01  INFO     FAIL  issues=3  confidence=0.95  cost=$0.1278  elapsed=23824ms
-17:22:01  WARNING    [parties] seller.taxRegistrationNumber — The VAT number is missing the 'GB' country prefix.
-17:22:01  WARNING    [lineItems] unitPrice — The unit price was extracted with the 'CD' suffix included, which is not part of the numeric value.
-17:22:01  WARNING    [totals] subtotal — The total amount 100.43 was duplicated into the subtotal field, but a grand subtotal is not explicitly printed on the document.

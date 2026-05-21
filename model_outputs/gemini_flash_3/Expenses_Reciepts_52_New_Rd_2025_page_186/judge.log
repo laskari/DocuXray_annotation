@@ -1,5 +1,0 @@
-17:45:33  INFO     =======================================================
-17:45:33  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_186  [2026-05-18 17:45:33]
-17:45:33  INFO     =======================================================
-17:45:55  INFO     FAIL  issues=1  confidence=0.95  cost=$0.0373  elapsed=22139ms
-17:45:55  WARNING    [lineItems] lineItems.lineTotalIncludingTax.originalValue — The currency symbol '£' was removed from the originalValue field.

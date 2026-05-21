@@ -1,7 +1,0 @@
-17:12:50  INFO     =======================================================
-17:12:50  INFO       JUDGE  doc_id=ConsettScanner_20251212_131455_page_5  [2026-05-18 17:12:50]
-17:12:50  INFO     =======================================================
-17:13:43  INFO     FAIL  issues=3  confidence=0.95  cost=$0.0810  elapsed=52279ms
-17:13:43  WARNING    [parties] seller.whatsappNumber — A general mobile phone number was extracted into the specific WhatsApp field without confirming it as a WhatsApp account.
-17:13:43  WARNING    [parties] customer.addressStructured.street_name — The street name field incorrectly includes the street type 'Close'.
-17:13:43  WARNING    [parties] customer.addressStructured.street_type — The street type 'Close' was not extracted into the appropriate field.

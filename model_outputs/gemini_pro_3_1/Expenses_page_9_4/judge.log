@@ -1,6 +1,0 @@
-17:29:09  INFO     =======================================================
-17:29:09  INFO       JUDGE  doc_id=Expenses_page_9_4  [2026-05-18 17:29:09]
-17:29:09  INFO     =======================================================
-17:29:36  INFO     FAIL  issues=2  confidence=0.80  cost=$0.0732  elapsed=26521ms
-17:29:36  WARNING    [invoiceInfo] documentTitle — The title 'Receipt' is inferred and not explicitly printed anywhere on the document.
-17:29:36  WARNING    [parties] seller.name — The name of the seller is 'Mark Fry', not 'Mark Terry'.

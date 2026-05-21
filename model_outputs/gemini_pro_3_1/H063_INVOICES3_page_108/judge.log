@@ -1,9 +1,0 @@
-17:39:47  INFO     =======================================================
-17:39:47  INFO       JUDGE  doc_id=H063_INVOICES3_page_108  [2026-05-18 17:39:47]
-17:39:47  INFO     =======================================================
-17:40:11  INFO     FAIL  issues=5  confidence=0.95  cost=$0.1358  elapsed=24691ms
-17:40:11  WARNING    [parties] customer.registrationNumber — Customer account number incorrectly extracted as company registration number.
-17:40:11  WARNING    [lineItems] unitOfMeasure — Leading '1 ' missing from unit of measure.
-17:40:11  WARNING    [lineItems] unitOfMeasure — Leading '1 ' missing from unit of measure.
-17:40:11  WARNING    [totals] subtotal.originalValue — The extracted subtotal value is not visible on the document.
-17:40:11  WARNING    [totals] totalExcludingTax.originalValue — The extracted total excluding tax value is not visible on the document.

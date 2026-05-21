@@ -1,6 +1,0 @@
-17:30:40  INFO     =======================================================
-17:30:40  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_150  [2026-05-18 17:30:40]
-17:30:40  INFO     =======================================================
-17:31:30  INFO     FAIL  issues=2  confidence=0.95  cost=$0.1439  elapsed=50130ms
-17:31:30  WARNING    [invoiceInfo] category — The category 'Office Supplies' is incorrect given the items purchased.
-17:31:30  WARNING    [totals] totalIncludingTax.originalValue — Captured the subtotal 'Gross' instead of the final grand total that includes other charges.

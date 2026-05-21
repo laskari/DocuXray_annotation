@@ -1,6 +1,0 @@
-17:38:03  INFO     =======================================================
-17:38:03  INFO       JUDGE  doc_id=ConsettScanner_20251212_132928_page_25  [2026-05-18 17:38:03]
-17:38:03  INFO     =======================================================
-17:38:20  INFO     FAIL  issues=2  confidence=0.80  cost=$0.0361  elapsed=17757ms
-17:38:20  WARNING    [lineItems] None — The extraction failed to capture any line items from the table visible in the center of the document.
-17:38:20  WARNING    [taxes] taxes — The extraction failed to capture any tax lines from the document's summary section.

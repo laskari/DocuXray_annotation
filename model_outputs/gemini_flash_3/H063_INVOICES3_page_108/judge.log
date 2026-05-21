@@ -1,8 +1,0 @@
-17:47:50  INFO     =======================================================
-17:47:50  INFO       JUDGE  doc_id=H063_INVOICES3_page_108  [2026-05-18 17:47:50]
-17:47:50  INFO     =======================================================
-17:48:37  INFO     FAIL  issues=4  confidence=0.95  cost=$0.0675  elapsed=46382ms
-17:48:37  WARNING    [parties] customer.registrationNumber — A customer account number was incorrectly extracted as a company registration number.
-17:48:37  WARNING    [parties] customer.addressStructured.building — The customer's trading name was incorrectly extracted into the building field.
-17:48:37  WARNING    [lineItems] lineItems[11].unitOfMeasure — The unit of measure contains an extra leading '5 ' prefix.
-17:48:37  WARNING    [lineItems] lineItems[12].unitOfMeasure — The unit of measure contains an extra leading '3 ' prefix.

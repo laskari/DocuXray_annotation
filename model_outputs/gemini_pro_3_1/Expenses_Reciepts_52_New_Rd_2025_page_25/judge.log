@@ -1,5 +1,0 @@
-17:32:38  INFO     =======================================================
-17:32:38  INFO       JUDGE  doc_id=Expenses_Reciepts_52_New_Rd_2025_page_25  [2026-05-18 17:32:38]
-17:32:38  INFO     =======================================================
-17:32:56  INFO     FAIL  issues=1  confidence=0.95  cost=$0.1008  elapsed=18006ms
-17:32:56  WARNING    [invoiceInfo] category — The assigned category 'Office Supplies' is incorrect based on the purchased items.

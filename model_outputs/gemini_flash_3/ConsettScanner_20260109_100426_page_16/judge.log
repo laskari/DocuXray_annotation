@@ -1,8 +1,0 @@
-17:25:56  INFO     =======================================================
-17:25:56  INFO       JUDGE  doc_id=ConsettScanner_20260109_100426_page_16  [2026-05-18 17:25:56]
-17:25:56  INFO     =======================================================
-17:26:49  INFO     FAIL  issues=4  confidence=0.95  cost=$0.1095  elapsed=53174ms
-17:26:49  WARNING    [invoiceInfo] documentNumber — The account number '50212237' is duplicated from 'customerNumber' into 'documentNumber'.
-17:26:49  WARNING    [parties] seller.name — The name is missing the 'UK' part which is present in the document.
-17:26:49  WARNING    [parties] seller.registrationNumber — The extracted registration number '1026167' is not found on the document. The correct number visible is '9740322'.
-17:26:49  WARNING    [totals] balanceDue — The extracted value '3,328.77' is a running balance for an individual transaction row, not a final balance due or summary total for the document.

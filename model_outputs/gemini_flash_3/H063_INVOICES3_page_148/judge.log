@@ -1,7 +1,0 @@
-17:27:40  INFO     =======================================================
-17:27:40  INFO       JUDGE  doc_id=H063_INVOICES3_page_148  [2026-05-18 17:27:40]
-17:27:40  INFO     =======================================================
-17:28:05  INFO     FAIL  issues=3  confidence=0.95  cost=$0.0551  elapsed=25318ms
-17:28:05  WARNING    [parties] seller.taxRegistrationNumber — The VAT number was incorrectly extracted as 211 4287 47, while the document shows 220 4302 31.
-17:28:05  WARNING    [parties] seller.phone — The seller's telephone number is present in the document but was not extracted.
-17:28:05  WARNING    [parties] customer.name — The customer name extracted 'MRS S M SMITH' contains fabricated parts. The document shows 'MRS S HALL'.
