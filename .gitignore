@@ -16,5 +16,5 @@ venv/
 env/
 ENV/
 
-./model_output/
-./sks_50/
+model_outputs/
+sks_50/
