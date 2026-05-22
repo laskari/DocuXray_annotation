@@ -388,6 +388,9 @@ class AnnotationApp(tk.Tk):
     # ── Data loading ─────────────────────────────────────────────────────────
 
     def _load_doc(self, idx: int):
+        # Clear previous entry vars so they don't overwrite the new document's data
+        self._entry_vars.clear()
+
         self.doc_idx = max(0, min(idx, len(DOC_IDS) - 1))
         doc_id = DOC_IDS[self.doc_idx]
 
@@ -724,18 +727,13 @@ class AnnotationApp(tk.Tk):
 
     def _on_submit(self, path: str, val: str):
         """Submit button clicked — commit final value."""
-        old_val = self.final_vals.get(path)
-        has_timestamp = path in self.timestamps
-
         now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        # Update timestamp if value changed or wasn't previously timestamped
-        if old_val != val or not has_timestamp:
-            self.timestamps[path] = now
-            lbl = self._verified_labels.get(path)
-            if lbl:
-                lbl.config(text=f"✓ Verified: {now}", fg="#34d399")
-            self._update_status()
+        self.timestamps[path] = now
+        lbl = self._verified_labels.get(path)
+        if lbl:
+            lbl.config(text=f"✓ Verified: {now}", fg="#34d399")
+        self._update_status()
 
         self.final_vals[path] = val
         ev = self._entry_vars.get(path)
