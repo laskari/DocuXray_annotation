@@ -107,14 +107,14 @@ def get_document_ids() -> list[str]:
     """
     A valid document folder must:
       1. Be a directory inside a model root.
-      2. Contain refinement.json in at least one model source.
+      2. Contain postprocessing.json in at least one model source.
     """
     ids: set[str] = set()
     for root in MODEL_SOURCES.values():
         if not root.exists():
             continue
         for p in root.iterdir():
-            if p.is_dir() and (p / "refinement.json").exists():
+            if p.is_dir() and (p / "postprocessing.json").exists():
                 ids.add(p.name)
 
     if ALLOWED_DOCS_JSON and ALLOWED_DOCS_JSON.exists():
@@ -130,7 +130,7 @@ def get_document_ids() -> list[str]:
 
 
 def load_refinement(label: str, doc_id: str) -> dict | None:
-    path = MODEL_SOURCES[label] / doc_id / "refinement.json"
+    path = MODEL_SOURCES[label] / doc_id / "postprocessing.json"
     if path.exists():
         try:
             with open(path, encoding="utf-8") as f:
@@ -141,6 +141,8 @@ def load_refinement(label: str, doc_id: str) -> dict | None:
 
 
 def get_refined_data(ref_json: dict) -> dict:
+    if "postprocessed" in ref_json:
+        return ref_json["postprocessed"]
     return ref_json.get("refinement", {}).get("refined_data", {})
 
 
@@ -176,7 +178,7 @@ def load_existing_annotation(doc_id: str) -> dict | None:
 def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[str, str] | None = None) -> str:
     """
     Reconstruct original schema from base model, apply edits, save.
-    Output is identical in structure to refinement.json input.
+    Output is identical in structure to postprocessing.json input.
     """
     ANNOTATIONS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -186,7 +188,7 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[st
         if base_raw is not None:
             break
     if base_raw is None:
-        raise ValueError(f"No refinement.json for {doc_id}")
+        raise ValueError(f"No postprocessing.json for {doc_id}")
 
     original_flat = flatten(get_refined_data(base_raw))
 
@@ -220,9 +222,14 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[st
         })
 
     out = copy.deepcopy(base_raw)
-    out["refinement"]["refined_data"] = reconstruct(
-        get_refined_data(base_raw), typed_edits
-    )
+    if "postprocessed" in out:
+        out["postprocessed"] = reconstruct(
+            get_refined_data(base_raw), typed_edits
+        )
+    else:
+        out["refinement"]["refined_data"] = reconstruct(
+            get_refined_data(base_raw), typed_edits
+        )
     out["annotation_meta"] = {
         "annotated": True,
         "source_models": list(MODEL_SOURCES.keys()),
@@ -247,7 +254,7 @@ def save_custom_combinations(doc_id: str, options: list[str]) -> list[str]:
 
     model_flat = load_all_model_flat(doc_id)
     if not model_flat:
-        raise ValueError(f"No refinement.json for {doc_id}")
+        raise ValueError(f"No postprocessing.json for {doc_id}")
 
     base_raw = None
     for label in _MS:
@@ -330,9 +337,14 @@ def save_custom_combinations(doc_id: str, options: list[str]) -> list[str]:
             })
 
         out = copy.deepcopy(base_raw)
-        out["refinement"]["refined_data"] = reconstruct(
-            get_refined_data(base_raw), typed_edits
-        )
+        if "postprocessed" in out:
+            out["postprocessed"] = reconstruct(
+                get_refined_data(base_raw), typed_edits
+            )
+        else:
+            out["refinement"]["refined_data"] = reconstruct(
+                get_refined_data(base_raw), typed_edits
+            )
         out["annotation_meta"] = {
             "annotated": True,
             "match_only": "matching" in opt,

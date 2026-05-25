@@ -12,14 +12,19 @@ PROJECT_ROOT = Path(__file__).resolve().parent / "SKS_Annotation"
 
 # ── One entry per model ─────────────────────────────────────────────────────
 # Key   = display name shown in the UI
-# Value = folder that contains <doc_id>/ sub-folders with refinement.json
-MODEL_SOURCES: dict[str, Path] = {
-    "Claude": PROJECT_ROOT / "model_outputs" / "claude_opus_4_7_batch",
-    "Gemini": PROJECT_ROOT / "model_outputs" / "gemini_pro_3_1",
-    "GPT":    PROJECT_ROOT / "model_outputs" / "openai_gpt_5_4_batch",
-    # Add or comment-out models as needed:
-    # "Model D": PROJECT_ROOT / "model_outputs" / "model_d",
-}
+# Value = folder that contains <doc_id>/ sub-folders with postprocessing.json
+MODEL_SOURCES: dict[str, Path] = {}
+_model_outputs_dir = PROJECT_ROOT / "model_outputs"
+if _model_outputs_dir.exists():
+    for _p in sorted(_model_outputs_dir.iterdir()):
+        if _p.is_dir() and not _p.name.startswith('.'):
+            _name_map = {
+                "claude_opus_4_7_batch": "Claude",
+                "gemini_pro_3_1": "Gemini",
+                "openai_gpt_5_4_batch": "GPT"
+            }
+            _display_name = _name_map.get(_p.name, _p.name.replace("_", " ").title())
+            MODEL_SOURCES[_display_name] = _p
 
 # ── Images directory ────────────────────────────────────────────────────────
 # Set to None if you have no invoice images.
