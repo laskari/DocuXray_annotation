@@ -175,7 +175,7 @@ def load_existing_annotation(doc_id: str) -> dict | None:
     return None
 
 
-def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[str, str] | None = None) -> str:
+def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[str, str] | None = None, confusing_image: bool = False) -> str:
     """
     Reconstruct original schema from base model, apply edits, save.
     Output is identical in structure to postprocessing.json input.
@@ -232,6 +232,7 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[st
         )
     out["annotation_meta"] = {
         "annotated": True,
+        "confusing_image": confusing_image,
         "source_models": list(MODEL_SOURCES.keys()),
         "manually_edited_keys": [
             p for p, v in typed_edits.items() if v != original_flat.get(p)

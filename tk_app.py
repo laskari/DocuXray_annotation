@@ -92,6 +92,7 @@ class AnnotationApp(tk.Tk):
         self.null_var   = tk.BooleanVar(value=False)
         self.sec_filter_var = tk.StringVar(value="All")
         self.subsec_filter_var = tk.StringVar(value="All")
+        self.confusing_image = False
 
         self.current_page = 0
         self.ITEMS_PER_PAGE = 50
@@ -191,6 +192,10 @@ class AnnotationApp(tk.Tk):
                   bg="#2a2a3e", fg="#2563eb", activebackground="#3a3a5e", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 11), padx=6
                   ).pack(side="left", padx=2)
+        self.confusing_btn = tk.Button(nav, text="❓ Confusing?", command=self._toggle_confusing,
+                                       bg="#3a3a5e", fg="#cbd5e1", activebackground="#4f4f7a", activeforeground="#ffffff",
+                                       relief="flat", font=(FONT, 11), padx=6)
+        self.confusing_btn.pack(side="right", padx=2)
 
         # Doc selector
         sel_frame = tk.Frame(left, bg="#1e1e2e", pady=2, padx=4)
@@ -400,6 +405,11 @@ class AnnotationApp(tk.Tk):
             {k: _disp(v) for k, v in flatten(get_refined_data(existing)).items()}
             if existing else None
         )
+
+        self.confusing_image = False
+        if existing:
+            self.confusing_image = existing.get("annotation_meta", {}).get("confusing_image", False)
+        self._update_confusing_button()
 
         self.all_rows = build_field_table(model_flat, exist_flat)
 
@@ -808,6 +818,30 @@ class AnnotationApp(tk.Tk):
     def _next(self):
         self._load_doc(self.doc_idx + 1)
 
+    def _toggle_confusing(self):
+        self.confusing_image = not self.confusing_image
+        self._update_confusing_button()
+        self.save_msg.config(text="⚠ Confusing status updated (remember to Save)", fg="#f59e0b")
+        self.after(2000, lambda: self.save_msg.config(text=""))
+
+    def _update_confusing_button(self):
+        if getattr(self, "confusing_image", False):
+            self.confusing_btn.config(
+                text="❓ Confused!",
+                bg="#b45309",
+                fg="#ffffff",
+                activebackground="#d97706",
+                activeforeground="#ffffff"
+            )
+        else:
+            self.confusing_btn.config(
+                text="❓ Confusing?",
+                bg="#3a3a5e",
+                fg="#cbd5e1",
+                activebackground="#4f4f7a",
+                activeforeground="#ffffff"
+            )
+
     def _on_doc_select(self, _=None):
         doc_id = self.doc_combo.get()
         if doc_id in DOC_IDS:
@@ -830,7 +864,7 @@ class AnnotationApp(tk.Tk):
     def _do_save(self) -> str:
         doc_id = DOC_IDS[self.doc_idx]
         edits  = self._collect_edits()
-        saved  = save_annotation(doc_id, edits, self.timestamps)
+        saved  = save_annotation(doc_id, edits, self.timestamps, confusing_image=self.confusing_image)
         print(f"[SAVE] Written to {saved}")
         return saved
 
