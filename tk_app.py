@@ -74,6 +74,36 @@ STATUS_COLORS = {
     },
 }
 
+class ToolTip:
+    def __init__(self, widget, text, wrap_length=400):
+        self.widget = widget
+        self.text = text
+        self.wrap_length = wrap_length
+        self.tip_window = None
+        self.widget.bind("<Enter>", self.show_tip)
+        self.widget.bind("<Leave>", self.hide_tip)
+        
+    def show_tip(self, event=None):
+        if self.tip_window or not self.text:
+            return
+        x, y, _, _ = self.widget.bbox("insert")
+        x = x + self.widget.winfo_rootx() + 25
+        y = y + self.widget.winfo_rooty() + 20
+        self.tip_window = tw = tk.Toplevel(self.widget)
+        tw.wm_overrideredirect(True)
+        tw.wm_geometry(f"+{x}+{y}")
+        
+        label = tk.Label(tw, text=self.text, justify=tk.LEFT,
+                         background="#ffffe0", fg="black", relief=tk.SOLID, borderwidth=1,
+                         wraplength=self.wrap_length,
+                         font=(FONT, 10, "normal"))
+        label.pack(ipadx=4, ipady=4)
+        
+    def hide_tip(self, event=None):
+        if self.tip_window:
+            self.tip_window.destroy()
+            self.tip_window = None
+
 
 class AnnotationApp(tk.Tk):
     def __init__(self):
@@ -124,6 +154,13 @@ class AnnotationApp(tk.Tk):
         self._build_ui()
         self._doc_stats = {}
         self._init_doc_stats()
+        
+        self.field_descriptions = {}
+        desc_path = Path("paths_with_descriptions.json")
+        if desc_path.exists():
+            with open(desc_path, "r", encoding="utf-8") as f:
+                self.field_descriptions = json.load(f)
+                
         self._load_doc(0)
 
     # ── Styles ───────────────────────────────────────────────────────────────
@@ -633,8 +670,17 @@ class AnnotationApp(tk.Tk):
         hdr.pack(fill="x")
         badge_text = {"conflict": "!! all differ", "partial": "~ partial",
                       "agree": "✓ agree", "missing": "∅ missing"}.get(status, status)
-        tk.Label(hdr, text=path, bg=sc["bg"], fg=sc["text"],
-                 font=(FONT, 13, "bold")).pack(side="left")
+        
+        path_lbl = tk.Label(hdr, text=path, bg=sc["bg"], fg=sc["text"],
+                            font=(FONT, 13, "bold"))
+        path_lbl.pack(side="left")
+        
+        import re
+        base_path = re.sub(r'\.\d+\.', '[*].', path)
+        desc = getattr(self, "field_descriptions", {}).get(base_path)
+        if desc:
+            ToolTip(path_lbl, desc)
+            
         tk.Label(hdr, text=f" {badge_text}", bg=sc["badge_bg"], fg=sc["badge_fg"],
                  font=(FONT, 11, "bold"), padx=6, pady=2, relief="flat"
                  ).pack(side="right")
