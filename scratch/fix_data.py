@@ -2,6 +2,7 @@ import json
 import os
 import glob
 import copy
+from pathlib import Path
 
 def has_non_null_data(obj):
     if isinstance(obj, dict):
@@ -54,8 +55,8 @@ def filter_dict_by_paths(data, valid_paths, current_path=""):
     return data
 
 def main():
-    base_dir = r"d:\sks_50"
-    paths_file = os.path.join(base_dir, "full_paths_to_consider.json")
+    PROJECT_ROOT = Path(__file__).resolve().parent
+    paths_file = os.path.join(PROJECT_ROOT.parent, "full_paths_to_consider.json")
     
     with open(paths_file, 'r', encoding='utf-8') as f:
         valid_paths = set(json.load(f))
@@ -76,7 +77,8 @@ def main():
         valid_paths.remove(p)
 
     # Iterate over all refinement.json files as the original data source
-    search_pattern = os.path.join(base_dir, "SKS_Annotation", "model_outputs", "*", "*", "refinement.json")
+    print(PROJECT_ROOT.parent)
+    search_pattern = os.path.join(PROJECT_ROOT.parent, "model_outputs", "*", "refinement.json")
     files = glob.glob(search_pattern)
     
     print(f"Found {len(files)} files to process.")

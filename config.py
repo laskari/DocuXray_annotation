@@ -8,7 +8,7 @@ from pathlib import Path
 # Change this to wherever your annotation project lives on your machine.
 # PROJECT_ROOT = Path(__file__).resolve().parent / "DocuXray_annotation"
 # On Mac/Linux use a plain forward-slash path, e.g.:        
-PROJECT_ROOT = Path(__file__).resolve().parent / "SKS_Annotation"
+PROJECT_ROOT = Path(__file__).resolve().parent
 
 # ── One entry per model ─────────────────────────────────────────────────────
 # Key   = display name shown in the UI
@@ -32,7 +32,7 @@ IMAGES_DIR: Path | None = PROJECT_ROOT / "sks_50"
 
 # ── Allowed Documents JSON ──────────────────────────────────────────────────
 # Filter list of images/documents to consider (only those listed in this JSON)
-ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data2.json"
+ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data3.json"
 
 # ── Where annotations are written ──────────────────────────────────────────
 ANNOTATIONS_DIR: Path = PROJECT_ROOT / "annotations"
