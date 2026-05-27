@@ -33,6 +33,7 @@ IMAGES_DIR: Path | None = PROJECT_ROOT / "sks_50"
 # ── Allowed Documents JSON ──────────────────────────────────────────────────
 # Filter list of images/documents to consider (only those listed in this JSON)
 ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data3.json"
+# ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data4.json"
 
 # ── Where annotations are written ──────────────────────────────────────────
 ANNOTATIONS_DIR: Path = PROJECT_ROOT / "annotations"
