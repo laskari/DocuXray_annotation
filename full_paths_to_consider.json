@@ -1,7 +1,6 @@
 [
     "applyTaxAfterDiscount",
     "currency",
-    "hasPaidStamp",
     "invoiceInfo.category",
     "invoiceInfo.customerMemo",
     "invoiceInfo.customerNumber",
