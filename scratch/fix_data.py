@@ -78,7 +78,7 @@ def main():
 
     # Iterate over all refinement.json files as the original data source
     # print(PROJECT_ROOT.parent)
-    search_pattern = os.path.join(PROJECT_ROOT.parent, "model_outputs", "*", "*","refinement.json")
+    search_pattern = os.path.join(PROJECT_ROOT.parent, "SKS_Annotation", "model_outputs", "*", "*","refinement.json")
     files = glob.glob(search_pattern)
     
     print(f"Found {len(files)} files to process.")

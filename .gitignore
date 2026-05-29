@@ -3,6 +3,8 @@ SKS_Annotation/
 
 # Ignore allowed documents JSON
 data2.json
+data3.json
+data4.json
 
 # Ignore Python bytecode and caches
 __pycache__/
