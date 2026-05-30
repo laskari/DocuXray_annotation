@@ -26,33 +26,39 @@ def combine_address(address_structured):
         return ", ".join(parts)
     return None
 
-def filter_dict_by_paths(data, valid_paths, current_path=""):
-    if not isinstance(data, dict):
-        return data
-
-    keys_to_remove = []
-    for k, v in data.items():
-        new_path = f"{current_path}.{k}" if current_path else k
+def copy_path(source, target, path_parts):
+    if not path_parts:
+        return
+    
+    part = path_parts[0]
+    is_list = part.endswith('[*]')
+    clean_part = part[:-3] if is_list else part
+    
+    if is_list:
+        source_list = source.get(clean_part) if isinstance(source, dict) else None
         
-        if isinstance(v, dict):
-            filter_dict_by_paths(v, valid_paths, new_path)
-            # Remove empty dicts if they are not explicitly in valid paths
-            # Wait, if we keep them, they might clutter. But we'll leave clean up for later if needed.
-        elif isinstance(v, list):
-            new_path_list = f"{new_path}[*]"
-            for i, item in enumerate(v):
-                if isinstance(item, dict):
-                    filter_dict_by_paths(item, valid_paths, new_path_list)
+        if clean_part not in target or target[clean_part] is None:
+            target[clean_part] = []
+            
+        if isinstance(source_list, list):
+            while len(target[clean_part]) < len(source_list):
+                target[clean_part].append({})
+            for i, src_item in enumerate(source_list):
+                tgt_item = target[clean_part][i]
+                if isinstance(src_item, dict) and isinstance(tgt_item, dict):
+                    copy_path(src_item, tgt_item, path_parts[1:])
+    else:
+        if len(path_parts) == 1:
+            if isinstance(source, dict) and clean_part in source:
+                target[clean_part] = copy.deepcopy(source[clean_part])
+            else:
+                target[clean_part] = None
         else:
-            # Leaf node
-            is_valid = new_path in valid_paths
-            if not is_valid:
-                keys_to_remove.append(k)
-
-    for k in keys_to_remove:
-        del data[k]
-        
-    return data
+            source_dict = source.get(clean_part) if isinstance(source, dict) else None
+            if clean_part not in target or target[clean_part] is None:
+                target[clean_part] = {}
+            if isinstance(target[clean_part], dict):
+                copy_path(source_dict or {}, target[clean_part], path_parts[1:])
 
 def main():
     PROJECT_ROOT = Path(__file__).resolve().parent
@@ -136,22 +142,10 @@ def main():
                     party_data["addressStructured"] = address_structured
                     parties[party_key] = party_data
                         
-        # 4. Filter by valid paths
-        filter_dict_by_paths(data, valid_paths)
-        
-        # Clean up empty parent nodes that are not prefixes of valid_paths
-        keys_to_delete = []
-        for k in list(data.keys()):
-            has_valid_child = any(vp.startswith(k) for vp in valid_paths)
-            # The root fields in valid_paths
-            if not has_valid_child and k not in ["invoiceStatus", "hasPaidStamp", "isOverflowPage", "applyTaxAfterDiscount", "currency"]:
-                keys_to_delete.append(k)
-                
-        for k in keys_to_delete:
-            del data[k]
-            
-        if "taxes" in data:
-            del data["taxes"]
+        # 4. Reconstruct and filter by valid paths
+        clean_data = {}
+        for path in sorted(valid_paths):
+            copy_path(data, clean_data, path.split('.'))
 
         # Write to postprocessing.json
         post_file = os.path.join(os.path.dirname(ref_file), "postprocessing.json")
@@ -167,7 +161,7 @@ def main():
                 pass
                 
         post_content["document_id"] = ref_content.get("document_id", os.path.basename(os.path.dirname(ref_file)))
-        post_content["postprocessed"] = data
+        post_content["postprocessed"] = clean_data
         if "metadata" in ref_content and "metadata" not in post_content:
             post_content["metadata"] = ref_content["metadata"]
 
