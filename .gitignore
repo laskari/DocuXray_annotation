@@ -18,3 +18,5 @@ ENV/
 
 model_outputs/
 sks_50/
+extraction_img_2/
+invoices_img_2/

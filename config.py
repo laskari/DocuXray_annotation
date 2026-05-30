@@ -29,7 +29,8 @@ IMAGES_DIR = PROJECT_ROOT / "invoices_img_2"
 images = sorted(os.listdir(IMAGES_DIR))
 
 # Write as JSON list
-with open("data.json", "w") as f:
+data_json_path = PROJECT_ROOT / "data.json"
+with open(data_json_path, "w") as f:
     json.dump(images, f, indent=4)
 
 print(f"Saved {len(images)} filenames to data.json")

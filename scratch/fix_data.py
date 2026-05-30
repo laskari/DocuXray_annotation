@@ -3,6 +3,46 @@ import os
 import glob
 import copy
 from pathlib import Path
+import sys
+
+# Add parent directory to path to allow importing config
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from config import MODEL_SOURCES
+
+def ensure_paths_exist(data, paths):
+    """
+    Ensure that all paths defined in dot-notation exist in the dictionary.
+    Missing leaf nodes are set to None.
+    Missing intermediate dictionaries are created as {}.
+    Missing lists are created as [].
+    """
+    for path in paths:
+        _ensure_path(data, path.split('.'))
+
+def _ensure_path(current_data, path_parts):
+    if not path_parts:
+        return
+        
+    part = path_parts[0]
+    is_leaf = (len(path_parts) == 1)
+    
+    if part.endswith('[*]'):
+        key = part[:-3]
+        if key not in current_data or not isinstance(current_data[key], list):
+            current_data[key] = []
+        
+        if not is_leaf:
+            for item in current_data[key]:
+                if isinstance(item, dict):
+                    _ensure_path(item, path_parts[1:])
+    else:
+        if is_leaf:
+            if part not in current_data:
+                current_data[part] = None
+        else:
+            if part not in current_data or not isinstance(current_data[part], dict):
+                current_data[part] = {}
+            _ensure_path(current_data[part], path_parts[1:])
 
 def has_non_null_data(obj):
     if isinstance(obj, dict):
@@ -76,10 +116,18 @@ def main():
     for p in paths_to_remove:
         valid_paths.remove(p)
 
-    # Iterate over all refinement.json files as the original data source
-    # print(PROJECT_ROOT.parent)
-    search_pattern = os.path.join(PROJECT_ROOT.parent, "extraction_img_2", "*","refinement.json")
-    files = glob.glob(search_pattern)
+    # Iterate over all refinement.json or 1_extraction.json files in configured model sources
+    files = []
+    for label, model_path in MODEL_SOURCES.items():
+        if not model_path.exists():
+            continue
+        for p in model_path.iterdir():
+            if p.is_dir():
+                ref_file = p / "refinement.json"
+                if not ref_file.exists():
+                    ref_file = p / "1_extraction.json"
+                if ref_file.exists():
+                    files.append(str(ref_file))
     
     print(f"Found {len(files)} files to process.")
     
@@ -90,17 +138,31 @@ def main():
             except json.JSONDecodeError:
                 continue
                 
-        # Original data is in refinement -> refined_data
-        if "refinement" not in ref_content or "refined_data" not in ref_content["refinement"]:
+        # Get original data using the same logic as core.py's get_refined_data
+        data = None
+        if "postprocessed" in ref_content:
+            data = ref_content["postprocessed"]
+        elif "data" in ref_content:
+            data = ref_content["data"]
+        elif "refinement" in ref_content and "refined_data" in ref_content["refinement"]:
+            data = ref_content["refinement"]["refined_data"]
+            
+        if data is None:
             continue
             
-        # Deepcopy to avoid modifying the original refinement.json in memory (though we don't save it back)
-        data = copy.deepcopy(ref_content["refinement"]["refined_data"])
+        # Deepcopy to avoid modifying in memory
+        data = copy.deepcopy(data)
         
-        # 1. Handle Taxes
+        # Ensure at least one item (index 0) always exists in lineItems and totals.otherCharges
+        if "lineItems" not in data or not isinstance(data["lineItems"], list) or len(data["lineItems"]) == 0:
+            data["lineItems"] = [{}]
+            
         if "totals" not in data or not isinstance(data["totals"], dict):
             data["totals"] = {}
-            
+        if "otherCharges" not in data["totals"] or not isinstance(data["totals"]["otherCharges"], list) or len(data["totals"]["otherCharges"]) == 0:
+            data["totals"]["otherCharges"] = [{}]
+        
+        # 1. Handle Taxes
         taxes = data.get("taxes", [])
         if isinstance(taxes, list) and len(taxes) > 0:
             tax = taxes[0]
@@ -132,7 +194,8 @@ def main():
                 if isinstance(party_data, dict):
                     address_structured = party_data.get("addressStructured", {})
                     combined = combine_address(address_structured)
-                    address_structured["address"] = combined
+                    if combined:
+                        address_structured["address"] = combined
                     party_data["addressStructured"] = address_structured
                     parties[party_key] = party_data
                         
@@ -152,6 +215,9 @@ def main():
             
         if "taxes" in data:
             del data["taxes"]
+
+        # 5. Ensure all valid paths exist (add absent ones)
+        ensure_paths_exist(data, valid_paths)
 
         # Write to postprocessing.json
         post_file = os.path.join(os.path.dirname(ref_file), "postprocessing.json")

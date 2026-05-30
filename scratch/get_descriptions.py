@@ -78,6 +78,12 @@ for path in paths:
     if path == 'totals.shippingAmount.originalValue':
         result[path] = "The raw value exactly as it appears printed on the document (e.g. '1,234.56', '10%', '2 pcs') for shipping, freight, delivery, or logistics charges."
         continue
+    if path == 'totals.otherCharges[*].key':
+        result[path] = "The label/name of the other charge as printed on the document (e.g., 'Shipping', 'Delivery', 'Surcharge')."
+        continue
+    if path == 'totals.otherCharges[*].value.originalValue':
+        result[path] = "The raw value of the other charge exactly as it appears printed on the document (e.g., '1,234.56', '10%', '2 pcs')."
+        continue
         
     if 'addressStructured' in path:
         part = path.split('.')[-1]

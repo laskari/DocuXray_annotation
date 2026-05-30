@@ -86,9 +86,12 @@ class ToolTip:
     def show_tip(self, event=None):
         if self.tip_window or not self.text:
             return
-        x, y, _, _ = self.widget.bbox("insert")
-        x = x + self.widget.winfo_rootx() + 25
-        y = y + self.widget.winfo_rooty() + 20
+        if event:
+            x = event.x_root + 20
+            y = event.y_root + 10
+        else:
+            x = self.widget.winfo_rootx() + 25
+            y = self.widget.winfo_rooty() + 20
         self.tip_window = tw = tk.Toplevel(self.widget)
         tw.wm_overrideredirect(True)
         tw.wm_geometry(f"+{x}+{y}")

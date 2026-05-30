@@ -114,7 +114,7 @@ def get_document_ids() -> list[str]:
         if not root.exists():
             continue
         for p in root.iterdir():
-            if p.is_dir() and (p / "1_extraction.json").exists():
+            if p.is_dir() and ((p / "postprocessing.json").exists() or (p / "1_extraction.json").exists()):
                 ids.add(p.name)
 
     if ALLOWED_DOCS_JSON and ALLOWED_DOCS_JSON.exists():
@@ -130,6 +130,16 @@ def get_document_ids() -> list[str]:
 
 
 def load_refinement(label: str, doc_id: str) -> dict | None:
+    # Try postprocessing.json first (created by fix_data.py)
+    path_post = MODEL_SOURCES[label] / doc_id / "postprocessing.json"
+    if path_post.exists():
+        try:
+            with open(path_post, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Parse error {path_post}: {e}")
+
+    # Fall back to 1_extraction.json
     path = MODEL_SOURCES[label] / doc_id / "1_extraction.json"
     if path.exists():
         try:
