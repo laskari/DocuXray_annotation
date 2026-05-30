@@ -150,11 +150,34 @@ def get_refined_data(ref_json: dict) -> dict:
 
 def load_all_model_flat(doc_id: str) -> dict[str, dict[str, Any]]:
     """Return {model_label: {dot_path: leaf_value}} for every model with data."""
-    return {
+    raw_data = {
         label: flatten(get_refined_data(raw))
         for label in MODEL_SOURCES
         if (raw := load_refinement(label, doc_id)) is not None
     }
+
+    # Filter keys if full_paths_to_consider.json exists
+    paths_file = Path(__file__).resolve().parent / "full_paths_to_consider.json"
+    if paths_file.exists():
+        try:
+            with open(paths_file, encoding="utf-8") as f:
+                allowed_paths = set(json.load(f))
+            
+            import re
+            filtered_data = {}
+            for label, flat in raw_data.items():
+                filtered_flat = {}
+                for path, val in flat.items():
+                    wildcard = re.sub(r'\.\d+', '[*]', path)
+                    if wildcard in allowed_paths:
+                        filtered_flat[path] = val
+                filtered_data[label] = filtered_flat
+            return filtered_data
+        except Exception as e:
+            print(f"Error filtering model flat data: {e}")
+            
+    return raw_data
+
 
 
 def find_image(doc_id: str) -> Path | None:

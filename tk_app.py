@@ -15,7 +15,7 @@ from pathlib import Path
 from PIL import Image, ImageTk
 import datetime
 
-from config import MODEL_SOURCES
+from config import MODEL_SOURCES, PROJECT_ROOT
 import itertools
 from core import (
     _disp,
@@ -156,7 +156,7 @@ class AnnotationApp(tk.Tk):
         self._init_doc_stats()
         
         self.field_descriptions = {}
-        desc_path = Path("paths_with_descriptions.json")
+        desc_path = PROJECT_ROOT / "paths_with_descriptions.json"
         if desc_path.exists():
             with open(desc_path, "r", encoding="utf-8") as f:
                 self.field_descriptions = json.load(f)
@@ -676,7 +676,7 @@ class AnnotationApp(tk.Tk):
         path_lbl.pack(side="left")
         
         import re
-        base_path = re.sub(r'\.\d+\.', '[*].', path)
+        base_path = re.sub(r'\.\d+', '[*]', path)
         desc = getattr(self, "field_descriptions", {}).get(base_path)
         if desc:
             ToolTip(path_lbl, desc)

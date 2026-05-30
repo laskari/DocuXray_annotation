@@ -18,6 +18,7 @@ MODEL_SOURCES: dict[str, Path] = {
     "Gemini": PROJECT_ROOT / "extraction_img_2"
 }
 
+
 # ── Images directory ────────────────────────────────────────────────────────
 # Set to None if you have no invoice images.
 IMAGES_DIR: Path | None = PROJECT_ROOT / "invoices_img_2"
