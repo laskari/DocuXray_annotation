@@ -3,7 +3,8 @@ config.py  –  Edit your paths and model sources here.
 Replaces "Cell 3" from the original Colab notebook.
 """
 from pathlib import Path
-
+import os
+import json
 # ── Project root ────────────────────────────────────────────────────────────
 # Change this to wherever your annotation project lives on your machine.
 # PROJECT_ROOT = Path(__file__).resolve().parent / "DocuXray_annotation"
@@ -12,27 +13,29 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 # ── One entry per model ─────────────────────────────────────────────────────
 # Key   = display name shown in the UI
-# Value = folder that contains <doc_id>/ sub-folders with postprocessing.json
-MODEL_SOURCES: dict[str, Path] = {}
-_model_outputs_dir = PROJECT_ROOT / "model_outputs"
-if _model_outputs_dir.exists():
-    for _p in sorted(_model_outputs_dir.iterdir()):
-        if _p.is_dir() and not _p.name.startswith('.'):
-            _name_map = {
-                "claude_opus_4_7_batch": "Claude",
-                "gemini_pro_3_1": "Gemini",
-                "openai_gpt_5_4_batch": "GPT"
-            }
-            _display_name = _name_map.get(_p.name, _p.name.replace("_", " ").title())
-            MODEL_SOURCES[_display_name] = _p
+# Value = folder that contains <doc_id>/ sub-folders with 1_extraction.json
+MODEL_SOURCES: dict[str, Path] = {
+    "Gemini": PROJECT_ROOT / "extraction_img_2"
+}
 
 # ── Images directory ────────────────────────────────────────────────────────
 # Set to None if you have no invoice images.
-IMAGES_DIR: Path | None = PROJECT_ROOT / "sks_50"
+IMAGES_DIR: Path | None = PROJECT_ROOT / "invoices_img_2"
 
+IMAGES_DIR = PROJECT_ROOT / "invoices_img_2"
+
+# Read all filenames
+images = sorted(os.listdir(IMAGES_DIR))
+
+# Write as JSON list
+with open("data.json", "w") as f:
+    json.dump(images, f, indent=4)
+
+print(f"Saved {len(images)} filenames to data.json")
 # ── Allowed Documents JSON ──────────────────────────────────────────────────
 # Filter list of images/documents to consider (only those listed in this JSON)
-ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data3.json"
+ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data.json"
+
 # ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data4.json"
 
 # ── Where annotations are written ──────────────────────────────────────────

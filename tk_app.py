@@ -1119,7 +1119,7 @@ if __name__ == "__main__":
         raise RuntimeError(
             "No documents found.\n"
             "Check MODEL_SOURCES in config.py — each model folder must contain\n"
-            "<doc_id>/ sub-directories with a postprocessing.json file inside."
+            "<doc_id>/ sub-directories with a 1_extraction.json file inside."
         )
     print(f"Models    : {' · '.join(MODEL_LABELS)}")
     print(f"Documents : {len(DOC_IDS)}")
