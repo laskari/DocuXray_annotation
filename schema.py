@@ -241,14 +241,14 @@ class Totals(StrictModel):
 
     # --- Charges ---
     otherCharges: Optional[List[charges]] = Field(None,description=(
-        "Dictionary of any additional non-line-item charges explicitly printed on the document "
+        "List of any additional non-line-item charges explicitly printed on the document "
         "that are applied outside the base merchandise or service amounts. "
-        "Use the charge label/name as the dictionary key and the corresponding charge amount "
-        "as the value. This field is intended to flexibly capture any extra charges that may "
+        "Each charge contains a key (the name or label of the charge) and a value (the amount "
+        "of the charge). This field is intended to flexibly capture any extra charges that may "
         "appear across different invoice formats. "
         "Only extract charges that are explicitly mentioned or printed in the document and do not "
         "infer or calculate missing charges. Preserve the original charge label as closely as possible "
-        "for the dictionary key."),)
+        "for the key."),)
 
     # --- Tax ---
     taxAmount: Optional[NumericValue] = Field(
