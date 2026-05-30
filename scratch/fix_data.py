@@ -25,6 +25,10 @@ def _ensure_path(current_data, path_parts):
         key = part[:-3]
         if key not in current_data or not isinstance(current_data[key], list):
             current_data[key] = []
+            
+        # Ensure at least one item exists so flat keys are generated for validation
+        if len(current_data[key]) == 0:
+            current_data[key].append({})
         
         if not is_leaf:
             for item in current_data[key]:
