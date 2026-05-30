@@ -1,6 +1,6 @@
 from enum import Enum
 from typing import List, Optional, Any, Union, Dict
-
+import json as json_module
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator, ValidationError
 
 
@@ -8,7 +8,6 @@ class StrictModel(BaseModel):
     """Base model that rejects any field not declared in the schema."""
     model_config = ConfigDict(extra="forbid")
 
-import json as json_module
 
 
 # =============================================================================
@@ -106,7 +105,6 @@ class NumericValue(StrictModel):
         description="The raw value exactly as it appears printed on the document (e.g. '1,234.56', '10%', '2 pcs'). Preserve bracket notation as-is (e.g. '(102.68)').",
     )
 
-
 class AddressStructured(StrictModel):
     """
     Address broken into semantically meaningful components.
@@ -156,7 +154,7 @@ class InvoiceInfo(StrictModel):
         return normalize_date_or_time_field(v)
 
 class Party(StrictModel):
-    name: Optional[str] = Field(None, description="The name of the entity (person or company).")
+    name: Optional[str] = Field(None, description="The name of the entity (person or company) as explicitely mentioned.")
     addressStructured: Optional[AddressStructured] = Field(None, description="Structured address broken into individual components (street, city, state, postal code, country).")
     phone: Optional[str] = Field(None, description="The contact phone number of the entity.")
     email: Optional[str] = Field(None, description="The email address of the entity.")
@@ -199,6 +197,10 @@ class LineItem(StrictModel):
     def normalize_service_date(cls, v: Any) -> Optional[str]:
         return normalize_date_or_time_field(v)
 
+class charges(BaseModel):
+    key: Optional[str] = Field(None, description="The name or label of the charge as printed on the document.")
+    value: Optional[NumericValue] = Field(None, description="The amount of the charge as printed on the document.")
+
 class Totals(StrictModel):
     # --- Discounts ---
     discountTotal: Optional[NumericValue] = Field(
@@ -236,8 +238,9 @@ class Totals(StrictModel):
             "Typically labelled 'Total Before Tax', 'Net Total', or 'Taxable Amount'. "
         ),
     )
+
     # --- Charges ---
-    otherCharges: Optional[Dict[str, NumericValue]] = Field(None,description=(
+    otherCharges: Optional[List[charges]] = Field(None,description=(
         "Dictionary of any additional non-line-item charges explicitly printed on the document "
         "that are applied outside the base merchandise or service amounts. "
         "Use the charge label/name as the dictionary key and the corresponding charge amount "
@@ -394,86 +397,46 @@ class InvoiceData(StrictModel):
 # INVOICE SPLIT SCHEMAS
 # -----------------------------------------------------------------------------
 
-class InvoicePartGeneral(StrictModel):
-    """
-    Part 1: General invoice metadata, currency, and category.
-    """
-    currency: Optional[str] = Field(None, description="The primary currency of the invoice as ISO 4217 text code (e.g., 'USD', 'EUR', 'INR'), not currency symbols.")
-    invoiceInfo: Optional[InvoiceInfo] = Field(None, description="General invoice identification and date info.")
-    invoiceStatus: Optional[InvoiceStatus] = Field(None, description="The payment/fulfillment status of the invoice. Use 'paid' if fully settled, 'unpaid' if outstanding, 'partial' if partially paid, 'processing' if still being fulfilled, 'cancelled' if voided, or 'unknown' if not determinable.")
-
 class InvoicePartParties(StrictModel):
     """
-    Part 2: All participants involved in the transaction.
+    Part 1: All participants involved in the transaction.
     """
     parties: Optional[Parties] = Field(None, description="Participants in the invoice (seller, buyer, billTo, shipTo, etc.).")
-    shippingInfo: Optional[ShippingInfo] = Field(None, description="Carrier and logistics details.")
 
 class InvoicePartLineItems(StrictModel):
     """
-    Part 3: Detailed list of line items/products/services.
+    Part 2: Detailed list of line items/products/services.
     """
     lineItems: Optional[List[LineItem]] = Field(None, description="Detailed list of items or services billed.")
-    isOverflowPage: Optional[bool] = Field(None, description="True if this page is a continuation of a table from the previous page (no new document header, line items continue mid-stream). False if this is a fresh page.")
 
 class InvoicePartTotals(StrictModel):
     """
-    Part 4: Financial totals, tax breakdowns, and payments.
+    Part 3: Financial totals, tax breakdowns, and payments.
     """
     totals: Optional[Totals] = Field(None, description="Financial summary including subtotal, tax, and grand total.")
     applyTaxAfterDiscount: Optional[bool] = Field(True, description="If True, discount is subtracted first and then tax is calculated on the discounted amount. If False or absent, tax is calculated first and then discount is applied.")
 
-
-# =============================================================================
-# DOCUMENT EXTRACTION RESULT (Wrapper)
-# =============================================================================
-
-class DocumentTypeAlternative(StrictModel):
-    type: DocumentType = Field(description="Alternative document type candidate.")
-    confidence: float = Field(description="Confidence score for this candidate.")
-
-
-class ExtractionMetadata(StrictModel):
-    pageCount: Optional[int] = Field(None, description="Total number of pages processed.")
-    language: Optional[str] = Field(None, description="Detected language of the document (e.g., 'English', 'Spanish').")
-    sourceCountryIfObvious: Optional[str] = Field(None, description="The country the document likely originates from.")
-    extractionDate: Optional[str] = Field(None, description="The date the extraction occurred.")
-    extractionDateISO: Optional[str] = Field(None, description="The date the extraction occurred in ISO 8601 format.")
-
-    @field_validator('extractionDate', 'extractionDateISO', mode='before')
-    @classmethod
-    def normalize_dates(cls, v: Any) -> Optional[str]:
-        return normalize_date_or_time_field(v)
-
-
-class DocumentExtractionResult(StrictModel):
-    documentType: DocumentType = Field(description="The primary identified type of the document (e.g., invoice, receipt).")
-    documentTypeConfidence: float = Field(
-        ..., ge=0.0, le=1.0, description="Confidence score for the primary document type."
-    )
-    documentTypeAlternatives: List[DocumentTypeAlternative] = Field(
-        default_factory=list, description="A list of other possible document types and their confidence scores."
-    )
-
-    metadata: ExtractionMetadata = Field(
-        default_factory=ExtractionMetadata, description="Metadata about the extraction process."
-    )
-
-    # Type-specific extracted data; ONLY ONE should be non-null
-    invoiceOutputData: Optional[InvoiceData] = Field(None, description="Extracted data specifically for Invoices.")
-    otherDocumentData: Optional[OtherDocumentData] = Field(None, description="Extracted data for documents not matching known types.")
+class InvoicePartOther(StrictModel):
+    """
+    Part 4: Other invoice data.
+    """
+    invoiceInfo: Optional[InvoiceInfo] = Field(None, description="General invoice identification and date info.")
+    shippingInfo: Optional[ShippingInfo] = Field(None, description="Carrier and logistics details.")
+    isOverflowPage: Optional[bool] = Field(None, description="True if this page is a continuation of a table from the previous page (no new document header, line items continue mid-stream). False if this is a fresh page.")
+    currency: Optional[str] = Field(None, description="The primary currency of the invoice as ISO 4217 text code (e.g., 'USD', 'EUR', 'INR'), not currency symbols.")
+    invoiceStatus: Optional[InvoiceStatus] = Field(None, description="The payment/fulfillment status of the invoice. Use 'paid' if fully settled, 'unpaid' if outstanding, 'partial' if partially paid, 'processing' if still being fulfilled, 'cancelled' if voided, or 'unknown' if not determinable.")
 
 
 # =============================================================================
 # SCHEMA REGISTRY (used by extraction service)
 # =============================================================================
 
+
 SCHEMA_MAP = {
-    "full":    InvoiceData,
-    "general": InvoicePartGeneral,
+    "lineitems": InvoicePartLineItems,
     "parties": InvoicePartParties,
-    "items":   InvoicePartLineItems,
     "totals":  InvoicePartTotals,
+    "other":  InvoicePartOther,
 }
 
-SPLIT_PARTS = ["general", "parties", "items", "totals"]
+SPLIT_PARTS = ["lineitems", "parties", "totals", "other"]
