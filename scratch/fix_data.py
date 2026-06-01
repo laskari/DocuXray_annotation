@@ -14,6 +14,18 @@ def ensure_paths_exist(data, paths):
     for path in paths:
         _ensure_path(data, path.split('.'))
 
+def _flatten_date(container: dict, date_key: str, iso_key: str) -> None:
+    """
+    If container[date_key] is a dict with {originalValue, value}, flatten it:
+      - container[date_key]  <- originalValue
+      - container[iso_key]   <- value  (if present)
+    """
+    date_val = container.get(date_key)
+    if isinstance(date_val, dict):
+        container[date_key] = date_val.get("originalValue")
+        if "value" in date_val:
+            container[iso_key] = date_val.get("value")
+
 def _ensure_path(current_data, path_parts):
     if not path_parts:
         return
@@ -174,7 +186,22 @@ def main():
                     address_structured["address"] = combined
                     party_data["addressStructured"] = address_structured
                     parties[party_key] = party_data
-                        
+
+        # 3b. Flatten date fields
+        invoice_info = data.get("invoiceInfo")
+        if isinstance(invoice_info, dict):
+            _flatten_date(invoice_info, "issueDate", "issueDateISO")
+            _flatten_date(invoice_info, "dueDate", "dueDateISO")
+        line_items = data.get("lineItems", [])
+        if isinstance(line_items, list):
+            for item in line_items:
+                if isinstance(item, dict):
+                    _flatten_date(item, "serviceDate", "serviceDateISO")
+        shipping = data.get("shippingInfo")
+        if isinstance(shipping, dict):
+            _flatten_date(shipping, "deliveryDate", "deliveryDateISO")
+ 
+
         # 4. Filter by valid paths
         filter_dict_by_paths(data, valid_paths)
         
