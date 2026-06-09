@@ -94,6 +94,8 @@ def coerce_value(raw_str: str, original_val: Any) -> Any:
             return float(s)
         except ValueError:
             pass
+    if isinstance(original_val, str):
+        return s
     try:
         return json.loads(s)
     except (json.JSONDecodeError, ValueError):
