@@ -73,11 +73,19 @@ def reconstruct(base: Any, flat_edits: dict[str, Any]) -> Any:
     return result
 
 
-def coerce_value(raw_str: str, original_val: Any) -> Any:
-    """Cast annotator text back to the original Python type."""
+def coerce_value(raw_str: str, original_val: Any, path: str = "") -> Any:
+    """
+    Cast annotator text back to the original Python type.
+    Enforces string type for fields ending in 'originalValue' unless the string represents null.
+    """
     s = raw_str.strip()
     if s.lower() in ("null", "none", ""):
         return None
+        
+    # Strict enforcement: '.originalValue' / '.originalvalues' must remain strings
+    if path and path.lower().endswith((".originalvalue", ".originalvalues")):
+        return s
+        
     if s.lower() == "true":
         return True
     if s.lower() == "false":
@@ -193,7 +201,7 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[st
     original_flat = flatten(get_refined_data(base_raw))
 
     typed_edits = {
-        path: coerce_value(val_str, original_flat.get(path))
+        path: coerce_value(val_str, original_flat.get(path), path)
         for path, val_str in flat_edits.items()
     }
 
@@ -314,7 +322,7 @@ def save_custom_combinations(doc_id: str, options: list[str]) -> list[str]:
 
         original_flat = flatten(get_refined_data(base_raw))
         typed_edits = {
-            path: coerce_value(val_str, original_flat.get(path))
+            path: coerce_value(val_str, original_flat.get(path), path)
             for path, val_str in edits.items()
         }
 
