@@ -1,10 +1,13 @@
 import json
 import sys
+import os
 
-sys.path.append('.')
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(root_dir)
 
 try:
-    from schema import InvoiceData
+    from schema import ReceiptData
+    # from schema import InvoiceData
 except Exception as e:
     print('Error importing schema:', e)
     sys.exit(1)
@@ -23,7 +26,7 @@ def get_full_description(model_class, path_parts):
     
     # User's json has some typos/inconsistencies with the schema
     mapping = {
-        'shippingAmount': 'otherCharges', # The schema uses 'otherCharges' in Totals for shipping? Or maybe shippingAmount was removed. Let's see if there's a shippingAmount. Actually wait!
+        'shippingAmount': 'otherCharges', 
     }
     
     if part in mapping and not (hasattr(model_class, 'model_fields') and part in model_class.model_fields):
@@ -37,7 +40,7 @@ def get_full_description(model_class, path_parts):
     
     descriptions = []
     if desc:
-        if getattr(model_class, '__name__', '') == 'InvoiceData' and len(path_parts) > 1:
+        if getattr(model_class, '__name__', '') == 'ReceiptData' and len(path_parts) > 1:
             pass
         else:
             descriptions.append(desc.strip())
@@ -67,7 +70,8 @@ def get_full_description(model_class, path_parts):
     
     return descriptions
 
-with open('full_paths_to_consider.json', 'r') as f:
+input_file = os.path.join(root_dir, 'full_paths_to_consider.json')
+with open(input_file, 'r') as f:
     paths = json.load(f)
 
 result = {}
@@ -91,7 +95,7 @@ for path in paths:
         except Exception:
             pass
 
-    descs = get_full_description(InvoiceData, path.split('.'))
+    descs = get_full_description(ReceiptData, path.split('.'))
     
     # Filter out NOT FOUND
     descs = [d for d in descs if not d.startswith("FIELD_NOT_FOUND")]
@@ -102,6 +106,7 @@ for path in paths:
         # Join multiple descriptions. Usually the parent has the domain description and child (like originalValue) has format.
         result[path] = " ".join(descs)
 
-with open('paths_with_descriptions.json', 'w') as f:
+output_file = os.path.join(root_dir, 'paths_with_descriptions.json')
+with open(output_file, 'w') as f:
     json.dump(result, f, indent=4)
-print("Updated paths_with_descriptions.json")
+print(f"Updated {output_file}")
