@@ -237,14 +237,17 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[st
         })
 
     out = copy.deepcopy(base_raw)
+    reconstructed = reconstruct(get_refined_data(base_raw), typed_edits)
     if "postprocessed" in out:
-        out["postprocessed"] = reconstruct(
-            get_refined_data(base_raw), typed_edits
-        )
+        out["postprocessed"] = reconstructed
+    elif "extracted_data" in out:
+        out["extracted_data"] = reconstructed
+    elif "data" in out:
+        out["data"] = reconstructed
     else:
-        out["refinement"]["refined_data"] = reconstruct(
-            get_refined_data(base_raw), typed_edits
-        )
+        if "refinement" not in out:
+            out["refinement"] = {}
+        out["refinement"]["refined_data"] = reconstructed
     out["annotation_meta"] = {
         "annotated": True,
         "confusing_image": confusing_image,
@@ -353,14 +356,17 @@ def save_custom_combinations(doc_id: str, options: list[str]) -> list[str]:
             })
 
         out = copy.deepcopy(base_raw)
+        reconstructed = reconstruct(get_refined_data(base_raw), typed_edits)
         if "postprocessed" in out:
-            out["postprocessed"] = reconstruct(
-                get_refined_data(base_raw), typed_edits
-            )
+            out["postprocessed"] = reconstructed
+        elif "extracted_data" in out:
+            out["extracted_data"] = reconstructed
+        elif "data" in out:
+            out["data"] = reconstructed
         else:
-            out["refinement"]["refined_data"] = reconstruct(
-                get_refined_data(base_raw), typed_edits
-            )
+            if "refinement" not in out:
+                out["refinement"] = {}
+            out["refinement"]["refined_data"] = reconstructed
         out["annotation_meta"] = {
             "annotated": True,
             "match_only": "matching" in opt,
