@@ -461,6 +461,28 @@ def build_field_table(
     for flat in model_flat.values():
         all_paths.update(flat.keys())
 
+    from config import PROJECT_ROOT
+    import re
+    
+    paths_file = PROJECT_ROOT / "full_paths_to_consider.json"
+    if paths_file.exists():
+        try:
+            with open(paths_file, "r", encoding="utf-8") as f:
+                full_paths = json.load(f)
+                
+            for p in full_paths:
+                if "[*]" in p:
+                    # Check if any existing path matches this array pattern
+                    pattern_str = "^" + re.escape(p).replace(r"\[\*\]", r"\.\d+") + "$"
+                    pattern = re.compile(pattern_str)
+                    if not any(pattern.match(ep) for ep in all_paths):
+                        all_paths.add(p.replace("[*]", ".0"))
+                else:
+                    if p not in all_paths:
+                        all_paths.add(p)
+        except Exception as e:
+            print(f"Error loading full_paths_to_consider.json: {e}")
+
     rows = []
     for path in sorted(all_paths):
         status, pairs, best = compute_consensus(path, model_flat)
