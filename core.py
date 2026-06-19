@@ -107,15 +107,17 @@ def get_document_ids() -> list[str]:
     """
     A valid document folder must:
       1. Be a directory inside a model root.
-      2. Contain 1_extraction.json in at least one model source.
+      2. Contain 1_extraction.json in at least one model source, OR be a direct .json file.
     """
     ids: set[str] = set()
     for root in MODEL_SOURCES.values():
         if not root.exists():
             continue
         for p in root.iterdir():
-            if p.is_dir() and ((p / "postprocessing.json").exists() or (p / "1_extraction.json").exists()):
+            if p.is_dir() and (p / "1_extraction.json").exists():
                 ids.add(p.name)
+            elif p.is_file() and p.suffix == ".json" and p.name != "postprocessing.json":
+                ids.add(p.stem)
 
     if ALLOWED_DOCS_JSON and ALLOWED_DOCS_JSON.exists():
         try:
@@ -130,16 +132,6 @@ def get_document_ids() -> list[str]:
 
 
 def load_refinement(label: str, doc_id: str) -> dict | None:
-    # Try postprocessing.json first (created by fix_data.py)
-    path_post = MODEL_SOURCES[label] / doc_id / "postprocessing.json"
-    if path_post.exists():
-        try:
-            with open(path_post, encoding="utf-8") as f:
-                return json.load(f)
-        except Exception as e:
-            print(f"Parse error {path_post}: {e}")
-
-    # Fall back to 1_extraction.json
     path = MODEL_SOURCES[label] / doc_id / "1_extraction.json"
     if path.exists():
         try:
@@ -147,47 +139,35 @@ def load_refinement(label: str, doc_id: str) -> dict | None:
                 return json.load(f)
         except Exception as e:
             print(f"Parse error {path}: {e}")
+            
+    path_direct = MODEL_SOURCES[label] / f"{doc_id}.json"
+    if path_direct.exists():
+        try:
+            with open(path_direct, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Parse error {path_direct}: {e}")
+            
     return None
 
 
 def get_refined_data(ref_json: dict) -> dict:
-    if "postprocessed" in ref_json:
-        return ref_json["postprocessed"]
     if "data" in ref_json:
         return ref_json["data"]
+    if "extracted_data" in ref_json:
+        return ref_json["extracted_data"]
+    if "postprocessed" in ref_json:
+        return ref_json["postprocessed"]
     return ref_json.get("refinement", {}).get("refined_data", {})
 
 
 def load_all_model_flat(doc_id: str) -> dict[str, dict[str, Any]]:
     """Return {model_label: {dot_path: leaf_value}} for every model with data."""
-    raw_data = {
+    return {
         label: flatten(get_refined_data(raw))
         for label in MODEL_SOURCES
         if (raw := load_refinement(label, doc_id)) is not None
     }
-
-    # Filter keys if full_paths_to_consider.json exists
-    paths_file = Path(__file__).resolve().parent / "full_paths_to_consider.json"
-    if paths_file.exists():
-        try:
-            with open(paths_file, encoding="utf-8") as f:
-                allowed_paths = set(json.load(f))
-            
-            import re
-            filtered_data = {}
-            for label, flat in raw_data.items():
-                filtered_flat = {}
-                for path, val in flat.items():
-                    wildcard = re.sub(r'\.\d+', '[*]', path)
-                    if wildcard in allowed_paths:
-                        filtered_flat[path] = val
-                filtered_data[label] = filtered_flat
-            return filtered_data
-        except Exception as e:
-            print(f"Error filtering model flat data: {e}")
-            
-    return raw_data
-
 
 
 def find_image(doc_id: str) -> Path | None:
@@ -259,10 +239,6 @@ def save_annotation(doc_id: str, flat_edits: dict[str, str], timestamps: dict[st
     out = copy.deepcopy(base_raw)
     if "postprocessed" in out:
         out["postprocessed"] = reconstruct(
-            get_refined_data(base_raw), typed_edits
-        )
-    elif "data" in out:
-        out["data"] = reconstruct(
             get_refined_data(base_raw), typed_edits
         )
     else:
@@ -379,10 +355,6 @@ def save_custom_combinations(doc_id: str, options: list[str]) -> list[str]:
         out = copy.deepcopy(base_raw)
         if "postprocessed" in out:
             out["postprocessed"] = reconstruct(
-                get_refined_data(base_raw), typed_edits
-            )
-        elif "data" in out:
-            out["data"] = reconstruct(
                 get_refined_data(base_raw), typed_edits
             )
         else:

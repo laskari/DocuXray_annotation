@@ -15,18 +15,21 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 # Key   = display name shown in the UI
 # Value = folder that contains <doc_id>/ sub-folders with 1_extraction.json
 MODEL_SOURCES: dict[str, Path] = {
-    "Gemini": PROJECT_ROOT / "extraction_img_2"
+    "Gemini": PROJECT_ROOT / "extraction"
 }
 
 
 # ── Images directory ────────────────────────────────────────────────────────
 # Set to None if you have no invoice images.
-IMAGES_DIR: Path | None = PROJECT_ROOT / "invoices_img_2"
+IMAGES_DIR: Path | None = PROJECT_ROOT / "images"
 
-IMAGES_DIR = PROJECT_ROOT / "invoices_img_2"
+IMAGES_DIR = PROJECT_ROOT / "images"
 
 # Read all filenames
-images = sorted(os.listdir(IMAGES_DIR))
+if IMAGES_DIR.exists():
+    images = sorted(os.listdir(IMAGES_DIR))
+else:
+    images = []
 
 # Write as JSON list
 data_json_path = PROJECT_ROOT / "data.json"
@@ -36,9 +39,10 @@ with open(data_json_path, "w") as f:
 print(f"Saved {len(images)} filenames to data.json")
 # ── Allowed Documents JSON ──────────────────────────────────────────────────
 # Filter list of images/documents to consider (only those listed in this JSON)
-ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data.json"
-
-# ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data4.json"
+if images:
+    ALLOWED_DOCS_JSON: Path | None = Path(__file__).resolve().parent / "data.json"
+else:
+    ALLOWED_DOCS_JSON: Path | None = None
 
 # ── Where annotations are written ──────────────────────────────────────────
 ANNOTATIONS_DIR: Path = PROJECT_ROOT / "annotations"
