@@ -12,6 +12,7 @@ from tkinter import ttk, messagebox, font as tkfont
 import threading
 import json
 from pathlib import Path
+# pyrefly: ignore [missing-import]
 from PIL import Image, ImageTk
 import datetime
 
@@ -152,6 +153,22 @@ class AnnotationApp(tk.Tk):
             self.save_opts.append(f"{m1} and {m2} matching")
         self.save_opts.append("At least two models matching")
         self.save_opts.append("All models matching")
+
+        # Load predefined keys for custom/group key additions
+        self.predefined_keys = []
+        paths_file = PROJECT_ROOT / "full_paths_to_consider.json"
+        if paths_file.exists():
+            try:
+                with open(paths_file, "r", encoding="utf-8") as f:
+                    self.predefined_keys = json.load(f)
+            except Exception as e:
+                print(f"Error loading predefined keys: {e}")
+
+        self.add_key_choices = [
+            "Group: Line Item",
+            "Group: Total Taxes",
+            "Group: Total Other Charges"
+        ]
 
         self._build_styles()
         self._build_ui()
@@ -319,6 +336,23 @@ class AnnotationApp(tk.Tk):
             activebackground="#12121e", activeforeground="#ffffff", font=(FONT, 12)
         ).pack(side="right", padx=8)
 
+        # Add Key row
+        add_key_row = tk.Frame(right, bg="#12121e", pady=5, padx=8)
+        add_key_row.pack(fill="x")
+        tk.Label(add_key_row, text="Add Key/Field:", bg="#12121e", fg="#cbd5e1",
+                 font=(FONT, 13, "bold")).pack(side="left", padx=(0, 6))
+        
+        self.add_key_combo = ttk.Combobox(
+            add_key_row, values=self.add_key_choices,
+            font=(FONT, 12), width=35
+        )
+        self.add_key_combo.pack(side="left", padx=(0, 10))
+        
+        tk.Button(add_key_row, text="➕ Add Field", command=self._add_custom_key,
+                  bg="#2563eb", fg="#ffffff", activebackground="#1d4ed8", activeforeground="#ffffff", relief="flat",
+                  font=(FONT, 11, "bold"), padx=10
+                  ).pack(side="left")
+
         # Pagination row
         self.page_row = tk.Frame(right, bg="#12121e", pady=2, padx=8)
         self.page_row.pack(fill="x")
@@ -409,6 +443,16 @@ class AnnotationApp(tk.Tk):
     def _wire_global_scroll(self):
         """Bind scroll on the root window so any widget under the cursor scrolls."""
         def _route_scroll(e):
+            # If the scroll event occurred on or inside a combobox/listbox/popdown, let it handle it
+            try:
+                if e.widget:
+                    w_class = e.widget.winfo_class()
+                    w_name = str(e.widget).lower()
+                    if w_class in ("Listbox", "TCombobox", "Combobox") or "popdown" in w_name or "combobox" in w_name:
+                        return
+            except Exception:
+                pass
+
             # If cursor is over the image canvas area, zoom the image
             try:
                 ic_x = self.img_canvas.winfo_rootx()
@@ -1113,6 +1157,123 @@ class AnnotationApp(tk.Tk):
                   bg="#3a3a5e", fg="#2563eb", activebackground="#4f4f7a", activeforeground="#1d4ed8", relief="flat",
                   font=(FONT, 12), padx=12, pady=4
                   ).pack(pady=(0, 8))
+
+    def _get_next_index(self, array_prefix: str) -> int:
+        """Find the next available integer index for a nested array of objects."""
+        existing_indices = set()
+        import re
+        pattern = re.compile(rf"^{re.escape(array_prefix)}\.(\d+)")
+        for r in self.all_rows:
+            m = pattern.match(r["path"])
+            if m:
+                existing_indices.add(int(m.group(1)))
+        if not existing_indices:
+            return 0
+        return max(existing_indices) + 1
+
+    def _add_custom_key(self):
+        """Add selected predefined group or typed custom key to active annotations."""
+        path = self.add_key_combo.get().strip()
+        if not path:
+            messagebox.showwarning("Empty Key", "Please select or type a key path to add.")
+            return
+
+        added_paths = []
+
+        if path == "Group: Line Item":
+            idx = self._get_next_index("lineItems")
+            added_paths = [
+                f"lineItems.{idx}.description",
+                f"lineItems.{idx}.discountAmount.originalValue",
+                f"lineItems.{idx}.discountPercent.originalValue",
+                f"lineItems.{idx}.itemCode",
+                f"lineItems.{idx}.lineTaxAmount.originalValue",
+                f"lineItems.{idx}.lineTaxPercent.originalValue",
+                f"lineItems.{idx}.lineTotalExcludingTax.originalValue",
+                f"lineItems.{idx}.lineTotalIncludingTax.originalValue",
+                f"lineItems.{idx}.quantity.originalValue",
+                f"lineItems.{idx}.unitPrice.originalValue",
+            ]
+            msg = f"Added Line Item group at index {idx}."
+        elif path == "Group: Total Taxes":
+            idx = self._get_next_index("totals.taxes")
+            added_paths = [
+                f"totals.taxes.{idx}.key",
+                f"totals.taxes.{idx}.percentage.originalValue",
+                f"totals.taxes.{idx}.value.originalValue",
+            ]
+            msg = f"Added Total Taxes group at index {idx}."
+        elif path == "Group: Total Other Charges":
+            idx = self._get_next_index("totals.otherCharges")
+            added_paths = [
+                f"totals.otherCharges.{idx}.key",
+                f"totals.otherCharges.{idx}.value.originalValue",
+            ]
+            msg = f"Added Total Other Charges group at index {idx}."
+        else:
+            # Single custom path
+            if any(r["path"] == path for r in self.all_rows):
+                messagebox.showinfo("Already Exists", f"Key '{path}' is already present for this document.")
+                return
+            added_paths = [path]
+            msg = f"Added key '{path}'."
+
+            # Save completely new path to predefined_keys and configuration file
+            if path not in self.predefined_keys:
+                self.predefined_keys.append(path)
+                self.predefined_keys.sort()
+                paths_file = PROJECT_ROOT / "full_paths_to_consider.json"
+                try:
+                    with open(paths_file, "w", encoding="utf-8") as f:
+                        json.dump(self.predefined_keys, f, indent=4)
+                    print(f"[ADD KEY] Wrote '{path}' to full_paths_to_consider.json")
+                except Exception as e:
+                    print(f"Error saving to full_paths_to_consider.json: {e}")
+
+        # Insert paths into the state
+        for p in added_paths:
+            # Check if it already exists (safety check)
+            if any(r["path"] == p for r in self.all_rows):
+                continue
+            
+            # Find status (consensus status if other models have it, otherwise missing)
+            # Since it's dynamically added, we can compute consensus
+            model_flat = load_all_model_flat(DOC_IDS[self.doc_idx])
+            from core import compute_consensus
+            status, pairs, best = compute_consensus(p, model_flat)
+            all_null = True
+            
+            new_row = {
+                "path": p,
+                "status": status,
+                "pairs": pairs,
+                "final": best or "",
+                "all_null": all_null
+            }
+            self.all_rows.append(new_row)
+            self.final_vals[p] = best or ""
+
+        # Re-sort all_rows to maintain correct ordering rules
+        order = {"conflict": 0, "partial": 1, "agree": 2, "missing": 3}
+        self.all_rows.sort(
+            key=lambda r: (r["all_null"], order.get(r["status"], 9), r["path"])
+        )
+
+        # Update filters to ensure the new field is visible under All_Null filter
+        self.null_var.set(False)  # Keep 'Show nulls' unchecked to avoid cluttering 'All' filter
+        self.filter_var.set("All_Null")  # Set status filter to All_Null
+        self._apply_filter()  # Re-apply filter and trigger self._render_fields()
+
+        # Navigate to the first newly added field's page
+        first_path = added_paths[0]
+        idx_in_vis = next((i for i, r in enumerate(self.vis_rows) if r["path"] == first_path), -1)
+        if idx_in_vis != -1:
+            self.current_page = idx_in_vis // self.ITEMS_PER_PAGE
+            self._render_fields()
+
+        self.save_msg.config(text=f"✓ {msg}", fg="#2ecc71")
+        self.add_key_combo.set("")
+        self.after(3000, lambda: self.save_msg.config(text=""))
 
 
 # ── Entry point ───────────────────────────────────────────────────────────────
