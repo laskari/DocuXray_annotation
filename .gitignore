@@ -3,6 +3,7 @@ SKS_Annotation/
 
 # Ignore allowed documents JSON
 data2.json
+5_receipts.zip
 
 # Ignore Python bytecode and caches
 __pycache__/
@@ -21,3 +22,4 @@ sks_50/
 extraction/
 invoices_img_2/
 images/
+annotations/
