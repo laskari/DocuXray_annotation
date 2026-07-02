@@ -97,11 +97,14 @@ def get_root_model(module, schema_path, model_name=None):
 
     filename_lower = os.path.basename(schema_path).lower()
     if "receipt" in filename_lower and hasattr(module, "RECEIPT_SCHEMA_MAP"):
-        return module.RECEIPT_SCHEMA_MAP.get("full")
+        if module.RECEIPT_SCHEMA_MAP.get("full") is not None:
+            return module.RECEIPT_SCHEMA_MAP.get("full")
     if hasattr(module, "SCHEMA_MAP"):
-        return module.SCHEMA_MAP.get("full")
+        if module.SCHEMA_MAP.get("full") is not None:
+            return module.SCHEMA_MAP.get("full")
     if hasattr(module, "RECEIPT_SCHEMA_MAP"):
-        return module.RECEIPT_SCHEMA_MAP.get("full")
+        if module.RECEIPT_SCHEMA_MAP.get("full") is not None:
+            return module.RECEIPT_SCHEMA_MAP.get("full")
 
     for candidate in ["ReceiptData", "InvoiceData", "DocumentExtractionResult"]:
         if hasattr(module, candidate):
