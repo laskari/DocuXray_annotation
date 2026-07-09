@@ -15,15 +15,15 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 # Key   = display name shown in the UI
 # Value = folder that contains <doc_id>/ sub-folders with 1_extraction.json
 MODEL_SOURCES: dict[str, Path] = {
-    "Gemini": PROJECT_ROOT / "extraction"
+    "Gemini": PROJECT_ROOT / "bank_statements_extractions"
 }
 
 
 # ── Images directory ────────────────────────────────────────────────────────
 # Set to None if you have no invoice images.
-IMAGES_DIR: Path | None = PROJECT_ROOT / "images"
+IMAGES_DIR: Path | None = PROJECT_ROOT / "bank_statement_images"
 
-IMAGES_DIR = PROJECT_ROOT / "images"
+IMAGES_DIR = PROJECT_ROOT / "bank_statement_images"
 
 # Read all filenames
 if IMAGES_DIR.exists():
@@ -46,6 +46,11 @@ else:
 
 # ── Where annotations are written ──────────────────────────────────────────
 ANNOTATIONS_DIR: Path = PROJECT_ROOT / "annotations"
+
+# ── Designated Schema Folder ───────────────────────────────────────────────
+# Folder where the active schema file and its generated files (flattened json
+# and paths_with_descriptions.json) are kept.
+SCHEMA_DIR: Path = PROJECT_ROOT / "bank_statement_schema"
 
 # ── UI default ─────────────────────────────────────────────────────────────
 # Show keys where every model returned null?

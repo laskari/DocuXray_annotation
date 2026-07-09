@@ -145,7 +145,10 @@ def main():
     print(f"Flattening root model: {root_model.__name__}")
 
     leaf_paths = get_leaf_paths(root_model)
-    sorted_paths = sorted(list(set(leaf_paths)))
+    sorted_paths = [
+        p for p in sorted(list(set(leaf_paths)))
+        if not any(k in p.lower() for k in ("reason", "anlysis", "analysis", "analytics"))
+    ]
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(sorted_paths, f, indent=4)

@@ -470,7 +470,16 @@ def build_field_table(
     from config import PROJECT_ROOT
     import re
     
-    paths_file = PROJECT_ROOT / "full_paths_to_consider.json"
+    paths_file = None
+    try:
+        from config import SCHEMA_DIR
+        if (SCHEMA_DIR / "full_paths_to_consider.json").exists():
+            paths_file = SCHEMA_DIR / "full_paths_to_consider.json"
+    except Exception:
+        pass
+    if paths_file is None:
+        paths_file = PROJECT_ROOT / "full_paths_to_consider.json"
+
     if paths_file.exists():
         try:
             with open(paths_file, "r", encoding="utf-8") as f:
@@ -507,6 +516,176 @@ def build_field_table(
 
 
 # ── UI helpers ───────────────────────────────────────────────────────────────
+
+def ensure_schema_and_descriptions_generated(doc_id: str | None = None) -> None:
+    """
+    Automatically creates/updates the flattened JSON (`full_paths_to_consider.json`)
+    and description JSON (`paths_with_descriptions.json`) inside the designated SCHEMA_DIR
+    using the first available extraction JSON and the schema class in SCHEMA_DIR.
+    """
+    import re
+    import importlib.util
+    import sys
+    from config import PROJECT_ROOT, MODEL_SOURCES
+    try:
+        from config import SCHEMA_DIR
+    except ImportError:
+        SCHEMA_DIR = PROJECT_ROOT / "bank_statement_schema"
+
+    SCHEMA_DIR.mkdir(parents=True, exist_ok=True)
+
+    # 1. Get reference extraction data (using doc_id or first available doc_id)
+    if doc_id is None:
+        doc_ids = get_document_ids()
+        if not doc_ids:
+            return
+        doc_id = doc_ids[0]
+
+    first_extraction_data = None
+    for label in MODEL_SOURCES:
+        raw = load_refinement(label, doc_id)
+        if raw is not None:
+            first_extraction_data = get_refined_data(raw)
+            break
+
+    if first_extraction_data is None:
+        return
+
+    # 2. Flatten and normalize list indices to [*]
+    flat_data = flatten(first_extraction_data)
+    normalized_paths = set()
+    for path in flat_data.keys():
+        norm_p = re.sub(r'\.\d+(?=\.|$)', '[*]', path)
+        normalized_paths.add(norm_p)
+
+    sorted_paths = [
+        p for p in sorted(list(normalized_paths))
+        if not any(k in p.lower() for k in ("reason", "anlysis", "analysis", "analytics"))
+    ]
+    flattened_json_path = SCHEMA_DIR / "full_paths_to_consider.json"
+    try:
+        with open(flattened_json_path, "w", encoding="utf-8") as f:
+            json.dump(sorted_paths, f, indent=4)
+        print(f"[Schema Gen] Saved {len(sorted_paths)} flattened paths to {flattened_json_path}")
+    except Exception as e:
+        print(f"[Schema Gen] Error saving {flattened_json_path}: {e}")
+
+    # 3. Locate schema file in SCHEMA_DIR and extract descriptions
+    schema_files = list(SCHEMA_DIR.glob("schema*.py"))
+    if not schema_files:
+        return
+    schema_path = schema_files[0]
+
+    module_name = schema_path.stem
+    try:
+        if module_name in sys.modules:
+            module = sys.modules[module_name]
+        else:
+            spec = importlib.util.spec_from_file_location(module_name, str(schema_path))
+            if spec and spec.loader:
+                module = importlib.util.module_from_spec(spec)
+                sys.modules[module_name] = module
+                spec.loader.exec_module(module)
+            else:
+                return
+    except Exception as e:
+        print(f"[Schema Gen] Error importing schema from {schema_path}: {e}")
+        return
+
+    root_model = None
+    for attr in ["BankStatementData", "ReceiptData", "InvoiceData", "DocumentExtractionResult"]:
+        if hasattr(module, attr):
+            root_model = getattr(module, attr)
+            break
+    if root_model is None:
+        for map_attr in ["BANK_STATEMENT_SCHEMA_MAP", "RECEIPT_SCHEMA_MAP", "SCHEMA_MAP"]:
+            if hasattr(module, map_attr):
+                m_map = getattr(module, map_attr)
+                if isinstance(m_map, dict) and m_map.get("full"):
+                    root_model = m_map.get("full")
+                    break
+
+    if root_model is None:
+        return
+
+    def get_desc(model_cls, path_parts) -> list[str]:
+        from typing import get_args, get_origin, Union
+        if not path_parts or model_cls is None or model_cls is Any:
+            return []
+        part = path_parts[0]
+        if part.endswith('[*]'):
+            part = part[:-3]
+
+        if not hasattr(model_cls, 'model_fields') or part not in model_cls.model_fields:
+            return [f"FIELD_NOT_FOUND:{part}"]
+
+        field_info = model_cls.model_fields[part]
+        desc = field_info.description
+
+        descs = []
+        if desc:
+            if getattr(model_cls, '__name__', '') in ('BankStatementData', 'InvoiceData', 'ReceiptData', 'DocumentExtractionResult') and len(path_parts) > 1:
+                pass
+            else:
+                descs.append(desc.strip())
+
+        if len(path_parts) == 1:
+            return descs
+
+        ann = field_info.annotation
+        origin = get_origin(ann)
+        nxt = ann
+        if origin is Union:
+            args = [a for a in get_args(ann) if a is not type(None)]
+            if args:
+                nxt = args[0]
+
+        origin2 = get_origin(nxt)
+        if origin2 in (list, list) or nxt is list:
+            args = get_args(nxt)
+            if args:
+                nxt = args[0]
+        elif origin2 in (dict, dict) or nxt is dict:
+            args = get_args(nxt)
+            if len(args) > 1:
+                nxt = args[1]
+
+        origin3 = get_origin(nxt)
+        if origin3 is Union:
+            args = [a for a in get_args(nxt) if a is not type(None)]
+            if args:
+                nxt = args[0]
+
+        child_descs = get_desc(nxt, path_parts[1:])
+        descs.extend(child_descs)
+        return descs
+
+    result_map = {}
+    for path in sorted_paths:
+        if "addressStructured" in path:
+            part = path.split(".")[-1]
+            if hasattr(module, "AddressStructured") and hasattr(module.AddressStructured, "model_fields"):
+                if part in module.AddressStructured.model_fields:
+                    field_desc = (module.AddressStructured.model_fields[part].description or "").strip()
+                    doc = (module.AddressStructured.__doc__ or "").strip()
+                    result_map[path] = f"{doc} {field_desc}".strip()
+                    continue
+
+        descs = get_desc(root_model, path.split("."))
+        descs = [d for d in descs if not d.startswith("FIELD_NOT_FOUND")]
+        if descs:
+            result_map[path] = " ".join(descs)
+        else:
+            result_map[path] = "DESCRIPTION_MISSING"
+
+    desc_path = SCHEMA_DIR / "paths_with_descriptions.json"
+    try:
+        with open(desc_path, "w", encoding="utf-8") as f:
+            json.dump(result_map, f, indent=4)
+        print(f"[Schema Gen] Updated {len(result_map)} descriptions in {desc_path}")
+    except Exception as e:
+        print(f"[Schema Gen] Error saving {desc_path}: {e}")
+
 
 STATUS_STYLE = {
     "agree":   ("OK", "#3B6D11", "#EAF3DE", "#C0DD97"),

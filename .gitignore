@@ -23,3 +23,6 @@ extraction/
 invoices_img_2/
 images/
 annotations/
+img/
+bank_statement_images/
+bank_statements_extractions/

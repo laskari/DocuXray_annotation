@@ -158,8 +158,20 @@ class AnnotationApp(tk.Tk):
         self._doc_stats = {}
         self._init_doc_stats()
         
+        from core import ensure_schema_and_descriptions_generated
+        ensure_schema_and_descriptions_generated()
+
         self.field_descriptions = {}
-        desc_path = PROJECT_ROOT / "paths_with_descriptions.json"
+        desc_path = None
+        try:
+            from config import SCHEMA_DIR
+            if (SCHEMA_DIR / "paths_with_descriptions.json").exists():
+                desc_path = SCHEMA_DIR / "paths_with_descriptions.json"
+        except Exception:
+            pass
+        if desc_path is None:
+            desc_path = PROJECT_ROOT / "paths_with_descriptions.json"
+
         if desc_path.exists():
             with open(desc_path, "r", encoding="utf-8") as f:
                 self.field_descriptions = json.load(f)
